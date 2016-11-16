@@ -1,0 +1,29 @@
+/*
+ * 登录的样式
+ */
+
+#login{
+    padding: 30px 0;
+}
+
+body{
+    
+}
+
+.profile-left{
+    margin-left: 20px;
+}
+.profile-right{
+    margin-right: 20px;
+}
+
+.profile-bottom{
+    margin-bottom: 10px;
+}
+
+.label-left{
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: left;
+    font-color:red;
+}
