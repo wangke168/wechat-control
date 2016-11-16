@@ -10,3 +10,7 @@ Homestead.json
 
 /public/media
 /public/assets
+/resources
+/storage
+/test
+/tests
