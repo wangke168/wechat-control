@@ -6,7 +6,7 @@ Homestead.json
 .env
 
 
-/bootstrap
+
 /config
 /database
 /public
