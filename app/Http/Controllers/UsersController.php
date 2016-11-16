@@ -35,14 +35,14 @@ class UsersController extends Controller
         $username = $request->get('username');
         $password = $request->get('password');
         $password = md5($password);
-        $userinfo = User::where('username', $username)->where('password', $password)->first();
+        $userinfo = User::where('username', $username)->where('userpwd', $password)->first();
 
         if ($userinfo) {
-//            $request->session()->put('username', $username);
+            $request->session()->put('username', $username);
             return redirect('/control/index');
         } else {
 //            return $request->all();
-//            \Session::flash('user_login','failed');
+            \Session::flash('user_login','failed');
             return redirect('/control/login')->withInput();
         }
     }
