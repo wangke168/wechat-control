@@ -42,7 +42,7 @@ class UsersController extends Controller
             return redirect('/control/index');
         } else {
 //            return $request->all();
-            \Session::flash('user_login','failed');
+//            \Session::flash('user_login','failed');
             return redirect('/control/login')->withInput();
         }
     }
