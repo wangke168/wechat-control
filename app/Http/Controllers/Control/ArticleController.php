@@ -100,7 +100,10 @@ class ArticleController extends Controller
                 break;
             case 'modify':
                 $row=DB::table('wx_article')
-                    ->find($id);
+                    ->where('id',$id)
+                    ->first();
+//                dd( $row);
+
                 return view('control.articlemodify', compact('row', 'id'));
                 break;
         }

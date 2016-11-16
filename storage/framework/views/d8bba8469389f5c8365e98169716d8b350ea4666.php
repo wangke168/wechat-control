@@ -98,7 +98,7 @@
 
                             <div class="col-md-11">
                                 <input name="keyword" type="text" data-role="tagsinput"
-                                       value="<?php echo $row->keyword; ?>" >
+                                       value="<?php echo str_replace('，', ',', $row->keyword); ?>" >
                                 <span class="help-inline">每一个关键字用回车隔开</span>
                             </div>
 

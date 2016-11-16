@@ -79,7 +79,7 @@ class Usage
                 if ($eventkey[$index] == 'all') {
                     $qrscenename = '全部显示';
                 } else {
-                    $qrscenename = $this->getQrsecneinfo($eventkey[$index]);
+                    $qrscenename = $this->getQrsecneinfo($eventkey[$index])->qrscene_name;
                 }
             } else {
                 if ($eventkey[$index] == 'all') {
