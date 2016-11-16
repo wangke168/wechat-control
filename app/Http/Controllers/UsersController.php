@@ -38,7 +38,7 @@ class UsersController extends Controller
         $userinfo = User::where('username', $username)->where('password', $password)->first();
 
         if ($userinfo) {
-            $request->session()->put('username', $username);
+//            $request->session()->put('username', $username);
             return redirect('/control/index');
         } else {
 //            return $request->all();
