@@ -178,7 +178,6 @@ class ArticleController extends Controller
             {
                 $pic_url=$request->input('pic_url_session');
             }
-   //         return $request->input('pic_url_session');
             if (!$pyq_pic)
             {
                 $pyq_pic=$request->input('pyq_pic_session');
@@ -195,7 +194,6 @@ class ArticleController extends Controller
 
         }
         elseif($action=='add') {
-//            dd($request->all());
             DB::table('wx_article')
                 ->insert(['classid' => $classid, 'title' => $title, 'keyword' => $keyword, 'picurl' => $pic_url,
                     'pyq_pic' => $pyq_pic, 'pyq_title' => $pyq_title, 'content' => $content, 'url' => $url,
@@ -211,7 +209,7 @@ class ArticleController extends Controller
     private function checkbox($box,$return)
     {
         switch ($return){
-            case '0':
+            case '0':           //是否审核
                 if ($box) {
                     return '0';
                 } else {
@@ -254,7 +252,7 @@ class ArticleController extends Controller
                     break;
             }
 
-            return $destPath . $filename;
+            return '/'.$destPath . $filename;
 
         }
     }

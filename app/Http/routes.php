@@ -23,7 +23,7 @@ Route::get('index', function () {
 
 
 
-Route::group(['prefix' => 'control'], function () {
+Route::group(['prefix' => 'control','middleware' => 'control'], function () {
     Route::get('index', function () {
         // Matches The "/control/index" URL
         return view('control.index');
