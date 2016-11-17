@@ -29,7 +29,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <meta content="" name="author"/>
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
 
-<link href="http://fonts.useso.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css"/>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css"/>
 <link href="<?php echo e(asset('assets/global/plugins/font-awesome/css/font-awesome.min.css')); ?>" rel="stylesheet" type="text/css"/>
 <link href="<?php echo e(asset('assets/global/plugins/simple-line-icons/simple-line-icons.min.css')); ?>" rel="stylesheet" type="text/css"/>
 <link href="<?php echo e(asset('bootstrap/css/bootstrap.css')); ?>" rel="stylesheet" type="text/css"/>
@@ -227,7 +227,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
 	<div class="page-footer-inner">
-		 2014 &copy; Metronic by keenthemes.
+		 2016 &copy; HenddianWorld.
 	</div>
 	<div class="scroll-to-top">
 		<i class="icon-arrow-up"></i>
@@ -262,6 +262,7 @@ License: You must have a valid license purchased only from themeforest(the above
 jQuery(document).ready(function() {
    Metronic.init(); // init metronic core components
 Layout.init(); // init current layout
+
 QuickSidebar.init(); // init quick sidebar
 Demo.init(); // init demo features
 
