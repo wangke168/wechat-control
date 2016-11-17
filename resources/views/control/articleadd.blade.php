@@ -66,7 +66,7 @@
                 </div>
                 <div class="portlet-body form">
 
-                    {!! Form::open(['url'=>'control/articlesave','files'=>true,'class'=>'form-horizontal form-bordered','id'=>'postForm']) !!}
+                    {!! Form::open(['url'=>'control/articlesave?action=add','files'=>true,'class'=>'form-horizontal form-bordered','id'=>'postForm']) !!}
                     <div class="form-body">
                         <div class="form-group">
                             <label class="control-label col-md-1">所属栏目</label>

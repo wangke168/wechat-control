@@ -64,7 +64,7 @@
                 </div>
                 <div class="portlet-body form">
 
-                    <?php echo Form::open(['url'=>'control/articlesave','files'=>true,'class'=>'form-horizontal form-bordered','id'=>'postForm']); ?>
+                    <?php echo Form::open(['url'=>'control/articlesave?action=add','files'=>true,'class'=>'form-horizontal form-bordered','id'=>'postForm']); ?>
 
                     <div class="form-body">
                         <div class="form-group">

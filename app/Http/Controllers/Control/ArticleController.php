@@ -163,10 +163,10 @@ class ArticleController extends Controller
         $marketid = $request->input('marketid');
 
         $marketid = $this->Qrscene_info($marketid);
-        $audit = $this->checkbox($request->input('audit'));
-        $focus = $this->checkbox($request->input('focus'));
-        $allow_copy = $this->checkbox($request->input('allow_copy'));
-        $show_qr = $this->checkbox($request->input('show_qr'));
+        $audit = $this->checkbox($request->input('audit'),'0');
+        $focus = $this->checkbox($request->input('focus'),'1');
+        $allow_copy = $this->checkbox($request->input('allow_copy'),'1');
+        $show_qr = $this->checkbox($request->input('show_qr'),'1');
 
         $pic_url = $this->uploadImage($request->file('pic_url'), 'pic_url');
         $pyq_pic = $this->uploadImage($request->file('pyq_pic'), 'pyq_pic');
@@ -195,6 +195,7 @@ class ArticleController extends Controller
 
         }
         elseif($action=='add') {
+//            dd($request->all());
             DB::table('wx_article')
                 ->insert(['classid' => $classid, 'title' => $title, 'keyword' => $keyword, 'picurl' => $pic_url,
                     'pyq_pic' => $pyq_pic, 'pyq_title' => $pyq_title, 'content' => $content, 'url' => $url,
@@ -207,22 +208,23 @@ class ArticleController extends Controller
 
     }
 
-    private function checkbox($box)
+    private function checkbox($box,$return)
     {
-        if ($box=='audit')
-        {
-            if ($box) {
-                return '0';
-            } else {
-                return '1';
-            }
-        }
-        else {
-            if ($box) {
-                return '1';
-            } else {
-                return '0';
-            }
+        switch ($return){
+            case '0':
+                if ($box) {
+                    return '0';
+                } else {
+                    return '1';
+                }
+                break;
+            case '1':
+                if ($box) {
+                    return '1';
+                } else {
+                    return '0';
+                }
+                break;
         }
     }
 
