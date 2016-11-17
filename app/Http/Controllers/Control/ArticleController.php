@@ -252,7 +252,7 @@ class ArticleController extends Controller
                     break;
             }
 
-            return '/'.$destPath . $filename;
+            return $destPath . $filename;
 
         }
     }
