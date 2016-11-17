@@ -190,7 +190,7 @@ class ArticleController extends Controller
                     'startdate' => $startdate, 'enddate' => $enddate, 'priority' => $priority,
                     'audit' => $audit, 'focus' => $focus, 'show_qr' => $show_qr,
                     'allow_copy' => $allow_copy, 'adddate' => date('Y-m-d'),
-                    'eventkey' => $marketid]);
+                    'eventkey' => $marketid,'author'=>\Session::get('username')]);
 
         }
         elseif($action=='add') {
@@ -200,7 +200,7 @@ class ArticleController extends Controller
                     'startdate' => $startdate, 'enddate' => $enddate, 'priority' => $priority,
                     'audit' => $audit, 'focus' => $focus, 'show_qr' => $show_qr,
                     'allow_copy' => $allow_copy, 'adddate' => date('Y-m-d'),
-                    'eventkey' => $marketid]);
+                    'eventkey' => $marketid,'author'=>\Session::get('username')]);
         }
         return redirect('/control/articlelist');
 
