@@ -22,6 +22,8 @@ Route::get('index', function () {
 });
 
 
+Route::get('control.login','UsersController@signin');
+Route::post('control.login','UsersController@login');
 
 Route::group(['prefix' => 'control','middleware' => 'control'], function () {
     Route::get('index', function () {
@@ -36,8 +38,6 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
     Route::get('json/qrscene','JsonController@qrscene');
 
     //用户管理
-    Route::get('login','UsersController@signin');
-    Route::post('login','UsersController@login');
     Route::get('logout','UsersController@logout');
     //文章管理
     Route::get('articlelist','Control\ArticleController@articleList');
