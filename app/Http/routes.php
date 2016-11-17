@@ -22,8 +22,8 @@ Route::get('index', function () {
 });
 
 
-Route::get('control.login','UsersController@signin');
-Route::post('control.login','UsersController@login');
+Route::get('control/login','UsersController@signin');
+Route::post('control/login','UsersController@login');
 
 Route::group(['prefix' => 'control','middleware' => 'control'], function () {
     Route::get('index', function () {
