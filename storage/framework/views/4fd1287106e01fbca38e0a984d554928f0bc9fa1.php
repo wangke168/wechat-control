@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="测试页面">
-    <title>App Name - <?php echo $__env->yieldContent('title'); ?></title>
+    <title>横店影视城微信管理平台 - <?php echo $__env->yieldContent('title'); ?></title>
     <link rel="stylesheet" href="<?php echo e(asset('bootstrap/css/bootstrap.min.css')); ?>">
     <link rel="stylesheet" href="<?php echo e(asset('bootstrap/css/style.css')); ?>">
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
