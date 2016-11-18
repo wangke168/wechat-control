@@ -87,8 +87,8 @@
                     <div class="number">
                         <?php
                         $row = DB::table('wx_order_send')
-                                ->whereDate('adddate', '>=', '2016-10-12')
-                                ->whereDate('adddate', '<', '2016-10-13')
+                     //           ->whereDate('adddate', '>=', '2016-10-12')
+                     //           ->whereDate('adddate', '<', '2016-10-13')
                                 ->whereDate('adddate', '>=', date("Y-m-d", strtotime("-1 day")))
                                 ->whereDate('adddate','<',date("Y-m-d"))
                                 ->count();
