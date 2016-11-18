@@ -99,8 +99,8 @@ class ArticleController extends Controller
                 return redirect()->back();
                 break;
             case 'modify':
-                $row=DB::table('wx_article')
-                    ->where('id',$id)
+                $row = DB::table('wx_article')
+                    ->where('id', $id)
                     ->first();
 //                dd( $row);
 
@@ -135,7 +135,7 @@ class ArticleController extends Controller
 //        dd($request->all());
 
 
-        $action=$request->input('action');
+        $action = $request->input('action');
 
         $classid = $request->input('classid');
         $title = $request->input('title');
@@ -163,52 +163,48 @@ class ArticleController extends Controller
         $marketid = $request->input('marketid');
 
         $marketid = $this->Qrscene_info($marketid);
-        $audit = $this->checkbox($request->input('audit'),'0');
-        $focus = $this->checkbox($request->input('focus'),'1');
-        $allow_copy = $this->checkbox($request->input('allow_copy'),'1');
-        $show_qr = $this->checkbox($request->input('show_qr'),'1');
+        $audit = $this->checkbox($request->input('audit'), '0');
+        $focus = $this->checkbox($request->input('focus'), '1');
+        $allow_copy = $this->checkbox($request->input('allow_copy'), '1');
+        $show_qr = $this->checkbox($request->input('show_qr'), '1');
 
         $pic_url = $this->uploadImage($request->file('pic_url'), 'pic_url');
         $pyq_pic = $this->uploadImage($request->file('pyq_pic'), 'pyq_pic');
 
-        if ($action=='modify')
-        {
+        if ($action == 'modify') {
 
-            if (!$pic_url)
-            {
-                $pic_url=$request->input('pic_url_session');
+            if (!$pic_url) {
+                $pic_url = $request->input('pic_url_session');
             }
-            if (!$pyq_pic)
-            {
-                $pyq_pic=$request->input('pyq_pic_session');
+            if (!$pyq_pic) {
+                $pyq_pic = $request->input('pyq_pic_session');
             }
-            $id=$request->input('id');
+            $id = $request->input('id');
             DB::table('wx_article')
-                ->where('id',$id)
+                ->where('id', $id)
                 ->update(['classid' => $classid, 'title' => $title, 'keyword' => $keyword, 'picurl' => $pic_url,
                     'pyq_pic' => $pyq_pic, 'pyq_title' => $pyq_title, 'content' => $content, 'url' => $url,
                     'startdate' => $startdate, 'enddate' => $enddate, 'priority' => $priority,
                     'audit' => $audit, 'focus' => $focus, 'show_qr' => $show_qr,
                     'allow_copy' => $allow_copy, 'adddate' => date('Y-m-d'),
-                    'eventkey' => $marketid,'author'=>\Session::get('username')]);
+                    'eventkey' => $marketid, 'author' => \Session::get('username')]);
 
-        }
-        elseif($action=='add') {
+        } elseif ($action == 'add') {
             DB::table('wx_article')
                 ->insert(['classid' => $classid, 'title' => $title, 'keyword' => $keyword, 'picurl' => $pic_url,
                     'pyq_pic' => $pyq_pic, 'pyq_title' => $pyq_title, 'content' => $content, 'url' => $url,
                     'startdate' => $startdate, 'enddate' => $enddate, 'priority' => $priority,
                     'audit' => $audit, 'focus' => $focus, 'show_qr' => $show_qr,
                     'allow_copy' => $allow_copy, 'adddate' => date('Y-m-d'),
-                    'eventkey' => $marketid,'author'=>\Session::get('username')]);
+                    'eventkey' => $marketid, 'author' => \Session::get('username')]);
         }
         return redirect('/control/articlelist');
 
     }
 
-    private function checkbox($box,$return)
+    private function checkbox($box, $return)
     {
-        switch ($return){
+        switch ($return) {
             case '0':           //是否审核
                 if ($box) {
                     return '0';
@@ -237,7 +233,10 @@ class ArticleController extends Controller
             $destPath = 'uploads/' . date('Ymd') . '/';
             if (!file_exists($destPath))
                 mkdir($destPath, 0755, true);
-            $filename = time() . str_random(5) . $file->getClientOriginalName();
+            $extension = $file->getClientOriginalExtension();
+            $filename = time() . str_random(5) . '.' . $extension;
+
+//            $filename = time() . str_random(5) . $file->getClientOriginalName();
             if (!$file->move($destPath, $filename)) {
                 exit('保存文件失败！');
             }
