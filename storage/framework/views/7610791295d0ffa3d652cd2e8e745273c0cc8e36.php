@@ -10,8 +10,8 @@
 
 <?php $__env->stopSection(); ?>
 
+<?php $__env->startSection('page-menu-title', '登记二维码'); ?>
 <?php $__env->startSection('page-title', '二维码管理'); ?>
-
 <?php $__env->startSection('page-bar'); ?>
     <div class="page-bar">
         <ul class="page-breadcrumb">
@@ -33,7 +33,7 @@
     <div class="row">
         <div class="col-md-12">
             <!-- BEGIN EXAMPLE TABLE PORTLET-->
-            <div class="portlet box purple">
+            <div class="portlet box green-haze">
 
                 <div class="portlet-title">
 

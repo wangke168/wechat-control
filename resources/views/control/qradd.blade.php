@@ -12,8 +12,8 @@
 
 @stop
 
+@section('page-menu-title', '登记二维码')
 @section('page-title', '二维码管理')
-
 @section('page-bar')
     <div class="page-bar">
         <ul class="page-breadcrumb">
@@ -23,7 +23,7 @@
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
-                <a href="#">公告牌</a>
+                <a href="#">二维码管理</a>
             </li>
         </ul>
 
@@ -35,7 +35,7 @@
     <div class="row">
         <div class="col-md-12">
             <!-- BEGIN EXAMPLE TABLE PORTLET-->
-            <div class="portlet box purple">
+            <div class="portlet box green-haze">
 
                 <div class="portlet-title">
 

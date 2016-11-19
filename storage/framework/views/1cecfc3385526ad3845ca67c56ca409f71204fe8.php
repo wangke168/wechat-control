@@ -1,7 +1,11 @@
+<?php $usage=new \App\WeChat\Usage();?>
 <?php $__env->startSection('title', '横店影视城微信管理平台－－－二维码管理'); ?>
 
-<?php $__env->startSection('page-title', '二维码管理'); ?>
+<?php $__env->startSection('page-title','二维码管理'); ?>
+<?php $__env->startSection('page-menu-title'); ?>
+    <?php echo $usage->get_qr_classid_name($classid)->class_name; ?>
 
+    <?php $__env->stopSection(); ?>
 <?php $__env->startSection('page-bar'); ?>
     <div class="page-bar">
         <ul class="page-breadcrumb">
@@ -11,7 +15,7 @@
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
-                <a href="#">公告牌</a>
+                <a href="#">二维码管理</a>
             </li>
         </ul>
 
@@ -19,14 +23,16 @@
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>
+
     @parent
     <div class="row">
         <div class="col-md-12">
             <!-- BEGIN EXAMPLE TABLE PORTLET-->
-            <div class="portlet box blue-hoki">
+            <div class="portlet box green-haze">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="fa fa-globe"></i>Datatable with TableTools
+                        <i class="fa fa-globe"></i><?php echo $usage->get_qr_classid_name($classid)->class_name; ?>
+
                     </div>
                     <div class="tools">
                     </div>

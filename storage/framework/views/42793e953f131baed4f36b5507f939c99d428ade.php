@@ -9,8 +9,8 @@
       href="<?php echo e(asset('assets/global/plugins/jquery-multi-select/css/multi-select.css')); ?>"/>
 
 <?php $__env->stopSection(); ?>
-<?php $__env->startSection('page-menu-title','二维码管理'); ?>
-<?php $__env->startSection('page-title', '修改信息'); ?>
+<?php $__env->startSection('page-title','二维码管理'); ?>
+<?php $__env->startSection('page-menu-title', '修改二维码信息'); ?>
 
 <?php $__env->startSection('page-bar'); ?>
     <div class="page-bar">
@@ -33,7 +33,7 @@
     <div class="row">
         <div class="col-md-12">
             <!-- BEGIN EXAMPLE TABLE PORTLET-->
-            <div class="portlet box purple">
+            <div class="portlet box green-haze">
 
                 <div class="portlet-title">
 

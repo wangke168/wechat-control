@@ -11,8 +11,8 @@
       href="{{asset('assets/global/plugins/jquery-multi-select/css/multi-select.css')}}"/>
 
 @stop
-@section('page-menu-title','二维码管理')
-@section('page-title', '修改信息')
+@section('page-title','二维码管理')
+@section('page-menu-title', '修改二维码信息')
 
 @section('page-bar')
     <div class="page-bar">
@@ -35,7 +35,7 @@
     <div class="row">
         <div class="col-md-12">
             <!-- BEGIN EXAMPLE TABLE PORTLET-->
-            <div class="portlet box purple">
+            <div class="portlet box green-haze">
 
                 <div class="portlet-title">
 

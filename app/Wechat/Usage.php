@@ -142,4 +142,15 @@ class Usage
             echo "<li><a href='qrlist?classid=".$row->classid."'>".$row->class_name."</a></li>";
         }
     }
+
+    /*
+     * 根据二维码的classid获取信息
+     */
+    public function get_qr_classid_name($classid)
+    {
+        $row=DB::table('wx_qrscene_class')
+            ->where('classid',$classid)
+            ->first();
+        return $row;
+    }
 }
