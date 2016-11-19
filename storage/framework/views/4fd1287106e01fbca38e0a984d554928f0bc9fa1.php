@@ -142,6 +142,7 @@
 <script src="<?php echo e(asset('assets/admin/layout/scripts/demo.js')); ?>" type="text/javascript"></script>
 <script src="<?php echo e(asset('assets/admin/pages/scripts/index.js')); ?>" type="text/javascript"></script>
 <script src="<?php echo e(asset('assets/admin/pages/scripts/tasks.js')); ?>" type="text/javascript"></script>
+<script src="<?php echo e(asset('lib/function.js')); ?>"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <script>
     jQuery(document).ready(function() {
@@ -157,6 +158,8 @@
         Index.initChat();
         Index.initMiniCharts();
         Tasks.initDashboardWidget();
+
+        menuchushi();
     });
 </script>
 <!-- END JAVASCRIPTS -->

@@ -46,6 +46,11 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
     Route::get('articleadd','Control\ArticleController@articleAdd');
     Route::post('articlesave','Control\ArticleController@articleSave');
 
+    //二维码管理
+    Route::get('qradd','Control\QrlistController@add');
+    Route::get('qrmodify','Control\QrlistController@modify');
+    Route::post('qrsave','Control\QrlistController@save');
+    Route::get('qrsearch','Control\QrlistController@search');
     Route::get('qrlist', 'Control\QrlistController@index');
     Route::get('qrlist1', 'Control\QrlistController@test');
 

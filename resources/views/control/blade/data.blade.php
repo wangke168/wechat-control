@@ -258,6 +258,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="{{asset('assets/admin/layout/scripts/quick-sidebar.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/admin/layout/scripts/demo.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/admin/pages/scripts/table-advanced.js')}}"></script>
+<script src="{{asset('lib/function.js')}}"></script>
 <script>
 jQuery(document).ready(function() {
    Metronic.init(); // init metronic core components
@@ -265,7 +266,7 @@ Layout.init(); // init current layout
 
 QuickSidebar.init(); // init quick sidebar
 Demo.init(); // init demo features
-
+	menuchushi();
 @yield('init')
 
   // TableAdvanced.init();

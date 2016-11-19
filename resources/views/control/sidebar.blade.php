@@ -135,36 +135,12 @@
 					<span class="arrow "></span>
 					</a>
 					<ul class="sub-menu">
+						<?php
+						$usage=new \App\WeChat\Usage();
+							$usage->get_menu_qr();
+						?>
 						<li>
-							<a href="qrlist?classid=1">
-							市场</a>
-						</li>
-						<li>
-							<a href="qrlist?classid=3">
-                                推广联盟</a>
-						</li>
-						<li>
-							<a href="qrlist?classid=2">
-                                代理商</a>
-						</li>						
-						<li>
-							<a href="qrlist?classid=5">
-							酒店</a>
-						</li>
-						<li>
-							<a href="qrlist?classid=6">
-							景区</a>
-						</li>
-						<li>
-							<a href="qrlist?classid=7">
-							合作</a>
-						</li>
-						<li>
-							<a href="qrlist?classid=4">
-							其他</a>
-						</li>
-						<li>
-							<a href="portlet_draggable.html">
+							<a href="qradd">
 							登记二维码</a>
 						</li>
 					</ul>

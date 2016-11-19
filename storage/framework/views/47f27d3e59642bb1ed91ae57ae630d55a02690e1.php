@@ -84,8 +84,8 @@
                     <div class="number">
                         <?php
                         $row = DB::table('wx_order_send')
-                                ->whereDate('adddate', '>=', '2016-10-12')
-                                ->whereDate('adddate', '<', '2016-10-13')
+                     //           ->whereDate('adddate', '>=', '2016-10-12')
+                     //           ->whereDate('adddate', '<', '2016-10-13')
                                 ->whereDate('adddate', '>=', date("Y-m-d", strtotime("-1 day")))
                                 ->whereDate('adddate','<',date("Y-m-d"))
                                 ->count();
@@ -129,7 +129,7 @@
             <div class="portlet solid bordered grey-cararra">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="fa fa-bar-chart-o"></i>Site Visits
+                        <i class="fa fa-bar-chart-o"></i>关注趋势
                     </div>
                     <div class="actions">
                         <div class="btn-group" data-toggle="buttons">

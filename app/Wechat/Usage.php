@@ -12,6 +12,9 @@ use DB;
 
 class Usage
 {
+    /*
+     * 添加文章时选择栏目
+     */
     public function menuList()
     {
         $rows = DB::table('wx_menu_list')
@@ -40,6 +43,9 @@ class Usage
         }
     }
 
+    /*
+     * 编辑文章时确认所选栏目
+     */
     public function menuCheck($classid)
     {
         $rows = DB::table('wx_menu_list')
@@ -70,6 +76,9 @@ class Usage
         }
     }
 
+    /*
+     * 编辑文章时获取所属市场
+     */
     public function getArticleShowQrsecne($eventkeys)
     {
         $eventkey = explode(',', $eventkeys);
@@ -98,5 +107,39 @@ class Usage
             ->where('qrscene_id', $eventkey)
             ->first();
         return $row;
+    }
+
+    public function get_qr_classid()
+    {
+        $rows=DB::table('wx_qrscene_class')
+            ->get();
+        foreach ($rows as $row)
+        {
+            echo "<option value=\"" . $row->classid . "\">" . $row->class_name . "</option>";
+        }
+    }
+
+    public function check_qr_classid($classid)
+    {
+        $rows=DB::table('wx_qrscene_class')
+            ->get();
+        foreach ($rows as $row)
+        {
+            if($row->classid==$classid){
+                echo "<option selected value=\"" . $row->classid . "\">" . $row->class_name . "</option>";
+            }
+            else {
+                echo "<option value=\"" . $row->classid . "\">" . $row->class_name . "</option>";
+            }
+        }
+    }
+
+    public function get_menu_qr()
+    {
+        $rows=DB::table('wx_qrscene_class')
+            ->get();
+        foreach ($rows as $row){
+            echo "<li><a href='qrlist?classid=".$row->classid."'>".$row->class_name."</a></li>";
+        }
     }
 }

@@ -132,7 +132,7 @@
             <div class="portlet solid bordered grey-cararra">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="fa fa-bar-chart-o"></i>Site Visits
+                        <i class="fa fa-bar-chart-o"></i>关注趋势
                     </div>
                     <div class="actions">
                         <div class="btn-group" data-toggle="buttons">
