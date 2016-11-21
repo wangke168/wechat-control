@@ -23,7 +23,7 @@
     <div class="row">
 				<div class="col-md-12">
 					<!-- BEGIN EXAMPLE TABLE PORTLET-->
-					<div class="portlet box blue-hoki">
+					<div class="portlet box green-haze">
 						<div class="portlet-title">
 							<div class="caption">
 								<i class="fa fa-globe"></i>Datatable with TableTools
@@ -87,7 +87,12 @@
                                         ?>
                                     </td>
                                     <td>
-                                        X
+                                        <?php
+                                        echo "<a href='http://weix2.hengdianworld.com/control/qr_create.php?qrscene_id=" . $row->qrscene_id . "' class='label label-warning' target='_blank'><i class=\"icon-edit\"></i>获取二维码</a>&nbsp;&nbsp;&nbsp;";
+
+                                        echo "<a href='qrmodify?action=modify&id=" . $row->id . "' class='label label-success'><i class=\"icon-edit\"></i>修改</a>&nbsp;&nbsp;&nbsp;";
+
+                                        ?>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>

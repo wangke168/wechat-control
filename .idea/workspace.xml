@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/eaf5d72cb0b46b16734e02227e53270f656db840" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Wechat/Usage.php" afterPath="$PROJECT_DIR$/app/Wechat/Usage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/qradd.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/qradd.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/qrlist.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/qrlist.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/qrmodify.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/qrmodify.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/qrsearch.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/qrsearch.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/sessions/5316895448e4c186a139f6bf4579fccd90a54165" afterPath="$PROJECT_DIR$/storage/framework/sessions/5316895448e4c186a139f6bf4579fccd90a54165" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/1cecfc3385526ad3845ca67c56ca409f71204fe8.php" afterPath="$PROJECT_DIR$/storage/framework/views/1cecfc3385526ad3845ca67c56ca409f71204fe8.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/42793e953f131baed4f36b5507f939c99d428ade.php" afterPath="$PROJECT_DIR$/storage/framework/views/42793e953f131baed4f36b5507f939c99d428ade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/7610791295d0ffa3d652cd2e8e745273c0cc8e36.php" afterPath="$PROJECT_DIR$/storage/framework/views/7610791295d0ffa3d652cd2e8e745273c0cc8e36.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/logs/laravel.log" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qrmodify.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="qrmodify.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/qrmodify.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32527882">
+            <state vertical-scroll-proportion="-13.461538">
               <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding />
             </state>
@@ -118,8 +108,8 @@
       <file leaf-file-name="qrlist.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/qrlist.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.3584905">
-              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="25" />
+            <state vertical-scroll-proportion="-7.056604">
+              <caret line="92" column="36" selection-start-line="92" selection-start-column="36" selection-end-line="97" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -135,11 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qrsearch.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="qrsearch.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/control/qrsearch.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.923077">
-              <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.6050186">
+              <caret line="95" column="42" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -198,11 +188,11 @@
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/QrRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Control/QrlistController.php" />
-        <option value="$PROJECT_DIR$/resources/views/control/qrsearch.blade.php" />
         <option value="$PROJECT_DIR$/app/Wechat/Usage.php" />
         <option value="$PROJECT_DIR$/resources/views/control/qrlist.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/qradd.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/qrmodify.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/qrsearch.blade.php" />
       </list>
     </option>
   </component>
@@ -982,14 +972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/qrsearch.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.923077">
-          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/QrlistController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.730769">
@@ -1023,14 +1005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/qrlist.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3584905">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/qradd.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-24.038462">
@@ -1041,8 +1015,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/qrmodify.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32527882">
+        <state vertical-scroll-proportion="-13.461538">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/qrlist.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.056604">
+          <caret line="92" column="36" selection-start-line="92" selection-start-column="36" selection-end-line="97" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/qrsearch.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6050186">
+          <caret line="95" column="42" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
           <folding />
         </state>
       </provider>
