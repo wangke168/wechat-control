@@ -1,6 +1,9 @@
 <?php $__env->startSection('title', '横店影视城微信管理平台－－－二维码管理'); ?>
 
-<?php $__env->startSection('page-title', '二维码管理'); ?>
+<?php $__env->startSection('page-title','二维码管理'); ?>
+<?php $__env->startSection('page-menu-title'); ?>
+    二维码搜索
+<?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('page-bar'); ?>
  <div class="page-bar">
@@ -11,7 +14,7 @@
                         <i class="fa fa-angle-right"></i>
                     </li>
                     <li>
-                        <a href="#">公告牌</a>
+                        <a href="#">二维码管理</a>
                     </li>
                 </ul>
                 
@@ -26,7 +29,7 @@
 					<div class="portlet box green-haze">
 						<div class="portlet-title">
 							<div class="caption">
-								<i class="fa fa-globe"></i>Datatable with TableTools
+								<i class="fa fa-globe"></i>搜索结果
 							</div>
 							<div class="tools">
 							</div>

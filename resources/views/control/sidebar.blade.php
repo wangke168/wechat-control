@@ -97,6 +97,27 @@
 				</li>
 				<li>
 					<a href="javascript:;">
+						<i class="icon-notebook"></i>
+						<span class="title">回复管理</span>
+						<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li>
+							<a href="requesttxt">
+								文字回复</a>
+						</li>
+						<li>
+							<a href="#">
+								语音回复</a>
+						</li>
+						<li>
+							<a href="# gwangdf">
+								图片回复</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">
 					<i class="icon-briefcase"></i>
 					<span class="title">数据统计</span>
 					<span class="arrow "></span>
@@ -119,7 +140,7 @@
 							Editable Datatables</a>
 						</li>
 						<li>
-							<a href="clickcount">
+							<a href="menuclickcount">
 							菜单点击数</a>
 						</li>
 						<li>

@@ -153,4 +153,24 @@ class Usage
             ->first();
         return $row;
     }
+
+    public function get_menu_info($name,$type)
+    {
+        switch ($type){
+            case 'name':
+                $row=DB::table('wx_menu_list')
+                    ->where('id',$name)
+                    ->first();
+                break;
+            case 'classid':
+                $row=DB::table('wx_menu_list')
+                    ->where('menu_name',$name)
+                    ->first();
+                break;
+            default:
+                $row='type error';
+                break;
+        }
+        return $row;
+    }
 }

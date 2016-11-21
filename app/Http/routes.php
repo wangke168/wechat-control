@@ -46,6 +46,15 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
     Route::get('articleadd','Control\ArticleController@articleAdd');
     Route::post('articlesave','Control\ArticleController@articleSave');
 
+
+    //回复管理
+    Route::get('requesttxt','Control\RequestController@txt');
+
+    //数据统计
+    Route::get('menuclickcount','Control\DataController@click');
+
+    Route::post('menuclickcount','Control\DataController@countSearch');
+
     //二维码管理
     Route::get('qradd','Control\QrlistController@add');
     Route::get('qrmodify','Control\QrlistController@modify');
@@ -54,5 +63,5 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
     Route::get('qrlist', 'Control\QrlistController@index');
     Route::get('qrlist1', 'Control\QrlistController@test');
 
-    Route::get('clickcount','Control\DataController@click');
+
 });
