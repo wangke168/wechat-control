@@ -1,4 +1,7 @@
-<?php $__env->startSection('title', '横店影视城微信管理平台－－－二维码管理'); ?>
+<?php $__env->startSection('title', '横店影视城微信管理平台－－－文章管理'); ?>
+<?php $__env->startSection('page-menu-title', '添加文章'); ?>
+
+<?php $__env->startSection('page-title', '文章管理'); ?>
 
 <?php $__env->startSection('css'); ?>
         <!-- BEGIN PAGE LEVEL STYLES -->
@@ -23,7 +26,6 @@
       href="<?php echo e(asset('assets/global/plugins/bootstrap-datepicker/css/datepicker3.css')); ?>"/>
 <?php $__env->stopSection(); ?>
 
-<?php $__env->startSection('page-title', '文章列表'); ?>
 
 <?php $__env->startSection('page-bar'); ?>
     <div class="page-bar">

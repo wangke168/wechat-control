@@ -1,6 +1,9 @@
 @extends('control.blade.data')
 
-@section('title', '横店影视城微信管理平台－－－二维码管理')
+@section('title', '横店影视城微信管理平台－－－文章管理')
+@section('page-menu-title', '添加文章')
+
+@section('page-title', '文章管理')
 
 @section('css')
         <!-- BEGIN PAGE LEVEL STYLES -->
@@ -25,7 +28,6 @@
       href="{{asset('assets/global/plugins/bootstrap-datepicker/css/datepicker3.css')}}"/>
 @stop
 
-@section('page-title', '文章列表')
 
 @section('page-bar')
     <div class="page-bar">

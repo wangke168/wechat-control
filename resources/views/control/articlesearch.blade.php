@@ -1,8 +1,9 @@
 @extends('control.blade.data')
 
-@section('title', '横店影视城微信管理平台－－－二维码管理')
+@section('title', '横店影视城微信管理平台－－－文章管理')
+@section('page-menu-title', '搜索文章')
 
-@section('page-title', '文章列表')
+@section('page-title', '文章管理')
 
 @section('page-bar')
     <div class="page-bar">
@@ -13,7 +14,11 @@
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
-                <a href="#">文章列表</a>
+                <a href="#">文章管理</a>
+                <i class="fa fa-angle-right"></i>
+            </li>
+            <li>
+                <a href="#">搜索文章</a>
             </li>
         </ul>
 

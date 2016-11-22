@@ -1,7 +1,9 @@
 @extends('control.blade.data')
 
-@section('title', '横店影视城微信管理平台－－－二维码管理')
+@section('title', '横店影视城微信管理平台－－－文章管理')
+@section('page-menu-title', '文章列表')
 
+@section('page-title', '文章管理')
 @section('css')
     <link href="{{asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css')}}" rel="stylesheet" type="text/css"/>
     <link href="{{asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal.css')}}" rel="stylesheet" type="text/css"/>
