@@ -124,8 +124,8 @@
 					</a>
 					<ul class="sub-menu">
 						<li>
-							<a href="table_basic.html">
-							Basic Datatables</a>
+							<a href="ordercount">
+							订单统计</a>
 						</li>
 						<li>
 							<a href="table_responsive.html">

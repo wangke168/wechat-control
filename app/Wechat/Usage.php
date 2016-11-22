@@ -103,6 +103,7 @@ class Usage
 
     public function getQrsecneinfo($eventkey)
     {
+
         $row = DB::table('wx_qrscene_info')
             ->where('qrscene_id', $eventkey)
             ->first();
@@ -173,4 +174,6 @@ class Usage
         }
         return $row;
     }
+
+
 }

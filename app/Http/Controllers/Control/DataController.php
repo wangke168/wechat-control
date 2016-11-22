@@ -58,4 +58,26 @@ class DataController extends Controller
         }
     }
 
+    //订单管理
+    public function ordersend()
+    {
+        $rows=DB::table('wx_order_confirm')
+            ->orderBy('id','desc')
+            ->paginate(20);
+        return view('control.count_order_payed',compact('rows'));
+    }
+
+    public function ordersend_search(Request $request)
+    {
+        $from=$request->input('from');
+        $to=$request->input('to');
+        \Session::flash('from',$from);
+        \Session::flash('to',$to);
+        $rows=DB::table('wx_order_confirm')
+            ->whereDate('adddate','>=',$from)
+            ->whereDate('adddate','<=',$to)
+            ->orderBy('id','desc')
+            ->paginate(20);
+        return view('control.count_order_payed_search',compact('rows','from','to'));
+    }
 }

@@ -14,4 +14,12 @@ class Count
             ->first();
         return $row;
     }
+
+    public function check_payed($sellid)
+    {
+        $row=DB::table('wx_order_send')
+            ->where('sellid',$sellid)
+            ->first();
+        return $row;
+    }
 }

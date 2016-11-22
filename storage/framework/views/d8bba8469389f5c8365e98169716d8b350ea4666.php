@@ -34,7 +34,11 @@
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
-                <a href="#">文章列表</a>
+                <a href="#">文章管理</a>
+                <i class="fa fa-angle-right"></i>
+            </li>
+            <li>
+                <a href="#">修改文章</a>
             </li>
         </ul>
 
@@ -49,18 +53,9 @@
             <div class="portlet box blue-hoki">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="fa fa-gift"></i>Bootstrap Summernote WYSIWYG Editor
+                        <i class="fa fa-gift"></i>文章修改
                     </div>
-                    <div class="tools">
-                        <a href="javascript:;" class="collapse">
-                        </a>
-                        <a href="#portlet-config" data-toggle="modal" class="config">
-                        </a>
-                        <a href="javascript:;" class="reload">
-                        </a>
-                        <a href="javascript:;" class="remove">
-                        </a>
-                    </div>
+                    
                 </div>
                 <div class="portlet-body form">
 

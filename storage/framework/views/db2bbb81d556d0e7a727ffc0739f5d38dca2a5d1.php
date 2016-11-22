@@ -16,6 +16,10 @@
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
+                <a href="#">文章管理</a>
+                <i class="fa fa-angle-right"></i>
+            </li>
+            <li>
                 <a href="#">文章列表</a>
             </li>
         </ul>

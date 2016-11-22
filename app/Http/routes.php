@@ -52,8 +52,10 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
 
     //数据统计
     Route::get('menuclickcount','Control\DataController@click');
-
     Route::post('menuclickcount','Control\DataController@countSearch');
+
+    Route::get('ordercount','Control\DataController@ordersend');
+    Route::get('ordercountsearch','Control\DataController@ordersend_search');
 
     //二维码管理
     Route::get('qradd','Control\QrlistController@add');
