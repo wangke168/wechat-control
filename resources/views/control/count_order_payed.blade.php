@@ -135,7 +135,7 @@
                                     ?>
                                 </td>
                                 <td>
-
+                                    {!! $order->order_menu_click($row->wx_openid) !!}
                                 </td>
                                 <td>
                                     @if($order->check_payed($row->sellid))

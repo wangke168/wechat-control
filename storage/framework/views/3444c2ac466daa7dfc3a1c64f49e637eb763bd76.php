@@ -139,6 +139,7 @@
                                     ?>
                                 </td>
                                 <td>
+                                    <?php echo $order->order_menu_click($row->wx_openid); ?>
 
                                 </td>
                                 <td>

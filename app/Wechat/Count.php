@@ -22,4 +22,23 @@ class Count
             ->first();
         return $row;
     }
+
+    /*
+     * 查询点击的菜单情况
+     */
+    public function order_menu_click($openid)
+    {
+        $rows = DB::table('wx_click_hits')
+            ->where('wx_openid', $openid)
+            ->orderBy('id', 'desc')
+            ->take(10)
+            ->get();
+        $click_info = '';
+        if ($rows) {
+            foreach ($rows as $row) {
+                $click_info = $click_info . '|' . $row->click;
+            }
+        }
+        return $click_info;
+    }
 }
