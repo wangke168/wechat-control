@@ -111,8 +111,12 @@
 								语音回复</a>
 						</li>
 						<li>
-							<a href="# gwangdf">
+							<a href="#">
 								图片回复</a>
+						</li>
+						<li>
+							<a href="requestse">
+								二次回复</a>
 						</li>
 					</ul>
 				</li>

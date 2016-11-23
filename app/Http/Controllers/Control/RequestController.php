@@ -16,4 +16,12 @@ class RequestController extends Controller
             ->paginate(20);
         return view('control.request_txt_list',compact('rows'));
     }
+
+    public function se()
+    {
+        $rows=DB::table('se_info_detail')
+            ->orderBy('id','desc')
+            ->paginate(20);
+        return view('control.request_se_list',compact('rows'));
+    }
 }

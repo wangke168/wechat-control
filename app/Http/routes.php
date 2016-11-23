@@ -49,6 +49,7 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
 
     //回复管理
     Route::get('requesttxt','Control\RequestController@txt');
+    Route::get('requestse','Control\RequestController@se');
 
     //数据统计
     Route::get('menuclickcount','Control\DataController@click');

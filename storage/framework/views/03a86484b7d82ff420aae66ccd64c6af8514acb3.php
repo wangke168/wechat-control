@@ -1,10 +1,10 @@
-<?php $__env->startSection('title', '横店影视城微信管理平台－－－文章管理'); ?>
-<?php $__env->startSection('page-menu-title', '文章列表'); ?>
+<?php $__env->startSection('title', '横店影视城微信管理平台－－－二维码管理'); ?>
 
-<?php $__env->startSection('page-title', '文章管理'); ?>
 <?php $__env->startSection('css'); ?>
-    <link href="<?php echo e(asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css')); ?>" rel="stylesheet" type="text/css"/>
-    <link href="<?php echo e(asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal.css')); ?>" rel="stylesheet" type="text/css"/>
+    <link href="<?php echo e(asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css')); ?>" rel="stylesheet"
+          type="text/css"/>
+    <link href="<?php echo e(asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal.css')); ?>" rel="stylesheet"
+          type="text/css"/>
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('page-title', '文章列表'); ?>
@@ -15,10 +15,6 @@
             <li>
                 <i class="fa fa-home"></i>
                 <a href="#">Home</a>
-                <i class="fa fa-angle-right"></i>
-            </li>
-            <li>
-                <a href="#">文章管理</a>
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
@@ -46,37 +42,7 @@
 
                     <ul class="nav nav-pills">
 
-                        <li <?php if (!$classid) echo 'class=active'; ?> ><a href="/control/articlelist">全部</a></li>
-
-                        <li <?php if ($classid == 2) echo 'class=active'; ?>><a href="/control/articlelist?classid=2">最新活动</a>
-                        </li>
-
-                        <li <?php if ($classid == 19) echo 'class=active'; ?>><a href="/control/articlelist?classid=19">横店攻略</a>
-                        </li>
-
-                        <li <?php if ($classid == 7) echo 'class=active'; ?>><a href="/control/articlelist?classid=7">门票预定</a>
-                        </li>
-
-                        <li <?php if ($classid == 8) echo 'class=active'; ?>><a href="/control/articlelist?classid=8">门票酒店预定组合</a>
-                        </li>
-                        <li <?php if ($classid == 9) echo 'class=active'; ?>><a href="/control/articlelist?classid=9">酒店预定</a>
-                        </li>
-                        <li <?php if ($classid == 14) echo 'class=active'; ?>><a href="/control/articlelist?classid=14">景区节目时间表</a>
-                        </li>
-                        <li <?php if ($classid == 15) echo 'class=active'; ?>><a href="/control/articlelist?classid=15">剧组拍摄动态</a>
-                        </li>
-                        <li <?php if ($classid == 16) echo 'class=active'; ?>><a href="/control/articlelist?classid=16">交通速查/出租/导航</a>
-                        </li>
-                        <li <?php if ($classid == 97) echo 'class=active'; ?>><a href="/control/articlelist?classid=97">其他</a>
-                        </li>
-                        <li <?php if ($classid == 'audit') echo 'class=active'; ?>><a
-                                    href="/control/articlelist?classid=audit">待审核</a></li>
-                        <li <?php if ($classid == 1) echo 'class=active'; ?>><a
-                                    href="/control/articlelist?classid=1">市场</a></li>
-                        <li <?php if ($classid == 'del') echo 'class=active'; ?>><a
-                                    href="/control/articlelist?classid=del">回收站</a></li>
-
-                        <form method="GET" name="myform" action="articlesearch" class="navbar-form navbar-right">
+                        <form method="POST" name="myform" action="requesttxt" class="navbar-form navbar-right">
                             <input class="m-wrap" type="text" name="keyword" class="form-control" placeholder="关键字"
                                    id="keyword" value=""/>
                             <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
@@ -95,13 +61,13 @@
                                     标题
                                 </th>
                                 <th>
-                                    排序
+                                    索引图
+                                </th>
+                                <th>
+                                    链接
                                 </th>
                                 <th>
                                     展示对象
-                                </th>
-                                <th>
-                                    点击数
                                 </th>
                                 <th>
                                     不重复点击数
@@ -113,7 +79,7 @@
                                     状态
                                 </th>
                                 <th>
-                                    上线时间
+                                    显示时间
                                 </th>
                                 <th>
                                     操作
@@ -132,51 +98,50 @@
 
                                     </td>
                                     <td>
-                                        <?php echo e($row->priority); ?>
-
-                                    </td>
-                                    <td>
-
-                                    </td>
-                                    <td>
-                                        <?php echo e($row->hits); ?>
-
-                                    </td>
-                                    <td>
                                         <?php
-                                        $count=new \App\WeChat\Count();
-                                            echo $count->count_hits_norepeat($row->id)->total;
+                                        if ($row->pic_url) {
+                                            echo '<img src=' . $row->pic_url . ' width=150>';
+                                        }
                                         ?>
                                     </td>
                                     <td>
-                                        <?php echo e($row->resp); ?>
+                                        <?php echo e($row->article_url); ?>
+
+                                    </td>
+                                    <td>
+                                        <?php if($row->is_all=='1'): ?>
+                                            <span class='label label-success'>全部</span>
+                                        <?php else: ?>
+                                            <?php if($row->zone): ?>
+                                                <span class='label label-success'><?php echo $row->zone; ?></span>
+                                            <?php endif; ?>
+                                            <?php if($row->hotel): ?>
+                                                <span class='label label-success'><?php echo $row->hotel; ?></span>
+                                            <?php endif; ?>
+                                            <?php endif; ?>
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
 
                                     </td>
                                     <td>
                                         <?php
                                         if ($row->online == 1) {
-                                        echo "<span class='label label-success'>显示</span>";
+                                            echo "<span class='label label-success'>显示</span>";
                                         } else {
-                                        echo "<span class='label label-danger'>不显示</span>";
-                                        }
-                                        if ($row->audit == 0) {
-                                            echo "&nbsp;<a OnClick=\"javascript:if (!confirm('是否真的要审核'))return false;\"  href='articlemodify?action=audit&id=" . $row->id . "'\" class='label label-danger'>待审核</span>";
+                                            echo "<span class='label label-danger'>不显示</span>";
                                         }
                                         ?>
                                     </td>
                                     <td>
-                                        <?php echo e($row->adddate); ?>
 
                                     </td>
                                     <td>
                                         <?php
-                                        echo "<a class='getqrcode label label-primary' data-target=\"#long\" data-toggle=\"modal\" data-src=\"http://weix2.hengdianworld.com/control/qrcode/getqrcode.php?id=" . $row->id . "\">预览</a>&nbsp;";
                                         echo "<a href='articlemodify?action=modify&id=" . $row->id . "' class='label label-success'><i class=\"icon-edit\"></i>修改</a>&nbsp;";
-                                        if ($row->del == 0) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要删除'))return false;\"  href='articlemodify?action=del&id=" . $row->id . "'\" class='label label-danger'><i class=\"icon-remove\"></i>删除</a>&nbsp;";
-                                        } elseif($row->del==1) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要还原'))return false;\"  href='articlemodify?action=return&id=" . $row->id . "'\" class='label label-success'><i class=\"icon-remove\"></i>还原</a>&nbsp;";
-                                        }                                        if ($row->online == 1) {
+                                        if ($row->online == 1) {
                                             echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='articlemodify?action=offline&id=" . $row->id . "'\" class='label label-warning'>下线</a>";
                                         } elseif ($row->online == 0) {
                                             echo "<a OnClick=\"javascript:if (!confirm('是否真的要上线'))return false;\"  href='articlemodify?action=online&id=" . $row->id . "'\" class='label label-success'>上线</a>";
@@ -189,11 +154,11 @@
 
                             </tbody>
                         </table>
+                        <?php echo $rows->render(); ?>
 
-                        <?php echo $rows->appends(["classid"=>$classid])->render(); ?>
 
 
-                        <!--弹出层-->
+                                <!--弹出层-->
                         <div id="long" class="modal fade modal-scroll" tabindex="-1" data-replace="true">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
@@ -201,7 +166,8 @@
                             </div>
                             <div class="modal-body">
                                 <!--				<img id='qr' style="height: 500px" src="../../../../../../i.imgur.com/KwPYo.jpg">-->
-                                <iframe id='qr' src="http://www.baidu.com" style="border:none; width:450px; height:450px;"></iframe>
+                                <iframe id='qr' src="http://www.baidu.com"
+                                        style="border:none; width:400px; height:400px;"></iframe>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" data-dismiss="modal" class="btn btn-default">关闭</button>
@@ -222,8 +188,10 @@
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('js'); ?>
-    <script src="<?php echo e(asset('assets/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js')); ?>" type="text/javascript"></script>
-    <script src="<?php echo e(asset('assets/global/plugins/bootstrap-modal/js/bootstrap-modal.js')); ?>" type="text/javascript"></script>
+    <script src="<?php echo e(asset('assets/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js')); ?>"
+            type="text/javascript"></script>
+    <script src="<?php echo e(asset('assets/global/plugins/bootstrap-modal/js/bootstrap-modal.js')); ?>"
+            type="text/javascript"></script>
     <script src="<?php echo e(asset('assets/admin/pages/scripts/ui-extended-modals.js')); ?>"></script>
 <?php $__env->stopSection(); ?>
 
@@ -234,7 +202,7 @@
     $("#qr").attr({"src": $(this).attr("data-src")});
     });
 
-    <?php $__env->stopSection(); ?>
+<?php $__env->stopSection(); ?>
 
 
 <?php echo $__env->make('control.blade.data', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
