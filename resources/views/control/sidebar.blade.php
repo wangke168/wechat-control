@@ -121,6 +121,13 @@
 					</ul>
 				</li>
 				<li>
+					<a href="menulist">
+						<i class="icon-home"></i>
+					<span class="title">
+					菜单管理 </span>
+					</a>
+				</li>
+				<li>
 					<a href="javascript:;">
 					<i class="icon-briefcase"></i>
 					<span class="title">数据统计</span>

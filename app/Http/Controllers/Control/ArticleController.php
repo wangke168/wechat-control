@@ -16,7 +16,6 @@ class ArticleController extends Controller
             $rows = DB::table('wx_article')
                 ->where('del', '0')
                 ->where('audit', '1')
-                ->orderBy('online', 'desc')
                 ->orderBy('id', 'desc')
                 ->paginate(20);
         } elseif ($classid == 1) {
@@ -24,7 +23,6 @@ class ArticleController extends Controller
                 ->where('eventkey', '<>', 'all')
                 ->where('del', '0')
                 ->where('audit', '1')
-                ->orderBy('online', 'desc')
                 ->orderBy('id', 'desc')
                 ->paginate(20);
         } elseif ($classid == 97) {
@@ -32,20 +30,17 @@ class ArticleController extends Controller
                 ->where('del', '0')
                 ->where('audit', '1')
                 ->where('classid', '')
-                ->orderBy('online', 'desc')
                 ->orderBy('id', 'desc')
                 ->paginate(20);
         } elseif ($classid == 'audit') {
             $rows = DB::table('wx_article')
                 ->where('del', '0')
                 ->where('audit', '0')
-                ->orderBy('online', 'desc')
                 ->orderBy('id', 'desc')
                 ->paginate(20);
         } elseif ($classid == 'del') {
             $rows = DB::table('wx_article')
                 ->where('del', '1')
-                ->orderBy('online', 'desc')
                 ->orderBy('id', 'desc')
                 ->paginate(20);
         } else {
@@ -54,7 +49,6 @@ class ArticleController extends Controller
                 ->where('audit', '1')
                 ->where('classid', $classid)
                 ->where('eventkey', 'all')
-                ->orderBy('online', 'desc')
                 ->orderBy('id', 'desc')
                 ->paginate(20);
         }

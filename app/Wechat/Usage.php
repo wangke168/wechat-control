@@ -175,5 +175,14 @@ class Usage
         return $row;
     }
 
-
+    /*
+     * 根据tag_id获取二维码名称
+     */
+    public function get_tag_info($tag_id)
+    {
+        $row=DB::table('wx_user_tag')
+            ->where('tag_id',$tag_id)
+            ->first();
+        return $row;
+    }
 }

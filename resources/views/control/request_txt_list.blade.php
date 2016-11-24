@@ -1,13 +1,16 @@
 @extends('control.blade.data')
 
-@section('title', '横店影视城微信管理平台－－－二维码管理')
+@section('title', '横店影视城微信管理平台－－－回复管理')
 
 @section('css')
     <link href="{{asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css')}}" rel="stylesheet" type="text/css"/>
     <link href="{{asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal.css')}}" rel="stylesheet" type="text/css"/>
 @stop
 
-@section('page-title', '文章列表')
+
+@section('page-menu-title', '文本回复')
+
+@section('page-title', '回复管理')
 
 @section('page-bar')
     <div class="page-bar">
@@ -141,21 +144,7 @@
                         {!! $rows->render() !!}
 
 
-                        <!--弹出层-->
-                        <div id="long" class="modal fade modal-scroll" tabindex="-1" data-replace="true">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                                <h4 class="modal-title">微信扫描二维码预览</h4>
-                            </div>
-                            <div class="modal-body">
-                                <!--				<img id='qr' style="height: 500px" src="../../../../../../i.imgur.com/KwPYo.jpg">-->
-                                <iframe id='qr' src="http://www.baidu.com" style="border:none; width:400px; height:400px;"></iframe>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" data-dismiss="modal" class="btn btn-default">关闭</button>
-                            </div>
-                        </div>
-                        <!--结束弹出层-->
+
 
                     </div>
                 </div>
@@ -177,10 +166,6 @@
 
 @section('init')
 
-    $(".getqrcode").click(function () {
-    //     alert($(this).attr('data-src'));
-    $("#qr").attr({"src": $(this).attr("data-src")});
-    });
 
     @stop
 

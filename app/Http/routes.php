@@ -67,4 +67,6 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
     Route::get('qrlist1', 'Control\QrlistController@test');
 
 
+    Route::get('menulist','Control\MenuController@menuList');
+
 });
