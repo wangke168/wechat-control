@@ -11,11 +11,16 @@ class TestController extends Controller
 {
     public function index()
     {
-        $row=DB::table('wx_article_hits')
-            ->selectRaw('count(distinct wx_openid) as total')
-            ->where('article_id','1260')
-            ->first();
-
-        return  $row->total;
+        $from=date("Y-m-d", strtotime("-1 day"));
+        $to=date("Y-m-d");
+        echo $from;
+        echo $to;
+        $row = DB::table('wx_order_send')
+            //           ->whereDate('adddate', '>=', '2016-10-12')
+            //           ->whereDate('adddate', '<', '2016-10-13')
+            ->whereDate('adddate', '>=', date("Y-m-d", strtotime("-1 day")))
+            ->whereDate('adddate','<',date("Y-m-d"))
+            ->count();
+        return $row;
     }
 }
