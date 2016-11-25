@@ -43,6 +43,7 @@
                     <div class="dd" id="nestable_list_3">
                         <ol class="dd-list">
 
+                            <?php if(array_key_exists ( 'menu', $menu_list)): ?>
                             <?php foreach($menu_list['menu']['button'] as  $key=> $menu): ?>
 
 
@@ -67,12 +68,14 @@
                                     </ol>
                                 </li>
                             <?php endforeach; ?>
+                                <?php endif; ?>
                         </ol>
                     </div>
                 </div>
             </div>
         </div>
 
+        <?php if(array_key_exists ( 'conditionalmenu', $menu_list)): ?>
         <?php foreach($menu_list['conditionalmenu'] as $key=> $menu): ?>
             <div class="col-md-3">
                 <div class="portlet box yellow">
@@ -118,6 +121,7 @@
                 </div>
             </div>
         <?php endforeach; ?>
+            <?php endif; ?>
     </div>
 
 

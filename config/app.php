@@ -163,7 +163,9 @@ return [
         //权限管理
         Zizaco\Entrust\EntrustServiceProvider::class,
         //Intervention/image 图片上传
-        Intervention\Image\ImageServiceProvider::class
+        Intervention\Image\ImageServiceProvider::class,
+
+        Overtrue\LaravelWechat\ServiceProvider::class,
     ],
 
     /*
@@ -216,7 +218,10 @@ return [
         //权限管理
         'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
         //图片上传
-        'Image' => Intervention\Image\Facades\Image::class
+        'Image' => Intervention\Image\Facades\Image::class,
+
+        'Wechat' => Overtrue\LaravelWechat\Facade::class,
+
     ],
 
 ];
