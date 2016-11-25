@@ -97,8 +97,7 @@
                         <?php foreach($rows as $row): ?>
                             <tr>
                                 <td>
-                                    <?php echo $row->sellid; ?>
-
+                                    <a href="http://e.hengdianworld.com/Admin_VisitorOrderView.aspx?SellID=<?php echo $row->sellid; ?>" target="_blank"> <?php echo $row->sellid; ?></a>
                                 </td>
                                 <td>
                                     <?php echo $row->arrive_date; ?>
