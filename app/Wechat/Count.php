@@ -42,10 +42,25 @@ class Count
         return $click_info;
     }
 
+    /*
+     * 二次推送的数据到达率
+     */
     public function se_request_count($id)
     {
         $row=DB::table('se_info_send')
             ->where('info_id',$id)
+            ->count();
+        return $row;
+    }
+
+    /*
+     * 二次推送的数据打开率
+     */
+    public function se_request_read_count($id)
+    {
+        $row=DB::table('se_info_send')
+            ->where('info_id',$id)
+            ->where('is_read','1')
             ->count();
         return $row;
     }

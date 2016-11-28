@@ -73,6 +73,9 @@
                                     发送数
                                 </th>
                                 <th>
+                                    打开数
+                                </th>
+                                <th>
                                     点击数
                                 </th>
                                 <th>
@@ -124,6 +127,12 @@
                                         $count=new \App\WeChat\Count();
                                             echo $count->se_request_count($row->id);
                                         ?>
+
+                                    </td>
+                                    <td>
+                                        <?php echo $count->se_request_read_count($row->id); ?>
+
+                                        
                                     </td>
                                     <td>
                                         <?php echo e($row->hits); ?>
