@@ -47,7 +47,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- END THEME STYLES -->
     <link rel="stylesheet" href="<?php echo e(asset('bootstrap/css/style.css')); ?>">
 
-<link rel="shortcut icon" href="favicon.ico"/>
+<link rel="shortcut icon" href="<?php echo e(asset('favicon.ico')); ?>"/>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->

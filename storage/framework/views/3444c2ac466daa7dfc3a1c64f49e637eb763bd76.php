@@ -65,7 +65,7 @@
                                 订单号
                             </th>
                             <th>
-                                预达日期
+                                提交时间
                             </th>
                             <th>
                                 姓名
@@ -74,7 +74,7 @@
                                 手机号
                             </th>
                             <th>
-                                提交时间
+                                预达日期
                             </th>
                             <th>
                                 状态
@@ -100,7 +100,7 @@
                                     <a href="http://e.hengdianworld.com/Admin_VisitorOrderView.aspx?SellID=<?php echo $row->sellid; ?>" target="_blank"> <?php echo $row->sellid; ?></a>
                                 </td>
                                 <td>
-                                    <?php echo $row->arrive_date; ?>
+                                    <?php echo $row->adddate; ?>
 
                                 </td>
                                 <td>
@@ -112,7 +112,7 @@
 
                                 </td>
                                 <td>
-                                    <?php echo $row->adddate; ?>
+                                    <?php echo $row->arrive_date; ?>
 
                                 </td>
                                 <td>

@@ -41,4 +41,12 @@ class Count
         }
         return $click_info;
     }
+
+    public function se_request_count($id)
+    {
+        $row=DB::table('se_info_send')
+            ->where('info_id',$id)
+            ->count();
+        return $row;
+    }
 }

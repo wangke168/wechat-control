@@ -72,10 +72,10 @@
                                     展示对象
                                 </th>
                                 <th>
-                                    不重复点击数
+                                    发送数
                                 </th>
                                 <th>
-                                    转发数
+                                    点击数
                                 </th>
                                 <th>
                                     状态
@@ -105,7 +105,7 @@
                                         ?>
                                     </td>
                                     <td>
-                                        {{$row->article_url}}
+                                        <a href="{{$row->article_url}}" target="_blank"> {{$row->article_url}}</a>
                                     </td>
                                     <td>
                                         @if ($row->is_all=='1')
@@ -120,11 +120,15 @@
                                             @endif
                                     </td>
                                     <td>
-
+                                        <?php
+                                        $count=new \App\WeChat\Count();
+                                            echo $count->se_request_count($row->id);
+                                        ?>
                                     </td>
                                     <td>
-
+                                        {{$row->hits}}
                                     </td>
+
                                     <td>
                                         <?php
                                         if ($row->online == 1) {
