@@ -6,6 +6,14 @@ use DB;
 class Count
 {
 
+    public function count_hits_article($id)
+    {
+        $row=DB::table('wx_article_hits')
+            ->where('article_id',$id)
+            ->count();
+        return $row;
+    }
+
     public function count_hits_norepeat($id)
     {
         $row=DB::table('wx_article_hits')
