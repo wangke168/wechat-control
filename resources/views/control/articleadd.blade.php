@@ -168,7 +168,7 @@
                             <div class="col-md-11">
                                 {{--<textarea class="input-block-level" id="summernote" name="content" rows="18"></textarea>--}}
                                 <script id="container" name="content" type="text/plain"
-                                        style="width:1024px;height:500px;"></script>
+                                        style="width:900px;height:500px;"></script>
                             </div>
                         </div>
                         <div class="form-group">
