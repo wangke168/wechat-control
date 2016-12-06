@@ -11,10 +11,6 @@
 <link rel="stylesheet" type="text/css"
       href="<?php echo e(asset('assets/global/plugins/jquery-multi-select/css/multi-select.css')); ?>"/>
 
-<!-- BEGIN PAGE LEVEL STYLES -->
-<link href="<?php echo e(asset('lib/summernote.css')); ?>" rel="stylesheet">
-<!-- END PAGE LEVEL STYLES -->
-
 <link href="<?php echo e(asset('lib/bootstrap-tagsinput.css')); ?>" rel="stylesheet">
 
 <!--上传-->
@@ -186,7 +182,7 @@
 
                             <div class="col-md-11">
                                 <?php /*<textarea class="input-block-level" id="summernote" name="content" rows="18"><?php echo $row->content; ?></textarea>*/ ?>
-                                <script id="container" name="content" type="text/plain"  style="width:1024px;height:500px;"><?php echo $row->content; ?></script>
+                                <script id="container" name="content" type="text/plain"  style="width:900px;height:500px;"><?php echo $row->content; ?></script>
                             </div>
                         </div>
                         <div class="form-group">
@@ -344,12 +340,6 @@
             src="<?php echo e(asset('assets/global/plugins/jquery-multi-select/js/jquery.multi-select.js')); ?>"></script>
     <!-- END PAGE LEVEL PLUGINS -->
 
-    <!-- BEGIN PAGE LEVEL PLUGINS -->
-
-    <script src="<?php echo e(asset('lib/summernote.js')); ?>"></script>
-    <script src="<?php echo e(asset('lib/lang/summernote-zh-CN.js')); ?>"></script>
-    <!-- END PAGE LEVEL PLUGINS -->
-
     <script src="<?php echo e(asset('lib/bootstrap-tagsinput.min.js')); ?>"
             type="text/javascript"></script>
 
@@ -369,22 +359,7 @@
 
 <?php $__env->startSection('init'); ?>
     ComponentsPickers.init();
-    $('#summernote').summernote({
-    lang:'zh-CN',
-    width:800,
-    height: 500,                 // set editor height
-    minHeight: null,             // set minimum height of editor
-    maxHeight: null,             // set maximum height of editor
-    focus: true                  // set focus to editable area after initializing summernote
-
-    });
-
-    var postForm = function() {
-    var content = $('textarea[name="content"]').html($('#summernote').code());
-    }
     ComponentsDropdowns.init();
-
-
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('javascript'); ?>
