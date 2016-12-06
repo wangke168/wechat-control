@@ -13,7 +13,8 @@
         "laravelcollective/html": "^5.2.0",
         "zizaco/entrust": "5.2.x-dev",
         "intervention/image": "^2.3",
-        "overtrue/laravel-wechat": "~3.0"
+        "overtrue/laravel-wechat": "~3.0",
+        "overtrue/laravel-ueditor": "~1.0"
 
     },
     "require-dev": {

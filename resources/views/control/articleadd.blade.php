@@ -13,9 +13,6 @@
 <link rel="stylesheet" type="text/css"
       href="{{asset('assets/global/plugins/jquery-multi-select/css/multi-select.css')}}"/>
 
-<!-- BEGIN PAGE LEVEL STYLES -->
-<link href="{{asset('lib/summernote.css')}}" rel="stylesheet">
-<!-- END PAGE LEVEL STYLES -->
 
 <link href="{{asset('lib/bootstrap-tagsinput.css')}}" rel="stylesheet">
 
@@ -27,7 +24,7 @@
 <link rel="stylesheet" type="text/css"
       href="{{asset('assets/global/plugins/bootstrap-datepicker/css/datepicker3.css')}}"/>
 @stop
-
+@include('vendor.ueditor.assets')
 
 @section('page-bar')
     <div class="page-bar">
@@ -169,7 +166,9 @@
                             <label class="control-label col-md-1">内容</label>
 
                             <div class="col-md-11">
-                                <textarea class="input-block-level" id="summernote" name="content" rows="18"></textarea>
+                                {{--<textarea class="input-block-level" id="summernote" name="content" rows="18"></textarea>--}}
+                                <script id="container" name="content" type="text/plain"
+                                        style="width:1024px;height:500px;"></script>
                             </div>
                         </div>
                         <div class="form-group">
@@ -326,11 +325,6 @@
             src="{{asset('assets/global/plugins/jquery-multi-select/js/jquery.multi-select.js')}}"></script>
     <!-- END PAGE LEVEL PLUGINS -->
 
-    <!-- BEGIN PAGE LEVEL PLUGINS -->
-
-    <script src="{{asset('lib/summernote.js')}}"></script>
-    <script src="{{asset('lib/lang/summernote-zh-CN.js')}}"></script>
-    <!-- END PAGE LEVEL PLUGINS -->
 
     <script src="{{asset('lib/bootstrap-tagsinput.min.js')}}"
             type="text/javascript"></script>
@@ -351,26 +345,15 @@
 
 @section('init')
     ComponentsPickers.init();
-    $('#summernote').summernote({
-    lang:'zh-CN',
-    width:800,
-    height: 500,                 // set editor height
-    minHeight: null,             // set minimum height of editor
-    maxHeight: null,             // set maximum height of editor
-    focus: true                  // set focus to editable area after initializing summernote
-
-    });
-
-    var postForm = function() {
-    var content = $('textarea[name="content"]').html($('#summernote').code());
-    }
     ComponentsDropdowns.init();
-
 
 @stop
 
 @section('javascript')
-    <script>
-
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+        ue.ready(function () {
+            ue.execCommand('serverparam', '_token', '{{ csrf_token() }}'); // 设置 CSRF token.
+        });
     </script>
 @stop

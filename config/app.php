@@ -166,6 +166,9 @@ return [
         Intervention\Image\ImageServiceProvider::class,
 
         Overtrue\LaravelWechat\ServiceProvider::class,
+
+        //编辑器
+        Overtrue\LaravelUEditor\UEditorServiceProvider::class,
     ],
 
     /*

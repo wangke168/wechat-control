@@ -25,7 +25,7 @@
 <link rel="stylesheet" type="text/css"
       href="<?php echo e(asset('assets/global/plugins/bootstrap-datepicker/css/datepicker3.css')); ?>"/>
 <?php $__env->stopSection(); ?>
-
+<?php echo $__env->make('vendor.ueditor.assets', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
 <?php $__env->startSection('page-bar'); ?>
     <div class="page-bar">
@@ -185,7 +185,8 @@
                             <label class="control-label col-md-1">内容</label>
 
                             <div class="col-md-11">
-                                <textarea class="input-block-level" id="summernote" name="content" rows="18"><?php echo $row->content; ?></textarea>
+                                <?php /*<textarea class="input-block-level" id="summernote" name="content" rows="18"><?php echo $row->content; ?></textarea>*/ ?>
+                                <script id="container" name="content" type="text/plain"  style="width:1024px;height:500px;"><?php echo $row->content; ?></script>
                             </div>
                         </div>
                         <div class="form-group">
@@ -387,8 +388,11 @@
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('javascript'); ?>
-    <script>
-
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+        ue.ready(function() {
+            ue.execCommand('serverparam', '_token', '<?php echo e(csrf_token()); ?>'); // 设置 CSRF token.
+        });
     </script>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('control.blade.data', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

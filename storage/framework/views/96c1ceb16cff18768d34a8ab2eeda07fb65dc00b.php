@@ -11,9 +11,6 @@
 <link rel="stylesheet" type="text/css"
       href="<?php echo e(asset('assets/global/plugins/jquery-multi-select/css/multi-select.css')); ?>"/>
 
-<!-- BEGIN PAGE LEVEL STYLES -->
-<link href="<?php echo e(asset('lib/summernote.css')); ?>" rel="stylesheet">
-<!-- END PAGE LEVEL STYLES -->
 
 <link href="<?php echo e(asset('lib/bootstrap-tagsinput.css')); ?>" rel="stylesheet">
 
@@ -25,7 +22,7 @@
 <link rel="stylesheet" type="text/css"
       href="<?php echo e(asset('assets/global/plugins/bootstrap-datepicker/css/datepicker3.css')); ?>"/>
 <?php $__env->stopSection(); ?>
-
+<?php echo $__env->make('vendor.ueditor.assets', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
 <?php $__env->startSection('page-bar'); ?>
     <div class="page-bar">
@@ -168,7 +165,9 @@
                             <label class="control-label col-md-1">内容</label>
 
                             <div class="col-md-11">
-                                <textarea class="input-block-level" id="summernote" name="content" rows="18"></textarea>
+                                <?php /*<textarea class="input-block-level" id="summernote" name="content" rows="18"></textarea>*/ ?>
+                                <script id="container" name="content" type="text/plain"
+                                        style="width:1024px;height:500px;"></script>
                             </div>
                         </div>
                         <div class="form-group">
@@ -325,12 +324,7 @@
     <script type="text/javascript"
             src="<?php echo e(asset('assets/global/plugins/jquery-multi-select/js/jquery.multi-select.js')); ?>"></script>
     <!-- END PAGE LEVEL PLUGINS -->
-
-    <!-- BEGIN PAGE LEVEL PLUGINS -->
-
-    <script src="<?php echo e(asset('lib/summernote.js')); ?>"></script>
-    <script src="<?php echo e(asset('lib/lang/summernote-zh-CN.js')); ?>"></script>
-    <!-- END PAGE LEVEL PLUGINS -->
+    
 
     <script src="<?php echo e(asset('lib/bootstrap-tagsinput.min.js')); ?>"
             type="text/javascript"></script>
@@ -351,27 +345,16 @@
 
 <?php $__env->startSection('init'); ?>
     ComponentsPickers.init();
-    $('#summernote').summernote({
-    lang:'zh-CN',
-    width:800,
-    height: 500,                 // set editor height
-    minHeight: null,             // set minimum height of editor
-    maxHeight: null,             // set maximum height of editor
-    focus: true                  // set focus to editable area after initializing summernote
-
-    });
-
-    var postForm = function() {
-    var content = $('textarea[name="content"]').html($('#summernote').code());
-    }
     ComponentsDropdowns.init();
-
 
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('javascript'); ?>
-    <script>
-
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+        ue.ready(function () {
+            ue.execCommand('serverparam', '_token', '<?php echo e(csrf_token()); ?>'); // 设置 CSRF token.
+        });
     </script>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('control.blade.data', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ec631c62ee1b64080c6b879ff030b597",
-    "content-hash": "94eb2c99553008845a14a045c88aeddb",
+    "hash": "17de6f0ad9ac2e1cc2a496bd8d768912",
+    "content-hash": "bf503c526cfc0fded6eb6a1f20a236c9",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -1542,6 +1542,42 @@
                 "php"
             ],
             "time": "2016-09-16 12:04:44"
+        },
+        {
+            "name": "overtrue/laravel-ueditor",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/laravel-ueditor.git",
+                "reference": "023a7ccc2e253574b72674c6d55591e14774ab08"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/overtrue/laravel-ueditor/zipball/023a7ccc2e253574b72674c6d55591e14774ab08",
+                "reference": "023a7ccc2e253574b72674c6d55591e14774ab08",
+                "shasum": ""
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "^1.10"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\LaravelUEditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "anzhengchao@gmail.com"
+                }
+            ],
+            "description": "UEditor integration for Laravel.",
+            "time": "2015-11-18 10:23:30"
         },
         {
             "name": "overtrue/laravel-wechat",
