@@ -62,27 +62,9 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
 <body class="page-header-fixed page-quick-sidebar-over-content ">
 <!-- BEGIN HEADER -->
-<div class="page-header navbar navbar-fixed-top">
-	<!-- BEGIN HEADER INNER -->
-	<div class="page-header-inner">
-		<!-- BEGIN LOGO -->
-		<div class="page-logo">
-			<a href="index-2.html">
-			<img src="<?php echo e(asset('assets/admin/layout/img/logo.png')); ?>" alt="logo" class="logo-default"/>
-			</a>
-			<div class="menu-toggler sidebar-toggler hide">
-				<!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
-			</div>
-		</div>
-		<!-- END LOGO -->
-		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
-		<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
-		</a>
-		<!-- END RESPONSIVE MENU TOGGLER -->
-		<?php echo $__env->make('control.top', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-	</div>
-	<!-- END HEADER INNER -->
-</div>
+
+<?php echo $__env->make('control.top', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
 <!-- END HEADER -->
 <div class="clearfix">
 </div>

@@ -123,6 +123,13 @@ class ArticleController extends Controller
     }
 
 
+    public function articleAdd1()
+    {
+        return view('control.articleadd_back');
+    }
+
+
+
     public function articleSave(Request $request)
     {
 //        dd($request->all());

@@ -46,6 +46,7 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
     Route::get('articleadd','Control\ArticleController@articleAdd');
     Route::post('articlesave','Control\ArticleController@articleSave');
 
+    Route::get('articleadd1','Control\ArticleController@articleAdd1');
 
     //回复管理
     Route::get('requesttxt','Control\RequestController@txt');
