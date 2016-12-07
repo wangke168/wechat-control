@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('test','Test\TestController@index');
+
 
 Route::get('index', function () {
     return view('test.test');
@@ -70,4 +70,8 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
 
     Route::get('menulist','Control\MenuController@menuList');
 
+
+
 });
+
+Route::get('test','Test\TestController@take_json');
