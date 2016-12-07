@@ -69,7 +69,7 @@
                         <a href="articleadd">
                             添加文章</a>
                     </li>
-                    <li>
+  {{--                  <li>
                         <a href="form_layouts.html">
                             Form Layouts</a>
                     </li>
@@ -96,7 +96,7 @@
                     <li>
                         <a href="form_dropzone.html">
                             Dropzone File Upload</a>
-                    </li>
+                    </li>--}}
                 </ul>
             </li>
             <li>
@@ -136,6 +136,10 @@
                             订单统计</a>
                     </li>
                     <li>
+                        <a href="menuclickcount">
+                            菜单点击数</a>
+                    </li>
+           {{--         <li>
                         <a href="table_responsive.html">
                             Responsive Datatables</a>
                     </li>
@@ -147,14 +151,11 @@
                         <a href="table_editable.html">
                             Editable Datatables</a>
                     </li>
-                    <li>
-                        <a href="menuclickcount">
-                            菜单点击数</a>
-                    </li>
+
                     <li>
                         <a href="table_ajax.html">
                             Ajax Datatables</a>
-                    </li>
+                    </li>--}}
                 </ul>
             </li>
             <li>
@@ -187,7 +188,7 @@
                     </li>
                 </ul>
             </li>
-            <li>
+{{--            <li>
                 <a href="javascript:;">
                     <i class="icon-bar-chart"></i>
                     <span class="title">Charts</span>
@@ -492,7 +493,7 @@
                             Vector Maps</a>
                     </li>
                 </ul>
-            </li>
+            </li>--}}
         </ul>
         <!-- END SIDEBAR MENU -->
     </div>
