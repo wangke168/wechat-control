@@ -36,7 +36,7 @@ class TestController extends Controller
                 ->whereDate('adddate', '>=', $from)
                 ->whereDate('adddate', '<', $to)
                 ->count();
-            $info[] = array(['name' => 'LaravelAcademy', 'passwd' => $row]);
+            $info[] = array('name' => 'LaravelAcademy', 'passwd' => $row);
 //            $info[] = array(['name' => 'LaravelAcademy', 'passwd' => $row]);
         }
 //        echo $row;
