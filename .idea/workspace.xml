@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/33f96901b9a3eb0ad99e8e757feb5426493fa5e4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/6375c5cb80ce84ea6b796da27b582cd6803cd5e1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/7239c6df01476197b6e4c5171a31e2387606ad54" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/970a31862acfad33be65530960deaa501e84b52d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/9cbbb9d2ef16f3c27fed851a0733f75b8a03626f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/9e6a7e6bcff5d2cedd2c0ffda1cca7a770defd98" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/ed9c571665fb2518aefca5eb35721607ff84b657" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/4f066521a34178650d013455ddecb3fea6ee06fe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/9da2172640998bcda61efdd7afdca68031fb7ab6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/c984cefe13d7bc09e8bf912bab3099a165e4c77f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/f010e40f13960cf7eed76f5b1a0bb92f65d8c8c0" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/charts-flotcharts.js" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/charts-flotcharts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/sessions/997fa548925df384972f026ba67866fe38a810c7" afterPath="$PROJECT_DIR$/storage/framework/sessions/997fa548925df384972f026ba67866fe38a810c7" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/sessions/9da2172640998bcda61efdd7afdca68031fb7ab6" afterPath="$PROJECT_DIR$/storage/framework/sessions/9da2172640998bcda61efdd7afdca68031fb7ab6" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/sessions/f010e40f13960cf7eed76f5b1a0bb92f65d8c8c0" afterPath="$PROJECT_DIR$/storage/framework/sessions/f010e40f13960cf7eed76f5b1a0bb92f65d8c8c0" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,8 +34,8 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-37.53846">
-              <caret line="76" column="48" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
+            <state vertical-scroll-proportion="-38.5">
+              <caret line="77" column="28" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -48,8 +44,8 @@
       <file leaf-file-name="TestController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-35.576923">
-              <caret line="42" column="81" selection-start-line="42" selection-start-column="81" selection-end-line="42" selection-end-column="81" />
+            <state vertical-scroll-proportion="-30.807692">
+              <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
               <folding>
                 <element signature="e#45#81#0#PHP" expanded="true" />
               </folding>
@@ -99,30 +95,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/control/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.8867924">
-              <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="55" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.4795043">
+              <caret line="148" column="55" selection-start-line="148" selection-start-column="55" selection-end-line="148" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="charts-flotcharts.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="charts-flotcharts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assets/admin/pages/scripts/charts-flotcharts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24">
-              <caret line="141" column="42" selection-start-line="141" selection-start-column="42" selection-end-line="141" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="161" column="42" selection-start-line="161" selection-start-column="42" selection-end-line="161" selection-end-column="42" />
               <folding>
-                <marker date="1481173342000" expanded="true" signature="22887:22943" placeholder="..." />
-                <marker date="1481173342000" expanded="true" signature="23889:23945" placeholder="..." />
-                <marker date="1481173342000" expanded="true" signature="24891:24947" placeholder="..." />
-                <marker date="1481173342000" expanded="true" signature="25948:26004" placeholder="..." />
-                <marker date="1481173342000" expanded="true" signature="27001:27057" placeholder="..." />
-                <marker date="1481173342000" expanded="true" signature="28435:28491" placeholder="..." />
-                <marker date="1481173342000" expanded="true" signature="29390:29446" placeholder="..." />
-                <marker date="1481173342000" expanded="true" signature="31165:31191" placeholder="..." />
+                <element signature="e#5438#6376#0" expanded="false" />
+                <element signature="e#6416#6720#0" expanded="false" />
+                <element signature="e#6836#7026#0" expanded="false" />
+                <element signature="e#7067#7257#0" expanded="false" />
+                <marker date="1481186417000" expanded="true" signature="21173:21229" placeholder="..." />
+                <marker date="1481186417000" expanded="true" signature="22176:22232" placeholder="..." />
+                <marker date="1481186417000" expanded="true" signature="23179:23235" placeholder="..." />
+                <marker date="1481186417000" expanded="true" signature="24237:24293" placeholder="..." />
+                <marker date="1481186417000" expanded="true" signature="25291:25347" placeholder="..." />
+                <marker date="1481186417000" expanded="true" signature="26726:26782" placeholder="..." />
+                <marker date="1481186417000" expanded="true" signature="27682:27738" placeholder="..." />
+                <marker date="1481186417000" expanded="true" signature="29457:29483" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -131,7 +131,7 @@
       <file leaf-file-name="data.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/blade/data.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-255.76923">
+            <state vertical-scroll-proportion="-33.653847">
               <caret line="266" column="45" selection-start-line="266" selection-start-column="45" selection-end-line="266" selection-end-column="45" />
               <folding />
             </state>
@@ -203,10 +203,10 @@
         <option value="$PROJECT_DIR$/resources/views/control/master.blade.php" />
         <option value="$PROJECT_DIR$/public/assets/admin/pages/scripts/index.js" />
         <option value="$PROJECT_DIR$/resources/views/control/blade/data.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/control/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
         <option value="$PROJECT_DIR$/public/assets/admin/pages/scripts/charts-flotcharts.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/index.blade.php" />
       </list>
     </option>
   </component>
@@ -931,30 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/blade/data.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-255.76923">
-          <caret line="266" column="45" selection-start-line="266" selection-start-column="45" selection-end-line="266" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8867924">
-          <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="55" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-37.53846">
-          <caret line="76" column="48" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.8846154">
@@ -962,14 +938,6 @@
           <folding>
             <element signature="e#47#57#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/articlelist.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="188.42308">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -981,30 +949,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/blade/data.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-33.653847">
+          <caret line="266" column="45" selection-start-line="266" selection-start-column="45" selection-end-line="266" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/articlelist.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="188.42308">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/admin/pages/scripts/charts-flotcharts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="161" column="42" selection-start-line="161" selection-start-column="42" selection-end-line="161" selection-end-column="42" />
+          <folding>
+            <element signature="e#5438#6376#0" expanded="false" />
+            <element signature="e#6416#6720#0" expanded="false" />
+            <element signature="e#6836#7026#0" expanded="false" />
+            <element signature="e#7067#7257#0" expanded="false" />
+            <marker date="1481186417000" expanded="true" signature="21173:21229" placeholder="..." />
+            <marker date="1481186417000" expanded="true" signature="22176:22232" placeholder="..." />
+            <marker date="1481186417000" expanded="true" signature="23179:23235" placeholder="..." />
+            <marker date="1481186417000" expanded="true" signature="24237:24293" placeholder="..." />
+            <marker date="1481186417000" expanded="true" signature="25291:25347" placeholder="..." />
+            <marker date="1481186417000" expanded="true" signature="26726:26782" placeholder="..." />
+            <marker date="1481186417000" expanded="true" signature="27682:27738" placeholder="..." />
+            <marker date="1481186417000" expanded="true" signature="29457:29483" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-38.5">
+          <caret line="77" column="28" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.576923">
-          <caret line="42" column="81" selection-start-line="42" selection-start-column="81" selection-end-line="42" selection-end-column="81" />
+        <state vertical-scroll-proportion="-30.807692">
+          <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
           <folding>
             <element signature="e#45#81#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/admin/pages/scripts/charts-flotcharts.js">
+    <entry file="file://$PROJECT_DIR$/resources/views/control/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24">
-          <caret line="141" column="42" selection-start-line="141" selection-start-column="42" selection-end-line="141" selection-end-column="42" />
-          <folding>
-            <marker date="1481173342000" expanded="true" signature="22887:22943" placeholder="..." />
-            <marker date="1481173342000" expanded="true" signature="23889:23945" placeholder="..." />
-            <marker date="1481173342000" expanded="true" signature="24891:24947" placeholder="..." />
-            <marker date="1481173342000" expanded="true" signature="25948:26004" placeholder="..." />
-            <marker date="1481173342000" expanded="true" signature="27001:27057" placeholder="..." />
-            <marker date="1481173342000" expanded="true" signature="28435:28491" placeholder="..." />
-            <marker date="1481173342000" expanded="true" signature="29390:29446" placeholder="..." />
-            <marker date="1481173342000" expanded="true" signature="31165:31191" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.4795043">
+          <caret line="148" column="55" selection-start-line="148" selection-start-column="55" selection-end-line="148" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>

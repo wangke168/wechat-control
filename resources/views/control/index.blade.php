@@ -146,7 +146,7 @@
             <div class="portlet box red">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="fa fa-gift"></i>Interactive Chart
+                        <i class="fa fa-gift"></i>用户数走势
                     </div>
                     <div class="tools">
                         <a href="javascript:;" class="collapse">

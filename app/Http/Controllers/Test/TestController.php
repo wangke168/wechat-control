@@ -24,19 +24,57 @@ class TestController extends Controller
         return $row;
     }
 
-    public function take_json(Request $request)
+    public function take_add_json(Request $request)
     {
-        for ($x=1; $x<=10; $x++) {
-            $y=$x-1;
-            $from = date("Y-m-d", strtotime("-".$x." day"));
-            $to = date("Y-m-d", strtotime("-".$y." day"));
+//        $info[]=array('root'=>'add');
+        for ($x=-15; $x<=0; $x++) {
+            $y=$x+1;
+            $z=$x+15;
+            $from = date("Y-m-d", strtotime($x." day"));
+            $to = date("Y-m-d", strtotime($y." day"));
             $row = DB::table('wx_user_add')
-                /*  ->whereDate('adddate', '>=', '2016-10-12')
-                  ->whereDate('adddate', '<', '2016-10-13')   */
+
                 ->whereDate('adddate', '>=', $from)
                 ->whereDate('adddate', '<', $to)
                 ->count();
-            $info[] = array('name' => 'LaravelAcademy', 'passwd' => $row);
+            $add[] = array('name' => $z, 'passwd' => $row);
+//            $info[] = array(['name' => 'LaravelAcademy', 'passwd' => $row]);
+        }
+
+
+        for ($x=-15; $x<=0; $x++) {
+            $y=$x+1;
+            $z=$x+15;
+            $from = date("Y-m-d", strtotime($x." day"));
+            $to = date("Y-m-d", strtotime($y." day"));
+            $row = DB::table('wx_user_esc')
+
+                ->whereDate('esc_time', '>=', $from)
+                ->whereDate('esc_time', '<', $to)
+                ->count();
+            $esc[] = array('name' => $z, 'passwd' => $row);
+//            $info[] = array(['name' => 'LaravelAcademy', 'passwd' => $row]);
+        }
+
+
+        $info=array('add'=>$add,'esc'=>$esc);
+//        echo $row;
+        return response()->json($info)->setCallback($request->input('callback'));
+    }
+
+    public function take_esc_json(Request $request)
+    {
+        for ($x=100; $x<=130; $x++) {
+            $y=$x-1;
+            $from = date("Y-m-d", strtotime("-".$x." day"));
+            $to = date("Y-m-d", strtotime("-".$y." day"));
+            $row = DB::table('wx_user_esc')
+                /*  ->whereDate('adddate', '>=', '2016-10-12')
+                  ->whereDate('adddate', '<', '2016-10-13')   */
+                ->whereDate('esc_time', '>=', $from)
+                ->whereDate('esc_time', '<', $to)
+                ->count();
+            $info[] = array('name' => $x, 'passwd' => $row);
 //            $info[] = array(['name' => 'LaravelAcademy', 'passwd' => $row]);
         }
 //        echo $row;
