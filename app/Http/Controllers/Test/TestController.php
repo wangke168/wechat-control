@@ -24,7 +24,7 @@ class TestController extends Controller
         return $row;
     }
 
-    public function take_json()
+    public function take_json(Request $request)
     {
         for ($x=1; $x<=10; $x++) {
             $y=$x-1;
@@ -40,6 +40,6 @@ class TestController extends Controller
 //            $info[] = array(['name' => 'LaravelAcademy', 'passwd' => $row]);
         }
 //        echo $row;
-        return response()->json($info);
+        return response()->json($info)->setCallback($request->input('callback'));
     }
 }
