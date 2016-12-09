@@ -138,13 +138,13 @@ var ChartsFlotcharts = function () {
                             var myArray_esc = new Array();
                             $.each(data.add, function (i, n) {
                                 myArray_add[i] = [];
-                                myArray_add[i][0] = n["name"];
-                                myArray_add[i][1] = n["passwd"];
+                                myArray_add[i][0] = n["date"];
+                                myArray_add[i][1] = n["numbers"];
                             });
                             $.each(data.esc, function (i, n) {
                                 myArray_esc[i] = [];
-                                myArray_esc[i][0] = n["name"];
-                                myArray_esc[i][1] = n["passwd"];
+                                myArray_esc[i][0] = n["date"];
+                                myArray_esc[i][1] = n["numbers"];
                             });
 
                             pageviews=myArray_esc;
@@ -194,6 +194,8 @@ var ChartsFlotcharts = function () {
                                 },
                                 colors: ["#d12610", "#37b7f3", "#52e136"],
                                 xaxis: {
+                                   /* mode: "time",
+                                    timeformat: "%Y/%m/%d",*/
                                     ticks: 11,
                                     tickDecimals: 0,
                                     tickColor: "#eee",

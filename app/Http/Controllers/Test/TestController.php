@@ -37,8 +37,8 @@ class TestController extends Controller
                 ->whereDate('adddate', '>=', $from)
                 ->whereDate('adddate', '<', $to)
                 ->count();
-            $add[] = array('name' => $z, 'passwd' => $row);
-//            $info[] = array(['name' => 'LaravelAcademy', 'passwd' => $row]);
+            $date=strtotime("2002-02-20 UTC") * 1000;
+            $add[] = array('date' => $z, 'numbers' => $row);
         }
 
 
@@ -52,13 +52,12 @@ class TestController extends Controller
                 ->whereDate('esc_time', '>=', $from)
                 ->whereDate('esc_time', '<', $to)
                 ->count();
-            $esc[] = array('name' => $z, 'passwd' => $row);
-//            $info[] = array(['name' => 'LaravelAcademy', 'passwd' => $row]);
+            $date=strtotime("2002-02-20 UTC") * 1000;
+            $esc[] = array('date' => $z, 'numbers' => $row);
         }
 
 
         $info=array('add'=>$add,'esc'=>$esc);
-//        echo $row;
         return response()->json($info)->setCallback($request->input('callback'));
     }
 
@@ -74,7 +73,8 @@ class TestController extends Controller
                 ->whereDate('esc_time', '>=', $from)
                 ->whereDate('esc_time', '<', $to)
                 ->count();
-            $info[] = array('name' => $x, 'passwd' => $row);
+            $date=strtotime("2002-02-20 UTC") * 1000;
+            $info[] = array('name' => $date, 'passwd' => $row);
 //            $info[] = array(['name' => 'LaravelAcademy', 'passwd' => $row]);
         }
 //        echo $row;
