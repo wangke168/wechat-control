@@ -1,4 +1,3 @@
-
 @extends('control.blade.data')
 
 @section('title', '横店影视城微信管理平台－－－公告牌')
@@ -7,12 +6,13 @@
 
 @section('css')
         <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
-<link href="{{asset('assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css')}}" rel="stylesheet" type="text/css" />
-<link href="{{asset('assets/global/plugins/fullcalendar/fullcalendar.min.css')}}" rel="stylesheet" type="text/css" />
-<link href="{{asset('assets/global/plugins/jqvmap/jqvmap/jqvmap.css')}}" rel="stylesheet" type="text/css" />
+<link href="{{asset('assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css')}}" rel="stylesheet"
+      type="text/css"/>
+<link href="{{asset('assets/global/plugins/fullcalendar/fullcalendar.min.css')}}" rel="stylesheet" type="text/css"/>
+<link href="{{asset('assets/global/plugins/jqvmap/jqvmap/jqvmap.css')}}" rel="stylesheet" type="text/css"/>
 <!-- END PAGE LEVEL PLUGIN STYLES -->
 <!-- BEGIN PAGE STYLES -->
-<link href="{{asset('assets/admin/pages/css/tasks.css')}}" rel="stylesheet" type="text/css" />
+<link href="{{asset('assets/admin/pages/css/tasks.css')}}" rel="stylesheet" type="text/css"/>
 <!-- END PAGE STYLES -->
 <!-- BEGIN THEME STYLES -->
 
@@ -20,19 +20,19 @@
 
 
 @section('page-bar')
- <div class="page-bar">
-                <ul class="page-breadcrumb">
-                    <li>
-                        <i class="fa fa-home"></i>
-                        <a href="index-2.html">Home</a>
-                        <i class="fa fa-angle-right"></i>
-                    </li>
-                    <li>
-                        <a href="#">公告牌</a>
-                    </li>
-                </ul>
-                
-            </div>
+    <div class="page-bar">
+        <ul class="page-breadcrumb">
+            <li>
+                <i class="fa fa-home"></i>
+                <a href="index-2.html">Home</a>
+                <i class="fa fa-angle-right"></i>
+            </li>
+            <li>
+                <a href="#">公告牌</a>
+            </li>
+        </ul>
+
+    </div>
 @stop
 
 @section('content')
@@ -48,11 +48,11 @@
 
                         <?php
                         $row = DB::table('wx_user_add')
-                              /*  ->whereDate('adddate', '>=', '2016-10-12')
-                                ->whereDate('adddate', '<', '2016-10-13')   */
+                                /*  ->whereDate('adddate', '>=', '2016-10-12')
+                                  ->whereDate('adddate', '<', '2016-10-13')   */
                                 ->whereDate('adddate', '>=', date("Y-m-d", strtotime("-1 day")))
-                                ->whereDate('adddate','<',date("Y-m-d"))
-                        ->count();
+                                ->whereDate('adddate', '<', date("Y-m-d"))
+                                ->count();
                         echo $row;
                         ?>
 
@@ -75,10 +75,10 @@
                     <div class="number">
                         <?php
                         $row = DB::table('wx_user_esc')
-                          /*      ->whereDate('esc_time', '>=', '2016-10-12')
-                                ->whereDate('esc_time', '<', '2016-10-13')  */
+                                /*      ->whereDate('esc_time', '>=', '2016-10-12')
+                                      ->whereDate('esc_time', '<', '2016-10-13')  */
                                 ->whereDate('esc_time', '>=', date("Y-m-d", strtotime("-1 day")))
-                                ->whereDate('esc_time','<',date("Y-m-d"))
+                                ->whereDate('esc_time', '<', date("Y-m-d"))
                                 ->count();
                         echo $row;
                         ?>
@@ -101,10 +101,10 @@
                     <div class="number">
                         <?php
                         $row = DB::table('wx_order_send')
-                     //           ->whereDate('adddate', '>=', '2016-10-12')
-                     //           ->whereDate('adddate', '<', '2016-10-13')
+                                //           ->whereDate('adddate', '>=', '2016-10-12')
+                                //           ->whereDate('adddate', '<', '2016-10-13')
                                 ->whereDate('adddate', '>=', date("Y-m-d", strtotime("-1 day")))
-                                ->whereDate('adddate','<',date("Y-m-d"))
+                                ->whereDate('adddate', '<', date("Y-m-d"))
                                 ->count();
                         echo $row;
                         ?>
@@ -160,7 +160,7 @@
                     </div>
                 </div>
                 <div class="portlet-body">
-                    <div id="chart_2" class="chart"  style="height:350px;">
+                    <div id="chart_2" class="chart" style="height:350px;">
                     </div>
                 </div>
             </div>
@@ -171,7 +171,7 @@
             <div class="portlet box yellow">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="fa fa-gift"></i>Stack Chart Controls
+                        <i class="fa fa-gift"></i>近期订单
                     </div>
                     <div class="tools">
                         <a href="javascript:;" class="collapse">
@@ -187,19 +187,19 @@
                 <div class="portlet-body">
                     <div id="chart_5" style="height:350px;">
                     </div>
-                   {{-- <div class="btn-toolbar">
-                        <div class="btn-group stackControls">
-                            <input type="button" class="btn blue" value="With stacking"/>
-                            <input type="button" class="btn red" value="Without stacking"/>
-                        </div>
-                        <div class="space5">
-                        </div>
-                        <div class="btn-group graphControls">
-                            <input type="button" class="btn" value="Bars"/>
-                            <input type="button" class="btn" value="Lines"/>
-                            <input type="button" class="btn" value="Lines with steps"/>
-                        </div>
-                    </div>--}}
+                    {{-- <div class="btn-toolbar">
+                         <div class="btn-group stackControls">
+                             <input type="button" class="btn blue" value="With stacking"/>
+                             <input type="button" class="btn red" value="Without stacking"/>
+                         </div>
+                         <div class="space5">
+                         </div>
+                         <div class="btn-group graphControls">
+                             <input type="button" class="btn" value="Bars"/>
+                             <input type="button" class="btn" value="Lines"/>
+                             <input type="button" class="btn" value="Lines with steps"/>
+                         </div>
+                     </div>--}}
                 </div>
             </div>
             <!-- END STACK CHART CONTROLS PORTLET-->
@@ -2188,26 +2188,35 @@
         </div>
     </div>
 
-@stop
+    @stop
 
-@section('js')
-    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    @section('js')
+            <!-- BEGIN PAGE LEVEL PLUGINS -->
     <script src="{{asset('assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js')}}" type="text/javascript"></script>
-    <script src="{{asset('assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js')}}" type="text/javascript"></script>
-    <script src="{{asset('assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js')}}" type="text/javascript"></script>
-    <script src="{{asset('assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js')}}" type="text/javascript"></script>
-    <script src="{{asset('assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js')}}" type="text/javascript"></script>
-    <script src="{{asset('assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js')}}" type="text/javascript"></script>
-    <script src="{{asset('assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js')}}" type="text/javascript"></script>
+    <script src="{{asset('assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js')}}"
+            type="text/javascript"></script>
+    <script src="{{asset('assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js')}}"
+            type="text/javascript"></script>
+    <script src="{{asset('assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js')}}"
+            type="text/javascript"></script>
+    <script src="{{asset('assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js')}}"
+            type="text/javascript"></script>
+    <script src="{{asset('assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js')}}"
+            type="text/javascript"></script>
+    <script src="{{asset('assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js')}}"
+            type="text/javascript"></script>
     <script src="{{asset('assets/global/plugins/flot/jquery.flot.min.js')}}" type="text/javascript"></script>
     <script src="{{asset('assets/global/plugins/flot/jquery.flot.resize.min.js')}}" type="text/javascript"></script>
     <script src="{{asset('assets/global/plugins/flot/jquery.flot.categories.min.js')}}" type="text/javascript"></script>
     <script src="{{asset('assets/global/plugins/jquery.pulsate.min.js')}}" type="text/javascript"></script>
-    <script src="{{asset('assets/global/plugins/bootstrap-daterangepicker/moment.min.js')}}" type="text/javascript"></script>
-    <script src="{{asset('assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js')}}" type="text/javascript"></script>
+    <script src="{{asset('assets/global/plugins/bootstrap-daterangepicker/moment.min.js')}}"
+            type="text/javascript"></script>
+    <script src="{{asset('assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js')}}"
+            type="text/javascript"></script>
     <!-- IMPORTANT! fullcalendar depends on jquery-ui-1.10.3.custom.min.js for drag & drop support -->
     <script src="{{asset('assets/global/plugins/fullcalendar/fullcalendar.min.js')}}" type="text/javascript"></script>
-    <script src="{{asset('assets/global/plugins/jquery-easypiechart/jquery.easypiechart.js')}}" type="text/javascript"></script>
+    <script src="{{asset('assets/global/plugins/jquery-easypiechart/jquery.easypiechart.js')}}"
+            type="text/javascript"></script>
     <script src="{{asset('assets/global/plugins/jquery.sparkline.min.js')}}" type="text/javascript"></script>
     <!-- END PAGE LEVEL PLUGINS -->
     <!-- BEGIN PAGE LEVEL SCRIPTS -->
