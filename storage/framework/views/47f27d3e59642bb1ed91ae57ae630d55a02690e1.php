@@ -13,7 +13,6 @@
 <link href="<?php echo e(asset('assets/admin/pages/css/tasks.css')); ?>" rel="stylesheet" type="text/css"/>
 <!-- END PAGE STYLES -->
 <!-- BEGIN THEME STYLES -->
-<link href="<?php echo e(asset('bootstrap/css/circle.css')); ?>" rel="stylesheet" type="text/css"/>
 <?php $__env->stopSection(); ?>
 
 

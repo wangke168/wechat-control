@@ -464,14 +464,14 @@ var ChartsFlotcharts = function () {
                     $.plot($("#chart_5"),
 
                         [{
-                            label: "确认订单",
+                            label: "支付订单",
                             data: d1,
                             lines: {
                                 lineWidth: 1,
                             },
                             shadowSize: 0
                         }, {
-                            label: "未付款订单",
+                            label: "未付订单",
                             data: d2,
                             lines: {
                                 lineWidth: 1,
