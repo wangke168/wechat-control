@@ -37,7 +37,7 @@ class TestController extends Controller
                 ->whereDate('adddate', '>=', $from)
                 ->whereDate('adddate', '<', $to)
                 ->count();
-            $add[] = array('name' => $from, 'passwd' => $row);
+            $add[] = array('name' => $z, 'passwd' => $row);
 //            $info[] = array(['name' => 'LaravelAcademy', 'passwd' => $row]);
         }
 
@@ -52,7 +52,7 @@ class TestController extends Controller
                 ->whereDate('esc_time', '>=', $from)
                 ->whereDate('esc_time', '<', $to)
                 ->count();
-            $esc[] = array('name' => $from, 'passwd' => $row);
+            $esc[] = array('name' => $z, 'passwd' => $row);
 //            $info[] = array(['name' => 'LaravelAcademy', 'passwd' => $row]);
         }
 
