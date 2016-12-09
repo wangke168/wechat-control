@@ -32,4 +32,29 @@ class JsonController extends Controller
         return response()->json($params);*/
 
     }
+
+    public function take_order(Request $request)
+    {
+        for ($x=-16; $x<=-1; $x++) {
+            $y=$x+1;
+            $z=$x+16;
+            $from = date("Y-m-d", strtotime($x." day"));
+            $to = date("Y-m-d", strtotime($y." day"));
+            $row_confirm = DB::table('wx_order_confirm')
+                ->whereDate('adddate', '>=', $from)
+                ->whereDate('adddate', '<', $to)
+                ->count();
+
+            $row_send = DB::table('wx_order_send')
+                ->whereDate('adddate', '>=', $from)
+                ->whereDate('adddate', '<', $to)
+                ->count();
+//            $other=$row_confirm-$row_send;
+            $send[] = array('date' => $z, 'numbers' => $row_send);
+            $other[] = array('date' => $z, 'numbers' =>$row_confirm-$row_send);
+        }
+        $info=array('send'=>$send,'other'=>$other);
+        return response()->json($info)->setCallback($request->input('callback'));
+
+    }
 }

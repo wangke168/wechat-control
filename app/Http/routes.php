@@ -76,3 +76,4 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
 
 Route::get('add','Test\TestController@take_add_json');
 Route::get('esc','Test\TestController@take_esc_json');
+Route::get('json/order','JsonController@take_order');

@@ -407,47 +407,73 @@ var ChartsFlotcharts = function () {
                     return;
                 }
                 var d1 = [];
-                for (var i = 0; i <= 10; i += 1)
-                    d1.push([i, parseInt(Math.random() * 30)]);
+                for (var i = 0; i <= 15; i += 1)
+                    d1.push([i, '10']);
 
                 var d2 = [];
-                for (var i = 0; i <= 10; i += 1)
-                    d2.push([i, parseInt(Math.random() * 30)]);
+                for (var i = 0; i <= 15; i += 1)
+                    d2.push([i, '20']);
 
-                var d3 = [];
+          /*      var d3 = [];
                 for (var i = 0; i <= 10; i += 1)
                     d3.push([i, parseInt(Math.random() * 30)]);
-
+*/
                 var stack = 0,
                     bars = true,
                     lines = false,
                     steps = false;
 
+                $.ajax({
+                    url: "/json/order",
+                    type: "get",
+
+                    success: function (data) {
+                        var myArray_send = new Array();
+                        var myArray_other = new Array();
+                        $.each(data.send, function (i, n) {
+                            myArray_send[i] = [];
+                            myArray_send[i][0] = n["date"];
+                            myArray_send[i][1] = n["numbers"];
+                        });
+                        $.each(data.other, function (i, n) {
+                            myArray_other[i] = [];
+                            myArray_other[i][0] = n["date"];
+                            myArray_other[i][1] = n["numbers"];
+                        });
+                        d1=myArray_other;
+                        d2=myArray_send;
+                        plotWithOptions();
+                    }
+                });
+
+
                 function plotWithOptions() {
                     $.plot($("#chart_5"),
 
                         [{
-                            label: "sales",
+                            label: "未付款订单",
                             data: d1,
                             lines: {
                                 lineWidth: 1,
                             },
                             shadowSize: 0
                         }, {
-                            label: "tax",
+                            label: "确认订单",
                             data: d2,
                             lines: {
                                 lineWidth: 1,
                             },
                             shadowSize: 0
-                        }, {
+                        }
+                        /*    , {
                             label: "profit",
                             data: d3,
                             lines: {
                                 lineWidth: 1,
                             },
                             shadowSize: 0
-                        }]
+                        }*/
+                        ]
 
                         , {
                             series: {
@@ -489,7 +515,7 @@ var ChartsFlotcharts = function () {
                     plotWithOptions();
                 });
 
-                plotWithOptions();
+                //plotWithOptions();
             }
 
             //graph

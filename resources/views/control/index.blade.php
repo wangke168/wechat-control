@@ -160,94 +160,49 @@
                     </div>
                 </div>
                 <div class="portlet-body">
-                    <div id="chart_2" class="chart">
+                    <div id="chart_2" class="chart"  style="height:350px;">
                     </div>
                 </div>
             </div>
             <!-- END PORTLET-->
         </div>
         <div class="col-md-6 col-sm-6">
-            <!-- BEGIN PORTLET-->
-            <div class="portlet solid grey-cararra bordered">
+            <!-- BEGIN STACK CHART CONTROLS PORTLET-->
+            <div class="portlet box yellow">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="fa fa-bullhorn"></i>Revenue
+                        <i class="fa fa-gift"></i>Stack Chart Controls
                     </div>
-                    <div class="actions">
-                        <div class="btn-group pull-right">
-                            <a href="#" class="btn grey-steel btn-sm dropdown-toggle" data-toggle="dropdown"
-                               data-hover="dropdown" data-close-others="true">
-                                Filter <span class="fa fa-angle-down">
-									</span>
-                            </a>
-                            <ul class="dropdown-menu pull-right">
-                                <li>
-                                    <a href="javascript:;">
-                                        Q1 2014 <span class="label label-sm label-default">
-											past </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        Q2 2014 <span class="label label-sm label-default">
-											past </span>
-                                    </a>
-                                </li>
-                                <li class="active">
-                                    <a href="javascript:;">
-                                        Q3 2014 <span class="label label-sm label-success">
-											current </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        Q4 2014 <span class="label label-sm label-warning">
-											upcoming </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="tools">
+                        <a href="javascript:;" class="collapse">
+                        </a>
+                        <a href="#portlet-config" data-toggle="modal" class="config">
+                        </a>
+                        <a href="javascript:;" class="reload">
+                        </a>
+                        <a href="javascript:;" class="remove">
+                        </a>
                     </div>
                 </div>
                 <div class="portlet-body">
-                    <div id="site_activities_loading">
-                        <img src="{{asset('assets/admin/layout/img/loading.gif')}}" alt="loading"/>
+                    <div id="chart_5" style="height:350px;">
                     </div>
-                    <div id="site_activities_content" class="display-none">
-                        <div id="site_activities" style="height: 228px;">
+                   {{-- <div class="btn-toolbar">
+                        <div class="btn-group stackControls">
+                            <input type="button" class="btn blue" value="With stacking"/>
+                            <input type="button" class="btn red" value="Without stacking"/>
                         </div>
-                    </div>
-                    <div style="margin: 20px 0 10px 30px">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-3 col-xs-6 text-stat">
-										<span class="label label-sm label-success">
-										Revenue: </span>
-
-                                <h3>$13,234</h3>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-6 text-stat">
-										<span class="label label-sm label-info">
-										Tax: </span>
-
-                                <h3>$134,900</h3>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-6 text-stat">
-										<span class="label label-sm label-danger">
-										Shipment: </span>
-
-                                <h3>$1,134</h3>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-6 text-stat">
-										<span class="label label-sm label-warning">
-										Orders: </span>
-
-                                <h3>235090</h3>
-                            </div>
+                        <div class="space5">
                         </div>
-                    </div>
+                        <div class="btn-group graphControls">
+                            <input type="button" class="btn" value="Bars"/>
+                            <input type="button" class="btn" value="Lines"/>
+                            <input type="button" class="btn" value="Lines with steps"/>
+                        </div>
+                    </div>--}}
                 </div>
             </div>
-            <!-- END PORTLET-->
+            <!-- END STACK CHART CONTROLS PORTLET-->
         </div>
     </div>
     <div class="clearfix">
