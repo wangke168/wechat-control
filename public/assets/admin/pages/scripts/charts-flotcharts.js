@@ -128,11 +128,17 @@ var ChartsFlotcharts = function () {
 
 
 
-
                     $.ajax({
                         url: "/add",
                         type: "get",
-
+                        beforeSend: function () {
+                            var el = $('#chart_2');
+                            Metronic.blockUI({
+                                target: el,
+                                animate: true,
+                                overlayColor: 'none'
+                            });
+                        },
                         success: function (data) {
                             var myArray_add = new Array();
                             var myArray_esc = new Array();
@@ -426,7 +432,14 @@ var ChartsFlotcharts = function () {
                 $.ajax({
                     url: "/json/order",
                     type: "get",
-
+                    beforeSend: function () {
+                        var el = $('#chart_5');
+                        Metronic.blockUI({
+                            target: el,
+                            animate: true,
+                            overlayColor: 'none'
+                        });
+                    },
                     success: function (data) {
                         var myArray_send = new Array();
                         var myArray_other = new Array();

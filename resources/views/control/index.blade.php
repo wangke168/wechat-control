@@ -15,7 +15,6 @@
 <link href="{{asset('assets/admin/pages/css/tasks.css')}}" rel="stylesheet" type="text/css"/>
 <!-- END PAGE STYLES -->
 <!-- BEGIN THEME STYLES -->
-
 @stop
 
 
@@ -161,6 +160,8 @@
                 </div>
                 <div class="portlet-body">
                     <div id="chart_2" class="chart" style="height:350px;">
+
+
                     </div>
                 </div>
             </div>
