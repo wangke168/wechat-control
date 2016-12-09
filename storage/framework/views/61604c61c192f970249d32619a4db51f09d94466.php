@@ -163,7 +163,7 @@
                                     <td>
                                         <?php
                                         echo "<a class='label label-primary' href=\"#Qrcodemodel\" data-toggle=\"modal\" data-src=\"http://weix2.hengdianworld.com/control/qrcode/getqrcode.php?id=" . $row->id . "\">预览</a>&nbsp;";
-                                        echo "<a href='ArticleModify.php?id=" . $row->id . "' class='label label-success'><i class=\"icon-edit\"></i>修改</a>&nbsp;";
+                                        echo "<a href='articlemodify?action=modify&id=" . $row->id . "' class='label label-success'><i class=\"icon-edit\"></i>修改</a>&nbsp;";
 
                                         if ($row->del == 0) {
                                             echo "<a OnClick=\"javascript:if (!confirm('是否真的要删除'))return false;\"  href='articlemodify?action=del&id=" . $row->id . "'\" class='label label-danger'><i class=\"icon-remove\"></i>删除</a>&nbsp;";

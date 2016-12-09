@@ -27,9 +27,9 @@ class TestController extends Controller
     public function take_add_json(Request $request)
     {
 //        $info[]=array('root'=>'add');
-        for ($x=-15; $x<=0; $x++) {
+        for ($x=-16; $x<=-1; $x++) {
             $y=$x+1;
-            $z=$x+15;
+            $z=$x+16;
             $from = date("Y-m-d", strtotime($x." day"));
             $to = date("Y-m-d", strtotime($y." day"));
             $row = DB::table('wx_user_add')
@@ -37,14 +37,14 @@ class TestController extends Controller
                 ->whereDate('adddate', '>=', $from)
                 ->whereDate('adddate', '<', $to)
                 ->count();
-            $add[] = array('name' => $z, 'passwd' => $row);
+            $add[] = array('name' => $from, 'passwd' => $row);
 //            $info[] = array(['name' => 'LaravelAcademy', 'passwd' => $row]);
         }
 
 
-        for ($x=-15; $x<=0; $x++) {
+        for ($x=-16; $x<=-1; $x++) {
             $y=$x+1;
-            $z=$x+15;
+            $z=$x+16;
             $from = date("Y-m-d", strtotime($x." day"));
             $to = date("Y-m-d", strtotime($y." day"));
             $row = DB::table('wx_user_esc')
@@ -52,7 +52,7 @@ class TestController extends Controller
                 ->whereDate('esc_time', '>=', $from)
                 ->whereDate('esc_time', '<', $to)
                 ->count();
-            $esc[] = array('name' => $z, 'passwd' => $row);
+            $esc[] = array('name' => $from, 'passwd' => $row);
 //            $info[] = array(['name' => 'LaravelAcademy', 'passwd' => $row]);
         }
 
