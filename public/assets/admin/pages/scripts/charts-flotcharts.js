@@ -440,8 +440,8 @@ var ChartsFlotcharts = function () {
                             myArray_other[i][0] = n["date"];
                             myArray_other[i][1] = n["numbers"];
                         });
-                        d1=myArray_other;
-                        d2=myArray_send;
+                        d2=myArray_other;
+                        d1=myArray_send;
                         plotWithOptions();
                     }
                 });
@@ -451,14 +451,14 @@ var ChartsFlotcharts = function () {
                     $.plot($("#chart_5"),
 
                         [{
-                            label: "未付款订单",
+                            label: "确认订单",
                             data: d1,
                             lines: {
                                 lineWidth: 1,
                             },
                             shadowSize: 0
                         }, {
-                            label: "确认订单",
+                            label: "未付款订单",
                             data: d2,
                             lines: {
                                 lineWidth: 1,
