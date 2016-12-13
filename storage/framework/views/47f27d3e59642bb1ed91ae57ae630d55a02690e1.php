@@ -45,8 +45,6 @@
 
                         <?php
                         $row = DB::table('wx_user_add')
-                                /*  ->whereDate('adddate', '>=', '2016-10-12')
-                                  ->whereDate('adddate', '<', '2016-10-13')   */
                                 ->whereDate('adddate', '>=', date("Y-m-d", strtotime("-1 day")))
                                 ->whereDate('adddate', '<', date("Y-m-d"))
                                 ->count();
@@ -72,8 +70,6 @@
                     <div class="number">
                         <?php
                         $row = DB::table('wx_user_esc')
-                                /*      ->whereDate('esc_time', '>=', '2016-10-12')
-                                      ->whereDate('esc_time', '<', '2016-10-13')  */
                                 ->whereDate('esc_time', '>=', date("Y-m-d", strtotime("-1 day")))
                                 ->whereDate('esc_time', '<', date("Y-m-d"))
                                 ->count();
@@ -98,8 +94,6 @@
                     <div class="number">
                         <?php
                         $row = DB::table('wx_order_send')
-                                //           ->whereDate('adddate', '>=', '2016-10-12')
-                                //           ->whereDate('adddate', '<', '2016-10-13')
                                 ->whereDate('adddate', '>=', date("Y-m-d", strtotime("-1 day")))
                                 ->whereDate('adddate', '<', date("Y-m-d"))
                                 ->count();
@@ -122,10 +116,16 @@
                 </div>
                 <div class="details">
                     <div class="number">
-                        +89%
+                        <?php
+                        $row = DB::table('wx_article_hits')
+                                ->whereDate('adddate', '>=', date("Y-m-d", strtotime("-1 day")))
+                                ->whereDate('adddate', '<', date("Y-m-d"))
+                                ->count();
+                        echo $row;
+                        ?>
                     </div>
                     <div class="desc">
-                        Brand Popularity
+                        昨日总阅读数
                     </div>
                 </div>
                 <a class="more" href="#">
