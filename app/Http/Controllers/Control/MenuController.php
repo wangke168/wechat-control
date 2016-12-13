@@ -10,11 +10,11 @@ use EasyWeChat\Foundation\Application;
 
 class MenuController extends Controller
 {
-    public $app;
+ /*   public $app;
     public function __construct(Application $app)
     {
         $this->app=$app;
-    }
+    }*/
 
     public function menuList()
     {
@@ -22,7 +22,7 @@ class MenuController extends Controller
 //        $ACCESS_TOKEN=$this->app->access_token->getToken();
         $token_url = "http://wechat.hengdianworld.com/hd-token";
         $ACCESS_TOKEN = file_get_contents($token_url);
-       return $ACCESS_TOKEN;
+//       return $ACCESS_TOKEN;
 
 
 //        return $ACCESS_TOKEN;
