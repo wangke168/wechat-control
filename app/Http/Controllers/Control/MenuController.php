@@ -23,6 +23,9 @@ class MenuController extends Controller
         $ACCESS_TOKEN = file_get_contents($token_url);*/
     //    return $ACCESS_TOKEN;
 
+
+        return $ACCESS_TOKEN;
+
         $menu_url='https://api.weixin.qq.com/cgi-bin/menu/get?access_token='.$ACCESS_TOKEN;
         $menu_list=file_get_contents($menu_url);
         $menu_list=json_decode($menu_list,true);
