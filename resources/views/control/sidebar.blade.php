@@ -173,7 +173,7 @@
             </li>
             <li>
                 <a href="javascript:;">
-                    <i class="icon-wallet"></i>
+                    <i class="icon-frame"></i>
                     <span class="title">二维码管理</span>
                     <span class="arrow "></span>
                 </a>
@@ -187,6 +187,20 @@
                             登记二维码</a>
                     </li>
                 </ul>
+            </li>
+            <li>
+
+                <a href="#">
+                    <i class="icon-wallet"></i>
+                    <span class="title">卡券管理</span>
+                </a>
+            </li>
+            <li>
+
+                <a href="message">
+                    <i class="icon-bubbles"></i>
+                    <span class="title">消息管理</span>
+                </a>
             </li>
 {{--            <li>
                 <a href="javascript:;">

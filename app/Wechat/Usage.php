@@ -9,6 +9,7 @@
 namespace App\WeChat;
 
 use DB;
+use EasyWeChat\Foundation\Application;
 
 class Usage
 {
@@ -185,4 +186,17 @@ class Usage
             ->first();
         return $row;
     }
+
+    /**
+     *
+     */
+    public function get_openid_info($openId)
+    {
+        $wechat = app('wechat');
+        $userService = $wechat->user;
+        $user = $userService->get($openId);
+        return $user;
+
+    }
+
 }

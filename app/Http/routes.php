@@ -70,7 +70,7 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
 
     Route::get('menulist','Control\MenuController@menuList');
 
-
+    Route::get('message','Control\MessageController@index');
 
 });
 
