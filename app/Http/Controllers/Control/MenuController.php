@@ -10,11 +10,11 @@ use EasyWeChat\Foundation\Application;
 
 class MenuController extends Controller
 {
-    public $app;
+/*    public $app;
     public function __construct(Application $app)
     {
         $this->app=$app;
-    }
+    }*/
 
     public function menuList()
     {
