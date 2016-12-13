@@ -18,6 +18,7 @@ class MenuController extends Controller
 
     public function menuList()
     {
+        return "221";
 //        $ACCESS_TOKEN=$this->app->access_token->getToken();
         $token_url = "http://wechat.hengdianworld.com/hd-token";
         $ACCESS_TOKEN = file_get_contents($token_url);
