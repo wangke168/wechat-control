@@ -154,19 +154,7 @@
                     </li>*/ ?>
                 </ul>
             </li>
-            <li>
-                <a href="javascript:;">
-                    <i class="icon-notebook"></i>
-                    <span class="title">其他设置 </span>
-                    <span class="arrow "></span>
-                </a>
-                <ul class="sub-menu">
-                    <li>
-                        <a href="menulist">
-                            菜单查询</a>
-                    </li>
-                </ul>
-            </li>
+
             <li>
                 <a href="javascript:;">
                     <i class="icon-frame"></i>
@@ -204,6 +192,19 @@
                     <i class="icon-bubbles"></i>
                     <span class="title">消息管理</span>
                 </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <i class="icon-notebook"></i>
+                    <span class="title">其他 </span>
+                    <span class="arrow "></span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="menulist">
+                            菜单查询</a>
+                    </li>
+                </ul>
             </li>
 <?php /*            <li>
                 <a href="javascript:;">

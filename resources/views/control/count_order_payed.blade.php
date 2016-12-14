@@ -130,7 +130,7 @@
                                     <?php
                                     if ($row->eventkey) {
                                         $usage = new \App\WeChat\Usage();
-                                        echo $usage->getQrsecneinfo($row->eventkey)->qrscene_name;
+                                        echo "<span class='label bg-grey-cascade'>".$usage->getQrsecneinfo($row->eventkey)->qrscene_name."</span>";
                                     }
                                     ?>
                                 </td>
