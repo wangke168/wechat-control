@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/MessageController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/MessageController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/sessions/17ed973e903b3d3e45241e7357ec991f98a76c35" afterPath="$PROJECT_DIR$/storage/framework/sessions/17ed973e903b3d3e45241e7357ec991f98a76c35" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/logs/wechat.log" afterPath="$PROJECT_DIR$/storage/logs/wechat.log" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,10 +27,10 @@
       <file leaf-file-name="MessageController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/MessageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3020446">
-              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.348513">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding>
-                <element signature="e#48#76#0#PHP" expanded="true" />
+                <element signature="e#48#86#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1065,10 +1063,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/MessageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3020446">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.348513">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding>
-            <element signature="e#48#76#0#PHP" expanded="true" />
+            <element signature="e#48#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
