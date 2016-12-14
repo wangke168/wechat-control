@@ -84,7 +84,8 @@
                 </div>
                 <div class="timeline-body-content">
 							<span class="font-grey-cascade">
-							
+							<?php echo $row->content; ?>
+
 							</span>
                 </div>
             </div>
