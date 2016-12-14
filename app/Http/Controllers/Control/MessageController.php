@@ -11,6 +11,7 @@ class MessageController extends Controller
 {
     public function index()
     {
+        return 'asd';
         $rows=DB::table('wx_recevice_txt')
             ->orderBy('id','desc')
             ->paginate(20);
