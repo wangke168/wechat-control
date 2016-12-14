@@ -22,6 +22,6 @@ Homestead.json
 /public/assets/admin/pages/img
 /public/assets/admin/pages/media
 
-
+/storage/logs
 
 /test
