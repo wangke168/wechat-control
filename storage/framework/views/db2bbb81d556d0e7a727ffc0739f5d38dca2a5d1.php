@@ -136,7 +136,10 @@
 
                                     </td>
                                     <td>
-
+<?php
+                                        $usage=new \App\WeChat\Usage();
+                                            echo "<span class='label bg-grey-cascade'>".$usage->getArticleShowQrsecne($row->eventkey)."</span>";
+                                        ?>
                                     </td>
                                     <td>
                                         <?php

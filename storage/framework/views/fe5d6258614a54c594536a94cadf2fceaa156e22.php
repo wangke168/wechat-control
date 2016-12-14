@@ -132,10 +132,6 @@
                 </a>
                 <ul class="sub-menu">
                     <li>
-                        <a href="ordercount">
-                            订单统计</a>
-                    </li>
-                    <li>
                         <a href="menuclickcount">
                             菜单点击数</a>
                     </li>
@@ -187,6 +183,13 @@
                             登记二维码</a>
                     </li>
                 </ul>
+            </li>
+            <li>
+
+                <a href="ordercount">
+                    <i class="icon-present"></i>
+                    <span class="title">订单管理</span>
+                </a>
             </li>
             <li>
 

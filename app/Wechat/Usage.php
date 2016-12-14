@@ -77,8 +77,10 @@ class Usage
         }
     }
 
-    /*
+    /**
      * 编辑文章时获取所属市场
+     * @param $eventkeys
+     * @return string
      */
     public function getArticleShowQrsecne($eventkeys)
     {
@@ -102,14 +104,20 @@ class Usage
         return $qrscenename;
     }
 
+
+    /**
+     * 获取eventkey对应的信息
+     * @param $eventkey
+     * @return mixed|static
+     */
     public function getQrsecneinfo($eventkey)
     {
-
         $row = DB::table('wx_qrscene_info')
             ->where('qrscene_id', $eventkey)
             ->first();
         return $row;
     }
+
 
     public function get_qr_classid()
     {
