@@ -86,7 +86,7 @@
                 </div>
                 <div class="timeline-body-content">
 							<span class="font-grey-cascade">
-							{!! $row->content !!}}
+							{!! $row->content !!}
 							</span>
                 </div>
             </div>

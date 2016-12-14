@@ -52,6 +52,8 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
     Route::get('requesttxt','Control\RequestController@txt');
     Route::get('requestse','Control\RequestController@se');
 
+    Route::get('requestmodify','Control\RequestController@request_modify');
+
     //数据统计
     Route::get('menuclickcount','Control\DataController@click');
     Route::post('menuclickcount','Control\DataController@countSearch');

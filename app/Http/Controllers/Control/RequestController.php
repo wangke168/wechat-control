@@ -24,4 +24,24 @@ class RequestController extends Controller
             ->paginate(20);
         return view('control.request_se_list',compact('rows'));
     }
+
+    public function request_modify(Request $request)
+    {
+        $action=$request->input('action');
+        $id=$request->input('id');
+        switch ($action){
+            case 'se_offline':
+                DB::table('se_info_detail')
+                    ->where('id',$id)
+                    ->update(['online'=>'0']);
+                return redirect()->back();
+                break;
+            case 'se_online':
+                DB::table('se_info_detail')
+                    ->where('id',$id)
+                    ->update(['online'=>'1']);
+                return redirect()->back();
+                break;
+        }
+    }
 }
