@@ -72,20 +72,8 @@
                                     <option value=""></option>
 
                                     <?php
-                                    $rows = DB::table('tour_zone_class')
-                                            ->get();
-                                    foreach ($rows as $row) {
-                                        echo "<optgroup label=\"" . $row->zone_name . "\">";
-                                        $result_options = DB::table('tour_project_class')
-                                                ->whereRaw('id not in (select project_id from tour_project_info)')
-                                                ->where('zone_classid', $row->id)
-                                                ->get();
-                                        foreach ($result_options as $result_option) {
-                                            echo "<option value=\"" . $result_option->id . "\">" . $result_option->project_name . "</option>";
-                                        }
-
-                                        echo "</optgroup>";
-                                    }
+                                    $Push = new \App\WeChat\Push();
+                                    $Push->showMenuList();
                                     ?>
 
                                 </select>
