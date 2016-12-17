@@ -9,76 +9,11 @@
 namespace App\WeChat;
 
 use DB;
-use EasyWeChat\Foundation\Application;
 
 class Usage
 {
-    /*
-     * 添加文章时选择栏目
-     */
-    public function menuList()
-    {
-        $rows = DB::table('wx_menu_list')
-            ->where('online', '1')
-            ->where('parents_id', '0')
-            ->orderBy('priority', 'asc')
-            ->get();
-        foreach ($rows as $row) {
-            echo "<optgroup label=\"" . $row->menu_name . "\">";
-
-
-            $result_options = DB::table('wx_menu_list')
-                ->where('online', '1')
-                ->where('parents_id', $row->id)
-                ->orderBy('priority', 'asc')
-                ->get();
-//                    $result_option = mysql_query("select * from wx_menu_list where online='1' and parents_id='" . $row["ID"] . "' order by id asc");
-
-            foreach ($result_options as $result_option) {
-
-                echo "<option value=\"" . $result_option->id . "\">" . $result_option->menu_name . "</option>";
-
-            }
-
-            echo "</optgroup>";
-        }
-    }
-
-    /*
-     * 编辑文章时确认所选栏目
-     */
-    public function menuCheck($classid)
-    {
-        $rows = DB::table('wx_menu_list')
-            ->where('online', '1')
-            ->where('parents_id', '0')
-            ->orderBy('priority', 'asc')
-            ->get();
-        foreach ($rows as $row) {
-            echo "<optgroup label=\"" . $row->menu_name . "\">";
-
-
-            $result_options = DB::table('wx_menu_list')
-                ->where('online', '1')
-                ->where('parents_id', $row->id)
-                ->orderBy('priority', 'asc')
-                ->get();
-//                    $result_option = mysql_query("select * from wx_menu_list where online='1' and parents_id='" . $row["ID"] . "' order by id asc");
-
-            foreach ($result_options as $result_option) {
-                if ($classid == $result_option->id) {
-                    echo "<option selected  value=\"" . $result_option->id . "\">" . $result_option->menu_name . "</option>";
-                } else {
-                    echo "<option  value=\"" . $result_option->id . "\">" . $result_option->menu_name . "</option>";
-                }
-            }
-
-            echo "</optgroup>";
-        }
-    }
-
     /**
-     * 编辑文章时获取所属市场
+     * 根据eventkey获取对应名称
      * @param $eventkeys
      * @return string
      */
@@ -119,42 +54,10 @@ class Usage
     }
 
 
-    public function get_qr_classid()
-    {
-        $rows=DB::table('wx_qrscene_class')
-            ->get();
-        foreach ($rows as $row)
-        {
-            echo "<option value=\"" . $row->classid . "\">" . $row->class_name . "</option>";
-        }
-    }
-
-    public function check_qr_classid($classid)
-    {
-        $rows=DB::table('wx_qrscene_class')
-            ->get();
-        foreach ($rows as $row)
-        {
-            if($row->classid==$classid){
-                echo "<option selected value=\"" . $row->classid . "\">" . $row->class_name . "</option>";
-            }
-            else {
-                echo "<option value=\"" . $row->classid . "\">" . $row->class_name . "</option>";
-            }
-        }
-    }
-
-    public function get_menu_qr()
-    {
-        $rows=DB::table('wx_qrscene_class')
-            ->get();
-        foreach ($rows as $row){
-            echo "<li><a href='qrlist?classid=".$row->classid."'>".$row->class_name."</a></li>";
-        }
-    }
-
-    /*
-     * 根据二维码的classid获取信息
+    /**
+     * 根据二维码的classid获取信息(带参二维码的类别)
+     * @param $classid
+     * @return mixed|static
      */
     public function get_qr_classid_name($classid)
     {
@@ -164,6 +67,12 @@ class Usage
         return $row;
     }
 
+    /**
+     * 获取菜单列表
+     * @param $name
+     * @param $type
+     * @return mixed|string|static
+     */
     public function get_menu_info($name,$type)
     {
         switch ($type){
@@ -184,8 +93,10 @@ class Usage
         return $row;
     }
 
-    /*
-     * 根据tag_id获取二维码名称
+    /**
+     * 根据tag_id获取eventkey
+     * @param $tag_id
+     * @return mixed|static
      */
     public function get_tag_info($tag_id)
     {
@@ -196,7 +107,9 @@ class Usage
     }
 
     /**
-     *
+     * 获取用户的相关信息(昵称,头像等)
+     * @param $openId
+     * @return mixed
      */
     public function get_openid_info($openId)
     {
@@ -206,5 +119,7 @@ class Usage
         return $user;
 
     }
+
+
 
 }

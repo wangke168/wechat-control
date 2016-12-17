@@ -119,8 +119,8 @@
                                             data-placeholder="选择所属类别">
                                         <option value=""></option>
                                         <?php
-                                        $Usage = new \App\WeChat\Usage();
-                                        $Usage->get_qr_classid();
+                                        $Qr = new \App\WeChat\Qr();
+                                        $Qr->get_qr_classid();
                                         ?>
 
 

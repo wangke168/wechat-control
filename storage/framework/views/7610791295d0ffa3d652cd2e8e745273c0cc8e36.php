@@ -21,7 +21,7 @@
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
-                <a href="#">公告牌</a>
+                <a href="#">二维码管理</a>
             </li>
         </ul>
 
@@ -118,8 +118,8 @@
                                             data-placeholder="选择所属类别">
                                         <option value=""></option>
                                         <?php
-                                        $Usage = new \App\WeChat\Usage();
-                                        $Usage->get_qr_classid();
+                                        $Qr = new \App\WeChat\Qr();
+                                        $Qr->get_qr_classid();
                                         ?>
 
 

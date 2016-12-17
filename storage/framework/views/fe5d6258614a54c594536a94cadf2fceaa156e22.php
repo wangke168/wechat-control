@@ -163,8 +163,11 @@
                 </a>
                 <ul class="sub-menu">
                     <?php
-                    $usage = new \App\WeChat\Usage();
-                    $usage->get_menu_qr();
+                    $rows=DB::table('wx_qrscene_class')
+                            ->get();
+                    foreach ($rows as $row){
+                        echo "<li><a href='qrlist?classid=".$row->classid."'>".$row->class_name."</a></li>";
+                    }
                     ?>
                     <li>
                         <a href="qradd">
@@ -173,26 +176,42 @@
                 </ul>
             </li>
             <li>
+                <a href="javascript:;">
+                    <i class="icon-feed"></i>
+                    <span class="title">景区相关</span>
+                    <span class="arrow "></span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="#">
+                            景区管理</a>
+                    </li>
+                    <li>
+                        <a href="pushproject">
+                            演艺秀管理</a>
+                    </li>
+                </ul>
+            </li>
 
+            <li>
                 <a href="ordercount">
                     <i class="icon-present"></i>
                     <span class="title">订单管理</span>
                 </a>
             </li>
             <li>
-
                 <a href="#">
                     <i class="icon-wallet"></i>
                     <span class="title">卡券管理</span>
                 </a>
             </li>
             <li>
-
                 <a href="message">
                     <i class="icon-bubbles"></i>
                     <span class="title">消息管理</span>
                 </a>
             </li>
+
             <li>
                 <a href="javascript:;">
                     <i class="icon-notebook"></i>

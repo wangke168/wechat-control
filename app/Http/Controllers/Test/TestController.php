@@ -9,6 +9,28 @@ use DB;
 
 class TestController extends Controller
 {
+
+
+    public function test()
+    {
+        return base64_decode('?6ZmE5Lu25rWL6K+V');
+
+
+    }
+
+
+    private function decode_mime($string)
+    {
+        $pos = strpos($string, '=?');
+//        return $pos;
+        if (!is_int($pos)) {
+            return $string;
+        }
+        else{
+//            return $string;
+        }
+    }
+
     public function index()
     {
         $from=date("Y-m-d", strtotime("-1 day"));

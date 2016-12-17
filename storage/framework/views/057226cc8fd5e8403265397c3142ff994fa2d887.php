@@ -6,7 +6,7 @@
 <?php $__env->stopSection(); ?>
 
 
-<?php $__env->startSection('page-menu-title', '文本回复'); ?>
+<?php $__env->startSection('page-menu-title', '文字回复'); ?>
 
 <?php $__env->startSection('page-title', '回复管理'); ?>
 
@@ -19,7 +19,7 @@
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
-                <a href="#">文章列表</a>
+                <a href="#">文字回复</a>
             </li>
         </ul>
 
@@ -34,7 +34,7 @@
             <div class="portlet box blue-hoki">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="fa fa-globe"></i>文章列表
+                        <i class="fa fa-globe"></i>文字回复列表
                     </div>
                     <div class="tools">
                     </div>
@@ -130,11 +130,11 @@
                                     </td>
                                     <td>
                                         <?php
-                                        echo "<a href='articlemodify?action=modify&id=" . $row->id . "' class='label label-success'><i class=\"icon-edit\"></i>修改</a>&nbsp;";
+                                        echo "<a href='#' class='label label-success'><i class=\"icon-edit\"></i>修改</a>&nbsp;";
                                        if ($row->online == 1) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='articlemodify?action=offline&id=" . $row->id . "'\" class='label label-warning'>下线</a>";
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='#' class='label label-warning'>下线</a>";
                                         } elseif ($row->online == 0) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要上线'))return false;\"  href='articlemodify?action=online&id=" . $row->id . "'\" class='label label-success'>上线</a>";
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要上线'))return false;\"  href='#' class='label label-success'>上线</a>";
 
                                         }
                                         ?>

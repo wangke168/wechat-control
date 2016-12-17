@@ -59,7 +59,8 @@
                 </div>
                 <div class="portlet-body form">
 
-                    {!! Form::open(['url'=>'control/articlesave?action=modify','files'=>true,'class'=>'form-horizontal form-bordered','id'=>'postForm']) !!}
+                    {!! Form::open(['url'=>'control/articlesave?action=modify','files'=>true,
+                    'class'=>'form-horizontal form-bordered','id'=>'postForm','onkeydown'=>'if(event.keyCode==13){return false;}']) !!}
                     <div class="form-body">
                         <div class="form-group">
                             <label class="control-label col-md-1">所属栏目</label>
@@ -73,8 +74,8 @@
                                     <option value=""></option>
 
                                     <?php
-                                    $Usage = new \App\WeChat\Usage();
-                                    $Usage->menuCheck($row->classid);
+                                    $Article = new \App\WeChat\Article();
+                                    $Article->menuCheck($row->classid);
                                     ?>
 
                                 </select>

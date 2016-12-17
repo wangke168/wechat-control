@@ -74,7 +74,12 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
 
     Route::get('message','Control\MessageController@index');
 
+    //景区演艺秀推送
+    Route::any('pushproject','Control\PushController@project');
+
 });
+
+Route::get('test','Test\TestController@test');
 
 Route::get('add','Test\TestController@take_add_json');
 Route::get('esc','Test\TestController@take_esc_json');

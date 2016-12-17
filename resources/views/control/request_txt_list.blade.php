@@ -8,7 +8,7 @@
 @stop
 
 
-@section('page-menu-title', '文本回复')
+@section('page-menu-title', '文字回复')
 
 @section('page-title', '回复管理')
 
@@ -21,7 +21,7 @@
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
-                <a href="#">文章列表</a>
+                <a href="#">文字回复</a>
             </li>
         </ul>
 
@@ -36,7 +36,7 @@
             <div class="portlet box blue-hoki">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="fa fa-globe"></i>文章列表
+                        <i class="fa fa-globe"></i>文字回复列表
                     </div>
                     <div class="tools">
                     </div>
