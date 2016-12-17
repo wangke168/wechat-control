@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Wechat/Article.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Wechat/Push.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Wechat/Qr.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Wechat/Zone.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/control/push_project_add.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/control/push_project_list.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/control/push_project_modify.blade.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/17ed973e903b3d3e45241e7357ec991f98a76c35" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/4a9d0b2a41f5c5f539d6257098b3cee8aae1462b" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/cfacb78e1a8369676ff8ecefcd6784f3e01c399d" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Wechat/Usage.php" afterPath="$PROJECT_DIR$/app/Wechat/Usage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/articleadd.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/articleadd.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/articlemodify.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/articlemodify.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/qradd.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/qradd.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/qrmodify.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/qrmodify.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/request_txt_list.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/request_txt_list.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/057226cc8fd5e8403265397c3142ff994fa2d887.php" afterPath="$PROJECT_DIR$/storage/framework/views/057226cc8fd5e8403265397c3142ff994fa2d887.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/42793e953f131baed4f36b5507f939c99d428ade.php" afterPath="$PROJECT_DIR$/storage/framework/views/42793e953f131baed4f36b5507f939c99d428ade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/7610791295d0ffa3d652cd2e8e745273c0cc8e36.php" afterPath="$PROJECT_DIR$/storage/framework/views/7610791295d0ffa3d652cd2e8e745273c0cc8e36.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/96c1ceb16cff18768d34a8ab2eeda07fb65dc00b.php" afterPath="$PROJECT_DIR$/storage/framework/views/96c1ceb16cff18768d34a8ab2eeda07fb65dc00b.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/d8bba8469389f5c8365e98169716d8b350ea4666.php" afterPath="$PROJECT_DIR$/storage/framework/views/d8bba8469389f5c8365e98169716d8b350ea4666.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/db2bbb81d556d0e7a727ffc0739f5d38dca2a5d1.php" afterPath="$PROJECT_DIR$/storage/framework/views/db2bbb81d556d0e7a727ffc0739f5d38dca2a5d1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/fe5d6258614a54c594536a94cadf2fceaa156e22.php" afterPath="$PROJECT_DIR$/storage/framework/views/fe5d6258614a54c594536a94cadf2fceaa156e22.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/logs/laravel.log" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Wechat/Push.php" afterPath="$PROJECT_DIR$/app/Wechat/Push.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/push_project_add.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/push_project_add.blade.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,11 +38,11 @@
       <file leaf-file-name="Push.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Wechat/Push.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.346153">
-              <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+            <state vertical-scroll-proportion="-4.8461537">
+              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="29" selection-end-column="13" />
               <folding>
-                <marker date="1481878722000" expanded="true" signature="494:534" placeholder="select proje..tour_project_info..." />
-                <marker date="1481878722000" expanded="true" signature="1210:1274" placeholder="..." />
+                <marker date="1481941236000" expanded="true" signature="493:533" placeholder="select proje..tour_project_info..." />
+                <marker date="1481941236000" expanded="true" signature="1055:1119" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -118,24 +92,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="push_project_add.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="push_project_add.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/control/push_project_add.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5">
-              <caret line="69" column="100" selection-start-line="69" selection-start-column="100" selection-end-line="69" selection-end-column="100" />
+            <state vertical-scroll-proportion="0.7202602">
+              <caret line="87" column="37" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="37" />
               <folding>
-                <marker date="1481879640000" expanded="true" signature="1859:2046" placeholder="..." />
-                <marker date="1481879640000" expanded="true" signature="1871:2044" placeholder="..." />
-                <marker date="1481879640000" expanded="true" signature="1872:2043" placeholder="..." />
+                <marker date="1481941236000" expanded="true" signature="1859:2046" placeholder="..." />
+                <marker date="1481941236000" expanded="true" signature="1871:2044" placeholder="..." />
+                <marker date="1481941236000" expanded="true" signature="1872:2043" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sidebar.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/sidebar.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44144982">
+            <state vertical-scroll-proportion="-18.26923">
               <caret line="191" column="25" selection-start-line="191" selection-start-column="25" selection-end-line="191" selection-end-column="25" />
               <folding />
             </state>
@@ -145,7 +119,7 @@
       <file leaf-file-name="push_project_modify.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/push_project_modify.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.8461539">
+            <state vertical-scroll-proportion="-11.461538">
               <caret line="62" column="63" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="63" />
               <folding>
                 <marker date="1481877764000" expanded="true" signature="1859:2046" placeholder="..." />
@@ -223,12 +197,12 @@
         <option value="$PROJECT_DIR$/app/Wechat/Usage.php" />
         <option value="$PROJECT_DIR$/resources/views/control/push_project_modify.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/app/Wechat/Push.php" />
-        <option value="$PROJECT_DIR$/resources/views/control/push_project_add.blade.php" />
         <option value="$PROJECT_DIR$/app/Wechat/Zone.php" />
         <option value="$PROJECT_DIR$/resources/views/control/push_project_list.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Control/PushController.php" />
         <option value="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" />
+        <option value="$PROJECT_DIR$/app/Wechat/Push.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/push_project_add.blade.php" />
       </list>
     </option>
   </component>
@@ -608,7 +582,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -956,46 +930,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Wechat/Push.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding>
-            <marker date="1481878722000" expanded="true" signature="494:534" placeholder="select proje..tour_project_info..." />
-            <marker date="1481878722000" expanded="true" signature="1210:1274" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/push_project_modify.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8461539">
-          <caret line="62" column="63" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="63" />
-          <folding>
-            <marker date="1481877764000" expanded="true" signature="1859:2046" placeholder="..." />
-            <marker date="1481877764000" expanded="true" signature="1871:2044" placeholder="..." />
-            <marker date="1481877764000" expanded="true" signature="1872:2043" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.192308">
           <caret line="201" column="8" selection-start-line="201" selection-start-column="8" selection-end-line="201" selection-end-column="48" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/push_project_add.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5">
-          <caret line="69" column="100" selection-start-line="69" selection-start-column="100" selection-end-line="69" selection-end-column="100" />
-          <folding>
-            <marker date="1481879640000" expanded="true" signature="1859:2046" placeholder="..." />
-            <marker date="1481879640000" expanded="true" signature="1871:2044" placeholder="..." />
-            <marker date="1481879640000" expanded="true" signature="1872:2043" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1029,9 +968,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/sidebar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44144982">
+        <state vertical-scroll-proportion="-18.26923">
           <caret line="191" column="25" selection-start-line="191" selection-start-column="25" selection-end-line="191" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/push_project_modify.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.461538">
+          <caret line="62" column="63" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="63" />
+          <folding>
+            <marker date="1481877764000" expanded="true" signature="1859:2046" placeholder="..." />
+            <marker date="1481877764000" expanded="true" signature="1871:2044" placeholder="..." />
+            <marker date="1481877764000" expanded="true" signature="1872:2043" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Wechat/Push.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.8461537">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="29" selection-end-column="13" />
+          <folding>
+            <marker date="1481941236000" expanded="true" signature="493:533" placeholder="select proje..tour_project_info..." />
+            <marker date="1481941236000" expanded="true" signature="1055:1119" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/push_project_add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7202602">
+          <caret line="87" column="37" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="37" />
+          <folding>
+            <marker date="1481941236000" expanded="true" signature="1859:2046" placeholder="..." />
+            <marker date="1481941236000" expanded="true" signature="1871:2044" placeholder="..." />
+            <marker date="1481941236000" expanded="true" signature="1872:2043" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
