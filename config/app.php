@@ -169,6 +169,8 @@ return [
 
         //编辑器
         Overtrue\LaravelUEditor\UEditorServiceProvider::class,
+//二维码
+        SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class,
     ],
 
     /*
@@ -225,6 +227,7 @@ return [
 
         'Wechat' => Overtrue\LaravelWechat\Facade::class,
 
+        'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class,
     ],
 
 ];

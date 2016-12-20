@@ -45,6 +45,9 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
     Route::get('articlesearch','Control\ArticleController@articleSearch');
     Route::get('articleadd','Control\ArticleController@articleAdd');
     Route::post('articlesave','Control\ArticleController@articleSave');
+//预览二维码
+    Route::get('qrcreat','Control\ArticleController@review_qr');
+
 
     Route::get('articleadd1','Control\ArticleController@articleAdd1');
 
@@ -68,6 +71,7 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
     Route::get('qrsearch','Control\QrlistController@search');
     Route::get('qrlist', 'Control\QrlistController@index');
     Route::get('qrlist1', 'Control\QrlistController@test');
+
 
 
     Route::get('menulist','Control\MenuController@menuList');
