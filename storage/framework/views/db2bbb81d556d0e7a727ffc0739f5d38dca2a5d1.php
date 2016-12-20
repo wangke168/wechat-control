@@ -199,14 +199,14 @@
 
 
                         <!--弹出层-->
-                        <div id="long" class="modal fade modal-scroll" tabindex="-1" data-replace="true">
+                        <div id="long" class="modal fade " tabindex="-1" data-replace="true">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
                                 <h4 class="modal-title">微信扫描二维码预览</h4>
                             </div>
                             <div class="modal-body">
                                 <!--				<img id='qr' style="height: 500px" src="../../../../../../i.imgur.com/KwPYo.jpg">-->
-                                <iframe id='qr' src="http://www.baidu.com" style="border:none; width:150px; height:250px;"></iframe>
+                                <iframe id='qr' src="http://www.baidu.com" style="border:none; width:250px; height:250px;"></iframe>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" data-dismiss="modal" class="btn btn-default">关闭</button>
