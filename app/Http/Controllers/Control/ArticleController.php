@@ -304,11 +304,11 @@ class ArticleController extends Controller
         return $marketid;
     }
 
-    public function review_qr()
+    public function review_qr($id)
     {
         $app = app('wechat');
         $url = $app->url;
-        $shortUrl = $url->shorten('http://e.hengdianworld.com/WeixinOpenId.aspx?nexturl=http://wechat.hengdianworld.com/article/review?id=1359');
+        $shortUrl = $url->shorten('http://e.hengdianworld.com/WeixinOpenId.aspx?nexturl=http://wechat.hengdianworld.com/article/review?id='.$id);
 //        return $shortUrl->short_url;
         return view('control.articlereviewqr',compact('shortUrl'));
 

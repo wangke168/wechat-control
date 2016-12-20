@@ -175,7 +175,7 @@
                                     </td>
                                     <td>
                                         <?php
-                                        echo "<a class='getqrcode label label-primary' data-target=\"#long\" data-toggle=\"modal\" data-src=\"http://weix2.hengdianworld.com/control/qrcode/getqrcode.php?id=" . $row->id . "\">预览</a>&nbsp;";
+                                        echo "<a class='getqrcode label label-primary' data-target=\"#long\" data-toggle=\"modal\" data-src=\"qrcreat/" . $row->id . "\">预览</a>&nbsp;";
                                         echo "<a href='articlemodify?action=modify&id=" . $row->id . "' class='label label-success'><i class=\"icon-edit\"></i>修改</a>&nbsp;";
                                         if ($row->del == 0) {
                                             echo "<a OnClick=\"javascript:if (!confirm('是否真的要删除'))return false;\"  href='articlemodify?action=del&id=" . $row->id . "'\" class='label label-danger'><i class=\"icon-remove\"></i>删除</a>&nbsp;";
@@ -206,7 +206,7 @@
                             </div>
                             <div class="modal-body">
                                 <!--				<img id='qr' style="height: 500px" src="../../../../../../i.imgur.com/KwPYo.jpg">-->
-                                <iframe id='qr' src="http://www.baidu.com" style="border:none; width:450px; height:450px;"></iframe>
+                                <iframe id='qr' src="http://www.baidu.com" style="border:none; width:150px; height:250px;"></iframe>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" data-dismiss="modal" class="btn btn-default">关闭</button>
