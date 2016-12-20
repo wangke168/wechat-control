@@ -2,6 +2,10 @@
 <?php $__env->startSection('title', '横店影视城微信管理平台－－－二维码管理'); ?>
 
 <?php $__env->startSection('page-title','二维码管理'); ?>
+<?php $__env->startSection('css'); ?>
+    <link href="<?php echo e(asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css')); ?>" rel="stylesheet" type="text/css"/>
+    <link href="<?php echo e(asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal.css')); ?>" rel="stylesheet" type="text/css"/>
+<?php $__env->stopSection(); ?>
 <?php $__env->startSection('page-menu-title'); ?>
     <?php echo $usage->get_qr_classid_name($classid)->class_name; ?>
 
@@ -94,7 +98,8 @@
                                 </td>
                                 <td>
                                     <?php
-                                    echo "<a href='http://weix2.hengdianworld.com/control/qr_create.php?qrscene_id=" . $row->qrscene_id . "' class='label label-warning' target='_blank'><i class=\"icon-edit\"></i>获取二维码</a>&nbsp;&nbsp;&nbsp;";
+                              //      echo "<a href='http://weix2.hengdianworld.com/control/qr_create.php?qrscene_id=" . $row->qrscene_id . "' class='label label-warning' target='_blank'><i class=\"icon-edit\"></i>获取二维码</a>&nbsp;&nbsp;&nbsp;";
+                                    echo "<a class='getqrcode label label-primary' data-target=\"#long\" data-toggle=\"modal\" data-src=\"qrcode_create/" . $row->qrscene_id . "\">预览</a>&nbsp;";
 
                                     echo "<a href='qrmodify?action=modify&id=" . $row->id . "' class='label label-success'><i class=\"icon-edit\"></i>修改</a>&nbsp;&nbsp;&nbsp;";
 
@@ -106,6 +111,23 @@
                     </table>
                     <?php echo $rows->appends(["classid"=>$classid])->render(); ?>
 
+
+                            <!--弹出层-->
+                    <div id="long" class="modal fade " tabindex="-1" data-replace="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                            <h4 class="modal-title">二维码下载</h4>
+                        </div>
+                        <div class="modal-body">
+                            				<?php /*<img id='qr'  src="../../../../../../i.imgur.com/KwPYo.jpg">*/ ?>
+                            <iframe id='qr' src="http://www.baidu.com" style="border:none; width:500px; height:500px;"></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-dismiss="modal" class="btn btn-default">关闭</button>
+                        </div>
+                    </div>
+                    <!--结束弹出层-->
+
                 </div>
             </div>
             <!-- END EXAMPLE TABLE PORTLET-->
@@ -113,7 +135,18 @@
     </div>
 
 <?php $__env->stopSection(); ?>
+<?php $__env->startSection('js'); ?>
+    <script src="<?php echo e(asset('assets/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js')); ?>" type="text/javascript"></script>
+    <script src="<?php echo e(asset('assets/global/plugins/bootstrap-modal/js/bootstrap-modal.js')); ?>" type="text/javascript"></script>
+    <script src="<?php echo e(asset('assets/admin/pages/scripts/ui-extended-modals.js')); ?>"></script>
+<?php $__env->stopSection(); ?>
 
+<?php $__env->startSection('init'); ?>
 
+    $(".getqrcode").click(function () {
+    //     alert($(this).attr('data-src'));
+    $("#qr").attr({"src": $(this).attr("data-src")});
+    });
 
+<?php $__env->stopSection(); ?>
 <?php echo $__env->make('control.blade.data', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use DB;
+use Intervention\Image\Facades\Image;
 
 class QrlistController extends Controller
 {
@@ -100,5 +101,27 @@ class QrlistController extends Controller
             ->paginate(20);
 
         return view('control.qrsearch', compact('rows', 'keyword'));
+    }
+
+    /**
+     * 生成带参二维码
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function create($id)
+    {
+        $app = app('wechat');
+        $qrcode = $app->qrcode;
+        $result = $qrcode->forever($id);// 或者 $qrcode->forever("foo");
+        $ticket = $result->ticket; // 或者 $result['ticket']
+
+        $QR =  $qrcode->url($ticket);
+        $logo = 'qr/logo.png';
+        $img = Image::make($QR);
+        $img->insert($logo,'center');
+        return $img->response('png');
+
+
+
     }
 }

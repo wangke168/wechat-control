@@ -71,7 +71,8 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
     Route::get('qrsearch','Control\QrlistController@search');
     Route::get('qrlist', 'Control\QrlistController@index');
     Route::get('qrlist1', 'Control\QrlistController@test');
-
+    //获取带参二维码
+    Route::get('qrcode_create/{id}','Control\QrlistController@create');
 
 
     Route::get('menulist','Control\MenuController@menuList');
