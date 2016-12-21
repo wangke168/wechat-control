@@ -125,11 +125,11 @@
                                     </td>
                                     <td>
                                         <?php
-                                        echo "<a href='pushproject?action=modify&id={$row->id}' class='label label-success'><i class=\"icon-edit\"></i>修改</a>&nbsp;";
+                                        echo "<a href='pushproject?action=modify&id={$row->id}' class='label label-success'><i class=\"fa fa-edit\"></i>&nbsp;修改</a>&nbsp;";
                                         if ($row->is_push == 1) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要取消推送'))return false;\"  href='pushproject?action=notpush&id={$row->id}' class='label label-warning'>取消推送</a>";
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要取消推送'))return false;\"  href='pushproject?action=notpush&id={$row->id}' class='label label-warning'><i class=\"fa  fa-chevron-circle-down\"></i>&nbsp;取消推送</a>";
                                         } elseif ($row->is_push == 0) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要推送'))return false;\"  href='pushproject?action=push&id={$row->id}' class='label label-success'>自动推送</a>";
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要推送'))return false;\"  href='pushproject?action=push&id={$row->id}' class='label label-success'><i class=\"fa  fa-chevron-circle-up\"></i>&nbsp;自动推送</a>";
 
                                         }
                                         ?>

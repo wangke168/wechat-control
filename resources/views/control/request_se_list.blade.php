@@ -157,11 +157,11 @@
                                     </td>
                                     <td>
                                         <?php
-                                        echo "<a href='#' class='label label-success'><i class=\"icon-edit\"></i>修改</a>&nbsp;";
+                                        echo "<a href='#' class='label label-success'><i class=\"fa fa-edit\"></i>&nbsp;修改</a>&nbsp;";
                                         if ($row->online == 1) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='requestmodify?action=se_offline&id=" . $row->id . "' class='label label-warning'>下线</a>";
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='requestmodify?action=se_offline&id=" . $row->id . "' class='label label-warning'><i class=\"fa  fa-arrow-circle-o-down\"></i>&nbsp;下线</a>";
                                         } elseif ($row->online == 0) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要上线'))return false;\"  href='requestmodify?action=se_online&id=" . $row->id . "' class='label label-success'>上线</a>";
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要上线'))return false;\"  href='requestmodify?action=se_online&id=" . $row->id . "' class='label label-success'><i class=\"fa  fa-arrow-circle-o-up\"></i>&nbsp;上线</a>";
 
                                         }
                                         ?>

@@ -99,9 +99,9 @@
                                 <td>
                                     <?php
                               //      echo "<a href='http://weix2.hengdianworld.com/control/qr_create.php?qrscene_id=" . $row->qrscene_id . "' class='label label-warning' target='_blank'><i class=\"icon-edit\"></i>获取二维码</a>&nbsp;&nbsp;&nbsp;";
-                                    echo "<a class='getqrcode label label-primary' data-target=\"#long\" data-toggle=\"modal\" data-src=\"qrcode_create/" . $row->qrscene_id . "\">预览</a>&nbsp;";
+                                    echo "<a class='getqrcode label label-primary' data-target=\"#long\" data-toggle=\"modal\" data-src=\"qrcode_create/" . $row->qrscene_id . "\"><i class=\"fa  fa-download\"></i>&nbsp;下载二维码</a>&nbsp;";
 
-                                    echo "<a href='qrmodify?action=modify&id=" . $row->id . "' class='label label-success'><i class=\"icon-edit\"></i>修改</a>&nbsp;&nbsp;&nbsp;";
+                                    echo "<a href='qrmodify?action=modify&id=" . $row->id . "' class='label label-success'><i class=\"fa fa-edit\"></i>&nbsp;修改</a>";
 
                                     ?>
                                 </td>
