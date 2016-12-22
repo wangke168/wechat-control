@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/articlemodify.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/articlemodify.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/d8bba8469389f5c8365e98169716d8b350ea4666.php" afterPath="$PROJECT_DIR$/storage/framework/views/d8bba8469389f5c8365e98169716d8b350ea4666.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,12 +104,12 @@
       <file leaf-file-name="articlemodify.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/control/articlemodify.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26165557">
-              <caret line="114" column="45" selection-start-line="114" selection-start-column="45" selection-end-line="114" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.21408182">
+              <caret line="112" column="48" selection-start-line="112" selection-start-column="48" selection-end-line="112" selection-end-column="48" />
               <folding>
-                <marker date="1482383517000" expanded="true" signature="1844:2047" placeholder="..." />
-                <marker date="1482383517000" expanded="true" signature="1856:2045" placeholder="..." />
-                <marker date="1482383517000" expanded="true" signature="1857:2044" placeholder="..." />
+                <marker date="1482383593000" expanded="true" signature="1844:2047" placeholder="..." />
+                <marker date="1482383593000" expanded="true" signature="1856:2045" placeholder="..." />
+                <marker date="1482383593000" expanded="true" signature="1857:2044" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -979,12 +980,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/articlemodify.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26165557">
-          <caret line="114" column="45" selection-start-line="114" selection-start-column="45" selection-end-line="114" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.21408182">
+          <caret line="112" column="48" selection-start-line="112" selection-start-column="48" selection-end-line="112" selection-end-column="48" />
           <folding>
-            <marker date="1482383517000" expanded="true" signature="1844:2047" placeholder="..." />
-            <marker date="1482383517000" expanded="true" signature="1856:2045" placeholder="..." />
-            <marker date="1482383517000" expanded="true" signature="1857:2044" placeholder="..." />
+            <marker date="1482383593000" expanded="true" signature="1844:2047" placeholder="..." />
+            <marker date="1482383593000" expanded="true" signature="1856:2045" placeholder="..." />
+            <marker date="1482383593000" expanded="true" signature="1857:2044" placeholder="..." />
           </folding>
         </state>
       </provider>
