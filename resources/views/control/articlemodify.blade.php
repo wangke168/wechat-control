@@ -93,7 +93,7 @@
 
                             <div class="col-md-11">
                                 <input name="keyword" type="text" data-role="tagsinput"
-                                       value="<?php echo str_replace('，', ',', $row->keyword); ?>" >
+                                       value="<?php echo str_replace('，', ',', $row->keyword); ?>">
                                 <span class="help-inline">每一个关键字用回车隔开</span>
                             </div>
 
@@ -107,9 +107,14 @@
                                     <div class="fileinput-preview thumbnail" data-trigger="fileinput"
                                          style="width: 225px; height: 125px;">
                                         <?php
-                                            if ($row->picurl){
-                                                echo '<img src=/'.$row->picurl.'>';
+                                        if ($row->picurl) {
+                                            if (strstr($row->picurl, '/editor/attached/image/') != '') {
+                                                $picurl = str_replace("/control/editor/attached/image/", "http://weix2.hengdianworld.com/control/editor/attached/image/", $row->picurl);
+                                                echo '<img src=' . $picurl . '>';
+                                            } else {
+                                                echo '<img src=/' . $row->picurl . '>';
                                             }
+                                        }
                                         ?>
 
                                     </div>
@@ -120,7 +125,8 @@
 													<span class="fileinput-exists">
 													更换图片 </span>
 													<input type="file" name="pic_url">
-                                                        <input type="text" name="pic_url_session" hidden value="{!! $row->picurl !!}">
+                                                        <input type="text" name="pic_url_session" hidden
+                                                               value="{!! $row->picurl !!}">
 													</span>
                                         <a href="#" class="btn red fileinput-exists" data-dismiss="fileinput">
                                             移除 </a>
@@ -143,9 +149,17 @@
                                     <div class="fileinput-preview thumbnail" data-trigger="fileinput"
                                          style="width: 100px; height: 100px;">
                                         <?php
-                                        if ($row->pyq_pic){
-                                            echo '<img src=/'.$row->pyq_pic.'>';
+
+                                        if ($row->pyq_pic) {
+
+                                            if (strstr($row->pyq_pic, '/editor/attached/image/') != '') {
+                                                $picurl = str_replace("/control/editor/attached/image/", "http://weix2.hengdianworld.com/control/editor/attached/image/", $row->picurl);
+                                                echo '<img src=' . $picurl . '>';
+                                            } else {
+                                                echo '<img src=/' . $row->pyq_pic . '>';
+                                            }
                                         }
+
                                         ?>
                                     </div>
                                     <div>
@@ -155,7 +169,8 @@
 													<span class="fileinput-exists">
 													更换图片 </span>
 													<input type="file" name="pyq_pic">
-                                                        <input type="text" name="pyq_pic_session" hidden value="{!! $row->pyq_pic !!}">
+                                                        <input type="text" name="pyq_pic_session" hidden
+                                                               value="{!! $row->pyq_pic !!}">
 
 													</span>
                                         <a href="#" class="btn red fileinput-exists" data-dismiss="fileinput">
@@ -175,7 +190,8 @@
                             <label class="control-label col-md-1">朋友圈标题</label>
 
                             <div class="col-md-11">
-                                <input name="pyq_title" class="form-control  input-inline input-xlarge" value="{!! $row->pyq_title !!}">
+                                <input name="pyq_title" class="form-control  input-inline input-xlarge"
+                                       value="{!! $row->pyq_title !!}">
                                 <label class="help-inline">如果不填，则默认转发文章标题</label>
                             </div>
                         </div>
@@ -184,14 +200,22 @@
 
                             <div class="col-md-11">
                                 {{--<textarea class="input-block-level" id="summernote" name="content" rows="18">{!! $row->content !!}</textarea>--}}
-                                <script id="container" name="content" type="text/plain"  style="width:900px;height:500px;">{!! $row->content !!}</script>
+                                <script id="container" name="content" type="text/plain"
+                                        style="width:900px;height:500px;">
+                                    <?php
+                                    $content = str_replace("http://weix2.hengdianworld.com/control/editor/attached/image/", "/control/editor/attached/image/", $row->content);
+                                    $content = str_replace("/control/editor/attached/image/", "http://weix2.hengdianworld.com/control/editor/attached/image/", $content);
+                                    echo $content;
+                                    ?>
+                                </script>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-md-1">链接</label>
 
                             <div class="col-md-11">
-                                <input name="url" class="form-control  input-inline input-xlarge" value="{!! $row->url !!}">
+                                <input name="url" class="form-control  input-inline input-xlarge"
+                                       value="{!! $row->url !!}">
                                 <label class="help-inline">除非该内容是直接链接到其他网页，否则不需要填写，文章内容和链接只需要在一处填写</label>
                             </div>
                         </div>
@@ -201,7 +225,8 @@
                             <div class="col-md-11">
                                 <div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd"
                                      data-date-start-date="+0d">
-                                    <input type="text" class="form-control" readonly name="startdate" value="{!! $row->startdate !!}">
+                                    <input type="text" class="form-control" readonly name="startdate"
+                                           value="{!! $row->startdate !!}">
 												<span class="input-group-btn">
 												<button class="btn default" type="button"><i class="fa fa-calendar"></i>
                                                 </button>
@@ -216,7 +241,8 @@
                             <div class="col-md-11">
                                 <div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd"
                                      data-date-start-date="+0d">
-                                    <input type="text" class="form-control input-inline" name="enddate" readonly value="{!! $row->enddate !!}">
+                                    <input type="text" class="form-control input-inline" name="enddate" readonly
+                                           value="{!! $row->enddate !!}">
 												<span class="input-group-btn">
 												<button class="btn default" type="button"><i class="fa fa-calendar"></i>
                                                 </button>
@@ -231,14 +257,14 @@
                             <div class="col-md-11">
                                 <select name="priority" class="form-control input-medium select2me"
                                         data-placeholder="Select...">
-                                    <option value="1" <?php if($row->priority==1) echo 'selected'?>>1</option>
-                                    <option value="2" <?php if($row->priority==2) echo 'selected'?>>2</option>
-                                    <option value="3" <?php if($row->priority==3) echo 'selected'?>>3</option>
-                                    <option value="4" <?php if($row->priority==4) echo 'selected'?>>4</option>
-                                    <option value="5" <?php if($row->priority==5) echo 'selected'?>>5</option>
-                                    <option value="6" <?php if($row->priority==6) echo 'selected'?>>6</option>
-                                    <option value="7" <?php if($row->priority==7) echo 'selected'?>>7</option>
-                                    <option value="8" <?php if($row->priority==8) echo 'selected'?>>8</option>
+                                    <option value="1" <?php if ($row->priority == 1) echo 'selected'?>>1</option>
+                                    <option value="2" <?php if ($row->priority == 2) echo 'selected'?>>2</option>
+                                    <option value="3" <?php if ($row->priority == 3) echo 'selected'?>>3</option>
+                                    <option value="4" <?php if ($row->priority == 4) echo 'selected'?>>4</option>
+                                    <option value="5" <?php if ($row->priority == 5) echo 'selected'?>>5</option>
+                                    <option value="6" <?php if ($row->priority == 6) echo 'selected'?>>6</option>
+                                    <option value="7" <?php if ($row->priority == 7) echo 'selected'?>>7</option>
+                                    <option value="8" <?php if ($row->priority == 8) echo 'selected'?>>8</option>
                                 </select>
                             </div>
                         </div>
@@ -252,7 +278,8 @@
 
                                 <label class="checkbox">
 
-                                    <input type="checkbox" name="audit" id="audit" value="yes" <?php if($row->audit==0) echo 'checked' ?>/>
+                                    <input type="checkbox" name="audit" id="audit"
+                                           value="yes" <?php if ($row->audit == 0) echo 'checked' ?>/>
                                     <span class="help-inline">如果勾选，则需审核后发布。</span>
                                 </label>
 
@@ -269,7 +296,8 @@
 
                                 <label class="checkbox">
 
-                                    <input type="checkbox" name="focus" id="focus" value="yes" <?php if($row->focus==1) echo 'checked' ?>/>
+                                    <input type="checkbox" name="focus" id="focus"
+                                           value="yes" <?php if ($row->focus == 1) echo 'checked' ?>/>
                                     <span class="help-inline">如果勾选，则客人关注时接收到此条信息。</span>
                                 </label>
                             </div>
@@ -282,7 +310,8 @@
 
                                 <label class="checkbox">
 
-                                    <input type="checkbox" name="allow_copy" value="yes" <?php if($row->allow_copy==1) echo 'checked' ?>/>
+                                    <input type="checkbox" name="allow_copy"
+                                           value="yes" <?php if ($row->allow_copy == 1) echo 'checked' ?>/>
                                     <span class="help-inline">如果勾选，则允许所有市场人员复制修改。</span>
                                 </label>
                             </div>
@@ -294,7 +323,8 @@
 
                                 <label class="checkbox">
 
-                                    <input type="checkbox" name="show_qr" value="yes" <?php if($row->show_qr==1) echo 'checked' ?>/>
+                                    <input type="checkbox" name="show_qr"
+                                           value="yes" <?php if ($row->show_qr == 1) echo 'checked' ?>/>
                                     <span class="help-inline">如果勾选，则允许所有市场人员复制修改。</span>
                                 </label>
                             </div>
@@ -305,7 +335,8 @@
                             <div class="col-md-4">
 
                                 <input type="hidden" name="marketid" id="select2_sample5"
-                                       class="form-control select2" value="<?php $usage=new \App\WeChat\Usage(); echo $usage->getArticleShowQrsecne($row->eventkey)?>">
+                                       class="form-control select2"
+                                       value="<?php $usage = new \App\WeChat\Usage(); echo $usage->getArticleShowQrsecne($row->eventkey)?>">
 
 
                             </div>
@@ -366,7 +397,7 @@
 @section('javascript')
     <script type="text/javascript">
         var ue = UE.getEditor('container');
-        ue.ready(function() {
+        ue.ready(function () {
             ue.execCommand('serverparam', '_token', '{{ csrf_token() }}'); // 设置 CSRF token.
         });
     </script>
