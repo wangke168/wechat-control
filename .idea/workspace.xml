@@ -103,12 +103,12 @@
       <file leaf-file-name="articlemodify.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/control/articlemodify.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3805899">
-              <caret line="115" column="44" selection-start-line="115" selection-start-column="44" selection-end-line="115" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.1665081">
+              <caret line="110" column="95" selection-start-line="110" selection-start-column="95" selection-end-line="110" selection-end-column="95" />
               <folding>
-                <marker date="1482375891000" expanded="true" signature="1844:2047" placeholder="..." />
-                <marker date="1482375891000" expanded="true" signature="1856:2045" placeholder="..." />
-                <marker date="1482375891000" expanded="true" signature="1857:2044" placeholder="..." />
+                <marker date="1482383336000" expanded="true" signature="1844:2047" placeholder="..." />
+                <marker date="1482383336000" expanded="true" signature="1856:2045" placeholder="..." />
+                <marker date="1482383336000" expanded="true" signature="1857:2044" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -979,12 +979,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/articlemodify.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3805899">
-          <caret line="115" column="44" selection-start-line="115" selection-start-column="44" selection-end-line="115" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.1665081">
+          <caret line="110" column="95" selection-start-line="110" selection-start-column="95" selection-end-line="110" selection-end-column="95" />
           <folding>
-            <marker date="1482375891000" expanded="true" signature="1844:2047" placeholder="..." />
-            <marker date="1482375891000" expanded="true" signature="1856:2045" placeholder="..." />
-            <marker date="1482375891000" expanded="true" signature="1857:2044" placeholder="..." />
+            <marker date="1482383336000" expanded="true" signature="1844:2047" placeholder="..." />
+            <marker date="1482383336000" expanded="true" signature="1856:2045" placeholder="..." />
+            <marker date="1482383336000" expanded="true" signature="1857:2044" placeholder="..." />
           </folding>
         </state>
       </provider>
