@@ -107,12 +107,12 @@
                                          style="width: 225px; height: 125px;">
                                         <?php
                                         if ($row->picurl) {
-                                            if (strstr($row->picurl, '/editor/attached/image/') != '') {
+                                        /*    if (strstr($row->picurl, '/editor/attached/image/') != '') {
                                                 $picurl = str_replace("/control/editor/attached/image/", "http://weix2.hengdianworld.com/control/editor/attached/image/", $row->picurl);
                                                 echo '<img src=' . $picurl . '>';
-                                            } else {
+                                            } else {*/
                                                 echo '<img src=/' . $row->picurl . '>';
-                                            }
+                                          //  }
                                         }
                                         ?>
 
@@ -152,8 +152,8 @@
                                         if ($row->pyq_pic) {
 
                                             if (strstr($row->pyq_pic, '/editor/attached/image/') != '') {
-                                                $picurl = str_replace("/control/editor/attached/image/", "http://weix2.hengdianworld.com/control/editor/attached/image/", $row->picurl);
-                                                echo '<img src=' . $picurl . '>';
+                                                $pyq_pic = str_replace("/control/editor/attached/image/", "http://weix2.hengdianworld.com/control/editor/attached/image/", $row->picurl);
+                                                echo '<img src=' . $pyq_pic . '>';
                                             } else {
                                                 echo '<img src=/' . $row->pyq_pic . '>';
                                             }
