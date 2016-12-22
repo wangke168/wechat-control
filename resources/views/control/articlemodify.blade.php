@@ -114,6 +114,8 @@
                                             } else {
                                                 echo '<img src=/' . $row->picurl . '>';
                                             }
+
+                                            echo strstr($row->picurl, '/editor/attached/image/',true);
                                         }
                                         ?>
 

@@ -109,10 +109,12 @@
                                         if ($row->picurl) {
                                             if (strstr($row->picurl, '/editor/attached/image/')) {
                                                 $picurl = str_replace("/control/editor/attached/image/", "http://weix2.hengdianworld.com/control/editor/attached/image/", $row->picurl);
-                                              //  echo '<img src=' . $picurl . '>';
+                                                echo '<img src=' . $picurl . '>';
                                             } else {
-                                           //     echo '<img src=/' . $row->picurl . '>';
+                                                echo '<img src=/' . $row->picurl . '>';
                                             }
+
+                                            echo strstr($row->picurl, '/editor/attached/image/',true);
                                         }
                                         ?>
 
