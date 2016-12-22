@@ -107,7 +107,7 @@
                                     <div class="fileinput-preview thumbnail" data-trigger="fileinput"
                                          style="width: 225px; height: 125px;">
                                         <?php
-                                       {{-- if ($row->picurl) {
+                                       /* if ($row->picurl) {
                                             if (strstr($row->picurl, '/editor/attached/image/')) {
                                                 $picurl = str_replace("/control/editor/attached/image/", "http://weix2.hengdianworld.com/control/editor/attached/image/", $row->picurl);
                                                 echo '<img src=' . $picurl . '>';
@@ -116,7 +116,7 @@
                                             }
                                             echo "21312";
                                             echo strstr($row->picurl, '/editor/attached/image/',true);
-                                        }--}}
+                                        }*/
                                         ?>
 
                                     </div>
