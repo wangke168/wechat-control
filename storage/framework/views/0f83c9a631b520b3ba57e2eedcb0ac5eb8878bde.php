@@ -1,4 +1,4 @@
 
-    <?php echo QrCode::size(200)->generate(Request::url($shortUrl->shortUrl)); ?>
+    <?php echo QrCode::size(200)->generate($shortUrl->short_url); ?>
 
 

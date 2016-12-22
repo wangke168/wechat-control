@@ -1,3 +1,3 @@
 
-    {!! QrCode::size(200)->generate(Request::url($shortUrl->shortUrl)) !!}
+    {!! QrCode::size(200)->generate($shortUrl->short_url) !!}
 
