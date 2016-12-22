@@ -113,7 +113,7 @@
                                             } else {
                                                 echo '<img src=/' . $row->picurl . '>';
                                             }
-
+                                            echo "21312";
                                             echo strstr($row->picurl, '/editor/attached/image/',true);
                                         }
                                         ?>
