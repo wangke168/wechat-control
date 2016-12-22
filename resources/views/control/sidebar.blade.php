@@ -205,13 +205,14 @@
                     <span class="title">卡券管理</span>
                 </a>
             </li>
+            <!--
             <li>
                 <a href="message">
                     <i class="icon-bubbles"></i>
                     <span class="title">消息管理</span>
                 </a>
             </li>
-
+-->
             <li>
                 <a href="javascript:;">
                     <i class="icon-notebook"></i>
