@@ -98,7 +98,7 @@
 
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-1">索引图1</label>
+                            <label class="control-label col-md-1">索引图</label>
 
                             <div class="col-md-11">
 
