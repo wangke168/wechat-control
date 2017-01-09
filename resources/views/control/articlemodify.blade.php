@@ -68,7 +68,7 @@
                             <div class="col-md-11">
                                 <input type="text" name="id" hidden value="{!! $id !!}">
 
-
+                                @if(Session::get('eventkey')=='all')
                                 <select class="form-control input-medium select2me" name="classid"
                                         data-placeholder="选择显示栏目">
                                     <option value=""></option>
@@ -79,6 +79,13 @@
                                     ?>
 
                                 </select>
+                                @else
+                                    <select class="form-control input-medium select2me" name="classid" readonly="readonly"
+                                            data-placeholder="选择显示栏目">
+                                        <option value="2">最新活动</option>
+
+                                    </select>
+                                @endif
                             </div>
                         </div>
                         <div class="form-group">
@@ -333,11 +340,14 @@
                             <label class="control-label col-md-1">是否属于市场</label>
 
                             <div class="col-md-4">
-
+                                @if(Session::get('eventkey')=='all')
                                 <input type="hidden" name="marketid" id="select2_sample5"
                                        class="form-control select2"
                                        value="<?php $usage = new \App\WeChat\Usage(); echo $usage->getArticleShowQrsecne($row->eventkey)?>">
-
+                                @else
+                                    <input type="hidden" name="marketid" id="select2_sample5" readonly="readonly"
+                                           class="form-control select2"  value="<?php $usage = new \App\WeChat\Usage(); echo $usage->getArticleShowQrsecne(Session::get('eventkey'))?>">
+                                @endif
 
                             </div>
                         </div>

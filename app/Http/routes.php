@@ -82,6 +82,9 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
     //景区演艺秀推送
     Route::any('pushproject','Control\PushController@project');
 
+    //修改密码
+    Route::any('changpassword','UsersController@changpwd');
+
 });
 
 Route::get('test','Test\TestController@test');

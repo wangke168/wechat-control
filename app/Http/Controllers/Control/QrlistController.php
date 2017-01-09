@@ -56,7 +56,9 @@ class QrlistController extends Controller
         $qrscene_person_name = $request->input('qrscene_person_name');
         $qrscene_person_phone = $request->input('qrscene_person_phone');
         $uid = $request->input('qrscene_uid');
+
         $classid = $request->input('classid');
+        dd($request->all());
         if ($action == 'add') {
             $j = 1000;
             $k = 100000;
@@ -75,8 +77,6 @@ class QrlistController extends Controller
                     'qrscene_person_phone'=>$qrscene_person_phone,'uid'=>$uid]);
 
             return redirect('control/qrlist?classid='.$classid);
-    //        $db->query("insert into wx_qrscene_info (classid,qrscene_id,parent_id,qrscene_name,qrscene_person_name,qrscene_person_phone,uid) VALUES (:classid,:j,:qrscene_id,:qrscene_name,:qrscene_person_name,:qrscene_person_phone,:Qrscene_UID)",
-    //            array("classid" => "$classid", "j" => "$j", "qrscene_id" => "$qrscene_id", "qrscene_name" => "$qrscene_name", "qrscene_person_name" => "$qrscene_person_name", "qrscene_person_phone" => "$qrscene_person_phone", "Qrscene_UID" => "$Qrscene_UID"));
         }
         elseif($action=='modify')
         {
@@ -120,8 +120,6 @@ class QrlistController extends Controller
         $img = Image::make($QR);
         $img->insert($logo,'center');
         return $img->response('png');
-
-
 
     }
 }

@@ -67,6 +67,7 @@
                             <label class="control-label col-md-1">所属栏目</label>
 
                             <div class="col-md-11">
+                                @if(Session::get('eventkey')=='all')
                                 <select class="form-control input-medium select2me" name="classid"
                                         data-placeholder="选择显示栏目">
                                     <option value=""></option>
@@ -77,6 +78,13 @@
                                     ?>
 
                                 </select>
+                                    @else
+                                    <select class="form-control input-medium select2me" name="classid" readonly="readonly"
+                                            data-placeholder="选择显示栏目">
+                                        <option value="2">最新活动</option>
+
+                                    </select>
+                                @endif
                             </div>
                         </div>
                         <div class="form-group">
@@ -92,7 +100,7 @@
                             <div class="col-md-11">
                                 <input name="keyword" type="text" value="" data-role="tagsinput"
                                        placeholder="请输入回复关键字"/>
-                                <span class="help-inline">每一个关键字用回车隔开</span>
+                                <span class="help-inline">每一个关键字用逗号隔开</span>
                             </div>
 
                         </div>
@@ -280,7 +288,7 @@
                                 <label class="checkbox">
 
                                     <input type="checkbox" name="show_qr" value="yes"/>
-                                    <span class="help-inline">如果勾选，则允许所有市场人员复制修改。</span>
+                                    <span class="help-inline">如果勾选，则在底部显示市场专属二维码。</span>
                                 </label>
                             </div>
                         </div>
@@ -289,9 +297,13 @@
 
                             <div class="col-md-4">
 
+                                @if(Session::get('eventkey')=='all')
                                 <input type="hidden" name="marketid" id="select2_sample5"
-                                       class="form-control select2" value="全部显示">
-
+                                       class="form-control select2"  value="全部显示">
+                                @else
+                                    <input type="hidden" name="marketid" id="select2_sample5" readonly="readonly"
+                                           class="form-control select2"  value="<?php $usage = new \App\WeChat\Usage(); echo $usage->getArticleShowQrsecne(Session::get('eventkey'))?>">
+                                @endif
 
                             </div>
                         </div>

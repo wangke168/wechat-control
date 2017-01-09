@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers\Control;
 
+use EasyWeChat\Staff\Session;
 use Image;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -12,47 +13,58 @@ class ArticleController extends Controller
     public function articleList(Request $request)
     {
         $classid = $request->input('classid');
-        if (!$classid) {
-            $rows = DB::table('wx_article')
-                ->where('del', '0')
-                ->where('audit', '1')
-                ->orderBy('id', 'desc')
-                ->paginate(20);
-        } elseif ($classid == 1) {
-            $rows = DB::table('wx_article')
-                ->where('eventkey', '<>', 'all')
-                ->where('del', '0')
-                ->where('audit', '1')
-                ->orderBy('id', 'desc')
-                ->paginate(20);
-        } elseif ($classid == 97) {
-            $rows = DB::table('wx_article')
-                ->where('del', '0')
-                ->where('audit', '1')
-                ->where('classid', '')
-                ->orderBy('id', 'desc')
-                ->paginate(20);
-        } elseif ($classid == 'audit') {
-            $rows = DB::table('wx_article')
-                ->where('del', '0')
-                ->where('audit', '0')
-                ->orderBy('id', 'desc')
-                ->paginate(20);
-        } elseif ($classid == 'del') {
-            $rows = DB::table('wx_article')
-                ->where('del', '1')
-                ->orderBy('id', 'desc')
-                ->paginate(20);
-        } else {
-            $rows = DB::table('wx_article')
-                ->where('del', '0')
-                ->where('audit', '1')
-                ->where('classid', $classid)
-                ->where('eventkey', 'all')
-                ->orderBy('id', 'desc')
-                ->paginate(20);
+        $eventkey= \Session::get('eventkey');
+        if ($eventkey=='all') {
+            if (!$classid) {
+                $rows = DB::table('wx_article')
+                    ->where('del', '0')
+                    ->where('audit', '1')
+                    ->orderBy('id', 'desc')
+                    ->paginate(20);
+            } elseif ($classid == 1) {
+                $rows = DB::table('wx_article')
+                    ->where('eventkey', '<>', 'all')
+                    ->where('del', '0')
+                    ->where('audit', '1')
+                    ->orderBy('id', 'desc')
+                    ->paginate(20);
+            } elseif ($classid == 97) {
+                $rows = DB::table('wx_article')
+                    ->where('del', '0')
+                    ->where('audit', '1')
+                    ->where('classid', '')
+                    ->orderBy('id', 'desc')
+                    ->paginate(20);
+            } elseif ($classid == 'audit') {
+                $rows = DB::table('wx_article')
+                    ->where('del', '0')
+                    ->where('audit', '0')
+                    ->orderBy('id', 'desc')
+                    ->paginate(20);
+            } elseif ($classid == 'del') {
+                $rows = DB::table('wx_article')
+                    ->where('del', '1')
+                    ->orderBy('id', 'desc')
+                    ->paginate(20);
+            } else {
+                $rows = DB::table('wx_article')
+                    ->where('del', '0')
+                    ->where('audit', '1')
+                    ->where('classid', $classid)
+                    ->where('eventkey', 'all')
+                    ->orderBy('id', 'desc')
+                    ->paginate(20);
+            }
+            return view('control.articlelist', compact('rows', 'classid'));
         }
-        return view('control.articlelist', compact('rows', 'classid'));
+        else
+        {
+            $rows = DB::table('wx_article')
+                ->where('eventkey', $eventkey)
+                ->orderBy('id', 'desc')
+                ->paginate(20);
+            return view('control.articlelist', compact('rows', 'classid','eventkey'));
+        }
     }
 
 
@@ -245,7 +257,7 @@ class ArticleController extends Controller
             switch ($type) {
 
                 case 'pic_url':
-                    Image::make($destPath . $filename)->fit(900, 500)->save();
+                    Image::make($destPath . $filename)->save();
                     break;
                 case 'pyq_pic':
                     Image::make($destPath . $filename)->fit(200)->save();

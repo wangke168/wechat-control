@@ -68,7 +68,7 @@ License: You must have a valid license purchased only from themeforest(the above
 	<div class="page-header-inner">
 		<!-- BEGIN LOGO -->
 		<div class="page-logo">
-			<a href="index-2.html">
+			<a href="#">
 			<img src="{{asset('assets/admin/layout/img/logo.png')}}" alt="logo" class="logo-default"/>
 			</a>
 			<div class="menu-toggler sidebar-toggler hide">
@@ -215,7 +215,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<ul class="page-breadcrumb">
 					<li>
 						<i class="fa fa-home"></i>
-						<a href="index-2.html">Home</a>
+						<a href="#">Home</a>
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
