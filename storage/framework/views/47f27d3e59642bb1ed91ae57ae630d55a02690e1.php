@@ -34,6 +34,7 @@
 
 <?php $__env->startSection('content'); ?>
     @parent
+    <?php if(Session::get('managelevel')=='3'): ?>
     <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <div class="dashboard-stat blue-madison">
@@ -2186,7 +2187,9 @@
             <!-- END PORTLET-->
         </div>
     </div>
-
+    <?php endif; ?>
+    <?php if(Session::get('managelevel')=='2'): ?>
+            <?php endif; ?>
     <?php $__env->stopSection(); ?>
 
     <?php $__env->startSection('js'); ?>
