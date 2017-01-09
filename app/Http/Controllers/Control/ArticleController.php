@@ -63,6 +63,8 @@ class ArticleController extends Controller
         {
             $rows = DB::table('wx_article')
                 ->where('eventkey', $eventkey)
+                ->where('del', '0')
+                ->where('audit', '1')
                 ->orderBy('id', 'desc')
                 ->paginate(20);
             return view('control.articlelist', compact('rows', 'classid','eventkey'));
@@ -147,10 +149,6 @@ class ArticleController extends Controller
 
     public function articleSave(Request $request)
     {
-//        dd($request->all());
-//        dd($request->all());
-
-
         $action = $request->input('action');
 
         $classid = $request->input('classid');
@@ -213,8 +211,32 @@ class ArticleController extends Controller
                     'audit' => $audit, 'focus' => $focus, 'show_qr' => $show_qr,
                     'allow_copy' => $allow_copy, 'adddate' => date('Y-m-d'),
                     'eventkey' => $marketid, 'author' => \Session::get('username')]);
+        }elseif ($action == 'copy') {
+            if (!$pic_url) {
+                $pic_url = $request->input('pic_url_session');
+            }
+            if (!$pyq_pic) {
+                $pyq_pic = $request->input('pyq_pic_session');
+            }
+            DB::table('wx_article')
+                ->insert(['classid' => $classid, 'title' => $title, 'keyword' => $keyword, 'picurl' => $pic_url,
+                    'pyq_pic' => $pyq_pic, 'pyq_title' => $pyq_title, 'content' => $content, 'url' => $url,
+                    'startdate' => $startdate, 'enddate' => $enddate, 'priority' => $priority,
+                    'audit' => $audit, 'focus' => $focus, 'show_qr' => $show_qr,
+                    'allow_copy' => $allow_copy, 'adddate' => date('Y-m-d'),
+                    'eventkey' => $marketid, 'author' => \Session::get('username')]);
         }
         return redirect('/control/articlelist');
+
+    }
+
+    public function articleCopy(Request $request)
+    {
+        $id=$request->input('id');
+        $row = DB::table('wx_article')
+            ->where('id', $id)
+            ->first();
+        return view('control.articlecopy', compact('row', 'id'));
 
     }
 

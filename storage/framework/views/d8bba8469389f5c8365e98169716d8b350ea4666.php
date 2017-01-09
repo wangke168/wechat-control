@@ -331,7 +331,7 @@
 
                                     <input type="checkbox" name="show_qr"
                                            value="yes" <?php if ($row->show_qr == 1) echo 'checked' ?>/>
-                                    <span class="help-inline">如果勾选，则允许所有市场人员复制修改。</span>
+                                    <span class="help-inline">如果勾选，则在底部显示市场专属二维码。</span>
                                 </label>
                             </div>
                         </div>

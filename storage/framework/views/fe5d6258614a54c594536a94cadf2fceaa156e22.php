@@ -42,7 +42,14 @@
 
 
             <?php if(Session::get('managelevel')=='2'): ?>
-
+                <li class="tooltips" data-container="body" data-placement="right" data-html="true"
+                    data-original-title="公告牌">
+                    <a href="index">
+                        <i class="icon-home"></i>
+					<span class="title">
+					公告牌 </span>
+                    </a>
+                </li>
                     <!-- START MARKET MENU -->
             <li class="heading">
                 <h3 class="uppercase">Features</h3>

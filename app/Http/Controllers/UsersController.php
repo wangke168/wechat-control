@@ -42,7 +42,7 @@ class UsersController extends Controller
             $request->session()->put('managelevel', $userinfo->managelevel);
             $request->session()->put('eventkey', $userinfo->eventkey);
             if ($userinfo->eventkey<>'all'){
-                return redirect('/control/articlelist');
+                return redirect('/control/index');
             }
             elseif ($userinfo->eventkey=='all'&&$userinfo->managelevel=='2'){
                 return redirect('/control/articlelist');
