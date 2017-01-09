@@ -2210,6 +2210,7 @@
                                     ->where('allow_copy','1')
                                     ->where('del', '0')
                                     ->where('audit', '1')
+                                    ->where('online', '1')
                                     ->orderBy('id','desc')
                                     ->get();
                             if ($rows)
