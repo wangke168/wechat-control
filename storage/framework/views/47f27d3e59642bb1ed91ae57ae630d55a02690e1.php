@@ -2206,6 +2206,8 @@
                             <?php
                             $rows = DB::table('wx_article')
                                     ->where('allow_copy','1')
+                                    ->where('del', '0')
+                                    ->where('audit', '1')
                                     ->orderBy('id','desc')
                                     ->get();
                             if ($rows)

@@ -63,8 +63,6 @@ class ArticleController extends Controller
         {
             $rows = DB::table('wx_article')
                 ->where('eventkey', $eventkey)
-                ->where('del', '0')
-                ->where('audit', '1')
                 ->orderBy('id', 'desc')
                 ->paginate(20);
             return view('control.articlelist', compact('rows', 'classid','eventkey'));
