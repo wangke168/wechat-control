@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers\Control;
 
+use App\WeChat\Usage;
 use EasyWeChat\Staff\Session;
 use Image;
 use Illuminate\Http\Request;
@@ -10,6 +11,7 @@ use DB;
 
 class ArticleController extends Controller
 {
+
     public function articleList(Request $request)
     {
         $classid = $request->input('classid');
@@ -118,9 +120,10 @@ class ArticleController extends Controller
     public function articleSearch(Request $request)
     {
         $keyword = $request->input('keyword');
-
+        $eventkey=$this->Qrscene_info($keyword);
         $rows = DB::table('wx_article')
             ->where('title', 'like', '%' . $keyword . '%')
+            ->orWhere('eventkey',$eventkey)
             ->where('audit', '1')
             ->orderBy('online', 'desc')
             ->orderBy('id', 'desc')
@@ -299,7 +302,9 @@ class ArticleController extends Controller
                     $row = DB::table('wx_qrscene_info')
                         ->where('qrscene_name', $qrscene_name[$index])
                         ->first();
+                    if ($row){
                     $marketid = $row->qrscene_id;
+                    }
                 }
             } else {
                 if ($qrscene_name[$index] == '全部显示') {

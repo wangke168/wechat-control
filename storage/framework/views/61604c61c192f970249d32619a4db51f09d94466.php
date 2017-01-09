@@ -2,7 +2,12 @@
 <?php $__env->startSection('page-menu-title', '搜索文章'); ?>
 
 <?php $__env->startSection('page-title', '文章管理'); ?>
-
+<?php $__env->startSection('css'); ?>
+    <link href="<?php echo e(asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css')); ?>" rel="stylesheet"
+          type="text/css"/>
+    <link href="<?php echo e(asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal.css')); ?>" rel="stylesheet"
+          type="text/css"/>
+<?php $__env->stopSection(); ?>
 <?php $__env->startSection('page-bar'); ?>
     <div class="page-bar">
         <ul class="page-breadcrumb">
@@ -127,7 +132,10 @@
 
                                     </td>
                                     <td>
-
+                                        <?php
+                                        $usage = new \App\WeChat\Usage();
+                                        echo "<span class='label bg-grey-cascade'>" . $usage->getArticleShowQrsecne($row->eventkey) . "</span>";
+                                        ?>
                                     </td>
                                     <td>
                                         <?php echo e($row->hits); ?>
@@ -162,19 +170,19 @@
                                     </td>
                                     <td>
                                         <?php
-                                        echo "<a class='label label-primary' href=\"#Qrcodemodel\" data-toggle=\"modal\" data-src=\"http://weix2.hengdianworld.com/control/qrcode/getqrcode.php?id=" . $row->id . "\">预览</a>&nbsp;";
+                                        echo "<a class='getqrcode label label-primary' data-target='#long' data-toggle='modal' data-src='qrcreat/" . $row->id . "'><i class='fa fa-eye'></i>&nbsp预览</a>&nbsp;";
                                         echo "<a href='articlemodify?action=modify&id=" . $row->id . "' class='label label-success'><i class=\"icon-edit\"></i>修改</a>&nbsp;";
 
                                         if ($row->del == 0) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要删除'))return false;\"  href='articlemodify?action=del&id=" . $row->id . "'\" class='label label-danger'><i class=\"icon-remove\"></i>删除</a>&nbsp;";
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要删除'))return false;\"  href='articlemodify?action=del&id=" . $row->id . "'\" class='label label-danger'><i class=\"fa fa-trash-o\"></i>&nbsp;删除</a>&nbsp;";
                                         } elseif($row->del==1) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要还原'))return false;\"  href='articlemodify?action=return&id=" . $row->id . "'\" class='label label-success'><i class=\"icon-remove\"></i>还原</a>&nbsp;";
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要还原'))return false;\"  href='articlemodify?action=return&id=" . $row->id . "'\" class='label label-success'><i class=\"fa fa-undo\"></i>&nbsp;还原</a>&nbsp;";
                                         }
 
                                         if ($row->online == 1) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='articlemodify?action=offline&id=" . $row->id . "'\" class='label label-danger'>下线</a>";
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='articlemodify?action=offline&id=" . $row->id . "'\" class='label label-danger'><i class='fa  fa-arrow-circle-o-down'></i>&nbsp;下线</a>";
                                         } elseif ($row->online == 0) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要上线'))return false;\"  href='articlemodify?action=online&id=" . $row->id . "'\" class='label label-success'>上线</a>";
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要上线'))return false;\"  href='articlemodify?action=online&id=" . $row->id . "'\" class='label label-success'><i class='fa  fa-arrow-circle-o-up'></i>&nbsp;上线</a>";
 
                                         }
                                         ?>
@@ -187,7 +195,22 @@
 
                         <?php echo $rows->appends(["keyword"=>$keyword])->render(); ?>
 
-
+                                <!--弹出层-->
+                        <div id="long" class="modal fade " tabindex="-1" data-replace="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                <h4 class="modal-title">微信扫描二维码预览</h4>
+                            </div>
+                            <div class="modal-body">
+                                <!--				<img id='qr' style="height: 500px" src="../../../../../../i.imgur.com/KwPYo.jpg">-->
+                                <iframe id='qr' src="http://www.baidu.com"
+                                        style="border:none; width:250px; height:250px;"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-default">关闭</button>
+                            </div>
+                        </div>
+                        <!--结束弹出层-->
 
                     </div>
                 </div>
@@ -204,8 +227,22 @@
 
     </script>
 <?php $__env->stopSection(); ?>
+<?php $__env->startSection('js'); ?>
+    <script src="<?php echo e(asset('assets/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js')); ?>"
+            type="text/javascript"></script>
+    <script src="<?php echo e(asset('assets/global/plugins/bootstrap-modal/js/bootstrap-modal.js')); ?>"
+            type="text/javascript"></script>
+    <script src="<?php echo e(asset('assets/admin/pages/scripts/ui-extended-modals.js')); ?>"></script>
+<?php $__env->stopSection(); ?>
 
+<?php $__env->startSection('init'); ?>
 
+    $(".getqrcode").click(function () {
+    //     alert($(this).attr('data-src'));
+    $("#qr").attr({"src": $(this).attr("data-src")});
+    });
+
+<?php $__env->stopSection(); ?>
 
 
 <?php echo $__env->make('control.blade.data', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
