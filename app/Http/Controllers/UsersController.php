@@ -44,6 +44,9 @@ class UsersController extends Controller
             if ($userinfo->eventkey<>'all'){
                 return redirect('/control/articlelist');
             }
+            elseif ($userinfo->eventkey=='all'&&$userinfo->managelevel=='2'){
+                return redirect('/control/articlelist');
+            }
             else {
                 return redirect('/control/index');
             }

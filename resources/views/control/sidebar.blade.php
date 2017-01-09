@@ -261,6 +261,12 @@
                     <span class="title">修改密码</span>
                 </a>
             </li>
+            <li>
+                <a href="logout">
+                    <i class="icon-key"></i>
+                    <span class="title">退出</span>
+                </a>
+            </li>
         </ul>
         <!-- END SIDEBAR MENU -->
     </div>
