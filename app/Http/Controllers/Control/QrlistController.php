@@ -58,7 +58,7 @@ class QrlistController extends Controller
         $uid = $request->input('qrscene_uid');
 
         $classid = $request->input('classid');
-        dd($request->all());
+
         if ($action == 'add') {
             $j = 1000;
             $k = 100000;
