@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/QrRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/QrRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/qradd.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/qradd.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/7610791295d0ffa3d652cd2e8e745273c0cc8e36.php" afterPath="$PROJECT_DIR$/storage/framework/views/7610791295d0ffa3d652cd2e8e745273c0cc8e36.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/logs/laravel.log" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" />
-    </list>
+    <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="" />
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -38,18 +32,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/control/login.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-49.03846">
-              <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="68" selection-end-column="10" />
+            <state vertical-scroll-proportion="-1.6951673">
+              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
               <folding>
-                <marker date="1479802743000" expanded="true" signature="3125:3272" placeholder="..." />
-                <marker date="1479802743000" expanded="true" signature="3137:3270" placeholder="..." />
-                <marker date="1479802743000" expanded="true" signature="3154:3269" placeholder="..." />
-                <marker date="1479802743000" expanded="true" signature="3400:3546" placeholder="..." />
-                <marker date="1479802743000" expanded="true" signature="3416:3544" placeholder="..." />
-                <marker date="1479802743000" expanded="true" signature="3428:3543" placeholder="..." />
+                <marker date="1484112626000" expanded="true" signature="3126:3273" placeholder="..." />
+                <marker date="1484112626000" expanded="true" signature="3138:3271" placeholder="..." />
+                <marker date="1484112626000" expanded="true" signature="3155:3270" placeholder="..." />
+                <marker date="1484112626000" expanded="true" signature="3401:3547" placeholder="..." />
+                <marker date="1484112626000" expanded="true" signature="3417:3545" placeholder="..." />
+                <marker date="1484112626000" expanded="true" signature="3429:3544" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -127,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qradd.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="qradd.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/qradd.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.023234202">
+            <state vertical-scroll-proportion="-50.96154">
               <caret line="53" column="71" selection-start-line="53" selection-start-column="71" selection-end-line="53" selection-end-column="71" />
               <folding />
             </state>
@@ -141,7 +135,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/control/blade/data.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-22.115385">
-              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -155,7 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Control/MenuController.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/BootstrapFourPresenter.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/BootstrapThreePresenter.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Control/MessageController.php" />
@@ -201,11 +194,12 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php" />
         <option value="$PROJECT_DIR$/resources/views/control/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/control/blade/data.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Control/QrlistController.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/QrRequest.php" />
         <option value="$PROJECT_DIR$/resources/views/control/qradd.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/blade/data.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/login.blade.php" />
       </list>
     </option>
   </component>
@@ -904,29 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/blade/data.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.115385">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-49.03846">
-          <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="68" selection-end-column="10" />
-          <folding>
-            <marker date="1479802743000" expanded="true" signature="3125:3272" placeholder="..." />
-            <marker date="1479802743000" expanded="true" signature="3137:3270" placeholder="..." />
-            <marker date="1479802743000" expanded="true" signature="3154:3269" placeholder="..." />
-            <marker date="1479802743000" expanded="true" signature="3400:3546" placeholder="..." />
-            <marker date="1479802743000" expanded="true" signature="3416:3544" placeholder="..." />
-            <marker date="1479802743000" expanded="true" signature="3428:3543" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/articleadd_back.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -961,9 +932,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/qradd.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.023234202">
+        <state vertical-scroll-proportion="-50.96154">
           <caret line="53" column="71" selection-start-line="53" selection-start-column="71" selection-end-line="53" selection-end-column="71" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/blade/data.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.115385">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6951673">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding>
+            <marker date="1484112626000" expanded="true" signature="3126:3273" placeholder="..." />
+            <marker date="1484112626000" expanded="true" signature="3138:3271" placeholder="..." />
+            <marker date="1484112626000" expanded="true" signature="3155:3270" placeholder="..." />
+            <marker date="1484112626000" expanded="true" signature="3401:3547" placeholder="..." />
+            <marker date="1484112626000" expanded="true" signature="3417:3545" placeholder="..." />
+            <marker date="1484112626000" expanded="true" signature="3429:3544" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

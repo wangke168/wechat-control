@@ -20,7 +20,7 @@
     <meta content="" name="description"/>
     <meta content="" name="author"/>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href="http://fonts.useso.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet"
+    <link href="https://fonts.useso.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet"
           type="text/css"/>
     <link href="{{asset('assets/global/plugins/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet"
           type="text/css"/>
