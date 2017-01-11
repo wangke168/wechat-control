@@ -51,7 +51,7 @@
 
                 <div class="portlet-body form">
 
-                    {!! Form::open(['url'=>'control/qrsave?action=add','files'=>true,'class'=>'form-horizontal form-bordered','id'=>'postForm']) !!}
+                    {!! Form::open(['url'=>'control/qrsave?action=add','class'=>'form-horizontal form-bordered','id'=>'postForm']) !!}
 
 
 

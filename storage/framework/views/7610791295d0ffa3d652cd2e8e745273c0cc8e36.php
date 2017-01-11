@@ -17,7 +17,7 @@
         <ul class="page-breadcrumb">
             <li>
                 <i class="fa fa-home"></i>
-                <a href="index-2.html">Home</a>
+                <a href="#">Home</a>
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
@@ -49,7 +49,7 @@
 
                 <div class="portlet-body form">
 
-                    <?php echo Form::open(['url'=>'control/qrsave?action=add','files'=>true,'class'=>'form-horizontal form-bordered','id'=>'postForm']); ?>
+                    <?php echo Form::open(['url'=>'control/qrsave?action=add','class'=>'form-horizontal form-bordered','id'=>'postForm']); ?>
 
 
 

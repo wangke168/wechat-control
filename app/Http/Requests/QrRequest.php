@@ -25,7 +25,7 @@ class QrRequest extends Request
     {
         return [
             'qrscene_name'=>'required',
-            'qrscene_uid'=>'required',
+//            'qrscene_uid'=>'required',
             'classid'=>'required',
         ];
     }
