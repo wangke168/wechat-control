@@ -137,10 +137,15 @@
                                         ?>
                                     </td>
                                     <td>
-                                        {{$row->hits}}
+                                        <?php
+                                        $count = new \App\WeChat\Count();
+                                        echo $count->count_hits_article($row->id);
+                                        ?>
                                     </td>
                                     <td>
-
+                                        <?php
+                                        echo $count->count_hits_norepeat($row->id)->total;
+                                        ?>
                                     </td>
                                     <td>
                                         {{$row->resp}}
