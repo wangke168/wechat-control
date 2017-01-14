@@ -21,7 +21,7 @@ class DataController extends Controller
         \Session::flash('from', $from);
         \Session::flash('to', $to);
         $rows = DB::table('wx_click_hits')
-            ->select(DB::raw('count(*) as count,click'))
+//            ->select(DB::raw('count(*) as count,click'))
             ->whereDate('adddate', '>=', $from)
             ->whereDate('adddate', '<', $to)
             ->groupBy('click')
@@ -50,7 +50,7 @@ class DataController extends Controller
                     ->groupBy('click')
                     ->get();
 //            return $rows;
-                return view('control.count_menu_click', compact('rows'));
+                return view('control.count_menu_click', compact('rows','from','to'));
                 break;
             default:
                 break;

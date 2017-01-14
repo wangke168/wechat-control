@@ -43,7 +43,15 @@ class Count
     }
 
 
-    public function count_menu_click($menuid, $type = 'all', $startdate = '2017-1-1', $enddate = '2017-12-31')
+    /**
+     * 菜单不重复点击数
+     * @param $menuid
+     * @param $type
+     * @param $startdate
+     * @param $enddate
+     * @return mixed
+     */
+    public function count_menu_click($menuid, $type, $startdate, $enddate)
     {
         if ($type == 'all') {
             $row = DB::table('wx_click_hits')
@@ -51,15 +59,19 @@ class Count
                 ->whereDate('adddate', '>=', $startdate)
                 ->whereDate('adddate', '<', $enddate)
                 ->count();
-        } elseif ($type == 'notreqeat') {
+            return $row;
+        } elseif ($type == 'notrepeat') {
             $row = DB::table('wx_click_hits')
-                ->where('click', $menuid)
                 ->selectRaw('count(distinct wx_openid) as total')
+                ->where('click', $menuid)
                 ->whereDate('adddate', '>=', $startdate)
                 ->whereDate('adddate', '<', $enddate)
                 ->first();
+
+//            dd($row) ;
+            return $row->total;
         }
-        return $row;
+//        return $row;
     }
 
     /**

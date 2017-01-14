@@ -84,7 +84,10 @@
                                     ?>
                                 </td>
                                 <td>
-                                    {!! $row->count !!}
+                                    <?php
+                                    $count=new \App\WeChat\Count();
+                                    echo $count->count_menu_click($row->click,'all',$from,$to);
+                                    ?>
                                 </td>
                                 <td>
                                     <?php

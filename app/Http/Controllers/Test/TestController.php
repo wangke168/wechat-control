@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Test;
 
 use App\Http\Controllers\Controller;
+use App\WeChat\Count;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use DB;
@@ -13,8 +14,17 @@ class TestController extends Controller
 
     public function test()
     {
-        return base64_decode('?6ZmE5Lu25rWL6K+V');
+    /*    $row = DB::table('wx_click_hits')
+            ->selectRaw('count(distinct wx_openid) as total')
+            ->where('click', '8')
+            ->whereDate('adddate', '>=', '2017-01-1')
+            ->whereDate('adddate', '<', '2017-01-14')
+            ->first();
 
+        dd($row) ;*/
+
+        $count=new Count();
+        dd($count->count_menu_click('8','notrepeat','2017-01-1','2017-01-14'));
 
     }
 
