@@ -217,7 +217,7 @@
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
     <div class="page-footer-inner">
-        2016 &copy; HenddianWorld.
+        2016 &copy; HengDianWorld.
     </div>
     <div class="scroll-to-top">
         <i class="icon-arrow-up"></i>

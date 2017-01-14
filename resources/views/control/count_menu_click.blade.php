@@ -68,6 +68,9 @@
                             <th>
                                 点击数
                             </th>
+                            <th>
+                                不重复点击数
+                            </th>
 
                         </tr>
                         </thead>
@@ -83,7 +86,12 @@
                                 <td>
                                     {!! $row->count !!}
                                 </td>
-
+                                <td>
+                                    <?php
+                                        $count=new \App\WeChat\Count();
+                                        echo $count->count_menu_click($row->click,'notrepeat',$from,$to);
+                                    ?>
+                                </td>
                             </tr>
                         @endforeach
                         </tbody>

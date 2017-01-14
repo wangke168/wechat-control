@@ -27,7 +27,7 @@ class DataController extends Controller
             ->groupBy('click')
             ->get();
 //            return $rows;
-        return view('control.count_menu_click', compact('rows'));
+        return view('control.count_menu_click', compact('rows','from','to'));
     }
 
     public function countSearch(Request $request)
