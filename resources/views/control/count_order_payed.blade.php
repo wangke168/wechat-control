@@ -70,14 +70,15 @@
                                 提交时间
                             </th>
                             <th>
+                                预达日期
+                            </th>
+                            <th>
                                 姓名
                             </th>
                             <th>
                                 手机号
                             </th>
-                            <th>
-                                预达日期
-                            </th>
+
                             <th>
                                 状态
                             </th>
@@ -105,14 +106,15 @@
                                     {!! $row->adddate !!}
                                 </td>
                                 <td>
+                                    {!! $row->arrive_date !!}
+                                </td>
+                                <td>
                                     {!! $row->order_name !!}
                                 </td>
                                 <td>
                                     {!! $row->tel !!}
                                 </td>
-                                <td>
-                                    {!! $row->arrive_date !!}
-                                </td>
+
                                 <td>
                                     <?php
                                     $order = new \App\WeChat\Count();

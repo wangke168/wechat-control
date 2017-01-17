@@ -345,7 +345,7 @@ class ArticleController extends Controller
     {
         $app = app('wechat');
         $url = $app->url;
-        $shortUrl = $url->shorten('http://e.hengdianworld.com/WeixinOpenId.aspx?nexturl=http://wechat.hengdianworld.com/article/review?id='.$id);
+        $shortUrl = $url->shorten('http://e.hengdianworld.com/WeixinOpenId.aspx?nexturl=http://wechat.unclewang.me/article/review?id='.$id);
 //        return $shortUrl->short_url;
         return view('control.articlereviewqr',compact('shortUrl'));
 
