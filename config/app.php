@@ -165,7 +165,7 @@ return [
         //Intervention/image 图片上传
         Intervention\Image\ImageServiceProvider::class,
 
-    //    Overtrue\LaravelWechat\ServiceProvider::class,
+        Overtrue\LaravelWechat\ServiceProvider::class,
 
         //编辑器
         Overtrue\LaravelUEditor\UEditorServiceProvider::class,
@@ -225,7 +225,7 @@ return [
         //图片上传
         'Image' => Intervention\Image\Facades\Image::class,
 
-    //    'Wechat' => Overtrue\LaravelWechat\Facade::class,
+        'Wechat' => Overtrue\LaravelWechat\Facade::class,
 
         'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class,
     ],
