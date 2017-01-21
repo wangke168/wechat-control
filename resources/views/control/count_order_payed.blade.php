@@ -66,9 +66,7 @@
                             <th>
                                 订单号
                             </th>
-                            <th>
-                                提交时间
-                            </th>
+
                             <th>
                                 预达日期
                             </th>
@@ -92,7 +90,13 @@
                                 点击菜单
                             </th>
                             <th>
+                                提交时间
+                            </th>
+                            <th>
                                 支付时间
+                            </th>
+                            <th>
+                              其他预订
                             </th>
                         </tr>
                         </thead>
@@ -102,9 +106,7 @@
                                 <td>
                                     <a href="http://e.hengdianworld.com/Admin_VisitorOrderView.aspx?SellID={!! $row->sellid !!}" target="_blank"> {!! $row->sellid !!}</a>
                                 </td>
-                                <td>
-                                    {!! $row->adddate !!}
-                                </td>
+
                                 <td>
                                     {!! $row->arrive_date !!}
                                 </td>
@@ -140,9 +142,21 @@
                                     {!! $order->order_menu_click($row->wx_openid) !!}
                                 </td>
                                 <td>
+                                    {!! $row->adddate !!}
+                                </td>
+                                <td>
                                     @if($order->check_payed($row->sellid))
                                         {!! $order->check_payed($row->sellid)->adddate !!}
                                     @endif
+                                </td>
+                                <td>
+                                    <?php
+                                    if ($row->other_order == 1) {
+                                        echo "<a OnClick=\"javascript:if (!confirm('是否真的没有在其他地方预订'))return false;\"  href='orderaction?action=no&id=" . $row->id . "' class='label label-danger'><i class='fa  fa-arrow-circle-o-down'></i>&nbsp;有</a>";
+                                    } elseif ($row->other_order == 0) {
+                                        echo "<a OnClick=\"javascript:if (!confirm('是否真的有在其他地方预订'))return false;\"  href='orderaction?action=yes&id=" . $row->id . "' class='label label-success'><i class='fa  fa-arrow-circle-o-up'></i>&nbsp;无</a>";
+                                    }
+                                    ?>
                                 </td>
                             </tr>
                         @endforeach

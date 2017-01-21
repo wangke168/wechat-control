@@ -27,7 +27,7 @@ class DataController extends Controller
             ->groupBy('click')
             ->get();
 //            return $rows;
-        return view('control.count_menu_click', compact('rows','from','to'));
+        return view('control.count_menu_click', compact('rows', 'from', 'to'));
     }
 
     public function countSearch(Request $request)
@@ -50,7 +50,7 @@ class DataController extends Controller
                     ->groupBy('click')
                     ->get();
 //            return $rows;
-                return view('control.count_menu_click', compact('rows','from','to'));
+                return view('control.count_menu_click', compact('rows', 'from', 'to'));
                 break;
             default:
                 break;
@@ -64,6 +64,28 @@ class DataController extends Controller
             ->orderBy('id', 'desc')
             ->paginate(20);
         return view('control.count_order_payed', compact('rows'));
+    }
+
+    public function orderaction(Request $request)
+    {
+        $action = $request->input('action');
+        $id=$request->input('id');
+        switch ($action) {
+            case 'yes':
+                DB::table('wx_order_confirm')
+                    ->where('id',$id)
+                    ->update(['other_order'=>'1']);
+                return redirect('control/ordercount');
+                break;
+            case 'no':
+                DB::table('wx_order_confirm')
+                    ->where('id',$id)
+                    ->update(['other_order'=>'0']);
+                return redirect('control/ordercount');
+                break;
+            default:
+                break;
+        }
     }
 
     public function ordersend_search(Request $request)

@@ -260,6 +260,23 @@
                     </li>
                 </ul>
             </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="icon-notebook"></i>
+                        <span class="title">企业号管理 </span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="tglm">
+                                推广联盟</a>
+                        </li>
+                        <li>
+                            <a href="tglm?action=add">
+                                登记企业号账号</a>
+                        </li>
+                    </ul>
+                </li>
             <!-- END MARKET MENU -->
             @endif
             <li>

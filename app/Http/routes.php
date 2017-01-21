@@ -66,6 +66,7 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
 
     Route::get('ordercount','Control\DataController@ordersend');
     Route::get('ordercountsearch','Control\DataController@ordersend_search');
+    Route::get('orderaction','Control\DataController@orderaction');
 
     //二维码管理
     Route::get('qradd','Control\QrlistController@add');
@@ -84,6 +85,9 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
 
     //景区演艺秀推送
     Route::any('pushproject','Control\PushController@project');
+
+    //企业号推广联盟管理
+    Route::any('tglm','Control\QyController@tglm');
 
     //修改密码
     Route::any('changpassword','UsersController@changpwd');

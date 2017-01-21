@@ -194,11 +194,11 @@
                                             echo "<a OnClick=\"javascript:if (!confirm('是否真的要删除'))return false;\"  href='articlemodify?action=del&id=" . $row->id . "' class='label label-danger'><i class='fa fa-trash-o'></i>&nbsp;删除</a>&nbsp;";
                                         } elseif ($row->del == 1) {
                                             echo "<a OnClick=\"javascript:if (!confirm('是否真的要还原'))return false;\"  href='articlemodify?action=return&id=" . $row->id . "' class='label label-success'><i class='fa fa-undo'></i>&nbsp;还原</a>&nbsp;";
-                                        }                                        if ($row->online == 1) {
+                                        }
+                                        if ($row->online == 1) {
                                             echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='articlemodify?action=offline&id=" . $row->id . "' class='label label-warning'><i class='fa  fa-arrow-circle-o-down'></i>&nbsp;下线</a>";
                                         } elseif ($row->online == 0) {
                                             echo "<a OnClick=\"javascript:if (!confirm('是否真的要上线'))return false;\"  href='articlemodify?action=online&id=" . $row->id . "' class='label label-success'><i class='fa  fa-arrow-circle-o-up'></i>&nbsp;上线</a>";
-
                                         }
                                         ?>
                                     </td>
