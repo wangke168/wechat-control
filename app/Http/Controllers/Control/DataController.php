@@ -61,6 +61,7 @@ class DataController extends Controller
     public function ordersend()
     {
         $rows = DB::table('wx_order_confirm')
+            ->whereDate('adddate','>=','2017-1-1')
             ->orderBy('id', 'desc')
             ->paginate(20);
         return view('control.count_order_payed', compact('rows'));
