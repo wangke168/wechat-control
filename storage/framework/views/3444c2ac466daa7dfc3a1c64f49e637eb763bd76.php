@@ -64,10 +64,6 @@
                             <th>
                                 订单号
                             </th>
-
-                            <th>
-                                预达日期
-                            </th>
                             <th>
                                 姓名
                             </th>
@@ -94,6 +90,9 @@
                                 支付时间
                             </th>
                             <th>
+                                预达日期
+                            </th>
+                            <th>
                               其他预订
                             </th>
                         </tr>
@@ -105,10 +104,7 @@
                                     <a href="http://e.hengdianworld.com/Admin_VisitorOrderView.aspx?SellID=<?php echo $row->sellid; ?>" target="_blank"> <?php echo $row->sellid; ?></a>
                                 </td>
 
-                                <td>
-                                    <?php echo $row->arrive_date; ?>
 
-                                </td>
                                 <td>
                                     <?php echo $row->order_name; ?>
 
@@ -153,6 +149,10 @@
                                         <?php echo $order->check_payed($row->sellid)->adddate; ?>
 
                                     <?php endif; ?>
+                                </td>
+                                <td>
+                                    <?php echo $row->arrive_date; ?>
+
                                 </td>
                                 <td>
                                     <?php

@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/control/qy_tglm.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/control/qy_tglm_add.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/count_order_payed.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/count_order_payed.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/count_order_payed_search.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/count_order_payed_search.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/3444c2ac466daa7dfc3a1c64f49e637eb763bd76.php" afterPath="$PROJECT_DIR$/storage/framework/views/3444c2ac466daa7dfc3a1c64f49e637eb763bd76.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/fe5d6258614a54c594536a94cadf2fceaa156e22.php" afterPath="$PROJECT_DIR$/storage/framework/views/fe5d6258614a54c594536a94cadf2fceaa156e22.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/logs/laravel.log" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/364a80fb82ca26e357a4bf469f727f826641e0ab.php" afterPath="$PROJECT_DIR$/storage/framework/views/364a80fb82ca26e357a4bf469f727f826641e0ab.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,16 +53,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QrlistController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/QrlistController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="88" column="11" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -93,8 +76,18 @@
       <file leaf-file-name="count_order_payed.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/control/count_order_payed.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5333952">
-              <caret line="154" column="191" selection-start-line="154" selection-start-column="191" selection-end-line="154" selection-end-column="191" />
+            <state vertical-scroll-proportion="0.55658627">
+              <caret line="152" column="37" selection-start-line="152" selection-start-column="37" selection-end-line="152" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="count_order_payed_search.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/control/count_order_payed_search.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-31.846153">
+              <caret line="152" column="37" selection-start-line="152" selection-start-column="37" selection-end-line="152" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -150,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/control/push_project_modify.blade.php" />
         <option value="$PROJECT_DIR$/app/Wechat/Zone.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Control/PushController.php" />
         <option value="$PROJECT_DIR$/app/Wechat/Push.php" />
@@ -200,6 +192,7 @@
         <option value="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/count_order_payed_search.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/count_order_payed.blade.php" />
       </list>
     </option>
@@ -524,13 +517,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/framework/cache/47/ec/47ecb2952968bef405e16ff580c86395d0683e14">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.5555553">
@@ -917,10 +903,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/count_order_payed_search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-31.846153">
+          <caret line="152" column="37" selection-start-line="152" selection-start-column="37" selection-end-line="152" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/count_order_payed.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5333952">
-          <caret line="154" column="191" selection-start-line="154" selection-start-column="191" selection-end-line="154" selection-end-column="191" />
+        <state vertical-scroll-proportion="0.55658627">
+          <caret line="152" column="37" selection-start-line="152" selection-start-column="37" selection-end-line="152" selection-end-column="37" />
           <folding />
         </state>
       </provider>

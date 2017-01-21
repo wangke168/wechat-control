@@ -67,23 +67,16 @@
                                 订单号
                             </th>
                             <th>
-                                预达日期
-                            </th>
-                            <th>
                                 姓名
                             </th>
                             <th>
                                 手机号
                             </th>
-                            <th>
-                                提交时间
-                            </th>
+
                             <th>
                                 状态
                             </th>
-                            <th>
-                                关注时间
-                            </th>
+
                             <th>
                                 来源
                             </th>
@@ -91,7 +84,19 @@
                                 点击菜单
                             </th>
                             <th>
+                                提交时间
+                            </th>
+                            <th>
                                 支付时间
+                            </th>
+                            <th>
+                                预达日期
+                            </th>
+                            <th>
+                                关注时间
+                            </th>
+                            <th>
+                                其他预订
                             </th>
                         </tr>
                         </thead>
@@ -99,20 +104,17 @@
                         @foreach($rows as $row)
                             <tr>
                                 <td>
-                                    {!! $row->sellid !!}
+                                    <a href="http://e.hengdianworld.com/Admin_VisitorOrderView.aspx?SellID={!! $row->sellid !!}" target="_blank"> {!! $row->sellid !!}</a>
                                 </td>
-                                <td>
-                                    {!! $row->arrive_date !!}
-                                </td>
+
+
                                 <td>
                                     {!! $row->order_name !!}
                                 </td>
                                 <td>
                                     {!! $row->tel !!}
                                 </td>
-                                <td>
-                                    {!! $row->adddate !!}
-                                </td>
+
                                 <td>
                                     <?php
                                     $order = new \App\WeChat\Count();
@@ -123,24 +125,40 @@
                                     }
                                     ?>
                                 </td>
-                                <td>
-                                    {!! $row->focusdate !!}
-                                </td>
+
                                 <td>
                                     <?php
                                     if ($row->eventkey) {
                                         $usage = new \App\WeChat\Usage();
-                                        echo $usage->getQrsecneinfo($row->eventkey)->qrscene_name;
+                                        echo "<span class='label bg-grey-cascade'>".$usage->getQrsecneinfo($row->eventkey)->qrscene_name."</span>";
                                     }
                                     ?>
                                 </td>
                                 <td>
-
+                                    {!! $order->order_menu_click($row->wx_openid) !!}
+                                </td>
+                                <td>
+                                    {!! $row->adddate !!}
                                 </td>
                                 <td>
                                     @if($order->check_payed($row->sellid))
                                         {!! $order->check_payed($row->sellid)->adddate !!}
                                     @endif
+                                </td>
+                                <td>
+                                    {!! $row->arrive_date !!}
+                                </td>
+                                <td>
+                                    {!! $row->focusdate !!}
+                                </td>
+                                <td>
+                                    <?php
+                                    if ($row->other_order == 1) {
+                                        echo "<a OnClick=\"javascript:if (!confirm('是否真的没有在其他地方预订'))return false;\"  href='orderaction?action=no&id=" . $row->id . "' class='label label-danger'><i class='fa  fa-arrow-circle-o-down'></i>&nbsp;有</a>";
+                                    } elseif ($row->other_order == 0) {
+                                        echo "<a OnClick=\"javascript:if (!confirm('是否真的有在其他地方预订'))return false;\"  href='orderaction?action=yes&id=" . $row->id . "' class='label label-success'><i class='fa  fa-arrow-circle-o-up'></i>&nbsp;无</a>";
+                                    }
+                                    ?>
                                 </td>
                             </tr>
                         @endforeach

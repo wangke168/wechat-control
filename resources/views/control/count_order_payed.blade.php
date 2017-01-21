@@ -66,10 +66,6 @@
                             <th>
                                 订单号
                             </th>
-
-                            <th>
-                                预达日期
-                            </th>
                             <th>
                                 姓名
                             </th>
@@ -80,9 +76,7 @@
                             <th>
                                 状态
                             </th>
-                            <th>
-                                关注时间
-                            </th>
+
                             <th>
                                 来源
                             </th>
@@ -96,6 +90,12 @@
                                 支付时间
                             </th>
                             <th>
+                                预达日期
+                            </th>
+                            <th>
+                                关注时间
+                            </th>
+                            <th>
                               其他预订
                             </th>
                         </tr>
@@ -107,9 +107,7 @@
                                     <a href="http://e.hengdianworld.com/Admin_VisitorOrderView.aspx?SellID={!! $row->sellid !!}" target="_blank"> {!! $row->sellid !!}</a>
                                 </td>
 
-                                <td>
-                                    {!! $row->arrive_date !!}
-                                </td>
+
                                 <td>
                                     {!! $row->order_name !!}
                                 </td>
@@ -127,9 +125,7 @@
                                     }
                                     ?>
                                 </td>
-                                <td>
-                                    {!! $row->focusdate !!}
-                                </td>
+
                                 <td>
                                     <?php
                                     if ($row->eventkey) {
@@ -148,6 +144,12 @@
                                     @if($order->check_payed($row->sellid))
                                         {!! $order->check_payed($row->sellid)->adddate !!}
                                     @endif
+                                </td>
+                                <td>
+                                    {!! $row->arrive_date !!}
+                                </td>
+                                <td>
+                                    {!! $row->focusdate !!}
                                 </td>
                                 <td>
                                     <?php
