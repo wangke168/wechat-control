@@ -226,7 +226,7 @@ type="text/css"/>
                                 ->where('audit', '1')
                                 ->where('online', '1')
                                 ->orderBy('id','desc')
-                                ->skip(0)->take(5)
+                                ->skip(0)->take(9)
                                 ->get();
                                 if ($rows)
                                 {
