@@ -169,8 +169,10 @@ return [
 
         //编辑器
         Overtrue\LaravelUEditor\UEditorServiceProvider::class,
-//二维码
+        //二维码
         SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class,
+
+
     ],
 
     /*
