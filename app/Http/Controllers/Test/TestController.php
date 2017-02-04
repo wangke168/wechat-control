@@ -30,6 +30,8 @@ class TestController extends Controller
         foreach ($rows as $key => $row) {
             # code...
             $count_temp=$row->count;
+            echo $count_temp;
+            echo "<br>";
             echo $row->wx_openid;
         }
         // dd($rows);
