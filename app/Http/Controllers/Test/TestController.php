@@ -26,7 +26,7 @@ class TestController extends Controller
         $count=new Count();
         dd($count->count_menu_click('8','notrepeat','2017-01-1','2017-01-14'));*/
 
-        $rows=DB::select('SELECT `wx_openid`,count(`wx_openid`) as count FROM `wx_user_info` GROUP BY `wx_openid` HAVING count(`wx_openid`) >1 ORDER BY count DESC limit 0,100');
+        $rows=DB::select('SELECT `wx_openid`,count(`wx_openid`) as count FROM `wx_user_info` GROUP BY `wx_openid` HAVING count(`wx_openid`) >1 ORDER BY count DESC limit 0,50');
         foreach ($rows as $key => $row) {
             # code...
           /*  $count_temp=$row->count;
@@ -37,8 +37,14 @@ class TestController extends Controller
             $row_repeat=DB::table('wx_user_info')
             ->where('wx_openid',$row->wx_openid)
             ->first();
-            echo $row_repeat->id;
-            echo "<br>";
+
+            DB::table('wx_user_info')
+            ->where('id',$row_repeat->id)
+            ->delete();
+            // DB::delete('delete wx_user_info where id = ?', ['John'])
+            //echo $row_repeat->id;
+           // echo "<br>";
+           echo "aaa";
 
         }
         // dd($rows);
