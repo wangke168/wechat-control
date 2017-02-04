@@ -44,7 +44,7 @@ class TestController extends Controller
             // DB::delete('delete wx_user_info where id = ?', ['John'])
             //echo $row_repeat->id;
            // echo "<br>";
-           echo "aaa";
+           echo $row_repeat->id;
            echo "<br>";
 
         }
