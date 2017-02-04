@@ -45,6 +45,7 @@ class TestController extends Controller
             //echo $row_repeat->id;
            // echo "<br>";
            echo "aaa";
+           echo "<br>";
 
         }
         // dd($rows);
