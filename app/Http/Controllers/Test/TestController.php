@@ -29,10 +29,16 @@ class TestController extends Controller
         $rows=DB::select('SELECT `wx_openid`,count(`wx_openid`) as count FROM `wx_user_info` GROUP BY `wx_openid` HAVING count(`wx_openid`) >1 ORDER BY count DESC');
         foreach ($rows as $key => $row) {
             # code...
-            $count_temp=$row->count;
+            /*$count_temp=$row->count;
             echo $count_temp;
             echo "<br>";
-            echo $row->wx_openid;
+            echo $row->wx_openid;*/
+            $row_repeat=DB::table('wx_user_info')
+            ->where('wx_openid',$row->wx_openid)
+            ->first();
+            echo $row_repeat->id;
+            echo "<br>";
+
         }
         // dd($rows);
 
