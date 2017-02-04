@@ -26,8 +26,8 @@ class TestController extends Controller
         $count=new Count();
         dd($count->count_menu_click('8','notrepeat','2017-01-1','2017-01-14'));*/
 
-        $rows=DB::selectRaw('SELECT `wx_openid`,count(`wx_openid`) as count FROM `wx_user_info` GROUP BY `wx_openid` HAVING count(`wx_openid`) >1 ORDER BY count DESC')->get();
-        return $rows;
+        $rows=DB::select('SELECT `wx_openid`,count(`wx_openid`) as count FROM `wx_user_info` GROUP BY `wx_openid` HAVING count(`wx_openid`) >1 ORDER BY count DESC');
+        dd($rows);
 
     }
 
