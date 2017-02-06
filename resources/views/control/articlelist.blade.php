@@ -150,7 +150,7 @@
                                     <td>
                                         <?php
                                         $usage = new \App\WeChat\Usage();
-                                        echo "<span class='label bg-grey-cascade'>" . $usage->getArticleShowQrsecne($row->eventkey) . "</span>";
+                                        echo "<span class='label bg-grey-cascade'>" . str_limit($usage->getArticleShowQrsecne($row->eventkey), $limit = 10, $end = '...') . "</span>";
                                         ?>
                                     </td>
                                     <td>

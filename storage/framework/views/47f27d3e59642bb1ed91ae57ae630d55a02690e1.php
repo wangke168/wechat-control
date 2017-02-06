@@ -250,7 +250,7 @@ type="text/css"/>
                                             </div>
                                             <div class="col2">
                                                 <div class="date">
-                                                    编辑
+                                                    <a href="articlemodify?action=modify&id=<?php echo $row->id; ?>">编辑</a>
                                                 </div>
                                             </div>
                                         </li>
