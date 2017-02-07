@@ -78,8 +78,12 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
     //获取带参二维码
     Route::get('qrcode_create/{id}','Control\QrlistController@create');
 
-
+    //菜单查询
     Route::get('menulist','Control\MenuController@menuList');
+
+    //标签管理
+    Route::any('tag','Control\TagController@index');
+
 
     Route::get('message','Control\MessageController@index');
 

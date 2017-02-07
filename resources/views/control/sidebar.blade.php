@@ -258,6 +258,10 @@
                         <a href="menulist">
                             菜单查询</a>
                     </li>
+                    <li>
+                        <a href="tag">
+                            标签管理</a>
+                    </li>
                 </ul>
             </li>
                 <li>
