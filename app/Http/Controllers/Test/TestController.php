@@ -26,25 +26,19 @@ class TestController extends Controller
         $count=new Count();
         dd($count->count_menu_click('8','notrepeat','2017-01-1','2017-01-14'));*/
 
-        for ($x=-16; $x<=-1; $x++) {
-            $y=$x+1;
-            $z=$x+16;
-            $from = date("Y-m-d", strtotime($x." day"));
-            $to = date("Y-m-d", strtotime($y." day"));
-            $row_confirm = DB::table('wx_order_confirm')
-                ->whereDate('adddate', '>=', $from)
-                ->whereDate('adddate', '<', $to)
-                ->count();
+        $row_confirm = DB::table('wx_order_confirm')
+            ->whereDate('adddate','>=', date("Y-m-d", strtotime("-1 day")))
+            ->whereDate('adddate', '<', date("Y-m-d"))
+            ->count();
 
-            $row_send = DB::table('wx_order_send')
-                ->whereDate('adddate', '>=', $from)
-                ->whereDate('adddate', '<', $to)
-                ->count();
+        $row_send = DB::table('wx_order_send')
+            ->whereDate('adddate','>=', date("Y-m-d", strtotime("-1 day")))
+            ->whereDate('adddate', '<', date("Y-m-d"))
+            ->count();
 //            $other=$row_confirm-$row_send;
 
-            DB::table('wx_order_dairy_detail')
-                ->insert(['submit'=>$row_confirm,'confirm'=>$row_send,'date'=>$from]);
-        }
+        DB::table('wx_order_dairy_detail')
+            ->insert(['submit'=>$row_confirm,'confirm'=>$row_send,'date'=>date("Y-m-d", strtotime("-1 day"))]);
 
     }
 

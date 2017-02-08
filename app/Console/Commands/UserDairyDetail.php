@@ -52,4 +52,21 @@ class UserDairyDetail extends Command
 //            $add[] = array('date' => $z, 'numbers' => $row);
         }
     }
+    private function order_dairy()
+    {
+
+        $row_confirm = DB::table('wx_order_confirm')
+            ->whereDate('adddate','>=', date("Y-m-d", strtotime("-1 day")))
+            ->whereDate('adddate', '<', date("Y-m-d"))
+            ->count();
+
+        $row_send = DB::table('wx_order_send')
+            ->whereDate('adddate','>=', date("Y-m-d", strtotime("-1 day")))
+            ->whereDate('adddate', '<', date("Y-m-d"))
+            ->count();
+//            $other=$row_confirm-$row_send;
+
+        DB::table('wx_order_dairy_detail')
+            ->insert(['submit'=>$row_confirm,'confirm'=>$row_send,'date'=>date("Y-m-d", strtotime("-1 day"))]);
+    }
 }
