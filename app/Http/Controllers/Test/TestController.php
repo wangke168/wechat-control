@@ -26,30 +26,27 @@ class TestController extends Controller
         $count=new Count();
         dd($count->count_menu_click('8','notrepeat','2017-01-1','2017-01-14'));*/
 
-        $rows=DB::select('SELECT `wx_openid`,count(`wx_openid`) as count FROM `wx_user_info` GROUP BY `wx_openid` HAVING count(`wx_openid`) >1 ORDER BY count DESC limit 0,50');
-        foreach ($rows as $key => $row) {
-            # code...
-          /*  $count_temp=$row->count;
-            echo $count_temp;
-            echo "<br>";
-            echo $row->wx_openid;
-            echo "<br>";*/
-            $row_repeat=DB::table('wx_user_info')
-            ->where('wx_openid',$row->wx_openid)
-            ->first();
+        for ($x=-16; $x<=-1; $x++) {
+            $y=$x+1;
+            $z=$x+16;
+            $from = date("Y-m-d", strtotime($x." day"));
+            $to = date("Y-m-d", strtotime($y." day"));
+            $row_add = DB::table('wx_user_add')
 
-            DB::table('wx_user_info')
-            ->where('id',$row_repeat->id)
-            ->delete();
-            // DB::delete('delete wx_user_info where id = ?', ['John'])
-            //echo $row_repeat->id;
-           // echo "<br>";
-           echo $row_repeat->id;
-           echo "<br>";
+                ->whereDate('adddate', '>=', $from)
+                ->whereDate('adddate', '<', $to)
+                ->count();
 
+            $row_esc = DB::table('wx_user_esc')
+
+                ->whereDate('esc_time', '>=', $from)
+                ->whereDate('esc_time', '<', $to)
+                ->count();
+
+            DB::table('wx_user_dairy_detail')
+                ->insert(['add'=>$row_add,'esc'=>$row_esc,'date'=>$from]);
         }
-        // dd($rows);
-
+        
     }
 
 
