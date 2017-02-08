@@ -77,8 +77,8 @@ class UserDairyDetail extends Command
             ->count();
 
         $row_esc = DB::table('wx_user_esc')
-            ->whereDate('adddate','>=', date("Y-m-d", strtotime("-1 day")))
-            ->whereDate('adddate', '<', date("Y-m-d"))
+            ->whereDate('esc_time','>=', date("Y-m-d", strtotime("-1 day")))
+            ->whereDate('esc_time', '<', date("Y-m-d"))
             ->count();
 //            $other=$row_confirm-$row_send;
 
