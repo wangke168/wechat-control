@@ -14,18 +14,8 @@ class TestController extends Controller
 
     public function test()
     {
-    /*    $row = DB::table('wx_click_hits')
-            ->selectRaw('count(distinct wx_openid) as total')
-            ->where('click', '8')
-            ->whereDate('adddate', '>=', '2017-01-1')
-            ->whereDate('adddate', '<', '2017-01-14')
-            ->first();
 
-        dd($row) ;*/
 /*
-        $count=new Count();
-        dd($count->count_menu_click('8','notrepeat','2017-01-1','2017-01-14'));*/
-
         $row_confirm = DB::table('wx_order_confirm')
             ->whereDate('adddate','>=', date("Y-m-d", strtotime("-1 day")))
             ->whereDate('adddate', '<', date("Y-m-d"))
@@ -38,7 +28,20 @@ class TestController extends Controller
 //            $other=$row_confirm-$row_send;
 
         DB::table('wx_order_dairy_detail')
-            ->insert(['submit'=>$row_confirm,'confirm'=>$row_send,'date'=>date("Y-m-d", strtotime("-1 day"))]);
+            ->insert(['submit'=>$row_confirm,'confirm'=>$row_send,'date'=>date("Y-m-d", strtotime("-1 day"))]);*/
+        $row_add = DB::table('wx_user_add')
+            ->whereDate('adddate','>=', date("Y-m-d", strtotime("-1 day")))
+            ->whereDate('adddate', '<', date("Y-m-d"))
+            ->count();
+
+        $row_esc = DB::table('wx_user_esc')
+            ->whereDate('adddate','>=', date("Y-m-d", strtotime("-1 day")))
+            ->whereDate('adddate', '<', date("Y-m-d"))
+            ->count();
+//            $other=$row_confirm-$row_send;
+
+        DB::table('wx_user_dairy_detail')
+            ->insert(['add'=>$row_add,'esc'=>$row_esc,'date'=>date("Y-m-d", strtotime("-1 day"))]);
 
     }
 

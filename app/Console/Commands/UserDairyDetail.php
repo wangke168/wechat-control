@@ -69,4 +69,20 @@ class UserDairyDetail extends Command
         DB::table('wx_order_dairy_detail')
             ->insert(['submit'=>$row_confirm,'confirm'=>$row_send,'date'=>date("Y-m-d", strtotime("-1 day"))]);
     }
+    private function user_dairy()
+    {
+        $row_add = DB::table('wx_user_add')
+            ->whereDate('adddate','>=', date("Y-m-d", strtotime("-1 day")))
+            ->whereDate('adddate', '<', date("Y-m-d"))
+            ->count();
+
+        $row_esc = DB::table('wx_user_esc')
+            ->whereDate('adddate','>=', date("Y-m-d", strtotime("-1 day")))
+            ->whereDate('adddate', '<', date("Y-m-d"))
+            ->count();
+//            $other=$row_confirm-$row_send;
+
+        DB::table('wx_user_dairy_detail')
+            ->insert(['add'=>$row_add,'esc'=>$row_esc,'date'=>date("Y-m-d", strtotime("-1 day"))]);
+    }
 }
