@@ -41,6 +41,7 @@ class UsersController extends Controller
             $request->session()->put('username', $username);
             $request->session()->put('managelevel', $userinfo->managelevel);
             $request->session()->put('eventkey', $userinfo->eventkey);
+            $request->session()->put('if_copy', $userinfo->if_copy);
             if ($userinfo->eventkey<>'all'){
                 return redirect('/control/index');
             }

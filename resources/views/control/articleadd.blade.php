@@ -268,7 +268,7 @@ href="{{asset('assets/global/plugins/bootstrap-datepicker/css/datepicker3.css')}
                     </div>
                 </div>
 
-                @if(Session::get('managelevel')<>'2')
+                @if(Session::get('if_copy')=='1')
                 <div class="form-group">
                     <label class="control-label col-md-1">是否允许复制</label>
 
