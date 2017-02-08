@@ -47,11 +47,10 @@
                         <div class="number">
 
                             <?php
-                            $row = DB::table('wx_user_add')
-                                    ->whereDate('adddate', '>=', date("Y-m-d", strtotime("-1 day")))
-                                    ->whereDate('adddate', '<', date("Y-m-d"))
-                                    ->count();
-                            echo $row;
+                            $row = DB::table('wx_user_dairy_detail')
+                                    ->orderBy('id','desc')
+                                    ->first();
+                            echo $row->add;
                             ?>
 
                         </div>
@@ -71,13 +70,7 @@
                     </div>
                     <div class="details">
                         <div class="number">
-                            <?php
-                            $row = DB::table('wx_user_esc')
-                                    ->whereDate('esc_time', '>=', date("Y-m-d", strtotime("-1 day")))
-                                    ->whereDate('esc_time', '<', date("Y-m-d"))
-                                    ->count();
-                            echo $row;
-                            ?>
+                            {!! $row->esc !!}
                         </div>
                         <div class="desc">
                             昨日取消关注数
@@ -96,11 +89,10 @@
                     <div class="details">
                         <div class="number">
                             <?php
-                            $row = DB::table('wx_order_send')
-                                    ->whereDate('adddate', '>=', date("Y-m-d", strtotime("-1 day")))
-                                    ->whereDate('adddate', '<', date("Y-m-d"))
-                                    ->count();
-                            echo $row;
+                            $row_order = DB::table('wx_order_dairy_detail')
+                                    ->orderBy('id','desc')
+                                    ->first();
+                            echo $row_order->confirm;
                             ?>
                         </div>
                         <div class="desc">
