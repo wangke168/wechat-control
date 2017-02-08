@@ -103,5 +103,23 @@ class DataController extends Controller
         return view('control.count_order_payed_search', compact('rows', 'from', 'to'));
     }
 
+    public function user_dairy_detail(Request $request)
+    {
+        $row_add=DB::table('wx_user_dairy_detail')
+            ->orderBy('id','desc')
+            ->take(15)
+            ->get();
+        $i=1;
+        $row_add=array_reverse($row_add);
+        foreach ($row_add as $key=>$row_test)
+        {
+            $add[] = array('date' => $i, 'numbers' => $row_test->add);
+            $esc[] = array('date' => $i, 'numbers' => $row_test->esc);
+            $i=$i+1;
+        }
+        $info=array('add'=>$add,'esc'=>$esc);
+        return response()->json($info)->setCallback($request->input('callback'));
+    }
+
 
 }

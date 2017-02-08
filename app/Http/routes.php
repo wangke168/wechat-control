@@ -100,6 +100,6 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
 
 Route::get('test','Test\TestController@test');
 
-Route::get('add','Test\TestController@take_add_json');
+Route::get('add','Control\DataController@user_dairy_detail');
 Route::get('esc','Test\TestController@take_esc_json');
 Route::get('json/order','JsonController@take_order');

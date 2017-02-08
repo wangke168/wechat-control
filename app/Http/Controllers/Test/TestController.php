@@ -46,7 +46,7 @@ class TestController extends Controller
             DB::table('wx_user_dairy_detail')
                 ->insert(['add'=>$row_add,'esc'=>$row_esc,'date'=>$from]);
         }
-        
+
     }
 
 
@@ -80,7 +80,7 @@ class TestController extends Controller
     public function take_add_json(Request $request)
     {
 //        $info[]=array('root'=>'add');
-        for ($x=-16; $x<=-1; $x++) {
+   /*     for ($x=-16; $x<=-1; $x++) {
             $y=$x+1;
             $z=$x+16;
             $from = date("Y-m-d", strtotime($x." day"));
@@ -92,10 +92,24 @@ class TestController extends Controller
                 ->count();
             $date=strtotime("2002-02-20 UTC") * 1000;
             $add[] = array('date' => $z, 'numbers' => $row);
+        }*/
+
+        $row_add=DB::table('wx_user_dairy_detail')
+            ->orderBy('id','desc')
+            ->take(15)
+            ->get();
+        $i=1;
+        $row_add=array_reverse($row_add);
+        foreach ($row_add as $key=>$row_test)
+        {
+            $add[] = array('date' => $i, 'numbers' => $row_test->add);
+            $esc[] = array('date' => $i, 'numbers' => $row_test->esc);
+            $i=$i+1;
         }
+//        $test=$row_add->add;
+//        return $add;
 
-
-        for ($x=-16; $x<=-1; $x++) {
+      /*  for ($x=-16; $x<=-1; $x++) {
             $y=$x+1;
             $z=$x+16;
             $from = date("Y-m-d", strtotime($x." day"));
@@ -108,7 +122,7 @@ class TestController extends Controller
             $date=strtotime("2002-02-20 UTC") * 1000;
             $esc[] = array('date' => $z, 'numbers' => $row);
         }
-
+*/
 
         $info=array('add'=>$add,'esc'=>$esc);
         return response()->json($info)->setCallback($request->input('callback'));
