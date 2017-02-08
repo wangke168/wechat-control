@@ -10,12 +10,7 @@ class DataController extends Controller
 {
     public function click(Request $request)
     {
-        /*
-                $rows=DB::table('wx_click_hits')
-                    ->whereDate('adddate', '>=', '2016-10-12')
-                    ->whereDate('adddate', '<', '2016-10-13')
-                    ->groupBy('click')
-                    ->count();*/
+
         $from = date('Y-m-d', mktime(0, 0, 0, date('n'), 1, date('Y')));
         $to = date('Y-m-d');
         \Session::flash('from', $from);
@@ -103,6 +98,11 @@ class DataController extends Controller
         return view('control.count_order_payed_search', compact('rows', 'from', 'to'));
     }
 
+    /**
+     * 获取近半个月的关注谁和取消关注数,并在公告牌显示
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\JsonResponse
+     */
     public function user_dairy_detail(Request $request)
     {
         $row_add=DB::table('wx_user_dairy_detail')
@@ -121,5 +121,28 @@ class DataController extends Controller
         return response()->json($info)->setCallback($request->input('callback'));
     }
 
+    /**
+     * 获取近半个月的订单提交数和付款数,并在公告牌显示
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\JsonResponse
+     */
+    public function take_order(Request $request)
+    {
+        $row_add=DB::table('wx_order_dairy_detail')
+            ->orderBy('id','desc')
+            ->take(15)
+            ->get();
+        $i=1;
+        $row_add=array_reverse($row_add);
+        foreach ($row_add as $key=>$row_test)
+        {
+            $send[] = array('date' => $i, 'numbers' => $row_test->confirm);
+            $other[] = array('date' => $i, 'numbers' => $row_test->submit);
+            $i=$i+1;
+        }
+        $info=array('send'=>$send,'other'=>$other);
+        return response()->json($info)->setCallback($request->input('callback'));
+
+    }
 
 }

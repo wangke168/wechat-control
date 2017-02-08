@@ -31,20 +31,19 @@ class TestController extends Controller
             $z=$x+16;
             $from = date("Y-m-d", strtotime($x." day"));
             $to = date("Y-m-d", strtotime($y." day"));
-            $row_add = DB::table('wx_user_add')
-
+            $row_confirm = DB::table('wx_order_confirm')
                 ->whereDate('adddate', '>=', $from)
                 ->whereDate('adddate', '<', $to)
                 ->count();
 
-            $row_esc = DB::table('wx_user_esc')
-
-                ->whereDate('esc_time', '>=', $from)
-                ->whereDate('esc_time', '<', $to)
+            $row_send = DB::table('wx_order_send')
+                ->whereDate('adddate', '>=', $from)
+                ->whereDate('adddate', '<', $to)
                 ->count();
+//            $other=$row_confirm-$row_send;
 
-            DB::table('wx_user_dairy_detail')
-                ->insert(['add'=>$row_add,'esc'=>$row_esc,'date'=>$from]);
+            DB::table('wx_order_dairy_detail')
+                ->insert(['submit'=>$row_confirm,'confirm'=>$row_send,'date'=>$from]);
         }
 
     }

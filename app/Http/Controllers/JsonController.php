@@ -35,7 +35,7 @@ class JsonController extends Controller
 
     public function take_order(Request $request)
     {
-        for ($x=-16; $x<=-1; $x++) {
+        /*for ($x=-16; $x<=-1; $x++) {
             $y=$x+1;
             $z=$x+16;
             $from = date("Y-m-d", strtotime($x." day"));
@@ -52,6 +52,18 @@ class JsonController extends Controller
 //            $other=$row_confirm-$row_send;
             $send[] = array('date' => $z, 'numbers' => $row_send);
             $other[] = array('date' => $z, 'numbers' =>$row_confirm-$row_send);
+        }*/
+        $row_add=DB::table('wx_order_dairy_detail')
+            ->orderBy('id','desc')
+            ->take(15)
+            ->get();
+        $i=1;
+        $row_add=array_reverse($row_add);
+        foreach ($row_add as $key=>$row_test)
+        {
+            $send[] = array('date' => $i, 'numbers' => $row_test->confirm);
+            $other[] = array('date' => $i, 'numbers' => $row_test->submit);
+            $i=$i+1;
         }
         $info=array('send'=>$send,'other'=>$other);
         return response()->json($info)->setCallback($request->input('callback'));
