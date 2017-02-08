@@ -126,7 +126,7 @@ class DataController extends Controller
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\JsonResponse
      */
-    public function take_order(Request $request)
+    public function order_dairy_detail(Request $request)
     {
         $row_add=DB::table('wx_order_dairy_detail')
             ->orderBy('id','desc')
@@ -137,7 +137,7 @@ class DataController extends Controller
         foreach ($row_add as $key=>$row_test)
         {
             $send[] = array('date' => $i, 'numbers' => $row_test->confirm);
-            $other[] = array('date' => $i, 'numbers' => $row_test->submit);
+            $other[] = array('date' => $i, 'numbers' => $row_test->submit-$row_test->confirm);
             $i=$i+1;
         }
         $info=array('send'=>$send,'other'=>$other);

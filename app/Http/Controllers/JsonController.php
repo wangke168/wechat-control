@@ -62,7 +62,7 @@ class JsonController extends Controller
         foreach ($row_add as $key=>$row_test)
         {
             $send[] = array('date' => $i, 'numbers' => $row_test->confirm);
-            $other[] = array('date' => $i, 'numbers' => $row_test->submit);
+            $other[] = array('date' => $i, 'numbers' => $row_test->submit-$row_test->confirm);
             $i=$i+1;
         }
         $info=array('send'=>$send,'other'=>$other);

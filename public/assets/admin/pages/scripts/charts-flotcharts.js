@@ -129,7 +129,7 @@ var ChartsFlotcharts = function () {
 
 
                     $.ajax({
-                        url: "/add",
+                        url: "/json/userdairydetail",
                         type: "get",
                         beforeSend: function () {
                             var el = $('#chart_2');
@@ -430,7 +430,7 @@ var ChartsFlotcharts = function () {
                     steps = false;
 
                 $.ajax({
-                    url: "/json/order",
+                    url: "/json/orderdairydetail",
                     type: "get",
                     beforeSend: function () {
                         var el = $('#chart_5');
