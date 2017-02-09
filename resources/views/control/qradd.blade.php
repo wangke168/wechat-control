@@ -95,7 +95,33 @@
                                 </div>
 
                             </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-1">Logo</label>
 
+                                <div class="col-md-11">
+                                    <div class="fileinput fileinput-new" data-provides="fileinput">
+                                        <div class="fileinput-preview thumbnail" data-trigger="fileinput"
+                                             style="width: 100px; height: 100px;">
+                                        </div>
+                                        <div>
+                               <span class="btn default btn-file">
+                                   <span class="fileinput-new">
+                                       选择图片 </span>
+                                       <span class="fileinput-exists">
+                                           更换图片 </span>
+                                           <input type="file" name="qrscene_logo">
+                                       </span>
+                                            <a href="#" class="btn red fileinput-exists" data-dismiss="fileinput">
+                                                移除 </a>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix margin-top-10">
+                                    <span class="label label-danger">
+                                        注意! </span> 尺寸为98*98
+                                    </div>
+
+                                </div>
+                            </div>
                             <div class="form-group">
 
                                 <label class="control-label  col-md-1">UID</label>

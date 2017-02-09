@@ -2,6 +2,7 @@
 namespace App\Http\Controllers\Control;
 
 use App\WeChat\Usage;
+use EasyWeChat\Foundation\Application;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
@@ -11,8 +12,12 @@ use Intervention\Image\Facades\Image;
 class QrlistController extends Controller
 {
     public $usage;
-    public function __construct()
+    public $app;
+    public $qrcode;
+    public function __construct(Application $app)
     {
+        $this->app=$app;
+        $this->qrcode=$this->app->qrcode;
         $this->usage=new Usage();
     }
 
@@ -65,7 +70,7 @@ class QrlistController extends Controller
         $uid = $request->input('qrscene_uid');
 
         $classid = $request->input('classid');
-
+        $qr_logo = $this->usage->uploadImage($request->file('qrscene_logo'),'qr_logo');
         if ($action == 'add') {
             $j = 1000;
             $k = 100000;
@@ -81,15 +86,19 @@ class QrlistController extends Controller
             DB::table('wx_qrscene_info')
                 ->insert(['classid' => $classid, 'qrscene_id' => $j, 'qrscene_name' => $qrscene_name,
                     'qrscene_person_name' => $qrscene_person_name,
-                    'qrscene_person_phone' => $qrscene_person_phone, 'uid' => $uid]);
+                    'qrscene_person_phone' => $qrscene_person_phone,'qrscene_logo'=>$qr_logo, 'uid' => $uid]);
 
             return redirect('control/qrlist?classid=' . $classid);
         } elseif ($action == 'modify') {
+//            $qr_logo = $this->usage->uploadImage($request->file('qrscene_logo'),'qr_logo');
+            if (!$qr_logo) {
+                $qr_logo = $request->input('qrscene_logo_session');
+            }
             DB::table('wx_qrscene_info')
                 ->where('id', $id)
                 ->update(['classid' => $classid, 'qrscene_name' => $qrscene_name,
                     'qrscene_person_name' => $qrscene_person_name,
-                    'qrscene_person_phone' => $qrscene_person_phone, 'uid' => $uid]);
+                    'qrscene_person_phone' => $qrscene_person_phone,'qrscene_logo'=>$qr_logo,'uid' => $uid]);
 
             return redirect('control/qrlist?classid=' . $classid);
         }
@@ -115,16 +124,25 @@ class QrlistController extends Controller
      */
     public function create($id)
     {
+        $row=DB::table('wx_qrscene_info')
+            ->where('id',$id)
+            ->first();
         $app = app('wechat');
         $qrcode = $app->qrcode;
-        $result = $qrcode->forever($id);// 或者 $qrcode->forever("foo");
+        $result = $qrcode->forever($row->qrscene_id);// 或者 $qrcode->forever("foo");
         $ticket = $result->ticket; // 或者 $result['ticket']
-
-        $QR = $qrcode->url($ticket);
-        $logo = 'qr/logo.png';
+        if ($row->qrscene_logo) {
+            $qr_logo = $row->qrscene_logo;
+        }
+        else{
+            $qr_logo='qr/logo.png';
+        }
+       /* $QR = $qrcode->url($ticket);
+        $logo = $qr_logo;
         $img = Image::make($QR);
         $img->insert($logo, 'center');
-        return $img->response('png');
+        return $img->response('png');*/
+        return $this->create_qr($ticket,$qr_logo);
     }
 
 
@@ -200,20 +218,29 @@ class QrlistController extends Controller
         else{
             $qr_logo='qr/logo.png';
         }
-        $app = app('wechat');
-        $qrcode = $app->qrcode;
-        $result = $qrcode->temporary($qr_id, $qr_expire);
+
+//        $qrcode = $this->app->qrcode;
+        $result = $this->qrcode->temporary($qr_id, $qr_expire);
         $ticket = $result->ticket;// 或者 $result['ticket']
 //        $expireSeconds = $result->expire_seconds; // 有效秒数
 //        $url = $result->url; // 二维码图片解析后的地址，开发者可根据该地址自行生成需要的二维码图片
 
-        $QR = $qrcode->url($ticket);
-//        $logo = 'qr/logo_ldjl.png';
+        /*$QR = $this->qrcode->url($ticket);
+        $logo=$qr_logo;
+        $img = Image::make($QR);
+        $img->insert($logo, 'center');
+        return $img->response('png');*/
+        return $this->create_qr($ticket,$qr_logo);
+
+    }
+
+    private function create_qr($ticket,$qr_logo)
+    {
+//        $qrcode = $this->app->qrcode;
+        $QR = $this->qrcode->url($ticket);
         $logo=$qr_logo;
         $img = Image::make($QR);
         $img->insert($logo, 'center');
         return $img->response('png');
-
     }
-
 }

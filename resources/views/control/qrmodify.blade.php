@@ -9,7 +9,8 @@
 <link rel="stylesheet" type="text/css" href="{{asset('assets/global/plugins/select2/select2.css')}}"/>
 <link rel="stylesheet" type="text/css"
       href="{{asset('assets/global/plugins/jquery-multi-select/css/multi-select.css')}}"/>
-
+<!--上传-->
+<link href="{{asset('assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css')}}" rel="stylesheet">
 @stop
 @section('page-title','二维码管理')
 @section('page-menu-title', '修改二维码信息')
@@ -56,91 +57,125 @@
                     <input type="text" name="id" hidden value="{!! $row->id !!}">
 
 
-                        <div class="form-body">
+                    <div class="form-body">
 
-                            <div class="form-group">
+                        <div class="form-group">
 
-                                <label class="control-label  col-md-1">名称</label>
+                            <label class="control-label  col-md-1">名称</label>
 
-                                <div class="col-md-11">
-                                    <input type="text" class="form-control input-large"
-                                           name="qrscene_name" value="{!! $row->qrscene_name !!}"/>
-                                </div>
+                            <div class="col-md-11">
+                                <input type="text" class="form-control input-large"
+                                       name="qrscene_name" value="{!! $row->qrscene_name !!}"/>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label class="control-label  col-md-1">联系人</label>
+
+                            <div class="col-md-11">
+
+                                <input id="Modal1in" type="text" value="{!! $row->qrscene_person_name !!}"
+                                       class="form-control input-large"
+                                       name="qrscene_person_name"/>
 
                             </div>
 
-                            <div class="form-group">
+                        </div>
 
-                                <label class="control-label  col-md-1">联系人</label>
+                        <div class="form-group">
 
-                                <div class="col-md-11">
+                            <label class="control-label  col-md-1">联系电话</label>
 
-                                    <input id="Modal1in" type="text" value="{!! $row->qrscene_person_name !!}" class="form-control input-large"
-                                           name="qrscene_person_name"/>
+                            <div class="col-md-11">
 
-                                </div>
+                                <input id="Text1" type="text" value="{!! $row->qrscene_person_phone !!}"
+                                       class="form-control input-large"
+                                       name="qrscene_person_phone"/>
+
 
                             </div>
 
-                            <div class="form-group">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-1">Logo</label>
 
-                                <label class="control-label  col-md-1">联系电话</label>
-
-                                <div class="col-md-11">
-
-                                    <input id="Text1" type="text" value="{!! $row->qrscene_person_phone !!}" class="form-control input-large"
-                                           name="qrscene_person_phone"/>
-
-
-                                </div>
-
-                            </div>
-
-                            <div class="form-group">
-
-                                <label class="control-label  col-md-1">UID</label>
-
-                                <div class="col-md-11">
-
-                                    <input id="Text2" type="text" value="{!! $row->uid !!}" class="form-control input-large"
-                                           name="qrscene_uid"/>
-
-                                </div>
-
-                            </div>
-
-                            <div class="form-group">
-
-                                <label class="control-label  col-md-1">类型</label>
-
-                                <div class="col-md-11">
-
-                                    <select class="form-control input-medium select2me" name="classid"
-                                            data-placeholder="选择所属类别">
-                                        <option value=""></option>
+                            <div class="col-md-11">
+                                <div class="fileinput fileinput-new" data-provides="fileinput">
+                                    <div class="fileinput-preview thumbnail" data-trigger="fileinput"
+                                         style="width: 100px; height: 100px;">
                                         <?php
-                                        $Qr = new \App\WeChat\Qr();
-                                        $Qr->check_qr_classid($row->classid);
+                                        if ($row->qrscene_logo) {
+                                            echo '<img src=/' . $row->qrscene_logo . '>';
+                                        }
                                         ?>
-
-
-                                    </select>
-
-                                </div>
-
-                            </div>
-
-                            <div class="form-actions">
-                                <div class="row">
-                                    <div class="col-md-offset-3 col-md-9">
-                                        <button type="submit" class="btn green"><i class="fa fa-check"></i> 提 交</button>
-                                        <button type="button" class="btn default">Cancel</button>
+                                    </div>
+                                    <div>
+                               <span class="btn default btn-file">
+                                   <span class="fileinput-new">
+                                       选择图片 </span>
+                                       <span class="fileinput-exists">
+                                           更换图片 </span>
+                                           <input type="file" name="qrscene_logo">
+                                   <input type="text" name="qrscene_logo_session" hidden value="{!! $row->qrscene_logo !!}">
+                                       </span>
+                                        <a href="#" class="btn red fileinput-exists" data-dismiss="fileinput">
+                                            移除 </a>
                                     </div>
                                 </div>
+                                <div class="clearfix margin-top-10">
+                                    <span class="label label-danger">
+                                        注意! </span> 尺寸为98*98
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <label class="control-label  col-md-1">UID</label>
+
+                            <div class="col-md-11">
+
+                                <input id="Text2" type="text" value="{!! $row->uid !!}" class="form-control input-large"
+                                       name="qrscene_uid"/>
+
                             </div>
 
-                            <!--END TABS-->
                         </div>
+
+                        <div class="form-group">
+
+                            <label class="control-label  col-md-1">类型</label>
+
+                            <div class="col-md-11">
+
+                                <select class="form-control input-medium select2me" name="classid"
+                                        data-placeholder="选择所属类别">
+                                    <option value=""></option>
+                                    <?php
+                                    $Qr = new \App\WeChat\Qr();
+                                    $Qr->check_qr_classid($row->classid);
+                                    ?>
+
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-actions">
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button type="submit" class="btn green"><i class="fa fa-check"></i> 提 交</button>
+                                    <button type="button" class="btn default">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--END TABS-->
+                    </div>
                     {!! Form::close() !!}
 
                 </div>
@@ -150,14 +185,16 @@
         </div>
     </div>
 
-@stop
+    @stop
 
 
-@section('js')
-        <!-- BEGIN PAGE LEVEL PLUGINS -->
+    @section('js')
+            <!-- BEGIN PAGE LEVEL PLUGINS -->
     <script type="text/javascript"
             src="{{asset('assets/global/plugins/bootstrap-select/bootstrap-select.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('assets/global/plugins/select2/select2.min.js')}}"></script>
     <script type="text/javascript"
             src="{{asset('assets/global/plugins/jquery-multi-select/js/jquery.multi-select.js')}}"></script>
-    @stop
+    <!--上传-->
+    <script src="{{asset('assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js')}}"></script>
+@stop
