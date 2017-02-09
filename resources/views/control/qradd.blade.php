@@ -9,7 +9,8 @@
 <link rel="stylesheet" type="text/css" href="{{asset('assets/global/plugins/select2/select2.css')}}"/>
 <link rel="stylesheet" type="text/css"
       href="{{asset('assets/global/plugins/jquery-multi-select/css/multi-select.css')}}"/>
-
+<!--上传-->
+<link href="{{asset('assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css')}}" rel="stylesheet">
 @stop
 
 @section('page-menu-title', '登记二维码')
@@ -186,4 +187,6 @@
     <script type="text/javascript" src="{{asset('assets/global/plugins/select2/select2.min.js')}}"></script>
     <script type="text/javascript"
             src="{{asset('assets/global/plugins/jquery-multi-select/js/jquery.multi-select.js')}}"></script>
+    <!--上传-->
+    <script src="{{asset('assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js')}}"></script>
     @stop

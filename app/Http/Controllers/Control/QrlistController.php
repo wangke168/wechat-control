@@ -236,7 +236,6 @@ class QrlistController extends Controller
 
     private function create_qr($ticket,$qr_logo)
     {
-//        $qrcode = $this->app->qrcode;
         $QR = $this->qrcode->url($ticket);
         $logo=$qr_logo;
         $img = Image::make($QR);
