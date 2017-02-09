@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/QrlistController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/QrlistController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/qradd.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/qradd.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/qrlist.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/qrlist.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/qrsearch.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/qrsearch.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/qrtemplist.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/qrtemplist.blade.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QrlistController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QrlistController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/QrlistController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-106.603775">
-              <caret line="237" column="5" selection-start-line="237" selection-start-column="5" selection-end-line="237" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.40532824">
+              <caret line="210" column="31" selection-start-line="210" selection-start-column="31" selection-end-line="210" selection-end-column="31" />
               <folding>
                 <element signature="e#47#68#0#PHP" expanded="true" />
               </folding>
@@ -51,8 +53,8 @@
       <file leaf-file-name="qrlist.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/qrlist.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.384615">
-              <caret line="98" column="164" selection-start-line="98" selection-start-column="164" selection-end-line="98" selection-end-column="164" />
+            <state vertical-scroll-proportion="-12.615385">
+              <caret line="98" column="172" selection-start-line="98" selection-start-column="162" selection-end-line="98" selection-end-column="172" />
               <folding />
             </state>
           </provider>
@@ -92,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qrsearch.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="qrsearch.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/qrsearch.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25510204">
-              <caret line="98" column="168" selection-start-line="98" selection-start-column="168" selection-end-line="98" selection-end-column="168" />
+            <state vertical-scroll-proportion="6.730769">
+              <caret line="98" column="176" selection-start-line="98" selection-start-column="166" selection-end-line="98" selection-end-column="176" />
               <folding />
             </state>
           </provider>
@@ -125,8 +127,8 @@
       <file leaf-file-name="qrtemplist.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/qrtemplist.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.716981">
-              <caret line="52" column="108" selection-start-line="52" selection-start-column="108" selection-end-line="52" selection-end-column="108" />
+            <state vertical-scroll-proportion="-7.09434">
+              <caret line="114" column="177" selection-start-line="114" selection-start-column="177" selection-end-line="114" selection-end-column="177" />
               <folding />
             </state>
           </provider>
@@ -184,13 +186,13 @@
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/control/qrtempadd.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/qrtempmodify.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/control/qrtemplist.blade.php" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/resources/views/control/qrmodify.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/control/qrlist.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Control/QrlistController.php" />
         <option value="$PROJECT_DIR$/resources/views/control/qradd.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/qrlist.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/qrsearch.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/qrtemplist.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Control/QrlistController.php" />
       </list>
     </option>
   </component>
@@ -405,7 +407,7 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="qrs&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qrsearch.blade.php&#10;qr&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qradd.blade.php&#10;re&#9;FILE&#9;file:///Volumes/Result/Project/lesson/readme.md&#10;a&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlemodify.blade.php&#10;art&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlemodify.blade.php&#10;ar&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articleadd.blade.php&#10;arti&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articleadd.blade.php&#10;pu&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/PushController.php&#10;push&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/push_project_list.blade.php&#10;qra&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qradd.blade.php&#10;qrl&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/QrlistController.php&#10;si&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/sidebar.blade.php&#10;me&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/menu_list.blade.php&#10;menu&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/menu_list.blade.php&#10;article&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlelist.blade.php&#10;pro&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/push_project_add.blade.php&#10;mess&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/message.blade.php&#10;usage&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Wechat/Usage.php&#10;sid&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/sidebar.blade.php&#10;Req&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/RequestController.php&#10;rout&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/routes.php" />
+    <property name="SearchEverywhereHistoryKey" value="qr&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qrtemplist.blade.php&#10;qrs&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qrsearch.blade.php&#10;re&#9;FILE&#9;file:///Volumes/Result/Project/lesson/readme.md&#10;a&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlemodify.blade.php&#10;art&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlemodify.blade.php&#10;ar&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articleadd.blade.php&#10;arti&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articleadd.blade.php&#10;pu&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/PushController.php&#10;push&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/push_project_list.blade.php&#10;qra&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qradd.blade.php&#10;qrl&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/QrlistController.php&#10;si&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/sidebar.blade.php&#10;me&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/menu_list.blade.php&#10;menu&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/menu_list.blade.php&#10;article&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlelist.blade.php&#10;pro&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/push_project_add.blade.php&#10;mess&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/message.blade.php&#10;usage&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Wechat/Usage.php&#10;sid&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/sidebar.blade.php&#10;Req&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/RequestController.php&#10;rout&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/routes.php" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../qywechat" />
     <property name="FullScreen" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -818,14 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/qrtemplist.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.716981">
-          <caret line="52" column="108" selection-start-line="52" selection-start-column="108" selection-end-line="52" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/articleadd.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16745956">
@@ -836,14 +830,6 @@
             <marker date="1486623050000" expanded="true" signature="1857:2043" placeholder="..." />
             <marker date="1486623050000" expanded="true" signature="1858:2042" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7777777">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -861,24 +847,6 @@
           <caret line="96" column="24" selection-start-line="96" selection-start-column="24" selection-end-line="122" selection-end-column="30" />
           <folding>
             <element signature="e#3679#3715#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/qrlist.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.384615">
-          <caret line="98" column="164" selection-start-line="98" selection-start-column="164" selection-end-line="98" selection-end-column="164" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/QrlistController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-106.603775">
-          <caret line="237" column="5" selection-start-line="237" selection-start-column="5" selection-end-line="237" selection-end-column="5" />
-          <folding>
-            <element signature="e#47#68#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -901,11 +869,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7777777">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/qrsearch.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25510204">
-          <caret line="98" column="168" selection-start-line="98" selection-start-column="168" selection-end-line="98" selection-end-column="168" />
+        <state vertical-scroll-proportion="6.730769">
+          <caret line="98" column="176" selection-start-line="98" selection-start-column="166" selection-end-line="98" selection-end-column="176" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/qrlist.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.615385">
+          <caret line="98" column="172" selection-start-line="98" selection-start-column="162" selection-end-line="98" selection-end-column="172" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/qrtemplist.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.09434">
+          <caret line="114" column="177" selection-start-line="114" selection-start-column="177" selection-end-line="114" selection-end-column="177" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/QrlistController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40532824">
+          <caret line="210" column="31" selection-start-line="210" selection-start-column="31" selection-end-line="210" selection-end-column="31" />
+          <folding>
+            <element signature="e#47#68#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

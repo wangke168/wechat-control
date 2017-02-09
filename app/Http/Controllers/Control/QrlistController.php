@@ -125,11 +125,11 @@ class QrlistController extends Controller
     public function create($id)
     {
         $row=DB::table('wx_qrscene_info')
-            ->where('id',$id)
+            ->where('qrscene_id',$id)
             ->first();
         $app = app('wechat');
         $qrcode = $app->qrcode;
-        $result = $qrcode->forever($row->qrscene_id);// 或者 $qrcode->forever("foo");
+        $result = $qrcode->forever($id);// 或者 $qrcode->forever("foo");
         $ticket = $result->ticket; // 或者 $result['ticket']
         if ($row->qrscene_logo) {
             $qr_logo = $row->qrscene_logo;
@@ -208,7 +208,7 @@ class QrlistController extends Controller
     public function create_temp($id)
     {
         $row=DB::table('wx_qrscene_temp_info')
-            ->where('id',$id)
+            ->where('qrscene_id',$id)
             ->first();
         $qr_id=$row->qrscene_id;
         $qr_expire=$row->expireseconds*60;
