@@ -9,7 +9,7 @@
 namespace App\WeChat;
 
 use DB;
-
+use Image;
 class Usage
 {
     /**
@@ -120,6 +120,41 @@ class Usage
 
     }
 
+    public function uploadImage($filename, $type)
+    {
+        if ($filename) {
+            $file = $filename;
+            //判断文件上传过程中是否出错
+            if (!$file->isValid()) {
+                exit('文件上传出错！');
+            }
+            $destPath = 'uploads/' . date('Ymd') . '/';
+            if (!file_exists($destPath))
+                mkdir($destPath, 0755, true);
+            $extension = $file->getClientOriginalExtension();
+            $filename = time() . str_random(5) . '.' . $extension;
 
+//            $filename = time() . str_random(5) . $file->getClientOriginalName();
+            if (!$file->move($destPath, $filename)) {
+                exit('保存文件失败！');
+            }
+
+            switch ($type) {
+
+                case 'pic_url':
+                    Image::make($destPath . $filename)->save();
+                    break;
+                case 'pyq_pic':
+                    Image::make($destPath . $filename)->fit(200)->save();
+                    break;
+                case 'qr_logo':
+                    Image::make($destPath . $filename)->fit(98)->save();
+                    break;
+            }
+
+            return $destPath . $filename;
+
+        }
+    }
 
 }

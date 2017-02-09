@@ -43,7 +43,7 @@
                 </div>
 
                 <div class="portlet-body">
-                    <form method="GET" name="myform" action="qrsearch" class="navbar-form navbar-right">
+                    <form method="GET" name="myform" action="qrsearch?action=qr" class="navbar-form navbar-right">
                         <input class="m-wrap" type="text" name="keyword" class="form-control" placeholder="二维码关键字"
                                id="keyword" value=""/>
                         <button type="submit"><span class="glyphicon glyphicon-search"></span></button>

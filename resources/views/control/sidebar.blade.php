@@ -203,6 +203,10 @@
                         echo "<li><a href='qrlist?classid=" . $row->classid . "'>" . $row->class_name . "</a></li>";
                     }
                     ?>
+                        <li>
+                            <a href="qrtemp">
+                                临时二维码</a>
+                        </li>
                     <li>
                         <a href="qradd">
                             登记二维码</a>
