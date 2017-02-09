@@ -159,6 +159,16 @@ class QrlistController extends Controller
                 $qr_expire=$request->input('qrscene_expire');
                 $qr_uid=$request->input('qrscene_uid');
                 $qr_logo = $this->usage->uploadImage($request->file('qrscene_logo'),'qr_logo');
+
+                $row=DB::table('wx_qrscene_temp_info')
+                    ->where('qrscene_id',$qr_id)
+                    ->get();
+                if ($row)
+                {
+                    \Session::flash('qr_id_repeat','failed');
+                    return redirect()->back()->withInput($request->input());
+                }
+
                 DB::table('wx_qrscene_temp_info')
                     ->insert(['qrscene_id'=>$qr_id,"qrscene_name"=>$qr_name,'uid'=>$qr_uid,
                         'qrscene_logo'=>$qr_logo,'expireseconds'=>$qr_expire]);

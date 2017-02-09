@@ -54,7 +54,12 @@
 
                     {!! Form::open(['url'=>'control/qrtemp?action=save','files'=>true,'class'=>'form-horizontal form-bordered','id'=>'postForm']) !!}
 
-
+                    @if(Session::has('qr_id_repeat'))
+                        <div class="alert alert-danger">
+                            <button class="close" data-close="alert"></button>
+			                <span>该编号的临时二维码已经存在 </span>
+                        </div>
+                    @endif
                     <div class="form-body">
 
                         <div class="form-group">
