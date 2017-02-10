@@ -67,6 +67,9 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
     Route::get('ordercount','Control\DataController@ordersend');
     Route::get('ordercountsearch','Control\DataController@ordersend_search');
     Route::get('orderaction','Control\DataController@orderaction');
+    //市场数据统计
+    Route::get('countmarket','Control\DataController@market');
+    Route::post('countmarket','Control\DataController@market');
 
     //二维码管理
     Route::get('qradd','Control\QrlistController@add');

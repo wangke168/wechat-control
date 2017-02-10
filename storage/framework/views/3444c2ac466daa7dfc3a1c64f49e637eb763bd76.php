@@ -74,9 +74,7 @@
                             <th>
                                 状态
                             </th>
-                            <th>
-                                关注时间
-                            </th>
+
                             <th>
                                 来源
                             </th>
@@ -91,6 +89,9 @@
                             </th>
                             <th>
                                 预达日期
+                            </th>
+                            <th>
+                                关注时间
                             </th>
                             <th>
                               其他预订
@@ -124,10 +125,7 @@
                                     }
                                     ?>
                                 </td>
-                                <td>
-                                    <?php echo $row->focusdate; ?>
 
-                                </td>
                                 <td>
                                     <?php
                                     if ($row->eventkey) {
@@ -152,6 +150,10 @@
                                 </td>
                                 <td>
                                     <?php echo $row->arrive_date; ?>
+
+                                </td>
+                                <td>
+                                    <?php echo $row->focusdate; ?>
 
                                 </td>
                                 <td>

@@ -50,224 +50,231 @@
 					公告牌 </span>
                     </a>
                 </li>
-                    <!-- START MARKET MENU -->
-            <li class="heading">
-                <h3 class="uppercase">Features</h3>
-            </li>
-            <li>
-                <a href="javascript:;">
-                    <i class="icon-settings"></i>
-                    <span class="title">文章管理</span>
-                    <span class="arrow "></span>
-                </a>
-                <ul class="sub-menu">
-                    <li>
-                        <a href="articlelist">
-                            文章列表</a>
-                    </li>
-                    <li>
-                        <a href="articleadd">
-                            添加文章</a>
-                    </li>
-                </ul>
-            </li>
-            <!-- END MARKET MENU-->
-            <?php endif; ?>
-            <?php if(Session::get('managelevel')=='3'): ?>
-                    <!-- BEGIN ANGULARJS LINK -->
-            <li class="tooltips" data-container="body" data-placement="right" data-html="true"
-                data-original-title="公告牌">
-                <a href="index">
-                    <i class="icon-home"></i>
+                <!-- START MARKET MENU -->
+                <li class="heading">
+                    <h3 class="uppercase">Features</h3>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="icon-settings"></i>
+                        <span class="title">文章管理</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="articlelist">
+                                文章列表</a>
+                        </li>
+                        <li>
+                            <a href="articleadd">
+                                添加文章</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- END MARKET MENU-->
+                <?php endif; ?>
+                <?php if(Session::get('managelevel')=='3'): ?>
+                        <!-- BEGIN ANGULARJS LINK -->
+                <li class="tooltips" data-container="body" data-placement="right" data-html="true"
+                    data-original-title="公告牌">
+                    <a href="index">
+                        <i class="icon-home"></i>
 					<span class="title">
 					公告牌 </span>
-                </a>
-            </li>
-            <!-- END ANGULARJS LINK -->
-            <!-- START MANGER MENU -->
-            <li class="heading">
-                <h3 class="uppercase">Features</h3>
-            </li>
-            <li>
-                <a href="javascript:;">
-                    <i class="icon-settings"></i>
-                    <span class="title">文章管理</span>
-                    <span class="arrow "></span>
-                </a>
-                <ul class="sub-menu">
-                    <li>
-                        <a href="articlelist">
-                            文章列表</a>
-                    </li>
-                    <li>
-                        <a href="articleadd">
-                            添加文章</a>
-                    </li>
-                    <?php /*                  <li>
-                                          <a href="form_layouts.html">
-                                              Form Layouts</a>
-                                      </li>
-                                      <li>
-                                          <a href="form_editable.html">
-                                              <span class="badge badge-roundless badge-warning">new</span>Form X-editable</a>
-                                      </li>
-                                      <li>
-                                          <a href="form_wizard.html">
-                                              Form Wizard</a>
-                                      </li>
-                                      <li>
-                                          <a href="form_validation.html">
-                                              Form Validation</a>
-                                      </li>
-                                      <li>
-                                          <a href="form_image_crop.html">
-                                              <span class="badge badge-roundless badge-danger">new</span>Image Cropping</a>
-                                      </li>
-                                      <li>
-                                          <a href="form_fileupload.html">
-                                              Multiple File Upload</a>
-                                      </li>
-                                      <li>
-                                          <a href="form_dropzone.html">
-                                              Dropzone File Upload</a>
-                                      </li>*/ ?>
-                </ul>
-            </li>
-            <li>
-                <a href="javascript:;">
-                    <i class="icon-book-open"></i>
-                    <span class="title">回复管理</span>
-                    <span class="arrow "></span>
-                </a>
-                <ul class="sub-menu">
-                    <li>
-                        <a href="requesttxt">
-                            文字回复</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            语音回复</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            图片回复</a>
-                    </li>
-                    <li>
-                        <a href="requestse">
-                            二次回复</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="javascript:;">
-                    <i class="icon-briefcase"></i>
-                    <span class="title">数据统计</span>
-                    <span class="arrow "></span>
-                </a>
-                <ul class="sub-menu">
-                    <li>
-                        <a href="menuclickcount">
-                            菜单点击数</a>
-                    </li>
-                    <?php /*         <li>
-                                 <a href="table_responsive.html">
-                                     Responsive Datatables</a>
-                             </li>
-                             <li>
-                                 <a href="table_managed.html">
-                                     Managed Datatables</a>
-                             </li>
-                             <li>
-                                 <a href="table_editable.html">
-                                     Editable Datatables</a>
-                             </li>
+                    </a>
+                </li>
+                <!-- END ANGULARJS LINK -->
+                <!-- START MANGER MENU -->
+                <li class="heading">
+                    <h3 class="uppercase">Features</h3>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="icon-settings"></i>
+                        <span class="title">文章管理</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="articlelist">
+                                文章列表</a>
+                        </li>
+                        <li>
+                            <a href="articleadd">
+                                添加文章</a>
+                        </li>
+                        <?php /*                  <li>
+                                              <a href="form_layouts.html">
+                                                  Form Layouts</a>
+                                          </li>
+                                          <li>
+                                              <a href="form_editable.html">
+                                                  <span class="badge badge-roundless badge-warning">new</span>Form X-editable</a>
+                                          </li>
+                                          <li>
+                                              <a href="form_wizard.html">
+                                                  Form Wizard</a>
+                                          </li>
+                                          <li>
+                                              <a href="form_validation.html">
+                                                  Form Validation</a>
+                                          </li>
+                                          <li>
+                                              <a href="form_image_crop.html">
+                                                  <span class="badge badge-roundless badge-danger">new</span>Image Cropping</a>
+                                          </li>
+                                          <li>
+                                              <a href="form_fileupload.html">
+                                                  Multiple File Upload</a>
+                                          </li>
+                                          <li>
+                                              <a href="form_dropzone.html">
+                                                  Dropzone File Upload</a>
+                                          </li>*/ ?>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="icon-book-open"></i>
+                        <span class="title">回复管理</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="requesttxt">
+                                文字回复</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                语音回复</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                图片回复</a>
+                        </li>
+                        <li>
+                            <a href="requestse">
+                                二次回复</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="icon-briefcase"></i>
+                        <span class="title">数据统计</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="ordercount">
 
-                             <li>
-                                 <a href="table_ajax.html">
-                                     Ajax Datatables</a>
-                             </li>*/ ?>
-                </ul>
-            </li>
+                                <span class="title">订单管理</span>
+                            </a>
+                        </li>
 
-            <li>
-                <a href="javascript:;">
-                    <i class="icon-frame"></i>
-                    <span class="title">二维码管理</span>
-                    <span class="arrow "></span>
-                </a>
-                <ul class="sub-menu">
-                    <?php
-                    $rows = DB::table('wx_qrscene_class')
-                            ->get();
-                    foreach ($rows as $row) {
-                        echo "<li><a href='qrlist?classid=" . $row->classid . "'>" . $row->class_name . "</a></li>";
-                    }
-                    ?>
+                        <li>
+                            <a href="countmarket">
+                                市场数据</a>
+                        </li>
+                        <li>
+                            <a href="menuclickcount">
+                                菜单点击数</a>
+                        </li>
+                        <?php /*          <li>
+                                     <a href="table_managed.html">
+                                         Managed Datatables</a>
+                                 </li>
+                                 <li>
+                                     <a href="table_editable.html">
+                                         Editable Datatables</a>
+                                 </li>
+
+                                 <li>
+                                     <a href="table_ajax.html">
+                                         Ajax Datatables</a>
+                                 </li>*/ ?>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript:;">
+                        <i class="icon-frame"></i>
+                        <span class="title">二维码管理</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <?php
+                        $rows = DB::table('wx_qrscene_class')
+                                ->get();
+                        foreach ($rows as $row) {
+                            echo "<li><a href='qrlist?classid=" . $row->classid . "'>" . $row->class_name . "</a></li>";
+                        }
+                        ?>
                         <li>
                             <a href="qrtemp">
                                 临时</a>
                         </li>
-                    <li>
-                        <a href="qradd">
-                            登记二维码</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="javascript:;">
-                    <i class="icon-feed"></i>
-                    <span class="title">景区相关</span>
-                    <span class="arrow "></span>
-                </a>
-                <ul class="sub-menu">
-                    <li>
-                        <a href="#">
-                            景区管理</a>
-                    </li>
-                    <li>
-                        <a href="pushproject">
-                            演艺秀管理</a>
-                    </li>
-                </ul>
-            </li>
+                        <li>
+                            <a href="qradd">
+                                登记二维码</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="icon-feed"></i>
+                        <span class="title">景区相关</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">
+                                景区管理</a>
+                        </li>
+                        <li>
+                            <a href="pushproject">
+                                演艺秀管理</a>
+                        </li>
+                    </ul>
+                </li>
 
-            <li>
-                <a href="ordercount">
-                    <i class="icon-present"></i>
-                    <span class="title">订单管理</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="icon-wallet"></i>
-                    <span class="title">卡券管理</span>
-                </a>
-            </li>
-            <!--
-            <li>
-                <a href="message">
-                    <i class="icon-bubbles"></i>
-                    <span class="title">消息管理</span>
-                </a>
-            </li>
--->
-            <li>
-                <a href="javascript:;">
-                    <i class="icon-notebook"></i>
-                    <span class="title">其他 </span>
-                    <span class="arrow "></span>
-                </a>
-                <ul class="sub-menu">
-                    <li>
-                        <a href="menulist">
-                            菜单查询</a>
-                    </li>
-                    <li>
-                        <a href="tag">
-                            标签管理</a>
-                    </li>
-                </ul>
-            </li>
+                <?php /*<li>
+                    <a href="ordercount">
+                        <i class="icon-present"></i>
+                        <span class="title">订单管理</span>
+                    </a>
+                </li>*/ ?>
+                <li>
+                    <a href="#">
+                        <i class="icon-wallet"></i>
+                        <span class="title">卡券管理</span>
+                    </a>
+                </li>
+                <!--
+                <li>
+                    <a href="message">
+                        <i class="icon-bubbles"></i>
+                        <span class="title">消息管理</span>
+                    </a>
+                </li>
+    -->
+                <li>
+                    <a href="javascript:;">
+                        <i class="icon-notebook"></i>
+                        <span class="title">其他 </span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="menulist">
+                                菜单查询</a>
+                        </li>
+                        <li>
+                            <a href="tag">
+                                标签管理</a>
+                        </li>
+                    </ul>
+                </li>
                 <li>
                     <a href="javascript:;">
                         <i class="icon-notebook"></i>
@@ -285,7 +292,7 @@
                         </li>
                     </ul>
                 </li>
-            <!-- END MARKET MENU -->
+                <!-- END MARKET MENU -->
             <?php endif; ?>
             <li>
                 <a href="changpassword">

@@ -117,4 +117,51 @@ class Count
             ->count();
         return $row;
     }
+
+    public function count_market_info($type, $eventkey, $from, $to)
+    {
+        switch ($type) {
+
+            case "user_add":
+                $row = DB::table('wx_user_add')
+                    ->where('eventkey', $eventkey)
+                    ->whereDate('adddate', '>=', $from)
+                    ->whereDate('adddate', '<', $to)
+                    ->count();
+                break;
+            case "user_esc":
+                $row = DB::table('wx_user_esc')
+                    ->where('eventkey', $eventkey)
+                    ->whereDate('esc_time', '>=', $from)
+                    ->whereDate('esc_time', '<', $to)
+                    ->count();
+                break;
+            case 'articles':
+                $row = DB::table('wx_article')
+                    ->where('eventkey', $eventkey)
+                    ->whereDate('adddate', '>=', $from)
+                    ->whereDate('adddate', '<', $to)
+                    ->count();
+                break;
+            case 'articles_hits':
+                $row = DB::table('wx_article')
+                    ->where('eventkey', $eventkey)
+                    ->whereDate('adddate', '>=', $from)
+                    ->whereDate('adddate', '<', $to)
+                    ->sum('hits');
+                $row==null&&$row='0';
+                break;
+            case 'articles_resp':
+                $row = DB::table('wx_article')
+                    ->where('eventkey', $eventkey)
+                    ->whereDate('adddate', '>=', $from)
+                    ->whereDate('adddate', '<', $to)
+                    ->sum('resp');
+                $row==null&&$row='0';
+                break;
+
+
+        }
+        return $row;
+    }
 }

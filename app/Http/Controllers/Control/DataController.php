@@ -142,7 +142,31 @@ class DataController extends Controller
         }
         $info=array('send'=>$send,'other'=>$other);
         return response()->json($info)->setCallback($request->input('callback'));
-
     }
 
+    public function market(Request $request)
+    {
+        $action=$request->input('action');
+
+        switch ($action){
+            case 'search':
+                $from = $request->input('from');
+                $to = $request->input('to');
+                \Session::flash('from', $from);
+                \Session::flash('to', $to);
+                $rows=DB::table('wx_qrscene_info')
+                    ->where('classid', '1')
+                    ->where('parent_id', '')
+                    ->paginate(20);
+                $type='market';
+                return view('control.count_market_info',compact('type','rows','from','to','action'));
+                dd($request->all());
+        break;
+            default:
+                $type='default';
+                return view('control.count_market_info',compact('type'));
+                break;
+        }
+        return view('control.count_market_info');
+    }
 }

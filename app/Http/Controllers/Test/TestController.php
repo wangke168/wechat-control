@@ -25,34 +25,8 @@ class TestController extends Controller
     public function test()
     {
 
-        $row=DB::table('wx_qrscene_temp_info')
-            ->where('qrscene_id','1306')
-            ->first();
-        $qr_id=$row->qrscene_id;
-        $qr_expire=$row->expireseconds*60;
-        if ($row->qrscene_logo) {
-            $qr_logo = $row->qrscene_logo;
-        }
-        else{
-            $qr_logo='qr/logo.png';
-        }
+        $count=new Count();
 
-//        $qrcode = $this->app->qrcode;
-        $result = $this->qrcode->temporary($qr_id, $qr_expire);
-        $ticket = $result->ticket;// 或者 $result['ticket']
-//        $expireSeconds = $result->expire_seconds; // 有效秒数
-//        $url = $result->url; // 二维码图片解析后的地址，开发者可根据该地址自行生成需要的二维码图片
-
-        /*$QR = $this->qrcode->url($ticket);
-        $logo=$qr_logo;
-        $img = Image::make($QR);
-        $img->insert($logo, 'center');
-        return $img->response('png');*/
-        $QR = $this->qrcode->url($ticket);
-        $logo=$qr_logo;
-        $img = Image::make($QR);
-        $img->insert($logo, 'center');
-        return $img->response('png');
     }
 
 
