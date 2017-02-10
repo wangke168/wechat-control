@@ -159,6 +159,13 @@ class Count
                     ->sum('resp');
                 $row==null&&$row='0';
                 break;
+            case 'order':
+                $row = DB::table('wx_order_send')
+                    ->where('eventkey', $eventkey)
+                    ->whereDate('adddate', '>=', $from)
+                    ->whereDate('adddate', '<', $to)
+                    ->count();
+                break;
 
 
         }

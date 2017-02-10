@@ -158,7 +158,7 @@
                                         {{ $count->count_market_info('articles_resp', $row->qrscene_id, $from, $to)}}
                                     </td>
                                     <td>
-
+                                        {{ $count->count_market_info('order', $row->qrscene_id, $from, $to)}}
                                     </td>
 
                                 </tr>
