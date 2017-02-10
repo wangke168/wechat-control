@@ -104,6 +104,10 @@ Route::group(['prefix' => 'control','middleware' => 'control'], function () {
 
 });
 
+//对外
+    Route::get('api/ldjl','Api\ApiController@ldjl');        //龙帝惊临每天获取二维码(有效期12小时)
+
+
 Route::get('test','Test\TestController@test');
 
 Route::get('json/userdairydetail','Control\DataController@user_dairy_detail');

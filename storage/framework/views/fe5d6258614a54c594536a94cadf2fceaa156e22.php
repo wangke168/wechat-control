@@ -205,7 +205,7 @@
                     ?>
                         <li>
                             <a href="qrtemp">
-                                临时二维码</a>
+                                临时</a>
                         </li>
                     <li>
                         <a href="qradd">

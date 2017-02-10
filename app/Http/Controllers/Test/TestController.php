@@ -3,46 +3,56 @@
 namespace App\Http\Controllers\Test;
 
 use App\Http\Controllers\Controller;
+use App\WeChat\Usage;
+use EasyWeChat\Foundation\Application;
 use App\WeChat\Count;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use DB;
-
+use Intervention\Image\Facades\Image;
 class TestController extends Controller
 {
 
-
+    public $usage;
+    public $app;
+    public $qrcode;
+    public function __construct(Application $app)
+    {
+        $this->app=$app;
+        $this->qrcode=$this->app->qrcode;
+        $this->usage=new Usage();
+    }
     public function test()
     {
 
-/*
-        $row_confirm = DB::table('wx_order_confirm')
-            ->whereDate('adddate','>=', date("Y-m-d", strtotime("-1 day")))
-            ->whereDate('adddate', '<', date("Y-m-d"))
-            ->count();
+        $row=DB::table('wx_qrscene_temp_info')
+            ->where('qrscene_id','1306')
+            ->first();
+        $qr_id=$row->qrscene_id;
+        $qr_expire=$row->expireseconds*60;
+        if ($row->qrscene_logo) {
+            $qr_logo = $row->qrscene_logo;
+        }
+        else{
+            $qr_logo='qr/logo.png';
+        }
 
-        $row_send = DB::table('wx_order_send')
-            ->whereDate('adddate','>=', date("Y-m-d", strtotime("-1 day")))
-            ->whereDate('adddate', '<', date("Y-m-d"))
-            ->count();
-//            $other=$row_confirm-$row_send;
+//        $qrcode = $this->app->qrcode;
+        $result = $this->qrcode->temporary($qr_id, $qr_expire);
+        $ticket = $result->ticket;// 或者 $result['ticket']
+//        $expireSeconds = $result->expire_seconds; // 有效秒数
+//        $url = $result->url; // 二维码图片解析后的地址，开发者可根据该地址自行生成需要的二维码图片
 
-        DB::table('wx_order_dairy_detail')
-            ->insert(['submit'=>$row_confirm,'confirm'=>$row_send,'date'=>date("Y-m-d", strtotime("-1 day"))]);*/
-        $row_add = DB::table('wx_user_add')
-            ->whereDate('adddate','>=', date("Y-m-d", strtotime("-1 day")))
-            ->whereDate('adddate', '<', date("Y-m-d"))
-            ->count();
-
-        $row_esc = DB::table('wx_user_esc')
-            ->whereDate('esc_time','>=', date("Y-m-d", strtotime("-1 day")))
-            ->whereDate('esc_time', '<', date("Y-m-d"))
-            ->count();
-//            $other=$row_confirm-$row_send;
-
-        DB::table('wx_user_dairy_detail')
-            ->insert(['add'=>$row_add,'esc'=>$row_esc,'date'=>date("Y-m-d", strtotime("-1 day"))]);
-
+        /*$QR = $this->qrcode->url($ticket);
+        $logo=$qr_logo;
+        $img = Image::make($QR);
+        $img->insert($logo, 'center');
+        return $img->response('png');*/
+        $QR = $this->qrcode->url($ticket);
+        $logo=$qr_logo;
+        $img = Image::make($QR);
+        $img->insert($logo, 'center');
+        return $img->response('png');
     }
 
 
