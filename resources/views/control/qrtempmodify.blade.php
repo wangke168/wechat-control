@@ -99,7 +99,7 @@
                                        class="form-control input-inline input-small"
                                        name="qrscene_expire" onkeyup="value=this.value.replace(/\D+/g,'')"
                                        value="{!! $row->expireseconds !!}"/>
-                                <span class="help-inline">分钟</span>
+                                <span class="help-inline">分钟</span>最大不超过43200（即30天）
                             </div>
 
                         </div>

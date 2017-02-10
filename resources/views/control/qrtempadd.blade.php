@@ -95,7 +95,7 @@
                                 <input id="Text1" type="text" placeholder="请输入有效期"
                                        class="form-control input-inline input-small"
                                        name="qrscene_expire" onkeyup="value=this.value.replace(/\D+/g,'')"/>
-                                <span class="help-inline">分钟</span>
+                                <span class="help-inline">分钟</span>最大不超过43200（即30天）
                             </div>
 
                         </div>
