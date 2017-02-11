@@ -172,6 +172,9 @@ return [
         //二维码
         SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class,
 
+        //出错提示
+        Sentry\SentryLaravel\SentryLaravelServiceProvider::class,
+
 
     ],
 
@@ -230,6 +233,8 @@ return [
         'Wechat' => Overtrue\LaravelWechat\Facade::class,
 
         'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class,
+
+        'Sentry' => Sentry\SentryLaravel\SentryFacade::class,
     ],
 
 ];
