@@ -18,7 +18,7 @@ class Handler extends ExceptionHandler
      */
     protected $dontReport = [
         AuthorizationException::class,
-//        HttpException::class,
+        HttpException::class,
         ModelNotFoundException::class,
         ValidationException::class,
     ];
@@ -33,7 +33,7 @@ class Handler extends ExceptionHandler
      */
     public function report(Exception $e)
     {
-        if (str_contains(env('SENTRY_DSN'),'138038')) {
+        if (str_contains(env('SENTRY_DSN'),'138041')) {
             if ($this->shouldReport($e)) {
                 app('sentry')->captureException($e);
             }
