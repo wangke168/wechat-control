@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Test;
 
 use App\Http\Controllers\Controller;
 use App\WeChat\Usage;
+use Carbon\Carbon;
 use EasyWeChat\Foundation\Application;
 use App\WeChat\Count;
 use Illuminate\Http\Request;
@@ -25,8 +26,7 @@ class TestController extends Controller
     public function test()
     {
 
-        $count=new Count();
-
+        return Carbon::now();
     }
 
 
