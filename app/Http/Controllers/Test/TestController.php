@@ -25,7 +25,7 @@ class TestController extends Controller
     }
     public function test()
     {
-        echo  date('Y-m-d H:i:s');
+        echo  date_default_timezone_get();
         return Carbon::now();
 
     }
