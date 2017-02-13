@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use Carbon\Carbon;
 use Illuminate\Console\Command;
 use DB;
 
@@ -56,7 +57,7 @@ class UserDairyDetail extends Command
             ->count();
 
         DB::table('wx_order_dairy_detail')
-            ->insert(['submit' => $row_confirm, 'confirm' => $row_send, 'date' => date("Y-m-d", strtotime("-1 day"))]);
+            ->insert(['submit' => $row_confirm, 'confirm' => $row_send, 'date' => date("Y-m-d", strtotime("-1 day")),'addtime'=>Carbon::now()]);
     }
 
     private function user_dairy()
