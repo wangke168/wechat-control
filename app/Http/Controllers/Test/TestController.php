@@ -25,8 +25,9 @@ class TestController extends Controller
     }
     public function test()
     {
-
+        echo  date('Y-m-d H:i:s');
         return Carbon::now();
+
     }
 
 
