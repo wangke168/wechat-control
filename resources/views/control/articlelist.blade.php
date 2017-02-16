@@ -155,10 +155,9 @@
                                     </td>
                                     <td>
                                         <?php
-                                      /* $count = new \App\WeChat\Count();
-                                        echo $count->count_hits_article($row->id); */
+                                        $count = new \App\WeChat\Count();
+                                        echo $count->count_hits_article($row->id);
                                         ?>
-                                            {{$row->hits}}
                                     </td>
                                     <td>
                                         <?php
