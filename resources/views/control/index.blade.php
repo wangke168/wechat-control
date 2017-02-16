@@ -48,7 +48,7 @@
 
                             <?php
                             $row = DB::table('wx_user_dairy_detail')
-                                    ->orderBy('id','desc')
+                                    ->orderBy('id', 'desc')
                                     ->first();
                             echo $row->add;
                             ?>
@@ -90,7 +90,7 @@
                         <div class="number">
                             <?php
                             $row_order = DB::table('wx_order_dairy_detail')
-                                    ->orderBy('id','desc')
+                                    ->orderBy('id', 'desc')
                                     ->first();
                             echo $row_order->confirm;
                             ?>
@@ -1895,6 +1895,111 @@
         </div>
     @endif
     @if(Session::get('managelevel')=='2')
+        <div class="alert alert-danger">
+            <button class="close" data-close="alert"></button>
+			<span>
+			新的文章请不要在旧文章链接中修改，会导致数据统计不准确。</span>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="dashboard-stat blue-madison">
+                    <div class="visual">
+                        <i class="fa fa-comments"></i>
+                    </div>
+                    <div class="details">
+                        <div class="number">
+                            <?php
+                            $row = DB::table('wx_user_info')
+                                    ->where('eventkey', Session::get('eventkey'))
+                                    ->count();
+                            echo $row;
+                            ?>
+                        </div>
+                        <div class="desc">
+                            总关注数
+                        </div>
+                    </div>
+                    <a class="more" href="#">
+                        View more <i class="m-icon-swapright m-icon-white"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="dashboard-stat red-intense">
+                    <div class="visual">
+                        <i class="fa fa-bar-chart-o"></i>
+                    </div>
+                    <div class="details">
+                        <div class="number">
+                            <?php
+                            $row = DB::table('wx_article')
+                                    ->where('eventkey', Session::get('eventkey'))
+                                    ->where('del', '0')
+                                    ->whereDate('adddate', '>=', '2017-1-1')
+                                    ->count();
+                            echo $row;
+                            ?>
+                        </div>
+                        <div class="desc">
+                            2017年文章数
+                        </div>
+                    </div>
+                    <a class="more" href="#">
+                        View more <i class="m-icon-swapright m-icon-white"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="dashboard-stat green-haze">
+                    <div class="visual">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="details">
+                        <div class="number">
+                            <?php
+                            $row_hits = DB::table('wx_article')
+                                    ->where('eventkey', Session::get('eventkey'))
+                                    ->where('del', '0')
+                                    ->whereDate('adddate', '>=', '2017-1-1')
+                                    ->sum('hits');
+                            echo $row_hits;
+                            ?>
+                        </div>
+                        <div class="desc">
+                            2017年总阅读数
+                        </div>
+                    </div>
+                    <a class="more" href="#">
+                        View more <i class="m-icon-swapright m-icon-white"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="dashboard-stat purple-plum">
+                    <div class="visual">
+                        <i class="fa fa-globe"></i>
+                    </div>
+                    <div class="details">
+                        <div class="number">
+                            <?php
+                            $row = DB::table('wx_order_send')
+                                    ->whereDate('adddate', '>=', '2017-1-1')
+                                    ->where('eventkey', Session::get('eventkey'))
+                                    ->count();
+                            echo $row;
+                            ?>
+                        </div>
+                        <div class="desc">
+                            2017年订单数
+                        </div>
+                    </div>
+                    <a class="more" href="#">
+                        View more <i class="m-icon-swapright m-icon-white"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-12">
                 <!-- BEGIN INLINE NOTIFICATIONS PORTLET-->
