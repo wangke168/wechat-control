@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/index.blade.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,21 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5576208">
-              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+            <state vertical-scroll-proportion="-22.115385">
+              <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/control/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.26923">
-              <caret line="1967" column="28" selection-start-line="1967" selection-start-column="28" selection-end-line="1971" selection-end-column="96" />
+            <state vertical-scroll-proportion="0.75092936">
+              <caret line="1972" column="30" selection-start-line="1972" selection-start-column="30" selection-end-line="1972" selection-end-column="30" />
               <folding>
                 <element signature="e#1193#5019#0#HTML" expanded="false" />
                 <element signature="e#1223#2187#0#HTML" expanded="false" />
@@ -113,7 +115,7 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-63.46154">
+            <state vertical-scroll-proportion="3.8076923">
               <caret line="75" column="59" selection-start-line="75" selection-start-column="59" selection-end-line="75" selection-end-column="59" />
               <folding />
             </state>
@@ -187,8 +189,8 @@
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/control/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/index.blade.php" />
       </list>
     </option>
   </component>
@@ -293,7 +295,7 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="art&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlelist.blade.php&#10;log&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/login.blade.php&#10;user&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/UsersController.php&#10;index&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/index.blade.php&#10;Acce&#9;FILE&#9;file:///Volumes/Result/Project/lesson/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;hand&#9;null&#9;null&#10;app&#9;FILE&#9;file:///Volumes/Result/Project/lesson/config/app.php&#10;rem&#9;FILE&#9;file:///Volumes/Result/Project/lesson/readme.md&#10;si&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/sidebar.blade.php&#10;qr&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/QrlistController.php&#10;data&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/DataController.php&#10;order&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/count_order_payed.blade.php&#10;ords&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/count_order_payed_search.blade.php&#10;q&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qrtempmodify.blade.php&#10;qrs&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qrsearch.blade.php&#10;re&#9;FILE&#9;file:///Volumes/Result/Project/lesson/readme.md&#10;a&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlemodify.blade.php&#10;ar&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articleadd.blade.php&#10;arti&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articleadd.blade.php&#10;pu&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/PushController.php&#10;push&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/push_project_list.blade.php&#10;qra&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qradd.blade.php&#10;qrl&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/QrlistController.php&#10;me&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/menu_list.blade.php&#10;menu&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/menu_list.blade.php&#10;article&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlelist.blade.php&#10;pro&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/push_project_add.blade.php&#10;mess&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/message.blade.php&#10;usage&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Wechat/Usage.php&#10;sid&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/sidebar.blade.php&#10;Req&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/RequestController.php&#10;rout&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/routes.php" />
+    <property name="SearchEverywhereHistoryKey" value="rou&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/routes.php&#10;art&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlelist.blade.php&#10;log&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/login.blade.php&#10;user&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/UsersController.php&#10;index&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/index.blade.php&#10;Acce&#9;FILE&#9;file:///Volumes/Result/Project/lesson/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;hand&#9;null&#9;null&#10;app&#9;FILE&#9;file:///Volumes/Result/Project/lesson/config/app.php&#10;rem&#9;FILE&#9;file:///Volumes/Result/Project/lesson/readme.md&#10;si&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/sidebar.blade.php&#10;qr&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/QrlistController.php&#10;data&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/DataController.php&#10;order&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/count_order_payed.blade.php&#10;ords&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/count_order_payed_search.blade.php&#10;q&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qrtempmodify.blade.php&#10;qrs&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qrsearch.blade.php&#10;re&#9;FILE&#9;file:///Volumes/Result/Project/lesson/readme.md&#10;a&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlemodify.blade.php&#10;ar&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articleadd.blade.php&#10;arti&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articleadd.blade.php&#10;pu&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/PushController.php&#10;push&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/push_project_list.blade.php&#10;qra&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qradd.blade.php&#10;qrl&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/QrlistController.php&#10;me&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/menu_list.blade.php&#10;menu&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/menu_list.blade.php&#10;article&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlelist.blade.php&#10;pro&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/push_project_add.blade.php&#10;mess&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/message.blade.php&#10;usage&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Wechat/Usage.php&#10;sid&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/sidebar.blade.php&#10;Req&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/RequestController.php&#10;rout&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/routes.php" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../qywechat" />
     <property name="FullScreen" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -706,14 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-63.46154">
-          <caret line="75" column="59" selection-start-line="75" selection-start-column="59" selection-end-line="75" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2091078">
@@ -764,6 +758,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.8076923">
+          <caret line="75" column="59" selection-start-line="75" selection-start-column="59" selection-end-line="75" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.115385">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/articlelist.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.115385">
@@ -774,21 +784,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.26923">
-          <caret line="1967" column="28" selection-start-line="1967" selection-start-column="28" selection-end-line="1971" selection-end-column="96" />
+        <state vertical-scroll-proportion="0.75092936">
+          <caret line="1972" column="30" selection-start-line="1972" selection-start-column="30" selection-end-line="1972" selection-end-column="30" />
           <folding>
             <element signature="e#1193#5019#0#HTML" expanded="false" />
             <element signature="e#1223#2187#0#HTML" expanded="false" />
             <element signature="e#138324#138570#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5576208">
-          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>

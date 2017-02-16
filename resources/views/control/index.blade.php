@@ -1968,8 +1968,9 @@
                             $row_hits=DB::table('wx_article_hits')->join('wx_article',function($join){
                                 $join->on('wx_article_hits.article_id','=','wx_article.id')
                                         ->where('wx_article.del','=',0)
+                                        ->where('wx_article_hits.adddate', '>=', '2017-1-1')
                                         ->where('wx_article.eventkey','=',Session::get('eventkey'));
-                            })->whereDate('wx_article_hits.adddate', '>=', '2017-1-1')->count();
+                            })->count();
 
                            /* $row_hits = DB::table('wx_article_hits')
                                     ->whereRaw('')
