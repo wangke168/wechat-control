@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/index.blade.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,14 +65,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/control/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-33.96154">
-              <caret line="1900" column="47" selection-start-line="1900" selection-start-column="47" selection-end-line="1900" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.65799254">
+              <caret line="1968" column="91" selection-start-line="1968" selection-start-column="91" selection-end-line="1968" selection-end-column="91" />
               <folding>
                 <element signature="e#1193#5019#0#HTML" expanded="false" />
                 <element signature="e#1223#2187#0#HTML" expanded="false" />
+                <element signature="e#138324#138570#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,10 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articlelist.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="articlelist.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/articlelist.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5576208">
+            <state vertical-scroll-proportion="-22.115385">
               <caret line="159" column="42" selection-start-line="159" selection-start-column="42" selection-end-line="159" selection-end-column="42" />
               <folding />
             </state>
@@ -185,9 +187,9 @@
         <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/resources/views/control/index.blade.php" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/index.blade.php" />
       </list>
     </option>
   </component>
@@ -755,17 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-33.96154">
-          <caret line="1900" column="47" selection-start-line="1900" selection-start-column="47" selection-end-line="1900" selection-end-column="47" />
-          <folding>
-            <element signature="e#1193#5019#0#HTML" expanded="false" />
-            <element signature="e#1223#2187#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.9259259">
@@ -784,9 +775,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/articlelist.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5576208">
+        <state vertical-scroll-proportion="-22.115385">
           <caret line="159" column="42" selection-start-line="159" selection-start-column="42" selection-end-line="159" selection-end-column="42" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65799254">
+          <caret line="1968" column="91" selection-start-line="1968" selection-start-column="91" selection-end-line="1968" selection-end-column="91" />
+          <folding>
+            <element signature="e#1193#5019#0#HTML" expanded="false" />
+            <element signature="e#1223#2187#0#HTML" expanded="false" />
+            <element signature="e#138324#138570#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

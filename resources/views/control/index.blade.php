@@ -1958,11 +1958,26 @@
                     <div class="details">
                         <div class="number">
                             <?php
-                            $row_hits = DB::table('wx_article')
+
+                        /*    $users = DB::table('users')->join('posts',function($join){
+                                $join->on('users.id','=','posts.user_id')
+                                        ->where('posts.id','>',1);
+                            })->get();*/
+
+
+                            $row_hits=DB::table('wx_article_hits')->join('wx_article',function($join){
+                                $join->on('wx_article_hits.article_id','=','wx_article.id')
+                                        ->where('wx_article.del','=',0)
+                                        ->where('wx_article.eventkey','=',Session::get('eventkey'));
+                            })->whereDate('wx_article_hits.adddate', '>=', '2017-1-1')->count();
+
+                           /* $row_hits = DB::table('wx_article_hits')
+                                    ->whereRaw('')
                                     ->where('eventkey', Session::get('eventkey'))
                                     ->where('del', '0')
                                     ->whereDate('adddate', '>=', '2017-1-1')
-                                    ->sum('hits');
+                                    ->sum('hits');  */
+
                             echo $row_hits;
                             ?>
                         </div>
