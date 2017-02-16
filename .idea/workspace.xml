@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,6 +29,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="124.96154">
               <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Count.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Wechat/Count.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.461538">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -71,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.023255814">
+            <state vertical-scroll-proportion="-0.9259259">
               <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
               <folding />
             </state>
@@ -89,6 +95,16 @@
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="articlelist.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/control/articlelist.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.580855">
+              <caret line="160" column="56" selection-start-line="160" selection-start-column="56" selection-end-line="160" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,7 +173,6 @@
         <option value="$PROJECT_DIR$/resources/views/control/qrtempadd.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/qrtempmodify.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php" />
-        <option value="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" />
         <option value="$PROJECT_DIR$/app/Wechat/Count.php" />
         <option value="$PROJECT_DIR$/resources/views/control/count_market_info.blade.php" />
@@ -172,6 +187,7 @@
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/control/index.blade.php" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" />
       </list>
     </option>
   </component>
@@ -276,7 +292,7 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="log&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/login.blade.php&#10;user&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/UsersController.php&#10;index&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/index.blade.php&#10;Acce&#9;FILE&#9;file:///Volumes/Result/Project/lesson/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;hand&#9;null&#9;null&#10;app&#9;FILE&#9;file:///Volumes/Result/Project/lesson/config/app.php&#10;rem&#9;FILE&#9;file:///Volumes/Result/Project/lesson/readme.md&#10;si&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/sidebar.blade.php&#10;qr&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/QrlistController.php&#10;data&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/DataController.php&#10;order&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/count_order_payed.blade.php&#10;ords&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/count_order_payed_search.blade.php&#10;q&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qrtempmodify.blade.php&#10;qrs&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qrsearch.blade.php&#10;re&#9;FILE&#9;file:///Volumes/Result/Project/lesson/readme.md&#10;a&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlemodify.blade.php&#10;art&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlemodify.blade.php&#10;ar&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articleadd.blade.php&#10;arti&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articleadd.blade.php&#10;pu&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/PushController.php&#10;push&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/push_project_list.blade.php&#10;qra&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qradd.blade.php&#10;qrl&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/QrlistController.php&#10;me&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/menu_list.blade.php&#10;menu&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/menu_list.blade.php&#10;article&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlelist.blade.php&#10;pro&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/push_project_add.blade.php&#10;mess&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/message.blade.php&#10;usage&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Wechat/Usage.php&#10;sid&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/sidebar.blade.php&#10;Req&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/RequestController.php&#10;rout&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/routes.php" />
+    <property name="SearchEverywhereHistoryKey" value="art&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlelist.blade.php&#10;log&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/login.blade.php&#10;user&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/UsersController.php&#10;index&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/index.blade.php&#10;Acce&#9;FILE&#9;file:///Volumes/Result/Project/lesson/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;hand&#9;null&#9;null&#10;app&#9;FILE&#9;file:///Volumes/Result/Project/lesson/config/app.php&#10;rem&#9;FILE&#9;file:///Volumes/Result/Project/lesson/readme.md&#10;si&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/sidebar.blade.php&#10;qr&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/QrlistController.php&#10;data&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/DataController.php&#10;order&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/count_order_payed.blade.php&#10;ords&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/count_order_payed_search.blade.php&#10;q&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qrtempmodify.blade.php&#10;qrs&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qrsearch.blade.php&#10;re&#9;FILE&#9;file:///Volumes/Result/Project/lesson/readme.md&#10;a&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlemodify.blade.php&#10;ar&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articleadd.blade.php&#10;arti&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articleadd.blade.php&#10;pu&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/PushController.php&#10;push&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/push_project_list.blade.php&#10;qra&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qradd.blade.php&#10;qrl&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/QrlistController.php&#10;me&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/menu_list.blade.php&#10;menu&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/menu_list.blade.php&#10;article&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlelist.blade.php&#10;pro&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/push_project_add.blade.php&#10;mess&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/message.blade.php&#10;usage&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Wechat/Usage.php&#10;sid&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/sidebar.blade.php&#10;Req&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/RequestController.php&#10;rout&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/routes.php" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../qywechat" />
     <property name="FullScreen" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -581,14 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Wechat/Count.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="162" column="47" selection-start-line="162" selection-start-column="47" selection-end-line="162" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/count_market_info.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -598,14 +606,6 @@
             <marker date="1486711231000" expanded="true" signature="1417:1533" placeholder="..." />
             <marker date="1486711231000" expanded="true" signature="1418:1532" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/articlelist.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="168" column="52" selection-start-line="168" selection-start-column="48" selection-end-line="168" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,8 +768,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.023255814">
+        <state vertical-scroll-proportion="-0.9259259">
           <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Wechat/Count.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.461538">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/articlelist.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.580855">
+          <caret line="160" column="56" selection-start-line="160" selection-start-column="56" selection-end-line="160" selection-end-column="56" />
           <folding />
         </state>
       </provider>
