@@ -30,8 +30,8 @@ class TestController extends Controller
             $join->on('wx_article_hits.article_id','=','wx_article.id')
                 ->where('wx_article.del','=',0)
                 ->where('wx_article_hits.adddate', '>=', '2017-1-1')
-                ->where('wx_article.eventkey','=','106');
-        })->count();
+                ->where('wx_article.eventkey','=','127');
+        })->get();
         dd($row_hits);
     }
 
