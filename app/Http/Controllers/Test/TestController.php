@@ -26,9 +26,12 @@ class TestController extends Controller
     public function test()
     {
 
-        echo  date('Y-m-d H:i:s');
-        return Carbon::now();
-
+        $row_hits=DB::table('wx_article_hits')->join('wx_article',function($join){
+            $join->on('wx_article_hits.article_id','=','wx_article.id')
+                ->where('wx_article.del','=',0)
+                ->where('wx_article.eventkey','=','106');
+        })->whereDate('wx_article_hits.adddate', '>=', '2017-1-1')->get();
+        dd($row_hits);
     }
 
 
