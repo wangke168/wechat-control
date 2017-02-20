@@ -32,11 +32,13 @@ class PushController extends Controller
                 $show_time = str_replace('：', ':', str_replace('，', ',', $request->input('show_time')));
                 $location_name = $request->input('location_name');
                 $location_url = $request->input('location_url');
+                $remark = $request->input('remark');
                 if ($id) {
 
                     DB::table('tour_project_info')
                         ->where('id', $id)
-                        ->update(['show_time' => $show_time, 'location_name' => $location_name, 'location_url' => $location_url]);
+                        ->update(['show_time' => $show_time, 'location_name' => $location_name,
+                            'location_url' => $location_url,'remark'=>$remark]);
                 }
                 else
                 {
@@ -47,7 +49,7 @@ class PushController extends Controller
                     DB::table('tour_project_info')
                         ->insert(['show_name'=>$show_name,'show_time' => $show_time, 'zone_id'=>$zone_id,
                             'location_name' => $location_name, 'location_url' => $location_url,
-                        'eventkey'=>$eventkey,'project_id'=>$project_id]);
+                        'eventkey'=>$eventkey,'project_id'=>$project_id,'remark'=>$remark]);
                 }
                 return redirect('/control/pushproject');
                 break;

@@ -104,7 +104,12 @@
                                 <input name="location_url"  value="" class="form-control  input-inline input-xlarge">
                             </div>
                         </div>
-
+                        <div class="form-group">
+                            <label class="control-label col-md-1">备注</label>
+                            <div class="col-md-11">
+                                <input name="remark"  value="" class="form-control  input-inline input-xlarge">
+                            </div>
+                        </div>
                     </div>
                     <div class="form-actions">
                         <div class="row">

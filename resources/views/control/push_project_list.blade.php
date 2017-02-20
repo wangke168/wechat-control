@@ -83,10 +83,11 @@
                             </tr>
                             </thead>
                             <tbody>
+                            <?php $i=1?>
                             @foreach($rows as $row)
                                 <tr>
                                     <td>
-                                        {{$row->id}}
+                                        {{$i}}
                                     </td>
                                     <td>
                                         {{$row->show_name}}
@@ -130,6 +131,7 @@
                                             echo "<a OnClick=\"javascript:if (!confirm('是否真的要推送'))return false;\"  href='pushproject?action=push&id={$row->id}' class='label label-success'><i class=\"fa  fa-chevron-circle-up\"></i>&nbsp;自动推送</a>";
 
                                         }
+                                            $i=$i+1;
                                         ?>
                                     </td>
                                 </tr>
