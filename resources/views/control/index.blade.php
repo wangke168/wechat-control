@@ -15,6 +15,8 @@
 <link href="{{asset('assets/admin/pages/css/tasks.css')}}" rel="stylesheet" type="text/css"/>
 <!-- END PAGE STYLES -->
 <!-- BEGIN THEME STYLES -->
+<link href="{{asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css')}}" rel="stylesheet" type="text/css"/>
+<link href="{{asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal.css')}}" rel="stylesheet" type="text/css"/>
 @stop
 
 
@@ -1959,51 +1961,20 @@
                         <div class="number">
                             <?php
 
-                        /*    $users = DB::table('users')->join('posts',function($join){
-                                $join->on('users.id','=','posts.user_id')
-                                        ->where('posts.id','>',1);
-                            })->get();*/
-
-
-                            $row_hits=DB::table('wx_article_hits')->join('wx_article',function($join){
+                                //2017年阅读数统计
+                            /*$row_hits=DB::table('wx_article_hits')->join('wx_article',function($join){
                                 $join->on('wx_article_hits.article_id','=','wx_article.id')
                                         ->where('wx_article.del','=',0)
                                         ->where('wx_article_hits.adddate', '>=', '2017-1-1')
                                         ->where('wx_article.eventkey','=',Session::get('eventkey'));
-                            })->count();
+                            })->count();*/
 
-                           /* $row_hits = DB::table('wx_article_hits')
-                                    ->whereRaw('')
-                                    ->where('eventkey', Session::get('eventkey'))
-                                    ->where('del', '0')
-                                    ->whereDate('adddate', '>=', '2017-1-1')
-                                    ->sum('hits');  */
-
-                            echo $row_hits;
-                            ?>
-                        </div>
-                        <div class="desc">
-                            2017年总阅读数
-                        </div>
-                    </div>
-                    <a class="more" href="#">
-                        View more <i class="m-icon-swapright m-icon-white"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="dashboard-stat purple-plum">
-                    <div class="visual">
-                        <i class="fa fa-globe"></i>
-                    </div>
-                    <div class="details">
-                        <div class="number">
-                            <?php
                             $row = DB::table('wx_order_send')
                                     ->whereDate('adddate', '>=', '2017-1-1')
                                     ->where('eventkey', Session::get('eventkey'))
                                     ->count();
                             echo $row;
+
                             ?>
                         </div>
                         <div class="desc">
@@ -2014,6 +1985,26 @@
                         View more <i class="m-icon-swapright m-icon-white"></i>
                     </a>
                 </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <a class="getqrcode" data-target="#long" data-toggle="modal" data-src="qrcode_create/{!! Session::get('eventkey') !!}">
+                <div class="dashboard-stat purple-plum">
+                    <div class="visual">
+                        <i class="fa fa-globe"></i>
+                    </div>
+                    <div class="details">
+
+                        <div class="number">
+                            市场二维码下载
+                        </div>
+
+                    </div>
+                    <a class="getqrcode more" data-target="#long" data-toggle="modal" data-src="qrcode_create/{!! Session::get('eventkey') !!}">
+
+                    View more <i class="m-icon-swapright m-icon-white"></i>
+                    </a>
+                </div>
+                    </a>
             </div>
         </div>
         <div class="row">
@@ -2055,6 +2046,21 @@
                 </div>
             </div>
         </div>
+        <!--弹出层-->
+        <div id="long" class="modal fade " tabindex="-1" data-replace="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                <h4 class="modal-title">{!! Session::get('username') !!}市场二维码</h4>
+            </div>
+            <div class="modal-body">
+                {{--<img id='qr'  src="../../../../../../i.imgur.com/KwPYo.jpg">--}}
+                <iframe id='qr' src="http://www.lesson.me" style="border:none; width:500px; height:500px;"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-default">关闭</button>
+            </div>
+        </div>
+        <!--结束弹出层-->
         @endif
         @stop
 
@@ -2103,6 +2109,10 @@
         <script src="{{asset('assets/admin/pages/scripts/index.js')}}" type="text/javascript"></script>
         <script src="{{asset('assets/admin/pages/scripts/tasks.js')}}" type="text/javascript"></script>
         <script src="{{asset('lib/function.js')}}"></script>
+
+        <script src="{{asset('assets/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js')}}" type="text/javascript"></script>
+        <script src="{{asset('assets/global/plugins/bootstrap-modal/js/bootstrap-modal.js')}}" type="text/javascript"></script>
+        <script src="{{asset('assets/admin/pages/scripts/ui-extended-modals.js')}}"></script>
 @stop
 
 @section('init')
@@ -2119,4 +2129,10 @@
     ChartsFlotcharts.initCharts();
     ChartsFlotcharts.initPieCharts();
     ChartsFlotcharts.initBarCharts();
+
+    $(".getqrcode").click(function () {
+      //  alert($(this).attr('data-src'));
+    $("#qr").attr({"src": $(this).attr("data-src")});
+    });
+
 @stop
