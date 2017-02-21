@@ -116,7 +116,7 @@
                                 alt=""> </span> <span class="name">杨樱 朱凯麟</span></div>
                </div>
             <div class="banner"><img class="lazyload"
-                                     data-src="http://img.qdaily.com/article/long_show/20170219212010NMsSDg9fjP3KbhqO.jpg?imageMogr2/auto-orient/thumbnail/640x1136/gravity/Center/crop/640x1136/quality/85/format/jpg/ignore-error/1"
+                                     data-src="/media/image/show.jpg"
                                      alt=""></div>
         <!--    <div class="com-share" data-id="37944" data-title="《耐克这双有着大塑料“泡泡”底的鞋是怎么做出来的？》，来自@好奇心日报"
                  data-pic="http://img.qdaily.com/article/article_show/201702192113213oLJGu8djwqOpBrA.jpg?imageMogr2/auto-orient/thumbnail/!640x380r/gravity/Center/crop/640x380/quality/85/format/jpg/ignore-error/1"
