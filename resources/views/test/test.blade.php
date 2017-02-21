@@ -100,8 +100,8 @@
     <link href="{{asset('lib/show.css')}}" rel="stylesheet" type="text/css"/>
     <link href="{{asset('lib/common.css')}}" rel="stylesheet" type="text/css"/>
 </head>
-{{--<body class="mobile articles show">--}}
-<body>
+<body class="mobile articles show">
+
 
 <div class="page-content">
     <div class="com-article-detail long" data-categoryid="17">
