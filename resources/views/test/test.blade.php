@@ -90,7 +90,7 @@
                 }
             }
 
-            var s = "http://www.lesson.me";
+            var s = "http://weix2.hengdianworld.com";
             t()
         }(window, document)</script>
     <link rel="stylesheet" media="all"
