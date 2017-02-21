@@ -2,9 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/media/image/show1.jpg" afterPath="$PROJECT_DIR$/public/media/image/show1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar3_small.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar_admin.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/icon-color-close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/icon-color.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/logo-big-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/logo-big.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/logo_hd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/sidebar_inline_toggler_icon_darkblue.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/sidebar_inline_toggler_icon_default.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/sidebar_toggler_icon_darkblue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/sidebar_toggler_icon_default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/css/custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/css/layout.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/css/themes/darkblue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/css/themes/default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/scripts/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/scripts/layout.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/admin/layout/scripts/quick-sidebar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/test/test.blade.php" afterPath="$PROJECT_DIR$/resources/views/test/test.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -124,7 +155,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.3488372">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -923,7 +954,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3488372">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="24" />
           <folding />
         </state>
       </provider>
