@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
-    <title>耐克这双有着大塑料“泡泡”底的鞋是怎么做出来的？_设计_好奇心日报</title>
+    <title>横店影视城各景区2017年演艺秀时间表</title>
     <meta name="keywords" content="商业报道,科技新闻,生活方式,设计,长文章,Top 15,球鞋,Air Max,Vapormax,耐克">
     <meta name="description"
           content="2 月 17 日的耐克波特兰全球总部，戴着黑框圆眼镜、穿着黑衬衫的 John Hoke 带着他治下的三个设计主管，一起坐在有着大大的三个黑三角的一面白墙前，每个三角里都摆着一只有着透明鞋底的灰色球鞋。同样的鞋在设计师们面前的原木桌上也...">
@@ -112,11 +112,11 @@
                 <h1 class="title">横店影视城各景区2017年演艺秀时间表</h1></div>
             <div class="author-date clearfix">
                 <div class="author clearfix"><span class="avatar x25 circle"><img
-                                src="http://img.qdaily.com/user/face/20160703130350rDxbKeNHnFO0zA58.jpg?imageMogr2/auto-orient/thumbnail/!80x80r/gravity/Center/crop/80x80/quality/85/format/jpg/ignore-error/1"
-                                alt=""> </span> <span class="name">杨樱 朱凯麟</span></div>
+                                src="/media/image/logo.png"
+                                alt=""> </span> <span class="name">横店影视城</span></div>
                </div>
             <div class="banner"><img class="lazyload"
-                                     data-src="/media/image/show1.jpg"
+                                     data-src="/media/image/show.jpg"
                                      alt=""></div>
         <!--    <div class="com-share" data-id="37944" data-title="《耐克这双有着大塑料“泡泡”底的鞋是怎么做出来的？》，来自@好奇心日报"
                  data-pic="http://img.qdaily.com/article/article_show/201702192113213oLJGu8djwqOpBrA.jpg?imageMogr2/auto-orient/thumbnail/!640x380r/gravity/Center/crop/640x380/quality/85/format/jpg/ignore-error/1"
