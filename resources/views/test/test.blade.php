@@ -109,14 +109,14 @@
         <div class="article-detail-hd">
             <div class="category-title">
 
-                <h1 class="title">耐克这双有着大塑料“泡泡”底的鞋是怎么做出来的？</h1></div>
+                <h1 class="title">横店影视城各景区2017年演艺秀时间表</h1></div>
             <div class="author-date clearfix">
                 <div class="author clearfix"><span class="avatar x25 circle"><img
                                 src="http://img.qdaily.com/user/face/20160703130350rDxbKeNHnFO0zA58.jpg?imageMogr2/auto-orient/thumbnail/!80x80r/gravity/Center/crop/80x80/quality/85/format/jpg/ignore-error/1"
                                 alt=""> </span> <span class="name">杨樱 朱凯麟</span></div>
                </div>
             <div class="banner"><img class="lazyload"
-                                     data-src="/media/image/show.jpg"
+                                     data-src="/media/image/show1.jpg"
                                      alt=""></div>
         <!--    <div class="com-share" data-id="37944" data-title="《耐克这双有着大塑料“泡泡”底的鞋是怎么做出来的？》，来自@好奇心日报"
                  data-pic="http://img.qdaily.com/article/article_show/201702192113213oLJGu8djwqOpBrA.jpg?imageMogr2/auto-orient/thumbnail/!640x380r/gravity/Center/crop/640x380/quality/85/format/jpg/ignore-error/1"
