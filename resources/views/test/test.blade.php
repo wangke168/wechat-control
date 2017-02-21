@@ -90,16 +90,15 @@
                 }
             }
 
-            var s = "http://weix2.hengdianworld.com";
+//            var s = "http://www.lesson.me";
             t()
         }(window, document)</script>
-    <link rel="stylesheet" media="all"
+ <!--   <link rel="stylesheet" media="all"
           href="http://m.qdaily.com/assets/mobile/common-800d3d3d1b76a41047727f27289461e61001b930c684d1ade4a54dd471583e42.css"/>
     <link rel="stylesheet" media="all"
-          href="http://m.qdaily.com/assets/mobile/articles/show-fb8c519490b7b7f00928aad6e18ffdb8e08fb8dda95b21f6e3701592aec95139.css"/>
-    <meta name="csrf-param" content="authenticity_token"/>
-    <meta name="csrf-token"
-          content="STc7CDGzLg4i2O7Qqrc5Qedau799FI67qpxBCfklgeYlGnUljuA1iIQoTKgQfO9GRFoWdI7YTUIueVVcEcColw=="/>
+          href="http://m.qdaily.com/assets/mobile/articles/show-fb8c519490b7b7f00928aad6e18ffdb8e08fb8dda95b21f6e3701592aec95139.css"/>-->
+    <link href="{{asset('lib/show.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{asset('lib/common.css')}}" rel="stylesheet" type="text/css"/>
 </head>
 {{--<body class="mobile articles show">--}}
 <body>
@@ -107,8 +106,7 @@
 <div class="page-content">
     <div class="com-article-detail long" data-categoryid="17">
         <div class="article-detail-hd">
-            <div class="category-title"><a href="/mobile/categories/17.html" class="category x25" data-id="17"><span
-                            class="iconfont icon-sheji-bg"></span> <span>设计</span></a>
+            <div class="category-title">
 
                 <h1 class="title">耐克这双有着大塑料“泡泡”底的鞋是怎么做出来的？</h1></div>
             <div class="author-date clearfix">
@@ -475,16 +473,15 @@
                                           href="/mobile/downloads/callup/1.html" class="btn">打开好奇心，查看更多内容</a></div>
         </div>
     </div>--}}
+                </div>
+            </div>
+        </div>
 </div>
-<script type="text/javascript">resetImgQuantity(), window.onload = function () {
-        !function (e, a, n, t, o, c, i) {
-            e.GoogleAnalyticsObject = o, e[o] = e[o] || function () {
-                        (e[o].q = e[o].q || []).push(arguments)
-                    }, e[o].l = 1 * new Date, c = a.createElement(n), i = a.getElementsByTagName(n)[0], c.async = 1, c.src = t, i.parentNode.insertBefore(c, i)
-        }(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"), ga("create", "UA-50426186-1", "qdaily.com"), ga("require", "displayfeatures"), ga("send", "pageview")
-    }</script>
+
 <script type="text/javascript" src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-<script src="http://m.qdaily.com/assets/mobile/common-5cffc13f9b18f605490fa090a8a968d64a96e05856c325d33fd0a7e10aacafd0.js"></script>
-<script src="http://m.qdaily.com/assets/mobile/articles/show-cbd87bbd231aea385b70d9134fc9db560d1e667d1e5a763b5aa0c7173f597170.js"></script>
+<!--<script src="http://m.qdaily.com/assets/mobile/common-5cffc13f9b18f605490fa090a8a968d64a96e05856c325d33fd0a7e10aacafd0.js"></script>
+<script src="http://m.qdaily.com/assets/mobile/articles/show-cbd87bbd231aea385b70d9134fc9db560d1e667d1e5a763b5aa0c7173f597170.js"></script>-->
+<script src="{{asset('lib/js/a1.js')}}"></script>
+<script src="{{asset('lib/js/a2.js')}}"></script>
 </body>
 </html>
