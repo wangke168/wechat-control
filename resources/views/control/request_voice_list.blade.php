@@ -49,12 +49,15 @@
 
                     </ul>
                     <ul class="nav nav-pills">
+                        {!! Form::open(['url'=>'control/requestvoice?action=search','class'=>'navbar-form navbar-right',
+                                            'id'=>'postForm']) !!}
 
-                        <form method="POST" name="myform" action="requesttxt" class="navbar-form navbar-right">
                             <input class="m-wrap" type="text" name="keyword" class="form-control" placeholder="关键字"
                                    id="keyword" value=""/>
+
                             <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
-                        </form>
+
+                        {!! Form::close() !!}
                     </ul>
                     <div class="tab-content">
 
@@ -116,13 +119,14 @@
                                     </td>
                                     <td>
                                         <?php
-                                        echo "<a href='#' class='label label-success'><i class=\"fa fa-edit\"></i>&nbsp;修改</a>&nbsp;";
+                                    //    echo "<a href='requestvoice?action=download&id=" . $row->id . "' class='label label-success'><i class=\"fa fa-edit\"></i>&nbsp;下载</a>&nbsp;";
                                        if ($row->online == 1) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='requestvoice?action=offline&id=" . $row->id . "' class='label label-warning'><i class=\"fa  fa-arrow-circle-o-down\"></i>&nbsp;下线</a>";
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='requestvoice?action=offline&id=" . $row->id . "' class='label label-warning'><i class=\"fa  fa-arrow-circle-o-down\"></i>&nbsp;下线</a>&nbsp;";
                                         } elseif ($row->online == 0) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要上线'))return false;\"  href='requestvoice?action=online&id=" . $row->id . "' class='label label-success'><i class=\"fa  fa-arrow-circle-o-up\"></i>&nbsp;上线</a>";
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要上线'))return false;\"  href='requestvoice?action=online&id=" . $row->id . "' class='label label-success'><i class=\"fa  fa-arrow-circle-o-up\"></i>&nbsp;上线</a>&nbsp;";
 
                                         }
+                                        echo "<a OnClick=\"javascript:if (!confirm('是否真的要删除'))return false;\"  href='requestvoice?action=del&id=" . $row->id . "&media_id=".$row->media_id."' class='label label-danger'><i class='fa fa-trash-o'></i>&nbsp;删除</a>";
                                         ?>
                                     </td>
                                 </tr>
