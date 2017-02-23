@@ -39,6 +39,42 @@ class Usage
         return $qrscenename;
     }
 
+    /**
+     * 根据市场名称获取eventkey
+     * @param $qrscene_name
+     * @return string
+     */
+    public function getQrscene_info($qrscene_name)
+    {
+
+        $qrscene_name = explode(',', $qrscene_name);
+        $marketid = '';
+        for ($index = 0; $index < count($qrscene_name); $index++) {
+            if ($index == 0) {
+                if ($qrscene_name[$index] == '全部显示') {
+                    $marketid = "all";
+                } else {
+                    $row = DB::table('wx_qrscene_info')
+                        ->where('qrscene_name', $qrscene_name[$index])
+                        ->first();
+                    if ($row){
+                        $marketid = $row->qrscene_id;
+                    }
+                }
+            } else {
+                if ($qrscene_name[$index] == '全部显示') {
+                    $marketid = $marketid . ',' . "all";
+                } else {
+                    $row = DB::table('wx_qrscene_info')
+                        ->where('qrscene_name', $qrscene_name[$index])
+                        ->first();
+                    $marketid = $marketid . ',' . $row->qrscene_id;
+                }
+            }
+
+        }
+        return $marketid;
+    }
 
     /**
      * 获取eventkey对应的信息

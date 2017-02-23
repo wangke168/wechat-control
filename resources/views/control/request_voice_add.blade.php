@@ -67,7 +67,7 @@
                             <label class="control-label col-md-1">名称</label>
 
                             <div class="col-md-11">
-                                <input name="remark" value="" class="form-control  input-inline input-xlarge">
+                                <input name="content" value="" class="form-control  input-inline input-xlarge">
                             </div>
                         </div>
 

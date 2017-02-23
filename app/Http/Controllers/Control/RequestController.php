@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Control;
 
+use App\WeChat\Usage;
 use EasyWeChat\Foundation\Application;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -12,12 +13,14 @@ class RequestController extends Controller
 {
     public $app;
     public $material;
+    public $usage;
     public function __construct(Application $app)
     {
         $this->app = $app;
 
         // 永久素材
         $this->material = $this->app->material;
+        $this->usage=new Usage();
     }
 
     public function txt()
@@ -60,13 +63,37 @@ class RequestController extends Controller
     {
         $action = $request->input('action');
         switch ($action) {
+            case 'online':
+                $id=$request->input('id');
+                DB::table('wx_voice_request')
+                    ->where('id',$id)
+                    ->update(['online'=>'1']);
+                return redirect('/control/requestvoice');
+                break;
+            case 'offline':
+                $id=$request->input('id');
+                DB::table('wx_voice_request')
+                    ->where('id',$id)
+                    ->update(['online'=>'0']);
+                return redirect('/control/requestvoice');
+                break;
             case 'add':
                 return view('control.request_voice_add');
                 break;
             case 'save':
 
-                $filename=$request->file('file');
-                $file = $filename;
+                $content=$request->input('content');
+                $marketid=$request->input('marketid');
+
+                $marketid=$this->usage->getQrscene_info($marketid);
+
+                $file = $request->file('file');
+                $media_id=$this->upload_material($file,'voice');
+
+                DB::table('wx_voice_request')
+                    ->insert(['media_id'=>$media_id,'eventkey'=>$marketid,'remark'=>$content]);
+                return redirect('/control/requestvoice');
+            /*    $file = $filename;
                 //判断文件上传过程中是否出错
                 if (!$file->isValid()) {
                     exit('文件上传出错！');
@@ -77,20 +104,14 @@ class RequestController extends Controller
                 $extension = $file->getClientOriginalExtension();
                 $filename = time() . str_random(5) . '.' . $extension;
 
-            $filename = time() . str_random(5) . $file->getClientOriginalName();
                 if (!$file->move($destPath, $filename)) {
                     exit('保存文件失败！');
                 }
-                $file= public_path().'/'.$destPath . $filename;
-//                print_r($_FILES);
+                $file = public_path() . '/' . $destPath . $filename;
 
-//                dd($request->file());
-//                $path=$request->file->path();
-//                $file = Input::file('photo');
-//                $filename=$request->file('file')->getPathname();
-//                return $request->file('file')->getPathInfo();
                 $result = $this->material->uploadVoice($file);  // 请使用绝对路径写法！除非你正确的理解了相对路径（好多人是没理解对的）！
-                var_dump($result);
+
+                $media_id = ($result->media_id);*/
                 break;
             default:
                 $rows = DB::table('wx_voice_request')
@@ -101,4 +122,31 @@ class RequestController extends Controller
 
         }
     }
+
+    private function upload_material($file, $type)
+    {
+        //判断文件上传过程中是否出错
+        if (!$file->isValid()) {
+            exit('文件上传出错！');
+        }
+        $destPath = 'uploads/' . date('Ymd') . '/';
+        if (!file_exists($destPath))
+            mkdir($destPath, 0755, true);
+        $extension = $file->getClientOriginalExtension();
+        $filename = time() . str_random(5) . '.' . $extension;
+
+        if (!$file->move($destPath, $filename)) {
+            exit('保存文件失败！');
+        }
+        $file = public_path() . '/' . $destPath . $filename;
+
+        switch ($type) {
+            case 'voice':
+                $result = $this->material->uploadVoice($file);  // 请使用绝对路径写法！除非你正确的理解了相对路径（好多人是没理解对的）！
+                return ($result->media_id);
+                break;
+        }
+
+    }
+
 }
