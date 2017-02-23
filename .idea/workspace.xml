@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/control/request_voice_modify.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/RequestController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/RequestController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/request_voice_list.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/request_voice_list.blade.php" />
     </list>
     <ignored path="lesson.iws" />
@@ -52,13 +49,24 @@
       <file leaf-file-name="request_voice_list.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/control/request_voice_list.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3949814">
-              <caret line="121" column="38" selection-start-line="121" selection-start-column="38" selection-end-line="121" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.62732345">
+              <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
               <folding>
-                <marker date="1487834757000" expanded="true" signature="1576:1733" placeholder="..." />
-                <marker date="1487834757000" expanded="true" signature="1588:1731" placeholder="..." />
-                <marker date="1487834757000" expanded="true" signature="1589:1730" placeholder="..." />
+                <element signature="e#6796#6843#0#HTML" expanded="true" />
+                <marker date="1487835113000" expanded="true" signature="1576:1733" placeholder="..." />
+                <marker date="1487835113000" expanded="true" signature="1588:1731" placeholder="..." />
+                <marker date="1487835113000" expanded="true" signature="1589:1730" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="qrlist.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/control/qrlist.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.423077">
+              <caret line="98" column="36" selection-start-line="98" selection-start-column="36" selection-end-line="98" selection-end-column="235" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,16 +116,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-32.73077">
               <caret line="70" column="49" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="qrlist.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/control/qrlist.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-59.615383">
-              <caret line="98" column="42" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -967,14 +965,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/qrlist.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-59.615383">
-          <caret line="98" column="42" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/articlelist.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.192308">
@@ -1005,14 +995,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/qrlist.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.423077">
+          <caret line="98" column="36" selection-start-line="98" selection-start-column="36" selection-end-line="98" selection-end-column="235" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/request_voice_list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3949814">
-          <caret line="121" column="38" selection-start-line="121" selection-start-column="38" selection-end-line="121" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.62732345">
+          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
           <folding>
-            <marker date="1487834757000" expanded="true" signature="1576:1733" placeholder="..." />
-            <marker date="1487834757000" expanded="true" signature="1588:1731" placeholder="..." />
-            <marker date="1487834757000" expanded="true" signature="1589:1730" placeholder="..." />
+            <element signature="e#6796#6843#0#HTML" expanded="true" />
+            <marker date="1487835113000" expanded="true" signature="1576:1733" placeholder="..." />
+            <marker date="1487835113000" expanded="true" signature="1588:1731" placeholder="..." />
+            <marker date="1487835113000" expanded="true" signature="1589:1730" placeholder="..." />
           </folding>
         </state>
       </provider>
