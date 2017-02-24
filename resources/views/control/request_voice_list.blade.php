@@ -3,8 +3,10 @@
 @section('title', '横店影视城微信管理平台－－－回复管理')
 
 @section('css')
-    <link href="{{asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css')}}" rel="stylesheet"
+          type="text/css"/>
+    <link href="{{asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal.css')}}" rel="stylesheet"
+          type="text/css"/>
 @stop
 
 
@@ -45,17 +47,19 @@
                     <ul class="nav nav-pills navbar-left">
 
 
-                        <button type="button" class="btn btn-success" onclick="javascript:window.location.href='requestvoice?action=add';">添加语音回复</button>
+                        <button type="button" class="btn btn-success"
+                                onclick="javascript:window.location.href='requestvoice?action=add';">添加语音回复
+                        </button>
 
                     </ul>
                     <ul class="nav nav-pills">
                         {!! Form::open(['url'=>'control/requestvoice?action=search','class'=>'navbar-form navbar-right',
                                             'id'=>'postForm']) !!}
 
-                            <input class="m-wrap" type="text" name="keyword" class="form-control" placeholder="关键字"
-                                   id="keyword" value=""/>
+                        <input class="m-wrap" type="text" name="keyword" class="form-control" placeholder="关键字"
+                               id="keyword" value=""/>
 
-                            <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                        <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
 
                         {!! Form::close() !!}
                     </ul>
@@ -88,10 +92,11 @@
                             </tr>
                             </thead>
                             <tbody>
+                            <?php $i = 1?>
                             @foreach($rows as $row)
                                 <tr>
                                     <td>
-                                        {{$row->id}}
+                                        {{$i}}
                                     </td>
                                     <td>
                                         {{$row->remark}}
@@ -108,9 +113,9 @@
                                     <td>
                                         <?php
                                         if ($row->online == 1) {
-                                        echo "<span class='label label-success'>显示</span>";
+                                            echo "<span class='label label-success'>显示</span>";
                                         } else {
-                                        echo "<span class='label label-danger'>不显示</span>";
+                                            echo "<span class='label label-danger'>不显示</span>";
                                         }
                                         ?>
                                     </td>
@@ -119,7 +124,7 @@
                                     </td>
                                     <td>
                                         <?php
-                                       if ($row->online == 1) {
+                                        if ($row->online == 1) {
                                             echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='requestvoice?action=offline&id=" . $row->id . "' class='label label-warning'><i class=\"fa  fa-arrow-circle-o-down\"></i>&nbsp;下线</a>&nbsp;";
                                         } elseif ($row->online == 0) {
                                             echo "<a OnClick=\"javascript:if (!confirm('是否真的要上线'))return false;\"  href='requestvoice?action=online&id=" . $row->id . "' class='label label-success'><i class=\"fa  fa-arrow-circle-o-up\"></i>&nbsp;上线</a>&nbsp;";
@@ -127,7 +132,8 @@
                                         }
                                         echo "<a class='getqrcode label label-primary' data-target=\"#long\" data-toggle=\"modal\" data-src=\"qrcode_create/" . $row->eventkey . "\"><i class=\"fa  fa-edit\"></i>&nbsp;试听</a>&nbsp;";
 
-                                        echo "<a OnClick=\"javascript:if (!confirm('是否真的要删除'))return false;\"  href='requestvoice?action=del&id=" . $row->id . "&media_id=".$row->media_id."' class='label label-danger'><i class='fa fa-trash-o'></i>&nbsp;删除</a>";
+                                        echo "<a OnClick=\"javascript:if (!confirm('是否真的要删除'))return false;\"  href='requestvoice?action=del&id=" . $row->id . "&media_id=" . $row->media_id . "' class='label label-danger'><i class='fa fa-trash-o'></i>&nbsp;删除</a>";
+                                        $i = $i + 1;
                                         ?>
                                     </td>
                                 </tr>
@@ -145,7 +151,8 @@
                             </div>
                             <div class="modal-body">
                                 {{--<img id='qr'  src="../../../../../../i.imgur.com/KwPYo.jpg">--}}
-                                <iframe id='qr' src="http://www.baidu.com" style="border:none; width:500px; height:500px;"></iframe>
+                                <iframe id='qr' src="http://www.baidu.com"
+                                        style="border:none; width:500px; height:500px;"></iframe>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" data-dismiss="modal" class="btn btn-default">关闭</button>
@@ -167,8 +174,10 @@
 @stop
 
 @section('js')
-    <script src="{{asset('assets/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js')}}" type="text/javascript"></script>
-    <script src="{{asset('assets/global/plugins/bootstrap-modal/js/bootstrap-modal.js')}}" type="text/javascript"></script>
+    <script src="{{asset('assets/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js')}}"
+            type="text/javascript"></script>
+    <script src="{{asset('assets/global/plugins/bootstrap-modal/js/bootstrap-modal.js')}}"
+            type="text/javascript"></script>
     <script src="{{asset('assets/admin/pages/scripts/ui-extended-modals.js')}}"></script>
 @stop
 

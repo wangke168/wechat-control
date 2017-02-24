@@ -25,14 +25,19 @@ class TestController extends Controller
     }
     public function test()
     {
+        $tagId = '171';
+//        $app = app('wechat');
+        $tag = $this->app->user_tag;
+        $openids = $tag->usersOfTag($tagId, $nextOpenId = '')->data;
+        $openIds=$openids['openid'];
 
-        $row_hits=DB::table('wx_article_hits')->join('wx_article',function($join){
-            $join->on('wx_article_hits.article_id','=','wx_article.id')
-                ->where('wx_article.del','=',0)
-                ->where('wx_article_hits.adddate', '>=', '2017-1-1')
-                ->where('wx_article.eventkey','=','127');
-        })->get();
-        dd($row_hits);
+        if (count($openIds)>0) {
+            for ($i = 0; $i <= count($openIds); $i = $i + 40) {
+                $openid = (array_slice($openIds, $i, $i + 39));
+                $tag->batchUntagUsers($openid, $tagId);
+            }
+        }
+
     }
 
 

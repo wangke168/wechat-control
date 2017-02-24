@@ -15,13 +15,14 @@ class RequestController extends Controller
     public $app;
     public $material;
     public $usage;
+
     public function __construct(Application $app)
     {
         $this->app = $app;
 
         // 永久素材
         $this->material = $this->app->material;
-        $this->usage=new Usage();
+        $this->usage = new Usage();
     }
 
     public function txt()
@@ -65,24 +66,24 @@ class RequestController extends Controller
         $action = $request->input('action');
         switch ($action) {
             case 'online':
-                $id=$request->input('id');
+                $id = $request->input('id');
                 DB::table('wx_voice_request')
-                    ->where('id',$id)
-                    ->update(['online'=>'1']);
+                    ->where('id', $id)
+                    ->update(['online' => '1']);
                 return redirect('/control/requestvoice');
                 break;
             case 'offline':
-                $id=$request->input('id');
+                $id = $request->input('id');
                 DB::table('wx_voice_request')
-                    ->where('id',$id)
-                    ->update(['online'=>'0']);
+                    ->where('id', $id)
+                    ->update(['online' => '0']);
                 return redirect('/control/requestvoice');
                 break;
             case 'del':
-                $id=$request->input('id');
-                $media_id=$request->input('media_id');
+                $id = $request->input('id');
+                $media_id = $request->input('media_id');
                 DB::table('wx_voice_request')
-                    ->where('id',$id)
+                    ->where('id', $id)
                     ->delete();
                 $this->material->delete($media_id);
                 return redirect('/control/requestvoice');
@@ -91,39 +92,39 @@ class RequestController extends Controller
                 return view('control.request_voice_add');
                 break;
             case 'search':
-                $keyword=$request->input('keyword');
-                $rows= DB::table('wx_voice_request')
-                    ->where('remark','like','%' . $keyword . '%')
+                $keyword = $request->input('keyword');
+                $rows = DB::table('wx_voice_request')
+                    ->where('remark', 'like', '%' . $keyword . '%')
                     ->orderBy('id', 'desc')
                     ->paginate(20);
                 return view('control.request_voice_list', compact('rows'));
                 break;
             case 'save':
 
-                $content=$request->input('content');
-                $marketid=$request->input('marketid');
+                $content = $request->input('content');
+                $marketid = $request->input('marketid');
 
-                $marketid=$this->usage->getQrscene_info($marketid);
+                $marketid = $this->usage->getQrscene_info($marketid);
 
                 $file = $request->file('file');
-                $media_id=$this->upload_material($file,'voice');
+                $media_id = $this->upload_material($file, 'voice');
 
                 DB::table('wx_voice_request')
-                    ->insert(['media_id'=>$media_id,'eventkey'=>$marketid,'remark'=>$content]);
+                    ->insert(['media_id' => $media_id, 'eventkey' => $marketid, 'remark' => $content]);
                 return redirect('/control/requestvoice');
                 break;
             case 'download':
-                $id=$request->input('id');
-                $row=DB::table('wx_voice_request')
-                     ->find($id);
-                $media_id=$row->media_id;
-                $title=$row->remark;
+                $id = $request->input('id');
+                $row = DB::table('wx_voice_request')
+                    ->find($id);
+                $media_id = $row->media_id;
+                $title = $row->remark;
                 $voice = $this->material->get($media_id);
                 $ext = File::getStreamExt($voice); //这里返回的扩展名已经带[.]了
 //                return $ext;
-                $directory='/volumes/result/Downloads';
-                file_put_contents($directory.'/'.$title.$ext, $voice);
-                return $title.$ext;
+                $directory = '/volumes/result/Downloads';
+                file_put_contents($directory . '/' . $title . $ext, $voice);
+                return $title . $ext;
 
                 break;
             default:
