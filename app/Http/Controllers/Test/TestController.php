@@ -26,8 +26,10 @@ class TestController extends Controller
     }
     public function test()
     {
-        $api=new Api();
-        $result= $api->get_wechat_api();
+//        $aaa=new App\Wechat\Usage();
+        $usage=new \App\Wechat\Api();
+
+        $result= $usage->get_wechat_api();
         return $result['token'];
 
     }
