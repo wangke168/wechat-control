@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Test;
 
 use App\Http\Controllers\Controller;
+use App\WeChat\Api;
 use App\WeChat\Usage;
 use Carbon\Carbon;
 use EasyWeChat\Foundation\Application;
@@ -25,18 +26,9 @@ class TestController extends Controller
     }
     public function test()
     {
-        $tagId = '171';
-//        $app = app('wechat');
-        $tag = $this->app->user_tag;
-        $openids = $tag->usersOfTag($tagId, $nextOpenId = '')->data;
-        $openIds=$openids['openid'];
-
-        if (count($openIds)>0) {
-            for ($i = 0; $i <= count($openIds); $i = $i + 40) {
-                $openid = (array_slice($openIds, $i, $i + 39));
-                $tag->batchUntagUsers($openid, $tagId);
-            }
-        }
+        $api=new Api();
+        $result= $api->get_wechat_api();
+        return $result['token'];
 
     }
 
