@@ -99,8 +99,11 @@ Route::group(['prefix' => 'control', 'middleware' => 'control'], function () {
 
     Route::get('message', 'Control\MessageController@index');
 
+    //演艺秀管理
+    Route::get('showlist', 'Control\ZoneController@showlist');
+    Route::post('showlist', 'Control\ZoneController@showlist');
     //景区演艺秀推送
-    Route::any('pushproject', 'Control\PushController@project');
+    Route::any('pushproject', 'Control\ZoneController@push');
 
     //企业号推广联盟管理
     Route::any('tglm', 'Control\QyController@tglm');

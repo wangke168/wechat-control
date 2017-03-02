@@ -1,6 +1,6 @@
 @extends('control.blade.data')
 
-@section('title', '横店影视城微信管理平台－－－景区演艺秀推送')
+@section('title', '横店影视城微信管理平台－－－景区演艺秀管理')
 
 @section('css')
     <link href="{{asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css')}}" rel="stylesheet"
@@ -10,9 +10,9 @@
 @stop
 
 
-@section('page-menu-title', '景区演艺秀推送')
+@section('page-menu-title', '景区演艺秀管理')
 
-@section('page-title', '景区演艺秀推送')
+@section('page-title', '景区演艺秀管理')
 
 @section('page-bar')
     <div class="page-bar">
@@ -23,7 +23,7 @@
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
-                <a href="#">景区演艺秀推送</a>
+                <a href="#">景区演艺秀管理</a>
             </li>
         </ul>
 
@@ -38,7 +38,7 @@
             <div class="portlet box blue-hoki">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="fa fa-globe"></i>时间列表
+                        <i class="fa fa-globe"></i>演艺秀列表
                     </div>
                     <div class="tools">
                     </div>
@@ -48,7 +48,7 @@
                     <ul class="nav nav-pills navbar-left">
 
 
-                        <button type="button" class="btn btn-success" onclick="javascript:window.location.href='pushproject?action=add';">添加推送演艺秀</button>
+                        <button type="button" class="btn btn-success" onclick="javascript:window.location.href='showlist?action=add';">添加演艺秀</button>
 
                     </ul>
                     <div class="tab-content">
@@ -61,15 +61,13 @@
                                 <th>
                                     演艺秀名称
                                 </th>
+
                                 <th>
-                                    演艺秀时间
-                                </th>
-                                <th>
-                                    开始日期
+                                    演艺秀地点
                                 </th>
 
                                 <th>
-                                    结束日期
+                                    地理位置
                                 </th>
                                 <th>
                                     所属景区
@@ -90,23 +88,14 @@
                                         {{$i}}
                                     </td>
                                     <td>
+                                        {{$row->show_name}}
+                                    </td>
 
-                                        <?php
-                                        $zone=new \App\WeChat\Zone();
-                                            echo $zone->get_project_info($row->show_id)->show_name;
-                                            if($row->se_name){
-                                                echo '('.$row->se_name.')';
-                                            }
-                                        ?>
+                                    <td>
+                                        {{$row->show_place}}
                                     </td>
                                     <td>
-                                        {{$row->show_time}}
-                                    </td>
-                                    <td>
-                                        {{$row->startdate}}
-                                    </td>
-                                    <td>
-                                        {{$row->enddate}}
+                                        {{$row->show_place_url}}
                                     </td>
                                     <td>
                                     <?php
@@ -121,23 +110,23 @@
                                         } else {
                                             echo "<span class='label label-danger'>不显示</span>";
                                         }*/
-                                        if ($row->is_top == 0) {
-                                            echo "&nbsp;<span class='label label-success'>常规</span>";
+                                       if ($row->is_push == 1) {
+                                            echo "&nbsp;<span class='label label-success'>推送</span>";
                                         } else {
-                                            echo "&nbsp;<span class='label label-danger'>黄金周</span>";
+                                            echo "&nbsp;<span class='label label-danger'>不推送</span>";
                                         }
                                         ?>
 
                                     </td>
                                     <td>
                                         <?php
-                                        echo "<a href='pushproject?action=modify&id={$row->id}' class='label label-success'><i class=\"fa fa-edit\"></i>&nbsp;修改</a>&nbsp;";
-                                       /* if ($row->is_push == 1) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要取消推送'))return false;\"  href='pushproject?action=notpush&id={$row->id}' class='label label-warning'><i class=\"fa  fa-chevron-circle-down\"></i>&nbsp;取消推送</a>";
+                                        echo "<a href='showlist?action=modify&id={$row->id}' class='label label-success'><i class=\"fa fa-edit\"></i>&nbsp;修改</a>&nbsp;";
+                                        if ($row->is_push == 1) {
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要取消推送'))return false;\"  href='showlist?action=notpush&id={$row->id}' class='label label-warning'><i class=\"fa  fa-chevron-circle-down\"></i>&nbsp;取消推送</a>";
                                         } elseif ($row->is_push == 0) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要推送'))return false;\"  href='pushproject?action=push&id={$row->id}' class='label label-success'><i class=\"fa  fa-chevron-circle-up\"></i>&nbsp;自动推送</a>";
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要推送'))return false;\"  href='showlist?action=push&id={$row->id}' class='label label-success'><i class=\"fa  fa-chevron-circle-up\"></i>&nbsp;自动推送</a>";
 
-                                        }*/
+                                        }
                                             $i=$i+1;
                                         ?>
                                     </td>

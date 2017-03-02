@@ -232,8 +232,12 @@
                                 景区管理</a>
                         </li>
                         <li>
-                            <a href="pushproject">
+                            <a href="showlist">
                                 演艺秀管理</a>
+                        </li>
+                        <li>
+                            <a href="pushproject">
+                                演艺秀时间</a>
                         </li>
                     </ul>
                 </li>

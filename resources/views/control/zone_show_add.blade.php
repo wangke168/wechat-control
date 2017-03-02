@@ -1,9 +1,9 @@
 @extends('control.blade.data')
 
-@section('title', '横店影视城微信管理平台－－－景区演艺秀推送')
-@section('page-menu-title', '添加演艺秀信息')
+@section('title', '横店影视城微信管理平台－－－景区演艺秀管理')
+@section('page-menu-title', '景区演艺秀管理')
 
-@section('page-title', '景区演艺秀推送')
+@section('page-title', '景区演艺秀管理')
 
 @section('css')
         <!-- BEGIN PAGE LEVEL STYLES -->
@@ -35,7 +35,7 @@
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
-                <a href="#">景区演艺秀推送</a>
+                <a href="#">景区相关</a>
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
@@ -54,7 +54,7 @@
             <div class="portlet box blue-hoki">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="fa fa-gift"></i>添加演艺秀
+                        <i class="fa fa-gift"></i>演艺秀名称
                     </div>
 
                 </div>
@@ -62,93 +62,51 @@
                     @if(Session::has('check'))
                         <div class="alert alert-danger">
                             <button class="close" data-close="alert"></button>
-                            <span>该演艺秀时间段和已有记录重合,请检查后重新提交. </span>
+                            <span>该景区已经存在此演艺秀. </span>
                         </div>
                     @endif
-
-                    {!! Form::open(['url'=>'control/pushproject?action=save','class'=>'form-horizontal form-bordered',
+                    {!! Form::open(['url'=>'control/showlist?action=save','class'=>'form-horizontal form-bordered',
                     'id'=>'postForm','onkeydown'=>'if(event.keyCode==13){return false;}']) !!}
                     <div class="form-body">
                         <div class="form-group">
-                            <label class="control-label col-md-1">选择演艺秀</label>
+                            <label class="control-label col-md-1">所在景区</label>
 
                             <div class="col-md-11">
-                                <select class="form-control input-medium select2me" name="show_id"
-                                        data-placeholder="选择演艺秀">
-                                    <option value=""></option>
+                                <select class="form-control input-medium select2me" name="zone_id"
+                                        data-placeholder="所在景区">
 
-                                    <?php
-                                    $Push = new \App\WeChat\Menu_Select();
-                                    $Push->show_list(Session::get('show_id'));
-                                    ?>
-
+                                <?php
+                                $Push = new \App\WeChat\Menu_Select();
+                                $Push->zone_list(Session::get('zone_id'));
+                                ?>
                                 </select>
                             </div>
                         </div>
-
                         <div class="form-group">
-                            <label class="control-label col-md-1">时间</label>
+                            <label class="control-label col-md-1">演艺秀名称</label>
 
                             <div class="col-md-11">
-                                <input name="show_time"   value="{!! Session::get('show_time') !!}" data-role="tagsinput"
-                                       placeholder="请输入演艺秀时间"/>
-                                <span class="help-inline">每一个时间段用","隔开</span>
-                            </div>
-
-                        </div>
-
-                        <div class="form-group">
-                            <label class="control-label col-md-1">开始日期</label>
-
-                            <div class="col-md-11">
-                                <div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd"
-                                     data-date-start-date="+0d">
-                                    <input type="text" class="form-control" readonly name="startdate" value="{!! Session::get('startdate') !!}">
-                                    <span class="input-group-btn">
-                                        <button class="btn default" type="button"><i class="fa fa-calendar"></i>
-                                        </button>
-                                    </span>
-                                </div>
-                                <span class="help-inline">如果不填,默认是今天</span>
+                                <input name="show_name"  value="{!! Session::get('show_name') !!}" class="form-control  input-inline input-xlarge">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label col-md-1">结束日期</label>
-
+                            <label class="control-label col-md-1">节目地点</label>
                             <div class="col-md-11">
-                                <div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd"
-                                     data-date-start-date="+0d">
-                                    <input type="text" class="form-control input-inline" name="enddate" readonly value="{!! Session::get('enddate') !!}">
-                                <span class="input-group-btn">
-                                    <button class="btn default" type="button"><i class="fa fa-calendar"></i>
-                                    </button>
-                                </span>
-
-                                </div>
-                                <span class="help-inline">如果不填,默认是年底</span>
+                                <input name="show_place"  value="" class="form-control  input-inline input-xlarge">
                             </div>
                         </div>
-                       <div class="form-group">
-                            <label class="control-label col-md-1">黄金周</label>
+                        <div class="form-group">
+                            <label class="control-label col-md-1">地理位置</label>
                             <div class="col-md-11">
-                                <label class="checkbox">
-                                    <input type="checkbox" name="is_top" value="1"/>
-                                    <span class="help-inline">如果勾选，则在该时间段优先显示。</span>
-                                </label>
+                                <input name="show_place_url"  value="" class="form-control  input-inline input-xlarge">
                             </div>
                         </div>
+
                         <div class="form-group">
                             <label class="control-label col-md-1">备注</label>
                             <div class="col-md-11">
-                                <input name="remark"  value="{!! Session::get('remark') !!}" class="form-control  input-inline input-xlarge">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-1">街头秀名称</label>
-                            <div class="col-md-11">
-                                <input name="se_name"  value="{!! Session::get('se_name') !!}" data-placeholder="街头秀名称"  class="form-control  input-inline input-large">
-                                <span class="help-inline">只有街头秀需要输入</span>
+                                <input name="remark"  value="" class="form-control  input-inline input-xlarge">
                             </div>
                         </div>
                     </div>

@@ -59,7 +59,12 @@
 
                 </div>
                 <div class="portlet-body form">
-
+                    @if(Session::has('check'))
+                        <div class="alert alert-danger">
+                            <button class="close" data-close="alert"></button>
+                            <span>该演艺秀时间段和已有记录重合,请检查后重新提交. </span>
+                        </div>
+                    @endif
                     {!! Form::open(['url'=>'control/pushproject?action=save','class'=>'form-horizontal form-bordered',
                     'id'=>'postForm','onkeydown'=>'if(event.keyCode==13){return false;}']) !!}
                     <div class="form-body">
@@ -67,12 +72,12 @@
                             <label class="control-label col-md-1">演艺秀名称</label>
 
                             <div class="col-md-11"><input type="text" name="id" hidden value="{!! $row->id !!}">
-                                <select class="form-control input-medium select2me" name="show_name" disabled>
+                                <select class="form-control input-medium select2me" name="show_id" >
                                     <option value=""></option>
 
                                     <?php
-                                    $Push = new \App\WeChat\Push();
-                                    $Push->showMenuList($row->id);
+                                    $Push = new \App\WeChat\Menu_Select();
+                                    $Push->show_list($row->show_id);
                                     ?>
 
 
@@ -84,33 +89,66 @@
                             <label class="control-label col-md-1">时间</label>
 
                             <div class="col-md-11">
-                                <input name="show_time"   value="{!! $row->show_time !!}" data-role="tagsinput"
+                                <input name="show_time" value="{!! $row->show_time !!}" data-role="tagsinput"
                                        placeholder="请输入回复关键字"/>
-                                <span class="help-inline">每一个时间段用回车隔开</span>
+                                <span class="help-inline">每一个时间段用","隔开</span>
                             </div>
 
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label col-md-1">演艺秀地点</label>
+                            <label class="control-label col-md-1">开始日期</label>
+
                             <div class="col-md-11">
-                                <input name="location_name"   value="{!! $row->location_name !!}" class="form-control  input-inline input-xlarge">
+                                <div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd"
+                                     data-date-start-date="+0d">
+                                    <input type="text" class="form-control" readonly name="startdate" value="{!! $row->startdate !!}">
+                                    <span class="input-group-btn">
+                                        <button class="btn default" type="button"><i class="fa fa-calendar"></i>
+                                        </button>
+                                    </span>
+                                </div>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label col-md-1">演艺秀地理位置</label>
+                            <label class="control-label col-md-1">结束日期</label>
+
                             <div class="col-md-11">
-                                <input name="location_url"  value="{!! $row->location_url !!}" class="form-control  input-inline input-xlarge">
+                                <div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd"
+                                     data-date-start-date="+0d">
+                                    <input type="text" class="form-control input-inline" name="enddate" readonly value="{!! $row->enddate !!}">
+                                <span class="input-group-btn">
+                                    <button class="btn default" type="button"><i class="fa fa-calendar"></i>
+                                    </button>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-1">黄金周</label>
+                            <div class="col-md-11">
+                                <label class="checkbox">
+                                    <input type="checkbox" name="is_top" value="1" <?php if ($row->is_top == 1) echo 'checked' ?>/>
+                                    <span class="help-inline">如果勾选，则在该时间段优先显示。</span>
+                                </label>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-md-1">备注</label>
+
                             <div class="col-md-11">
-                                <input name="remark"  value="{!! $row->remark !!}" class="form-control  input-inline input-xlarge">
+                                <input name="remark" value="{!! $row->remark !!}"
+                                       class="form-control  input-inline input-xlarge">
                             </div>
                         </div>
-
+                        <div class="form-group">
+                            <label class="control-label col-md-1">街头秀名称</label>
+                            <div class="col-md-11">
+                                <input name="se_name"  value="{!! $row->se_name !!}" data-placeholder="街头秀名称"  class="form-control  input-inline input-large">
+                                <span class="help-inline">只有街头秀需要输入</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="form-actions">
                         <div class="row">

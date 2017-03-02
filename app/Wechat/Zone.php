@@ -18,7 +18,7 @@ class Zone
      */
     public function get_project_info($project_id)
     {
-        $row=DB::table('tour_project_class')
+        $row=DB::table('zone_show_info')
             ->where('id',$project_id)
             ->first();
         return $row;
@@ -26,7 +26,7 @@ class Zone
 
     public function get_zone_info($zone_id)
     {
-        $row=DB::table('tour_zone_class')
+        $row=DB::table('zone')
             ->where('id',$zone_id)
             ->first();
         return $row;
