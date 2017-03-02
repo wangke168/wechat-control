@@ -48,7 +48,7 @@
                     <ul class="nav nav-pills navbar-left">
 
 
-                        <button type="button" class="btn btn-success" onclick="javascript:window.location.href='pushproject?action=add';">添加推送演艺秀</button>
+                        <button type="button" class="btn btn-success" onclick="javascript:window.location.href='pushproject?action=add';">添加演艺秀时间</button>
 
                     </ul>
                     <div class="tab-content">

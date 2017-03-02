@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/control/zone_show_add.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/control/zone_show_list.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/control/zone_show_modify.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/PushController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/ZoneController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Wechat/Push.php" afterPath="$PROJECT_DIR$/app/Wechat/Menu_Select.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Wechat/Zone.php" afterPath="$PROJECT_DIR$/app/Wechat/Zone.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/articleadd.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/articleadd.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/push_project_add.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/push_project_add.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/push_project_list.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/push_project_list.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/push_project_modify.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/push_project_modify.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="push_project_list.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="push_project_list.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/control/push_project_list.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.867924">
-              <caret line="124" column="92" selection-start-line="124" selection-start-column="92" selection-end-line="124" selection-end-column="92" />
+            <state vertical-scroll-proportion="0.3330162">
+              <caret line="50" column="145" selection-start-line="50" selection-start-column="145" selection-end-line="50" selection-end-column="145" />
               <folding>
                 <element signature="e#4456#4768#0#PHP" expanded="true" />
               </folding>
@@ -52,7 +39,7 @@
       <file leaf-file-name="push_project_add.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/push_project_add.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-35.576923">
+            <state vertical-scroll-proportion="-105.76923">
               <caret line="139" column="30" selection-start-line="139" selection-start-column="30" selection-end-line="139" selection-end-column="30" />
               <folding>
                 <marker date="1488421271000" expanded="true" signature="2167:2354" placeholder="..." />
@@ -107,10 +94,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZoneController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ZoneController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ZoneController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8840445">
+            <state vertical-scroll-proportion="-36.653847">
               <caret line="128" column="70" selection-start-line="128" selection-start-column="70" selection-end-line="128" selection-end-column="70" />
               <folding>
                 <element signature="e#49#69#0#PHP" expanded="true" />
@@ -205,10 +192,10 @@
         <option value="$PROJECT_DIR$/resources/views/control/zone_show_modify.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
         <option value="$PROJECT_DIR$/resources/views/control/articleadd.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/control/push_project_list.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/push_project_modify.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/push_project_add.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Control/ZoneController.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/push_project_list.blade.php" />
       </list>
     </option>
   </component>
@@ -909,16 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/push_project_list.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.867924">
-          <caret line="124" column="92" selection-start-line="124" selection-start-column="92" selection-end-line="124" selection-end-column="92" />
-          <folding>
-            <element signature="e#4456#4768#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/articlemodify.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.60296845">
@@ -955,9 +932,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ZoneController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-36.653847">
+          <caret line="128" column="70" selection-start-line="128" selection-start-column="70" selection-end-line="128" selection-end-column="70" />
+          <folding>
+            <element signature="e#49#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/push_project_add.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.576923">
+        <state vertical-scroll-proportion="-105.76923">
           <caret line="139" column="30" selection-start-line="139" selection-start-column="30" selection-end-line="139" selection-end-column="30" />
           <folding>
             <marker date="1488421271000" expanded="true" signature="2167:2354" placeholder="..." />
@@ -967,12 +954,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ZoneController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/control/push_project_list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8840445">
-          <caret line="128" column="70" selection-start-line="128" selection-start-column="70" selection-end-line="128" selection-end-column="70" />
+        <state vertical-scroll-proportion="0.3330162">
+          <caret line="50" column="145" selection-start-line="50" selection-start-column="145" selection-end-line="50" selection-end-column="145" />
           <folding>
-            <element signature="e#49#69#0#PHP" expanded="true" />
+            <element signature="e#4456#4768#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
