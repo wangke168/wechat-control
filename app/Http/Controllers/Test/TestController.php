@@ -32,6 +32,12 @@ class TestController extends Controller
 
     public function test()
     {
+
+        $api=new Api();
+        $result= $api->get_wechat_api();
+        return $result['token'];
+
+
         $date = Carbon::now()->toDateString();
 //        return $date;
 
