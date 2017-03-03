@@ -73,6 +73,44 @@
                 </li>
                 <!-- END MARKET MENU-->
                 @endif
+            @if (Session::get('managelevel')=='4')
+                <li class="tooltips" data-container="body" data-placement="right" data-html="true"
+                    data-original-title="公告牌">
+                    <a href="index">
+                        <i class="icon-home"></i>
+					<span class="title">
+					公告牌 </span>
+                    </a>
+                </li>
+                <!-- START MARKET MENU -->
+                <li class="heading">
+                    <h3 class="uppercase">Features</h3>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="icon-settings"></i>
+                        <span class="title">文章管理</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="articlelist">
+                                文章列表</a>
+                        </li>
+                        <li>
+                            <a href="articleadd">
+                                添加文章</a>
+                        </li>
+                    </ul>
+                <li>
+                    <a href="pushproject">
+                        <i class="icon-wallet"></i>
+                        <span class="title">演艺秀时间</span>
+                    </a>
+                </li>
+                </li>
+                <!-- END MARKET MENU-->
+                @endif
                 @if (Session::get('managelevel')=='3')
                         <!-- BEGIN ANGULARJS LINK -->
                 <li class="tooltips" data-container="body" data-placement="right" data-html="true"

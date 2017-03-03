@@ -48,7 +48,9 @@
                     <ul class="nav nav-pills navbar-left">
 
 
-                        <button type="button" class="btn btn-success" onclick="javascript:window.location.href='pushproject?action=add';">添加演艺秀时间</button>
+                        <button type="button" class="btn btn-success"
+                                onclick="javascript:window.location.href='pushproject?action=add';">添加演艺秀时间
+                        </button>
 
                     </ul>
                     <div class="tab-content">
@@ -83,7 +85,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <?php $i=1?>
+                            <?php $i = 1?>
                             @foreach($rows as $row)
                                 <tr>
                                     <td>
@@ -92,11 +94,11 @@
                                     <td>
 
                                         <?php
-                                        $zone=new \App\WeChat\Zone();
-                                            echo $zone->get_project_info($row->show_id)->show_name;
-                                            if($row->se_name){
-                                                echo '('.$row->se_name.')';
-                                            }
+                                        $zone = new \App\WeChat\Zone();
+                                        echo $zone->get_project_info($row->show_id)->show_name;
+                                        if ($row->se_name) {
+                                            echo '(' . $row->se_name . ')';
+                                        }
                                         ?>
                                     </td>
                                     <td>
@@ -116,15 +118,19 @@
 
                                     <td>
                                         <?php
-                                       /* if ($row->online == 1) {
-                                            echo "<span class='label label-success'>显示</span>";
-                                        } else {
-                                            echo "<span class='label label-danger'>不显示</span>";
-                                        }*/
+                                        /* if ($row->online == 1) {
+                                             echo "<span class='label label-success'>显示</span>";
+                                         } else {
+                                             echo "<span class='label label-danger'>不显示</span>";
+                                         }*/
                                         if ($row->is_top == 0) {
                                             echo "&nbsp;<span class='label label-success'>常规</span>";
                                         } else {
                                             echo "&nbsp;<span class='label label-danger'>黄金周</span>";
+                                        }
+                                        $date = Carbon\Carbon::now()->toDateString();
+                                        if ($row->startdate <= $date && $row->enddate > $date) {
+                                            echo "&nbsp;<span class='label label-warning'>在线</span>";
                                         }
                                         ?>
 
@@ -132,13 +138,14 @@
                                     <td>
                                         <?php
                                         echo "<a href='pushproject?action=modify&id={$row->id}' class='label label-success'><i class=\"fa fa-edit\"></i>&nbsp;修改</a>&nbsp;";
-                                       /* if ($row->is_push == 1) {
+
+                                        /* if ($row->is_push == 1) {
                                             echo "<a OnClick=\"javascript:if (!confirm('是否真的要取消推送'))return false;\"  href='pushproject?action=notpush&id={$row->id}' class='label label-warning'><i class=\"fa  fa-chevron-circle-down\"></i>&nbsp;取消推送</a>";
                                         } elseif ($row->is_push == 0) {
                                             echo "<a OnClick=\"javascript:if (!confirm('是否真的要推送'))return false;\"  href='pushproject?action=push&id={$row->id}' class='label label-success'><i class=\"fa  fa-chevron-circle-up\"></i>&nbsp;自动推送</a>";
 
                                         }*/
-                                            $i=$i+1;
+                                        $i = $i + 1;
                                         ?>
                                     </td>
                                 </tr>
