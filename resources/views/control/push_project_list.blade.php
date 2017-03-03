@@ -53,6 +53,17 @@
                         </button>
 
                     </ul>
+                    <ul class="nav nav-pills navbar-right">
+                        {!! Form::open(['url'=>'control/pushproject?action=search','class'=>'navbar-form',
+                                            'id'=>'postForm']) !!}
+
+                        <input class="m-wrap" type="text" name="keyword" class="form-control" placeholder="关键字"
+                               id="keyword" value=""/>
+
+                        <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
+
+                        {!! Form::close() !!}
+                    </ul>
                     <div class="tab-content">
                         <table class="table table-striped table-bordered table-hover" id="sample_1">
                             <thead>

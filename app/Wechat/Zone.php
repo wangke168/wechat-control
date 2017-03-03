@@ -24,6 +24,7 @@ class Zone
         return $row;
     }
 
+
     public function get_zone_info($zone_id)
     {
         $row=DB::table('zone')
@@ -31,4 +32,6 @@ class Zone
             ->first();
         return $row;
     }
+
+
 }

@@ -88,6 +88,18 @@ class ZoneController extends Controller
                     ->where('id', $id)
                     ->first();
                 return view('control.push_project_modify', compact('row'));
+            case 'search':
+                $keyword=$request->input('keyword');
+                $project_ids=DB::table('zone_show_info')
+                    ->where('show_name','like','%'.$keyword.'%')
+                    ->pluck('id');
+
+                $rows=DB::table('zone_show_time')
+                    ->whereIn('show_id',$project_ids)
+                    ->paginate(20);
+                return view('control.push_project_list', compact('rows'));
+
+                break;
             case 'save':
 //                dd($request->all());
                 $show_id = $request->input('show_id');
@@ -98,6 +110,7 @@ class ZoneController extends Controller
                 $enddate ?: $enddate = '2017-12-31';        //如果不填,默认是年底
 
                 $is_top = $request->input('is_top');
+                $is_top?:$is_top=0;
                 $remark = $request->input('remark');
                 $se_name = $request->input('se_name');
                 $zone = new Zone();
@@ -105,12 +118,13 @@ class ZoneController extends Controller
                 $zone_id = $zone->get_project_info($show_id)->zone_id;
                 $eventkey = $zone->get_zone_info($zone_id)->eventkey;
 
-                if ($this->check_show_time($show_id, $startdate,$id,$se_name)) {
+                if($is_top==0) {
+                    if ($this->check_show_time($show_id, $startdate, $id, $se_name)) {
 //                    \Session::flash('check','failed');
-                    return \Redirect::back()->with(['check' => 'failed', 'show_id' => $show_id, 'show_time' => $show_time,
-                        'startdate' => $startdate, 'enddate' => $enddate, 'remark' => $remark, 'se_name' => $se_name]);
+                        return \Redirect::back()->with(['check' => 'failed', 'show_id' => $show_id, 'show_time' => $show_time,
+                            'startdate' => $startdate, 'enddate' => $enddate, 'remark' => $remark, 'se_name' => $se_name]);
+                    }
                 }
-
                 if ($id) {
 
                     DB::table('zone_show_time')
@@ -195,6 +209,7 @@ class ZoneController extends Controller
         $row = DB::table('zone_show_time')
             ->where('show_id', $show_id)
             ->where('se_name',$se_name)
+            ->where('is_top','0')
             ->where('id','<>',$id)
             ->whereDate('enddate', '>', $startdate)
             ->count();
