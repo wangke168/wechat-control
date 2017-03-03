@@ -119,7 +119,7 @@ class ZoneController extends Controller
                 $eventkey = $zone->get_zone_info($zone_id)->eventkey;
 
                 if($is_top==0) {
-                    if ($this->check_show_time($show_id, $startdate, $id, $se_name)) {
+                    if ($this->check_show_time($show_id, $startdate, $enddate,$id, $se_name)) {
 //                    \Session::flash('check','failed');
                         return \Redirect::back()->with(['check' => 'failed', 'show_id' => $show_id, 'show_time' => $show_time,
                             'startdate' => $startdate, 'enddate' => $enddate, 'remark' => $remark, 'se_name' => $se_name]);
@@ -180,7 +180,7 @@ class ZoneController extends Controller
         }
     }
 
-    private function check_show_time($show_id, $startdate, $id=null,$se_name=null)
+    private function check_show_time($show_id, $startdate,$enddate, $id=null,$se_name=null)
     {
         /*if (!$id) {
             $row = DB::table('zone_show_time')
@@ -212,7 +212,8 @@ class ZoneController extends Controller
             ->where('is_top','0')
             ->where('id','<>',$id)
             ->whereDate('enddate', '>', $startdate)
-            ->count();
+            ->whereDate('startdate', '<', $enddate)
+                        ->count();
 
         if ($row > 0) {
             return true;

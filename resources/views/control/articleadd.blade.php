@@ -199,7 +199,7 @@
                                      data-date-start-date="+0d">
                                     <input type="text" class="form-control" readonly name="startdate">
                                     <span class="input-group-btn">
-                                        <button class="btn default" type="button"><i class="fa fa-calendar"></i>
+                                        <button class="btn default" type="button"  style="height: 34px"><i class="fa fa-calendar"></i>
                                         </button>
                                     </span>
                                 </div>
@@ -214,7 +214,7 @@
                                      data-date-start-date="+0d">
                                     <input type="text" class="form-control input-inline" name="enddate" readonly>
                                 <span class="input-group-btn">
-                                    <button class="btn default" type="button"><i class="fa fa-calendar"></i>
+                                    <button class="btn default" type="button"  style="height: 34px"><i class="fa fa-calendar"></i>
                                     </button>
                                 </span>
                                 </div>

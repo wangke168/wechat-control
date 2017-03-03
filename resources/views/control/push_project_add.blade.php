@@ -16,8 +16,6 @@
 
 <link href="{{asset('lib/bootstrap-tagsinput.css')}}" rel="stylesheet">
 
-<!--上传-->
-<link href="{{asset('assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css')}}" rel="stylesheet">
 
 <!--日历-->
 
@@ -105,10 +103,11 @@
                                      data-date-start-date="+0d">
                                     <input type="text" class="form-control" readonly name="startdate" value="{!! Session::get('startdate') !!}">
                                     <span class="input-group-btn">
-                                        <button class="btn default" type="button"><i class="fa fa-calendar"></i>
+                                        <button class="btn default" type="button" style="height: 34px"><i class="fa fa-calendar"></i>
                                         </button>
                                     </span>
                                 </div>
+
                                 <span class="help-inline">如果不填,默认是今天</span>
                             </div>
                         </div>
@@ -121,7 +120,7 @@
                                      data-date-start-date="+0d">
                                     <input type="text" class="form-control input-inline" name="enddate" readonly value="{!! Session::get('enddate') !!}">
                                 <span class="input-group-btn">
-                                    <button class="btn default" type="button"><i class="fa fa-calendar"></i>
+                                    <button class="btn default" type="button" style="height: 34px"><i class="fa fa-calendar"></i>
                                     </button>
                                 </span>
 
@@ -188,10 +187,6 @@
     <script type="text/javascript"
             src="{{asset('assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js')}}"></script>
     <script src="{{asset('assets/admin/pages/scripts/components-pickers.js')}}"></script>
-
-
-    <!--上传-->
-    <script src="{{asset('assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js')}}"></script>
 
 
     <!--下拉框-->

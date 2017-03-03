@@ -236,7 +236,7 @@
                                     <input type="text" class="form-control" readonly name="startdate"
                                            value="{!! $row->startdate !!}">
                                 <span class="input-group-btn">
-                                    <button class="btn default" type="button"><i class="fa fa-calendar"></i>
+                                    <button class="btn default" type="button" style="height: 34px"><i class="fa fa-calendar"></i>
                                     </button>
                                 </span>
                                 </div>
@@ -252,7 +252,7 @@
                                     <input type="text" class="form-control input-inline" name="enddate" readonly
                                            value="{!! $row->enddate !!}">
                             <span class="input-group-btn">
-                                <button class="btn default" type="button"><i class="fa fa-calendar"></i>
+                                <button class="btn default" type="button" style="height: 34px"><i class="fa fa-calendar"></i>
                                 </button>
                             </span>
                                 </div>
