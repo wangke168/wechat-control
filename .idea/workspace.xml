@@ -58,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/control/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.67254174">
-              <caret line="1898" column="73" selection-start-line="1898" selection-start-column="73" selection-end-line="1898" selection-end-column="73" />
+              <caret line="1898" column="42" selection-start-line="1898" selection-start-column="42" selection-end-line="1898" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -942,7 +942,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/control/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.67254174">
-          <caret line="1898" column="73" selection-start-line="1898" selection-start-column="73" selection-end-line="1898" selection-end-column="73" />
+          <caret line="1898" column="42" selection-start-line="1898" selection-start-column="42" selection-end-line="1898" selection-end-column="42" />
           <folding />
         </state>
       </provider>

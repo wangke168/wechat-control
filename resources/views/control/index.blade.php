@@ -1896,7 +1896,7 @@
             </div>
         </div>
     @endif
-    @if(Session::get('managelevel')=='2'&&Session::get('managelevel')=='4')
+    @if(Session::get('managelevel')=='2'||Session::get('managelevel')=='4')
         <div class="alert alert-danger">
             <button class="close" data-close="alert"></button>
 			<span>
