@@ -168,9 +168,10 @@ class ZoneController extends Controller
 
     private function check_show_time($show_id, $startdate, $id=null,$remark=null)
     {
-        if (!$id) {
+        /*if (!$id) {
             $row = DB::table('zone_show_time')
                 ->where('show_id', $show_id)
+                ->where('remark',$remark)
                 ->whereDate('enddate', '>', $startdate)
                 ->count();
             if ($row > 0) {
@@ -190,6 +191,17 @@ class ZoneController extends Controller
             } else {
                 return false;
             }
+        }*/
+        $row = DB::table('zone_show_time')
+            ->where('show_id', $show_id)
+            ->where('remark',$remark)
+            ->where('id','<>',$id)
+            ->whereDate('enddate', '>', $startdate)
+            ->count();
+        if ($row > 0) {
+            return true;
+        } else {
+            return false;
         }
     }
 }
