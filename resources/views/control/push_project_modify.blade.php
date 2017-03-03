@@ -130,7 +130,7 @@
                             <div class="col-md-11">
                                 <label class="checkbox">
                                     <input type="checkbox" name="is_top" value="1" <?php if ($row->is_top == 1) echo 'checked' ?>/>
-                                    <span class="help-inline">如果勾选，则在该时间段优先显示。</span>
+                                 <!--   <span class="help-inline">如果勾选，则在该时间段优先显示。</span>-->
                                 </label>
                             </div>
                         </div>

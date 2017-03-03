@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/ZoneController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/ZoneController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/push_project_add.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/push_project_add.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/push_project_modify.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/push_project_modify.blade.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,12 +49,12 @@
       <file leaf-file-name="push_project_add.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/push_project_add.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="139" column="30" selection-start-line="139" selection-start-column="30" selection-end-line="139" selection-end-column="30" />
+            <state vertical-scroll-proportion="-7.6923075">
+              <caret line="136" column="92" selection-start-line="136" selection-start-column="92" selection-end-line="136" selection-end-column="92" />
               <folding>
-                <marker date="1488421271000" expanded="true" signature="2167:2354" placeholder="..." />
-                <marker date="1488421271000" expanded="true" signature="2179:2352" placeholder="..." />
-                <marker date="1488421271000" expanded="true" signature="2180:2351" placeholder="..." />
+                <marker date="1488505659000" expanded="true" signature="2167:2354" placeholder="..." />
+                <marker date="1488505659000" expanded="true" signature="2179:2352" placeholder="..." />
+                <marker date="1488505659000" expanded="true" signature="2180:2351" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -96,12 +97,12 @@
       <file leaf-file-name="push_project_modify.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/push_project_modify.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="135" column="30" selection-start-line="135" selection-start-column="30" selection-end-line="135" selection-end-column="30" />
+            <state vertical-scroll-proportion="-21.153847">
+              <caret line="132" column="92" selection-start-line="132" selection-start-column="92" selection-end-line="132" selection-end-column="92" />
               <folding>
-                <marker date="1488421272000" expanded="true" signature="2166:2353" placeholder="..." />
-                <marker date="1488421272000" expanded="true" signature="2178:2351" placeholder="..." />
-                <marker date="1488421272000" expanded="true" signature="2179:2350" placeholder="..." />
+                <marker date="1488505659000" expanded="true" signature="2166:2353" placeholder="..." />
+                <marker date="1488505659000" expanded="true" signature="2178:2351" placeholder="..." />
+                <marker date="1488505659000" expanded="true" signature="2179:2350" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -110,8 +111,8 @@
       <file leaf-file-name="ZoneController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ZoneController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5361781">
-              <caret line="107" column="67" selection-start-line="107" selection-start-column="67" selection-end-line="107" selection-end-column="67" />
+            <state vertical-scroll-proportion="0.28107607">
+              <caret line="107" column="75" selection-start-line="107" selection-start-column="75" selection-end-line="107" selection-end-column="75" />
               <folding>
                 <element signature="e#49#69#0#PHP" expanded="true" />
               </folding>
@@ -204,10 +205,10 @@
         <option value="$PROJECT_DIR$/resources/views/control/zone_show_add.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/zone_show_modify.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/articleadd.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/control/push_project_modify.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/control/push_project_add.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/push_project_list.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/push_project_modify.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/push_project_add.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Control/ZoneController.php" />
       </list>
     </option>
@@ -823,6 +824,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+          <folding>
+            <marker date="1488333140000" expanded="true" signature="1942:2006" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -875,30 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/push_project_modify.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="135" column="30" selection-start-line="135" selection-start-column="30" selection-end-line="135" selection-end-column="30" />
-          <folding>
-            <marker date="1488421272000" expanded="true" signature="2166:2353" placeholder="..." />
-            <marker date="1488421272000" expanded="true" signature="2178:2351" placeholder="..." />
-            <marker date="1488421272000" expanded="true" signature="2179:2350" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/push_project_add.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="139" column="30" selection-start-line="139" selection-start-column="30" selection-end-line="139" selection-end-column="30" />
-          <folding>
-            <marker date="1488421271000" expanded="true" signature="2167:2354" placeholder="..." />
-            <marker date="1488421271000" expanded="true" signature="2179:2352" placeholder="..." />
-            <marker date="1488421271000" expanded="true" signature="2180:2351" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/push_project_list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -935,10 +915,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/push_project_modify.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.153847">
+          <caret line="132" column="92" selection-start-line="132" selection-start-column="92" selection-end-line="132" selection-end-column="92" />
+          <folding>
+            <marker date="1488505659000" expanded="true" signature="2166:2353" placeholder="..." />
+            <marker date="1488505659000" expanded="true" signature="2178:2351" placeholder="..." />
+            <marker date="1488505659000" expanded="true" signature="2179:2350" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/push_project_add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.6923075">
+          <caret line="136" column="92" selection-start-line="136" selection-start-column="92" selection-end-line="136" selection-end-column="92" />
+          <folding>
+            <marker date="1488505659000" expanded="true" signature="2167:2354" placeholder="..." />
+            <marker date="1488505659000" expanded="true" signature="2179:2352" placeholder="..." />
+            <marker date="1488505659000" expanded="true" signature="2180:2351" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ZoneController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5361781">
-          <caret line="107" column="67" selection-start-line="107" selection-start-column="67" selection-end-line="107" selection-end-column="67" />
+        <state vertical-scroll-proportion="0.28107607">
+          <caret line="107" column="75" selection-start-line="107" selection-start-column="75" selection-end-line="107" selection-end-column="75" />
           <folding>
             <element signature="e#49#69#0#PHP" expanded="true" />
           </folding>
