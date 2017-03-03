@@ -36,19 +36,16 @@ class ZoneController extends Controller
                 $remark = $request->input('remark');
                 $zone = new Zone();
                 $eventkey = $zone->get_zone_info($zone_id)->eventkey;
-                if ($this->check_show($show_name,$zone_id))
-                {
+                if ($this->check_show($show_name, $zone_id)) {
 //                    \Session::flash('check','failed');
-                    return \Redirect::back()->with(['check'=>'failed','show_name'=>$show_name,'zone_id'=>$zone_id]);
-                }
-                else {
+                    return \Redirect::back()->with(['check' => 'failed', 'show_name' => $show_name, 'zone_id' => $zone_id]);
+                } else {
                     if ($id) {
                         DB::table('zone_show_info')
                             ->where('id', $id)
                             ->update(['zone_id' => $zone_id, 'show_name' => $show_name, 'show_place' => $show_place,
                                 'show_place_url' => $show_place_url, 'remark' => $remark, 'eventkey' => $eventkey]);
-                    }
-                    else{
+                    } else {
                         DB::table('zone_show_info')
                             ->insert(['zone_id' => $zone_id, 'show_name' => $show_name, 'show_place' => $show_place,
                                 'show_place_url' => $show_place_url, 'remark' => $remark, 'eventkey' => $eventkey]);
@@ -100,33 +97,32 @@ class ZoneController extends Controller
                 $enddate = $request->input('enddate');
                 $enddate ?: $enddate = '2017-12-31';        //如果不填,默认是年底
 
-                $is_top=$request->input('is_top');
+                $is_top = $request->input('is_top');
                 $remark = $request->input('remark');
-                $se_name=$request->input('se_name');
+                $se_name = $request->input('se_name');
                 $zone = new Zone();
 //                    $show_name=$zone->get_project_info($show_id)->project_name;
                 $zone_id = $zone->get_project_info($show_id)->zone_id;
                 $eventkey = $zone->get_zone_info($zone_id)->eventkey;
 
-                if ($this->check_show_time($show_id,$startdate))
-                {
+                if ($this->check_show_time($show_id, $startdate,$id)) {
 //                    \Session::flash('check','failed');
-                    return \Redirect::back()->with(['check'=>'failed','show_id'=>$show_id,'show_time'=>$show_time,
-                    'startdate'=>$startdate,'enddate'=>$enddate,'remark'=>$remark,'se_name'=>$se_name]);
+                    return \Redirect::back()->with(['check' => 'failed', 'show_id' => $show_id, 'show_time' => $show_time,
+                        'startdate' => $startdate, 'enddate' => $enddate, 'remark' => $remark, 'se_name' => $se_name]);
                 }
 
                 if ($id) {
 
                     DB::table('zone_show_time')
                         ->where('id', $id)
-                        ->update(['show_id' => $show_id,'zone_id' => $zone_id, 'show_time' => $show_time, 'startdate' => $startdate,
-                            'enddate' => $enddate,'eventkey' => $eventkey,'is_top'=>$is_top,'remark' => $remark,'se_name'=>$se_name]);
+                        ->update(['show_id' => $show_id, 'zone_id' => $zone_id, 'show_time' => $show_time, 'startdate' => $startdate,
+                            'enddate' => $enddate, 'eventkey' => $eventkey, 'is_top' => $is_top, 'remark' => $remark, 'se_name' => $se_name]);
                 } else {
 
                     DB::table('zone_show_time')
                         ->insert(['show_id' => $show_id, 'show_time' => $show_time, 'zone_id' => $zone_id,
                             'startdate' => $startdate, 'enddate' => $enddate,
-                            'eventkey' => $eventkey,'is_top'=>$is_top,'remark' => $remark,'se_name'=>$se_name]);
+                            'eventkey' => $eventkey, 'is_top' => $is_top, 'remark' => $remark, 'se_name' => $se_name]);
                 }
                 return redirect('/control/pushproject');
                 break;
@@ -145,8 +141,8 @@ class ZoneController extends Controller
             default:
                 $rows = DB::table('zone_show_time')
                     ->orderBy('zone_id', 'asc')
-                    ->orderBy('show_id','asc')
-                    ->orderBy('startdate','asc')
+                    ->orderBy('show_id', 'asc')
+                    ->orderBy('startdate', 'asc')
                     ->paginate(20);
                 return view('control.push_project_list', compact('rows'));
                 break;
@@ -170,16 +166,29 @@ class ZoneController extends Controller
         }
     }
 
-    private function check_show_time($show_id,$startdate)
+    private function check_show_time($show_id, $startdate, $id=null)
     {
-        $row=DB::table('zone_show_time')
-            ->where('show_id',$show_id)
-            ->whereDate('enddate','>',$startdate)
-            ->count();
-        if ($row > 0) {
-            return true;
+        if (!$id) {
+            $row = DB::table('zone_show_time')
+                ->where('show_id', $show_id)
+                ->whereDate('enddate', '>', $startdate)
+                ->count();
+            if ($row > 0) {
+                return true;
+            } else {
+                return false;
+            }
         } else {
-            return false;
+            $row = DB::table('zone_show_time')
+                ->where('show_id', $show_id)
+                ->where('id','<>',$id)
+                ->whereDate('enddate', '>', $startdate)
+                ->count();
+            if ($row > 0) {
+                return true;
+            } else {
+                return false;
+            }
         }
     }
 }
