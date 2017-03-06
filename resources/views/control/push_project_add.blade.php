@@ -22,7 +22,7 @@
 <link rel="stylesheet" type="text/css"
       href="{{asset('assets/global/plugins/bootstrap-datepicker/css/datepicker3.css')}}"/>
 @stop
-@include('vendor.ueditor.assets')
+
 
 @section('page-bar')
     <div class="page-bar">
@@ -103,7 +103,7 @@
                                      data-date-start-date="+0d">
                                     <input type="text" class="form-control" readonly name="startdate" value="{!! Session::get('startdate') !!}">
                                     <span class="input-group-btn">
-                                        <button class="btn default" type="button" style="height: 34px"><i class="fa fa-calendar"></i>
+                                        <button class="btn default" type="button"><i class="fa fa-calendar"></i>
                                         </button>
                                     </span>
                                 </div>
@@ -120,7 +120,7 @@
                                      data-date-start-date="+0d">
                                     <input type="text" class="form-control input-inline" name="enddate" readonly value="{!! Session::get('enddate') !!}">
                                 <span class="input-group-btn">
-                                    <button class="btn default" type="button" style="height: 34px"><i class="fa fa-calendar"></i>
+                                    <button class="btn default" type="button"><i class="fa fa-calendar"></i>
                                     </button>
                                 </span>
 

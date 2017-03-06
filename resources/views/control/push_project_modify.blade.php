@@ -16,15 +16,14 @@
 
 <link href="{{asset('lib/bootstrap-tagsinput.css')}}" rel="stylesheet">
 
-<!--上传-->
-<link href="{{asset('assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css')}}" rel="stylesheet">
+
 
 <!--日历-->
 
 <link rel="stylesheet" type="text/css"
       href="{{asset('assets/global/plugins/bootstrap-datepicker/css/datepicker3.css')}}"/>
 @stop
-@include('vendor.ueditor.assets')
+
 
 @section('page-bar')
     <div class="page-bar">
@@ -104,7 +103,7 @@
                                      data-date-start-date="+0d">
                                     <input type="text" class="form-control" readonly name="startdate" value="{!! $row->startdate !!}">
                                     <span class="input-group-btn">
-                                        <button class="btn default" type="button" style="height: 34px"><i class="fa fa-calendar"></i>
+                                        <button class="btn default" type="button"><i class="fa fa-calendar"></i>
                                         </button>
                                     </span>
                                 </div>
@@ -121,7 +120,7 @@
                                      data-date-start-date="+0d">
                                     <input type="text" class="form-control input-inline" name="enddate" readonly value="{!! $row->enddate !!}">
                                 <span class="input-group-btn">
-                                    <button class="btn default" type="button" style="height: 34px"><i class="fa fa-calendar"></i>
+                                    <button class="btn default" type="button"><i class="fa fa-calendar"></i>
                                     </button>
                                 </span>
                                 </div>
@@ -188,10 +187,6 @@
     <script type="text/javascript"
             src="{{asset('assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js')}}"></script>
     <script src="{{asset('assets/admin/pages/scripts/components-pickers.js')}}"></script>
-
-
-    <!--上传-->
-    <script src="{{asset('assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js')}}"></script>
 
 
     <!--下拉框-->

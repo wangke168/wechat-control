@@ -149,6 +149,7 @@
                                     <td>
                                         <?php
                                         echo "<a href='pushproject?action=modify&id={$row->id}' class='label label-success'><i class=\"fa fa-edit\"></i>&nbsp;修改</a>&nbsp;";
+                                        echo "<a OnClick=\"javascript:if (!confirm('是否真的要删除'))return false;\"  href='pushproject?action=del&id={$row->id}' class='label label-danger'><i class=\"fa  fa-trash-o\"></i>&nbsp;删除</a>";
 
                                         /* if ($row->is_push == 1) {
                                             echo "<a OnClick=\"javascript:if (!confirm('是否真的要取消推送'))return false;\"  href='pushproject?action=notpush&id={$row->id}' class='label label-warning'><i class=\"fa  fa-chevron-circle-down\"></i>&nbsp;取消推送</a>";
