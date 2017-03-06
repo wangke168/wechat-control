@@ -116,6 +116,9 @@ Route::group(['prefix' => 'control', 'middleware' => 'control'], function () {
 //对外
 Route::get('api/ldjl', 'Api\ApiController@ldjl');        //龙帝惊临每天获取二维码(有效期12小时)
 
+//景区导览图
+Route::get('zone/map', 'ZoneController@map');
+
 
 Route::get('test', 'Test\TestController@test');
 
