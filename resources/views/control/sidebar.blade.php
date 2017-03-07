@@ -103,10 +103,25 @@
                         </li>
                     </ul>
                 <li>
-                    <a href="pushproject">
-                        <i class="icon-wallet"></i>
-                        <span class="title">演艺秀时间</span>
+                    <a href="javascript:;">
+                        <i class="icon-feed"></i>
+                        <span class="title">景区相关</span>
+                        <span class="arrow "></span>
                     </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">
+                                景区管理</a>
+                        </li>
+                        <li>
+                            <a href="showlist">
+                                演艺秀管理</a>
+                        </li>
+                        <li>
+                            <a href="pushproject">
+                                演艺秀时间</a>
+                        </li>
+                    </ul>
                 </li>
                 </li>
                 <!-- END MARKET MENU-->

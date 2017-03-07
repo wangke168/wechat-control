@@ -8,9 +8,10 @@ use App\Http\Requests;
 
 class ZoneController extends Controller
 {
-    public function map()
+    public function map(Request $request)
     {
-        return view('zone.map');
+        $zone_id=$request->input('id');
+        return view('zone.map',compact('zone_id'));
     }
 
 }

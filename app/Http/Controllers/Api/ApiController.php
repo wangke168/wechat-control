@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\WeChat\Usage;
+use Carbon\Carbon;
 use EasyWeChat\Foundation\Application;
 use App\WeChat\Count;
 use Illuminate\Http\Request;
@@ -24,6 +25,10 @@ class ApiController extends Controller
         $this->usage = new Usage();
     }
 
+    /**
+     * 输出龙帝惊临临时二维码
+     * @return mixed
+     */
     public function ldjl()
     {
         $row = DB::table('wx_qrscene_temp_info')
@@ -46,4 +51,58 @@ class ApiController extends Controller
         $img->insert($logo, 'center');
         return $img->response('png');
     }
+
+    public function api_mobile(Request $request)
+    {
+        $type = $request->input('type');
+        switch ($type) {
+            case 'show':
+                $show = array();
+                $date = Carbon::now()->toDateString();
+                $zone = new \App\WeChat\Zone();
+                $rows_zone = DB::table('zone')
+                    ->orderBy('priority', 'asc')
+                    ->get();
+                foreach ($rows_zone as $row_zone) {
+                    //获取现在所处时间段
+
+                    $rows_show = DB::table('zone_show_time')
+                        ->whereDate('startdate', '<=', $date)
+                        ->whereDate('enddate', '>=', $date)
+                        ->where('zone_id', $row_zone->id)
+                        ->orderBy('show_id', 'asc')
+                        ->get();
+                    if ($rows_show) {
+                        $zone_name = $row_zone->zone_name;
+                        $show_info = array();
+                        foreach ($rows_show as $row_show) {
+                            if ($zone->get_correct_show($row_show->id, $row_show->show_id, $date)) {
+                                $show_name = $zone->get_project_info($row_show->show_id)->show_name;
+                                if ($row_show->se_name) {
+                                    $show_name = $row_show->se_name . '(' . $show_name . ')';
+                                }
+
+                                $show_time = str_replace(',', ' | ', $row_show->show_time);
+                                if ($row_show->remark) {
+                                    $show_remark = $row_show->remark;
+                                } else {
+                                    $show_remark = '';
+                                }
+                                $show_info[] = array('show_name' => $show_name, 'show_time' => $show_time, 'show_remark' => $show_remark);
+                            }
+                        }
+                    }
+                    else{
+                        continue;
+                    }
+                    $show[] = array('zone'=>$zone_name,'info' => $show_info);
+                }
+         //       $aaa=json_encode($show);
+       //         var_dump(json_decode($aaa));
+                return $show;
+                     return response()->json($show);
+                break;
+        }
+    }
+
 }

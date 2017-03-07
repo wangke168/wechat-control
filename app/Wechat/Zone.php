@@ -32,6 +32,19 @@ class Zone
             ->first();
         return $row;
     }
-
+    public function get_correct_show($id, $show_id, $date)
+    {
+        $temp = DB::table('zone_show_time')
+            ->whereDate('startdate', '<=', $date)
+            ->whereDate('enddate', '>=', $date)
+            ->where('show_id', $show_id)
+            ->orderBy('is_top', 'desc')
+            ->first();
+        if ($id == $temp->id) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 }
