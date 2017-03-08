@@ -102,6 +102,17 @@ class ApiController extends Controller
 //                return $show;
                      return response()->json($show)->setCallback(request()->input('callback'));
                 break;
+            case 'cast':
+                $row_day=DB::table('wx_article')
+                    ->find('37');
+                $day_cast=$row_day->content;
+                $row_week=DB::table('wx_article')
+                    ->find('38');
+                $week_cast=$row_week->content;
+
+                $data=['day'=>$day_cast,'week'=>$week_cast];
+                return response()->json($data)->setCallback(request()->input('callback'));
+                break;
         }
     }
 
