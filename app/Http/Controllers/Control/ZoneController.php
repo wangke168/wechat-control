@@ -36,7 +36,7 @@ class ZoneController extends Controller
                 $remark = $request->input('remark');
                 $zone = new Zone();
                 $eventkey = $zone->get_zone_info($zone_id)->eventkey;
-                if ($this->check_show($show_name, $zone_id)) {
+                if ($this->check_show($show_name, $zone_id,$id)) {
 //                    \Session::flash('check','failed');
                     return \Redirect::back()->with(['check' => 'failed', 'show_name' => $show_name, 'zone_id' => $zone_id]);
                 } else {
@@ -171,11 +171,12 @@ class ZoneController extends Controller
      * 检查数据库中是否已经存在该演艺秀
      * @param $type
      */
-    private function check_show($show_name, $zone_id)
+    private function check_show($show_name, $zone_id,$id=null)
     {
         $row = DB::table('zone_show_info')
             ->where('show_name', $show_name)
             ->where('zone_id', $zone_id)
+            ->where('id', '<>', $id)
             ->count();
         if ($row > 0) {
             return true;
