@@ -44,14 +44,7 @@
                 </div>
                 <div class="portlet-body">
                     <form method="GET" name="myform" action="/control/ordercountsearch" class="navbar-form navbar-right">
-                        <div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd"
-                             data-date-start-date="+0d">
-                            <input type="text" class="form-control" readonly name="startdate" value="">
-                                    <span class="input-group-btn">
-                                        <button class="btn default" type="button" ><i class="fa fa-calendar"></i>
-                                        </button>
-                                    </span>
-                        </div>
+
                     <div class="input-group input-large date-picker input-daterange" data-date="10/11/2012"
                          data-date-format="yyyy/mm/dd">
                         <input type="text" class="form-control" name="from"

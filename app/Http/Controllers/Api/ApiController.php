@@ -99,8 +99,8 @@ class ApiController extends Controller
                 }
          //       $aaa=json_encode($show);
        //         var_dump(json_decode($aaa));
-                return $show;
-                     return response()->json($show);
+//                return $show;
+                     return response()->json($show)->setCallback(request()->input('callback'));
                 break;
         }
     }
