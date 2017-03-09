@@ -105,12 +105,14 @@ class ApiController extends Controller
             case 'cast':
                 $row_day=DB::table('wx_article')
                     ->find('37');
+                $day_update=$row_day->adddate;
                 $day_cast=$row_day->content;
                 $row_week=DB::table('wx_article')
                     ->find('38');
                 $week_cast=$row_week->content;
+                $week_update=$row_week->adddate;
 
-                $data=['day'=>$day_cast,'week'=>$week_cast];
+                $data=['day_update'=>$day_update,'day'=>$day_cast,'week_update'=>$week_update,'week'=>$week_cast];
                 return response()->json($data)->setCallback(request()->input('callback'));
                 break;
         }
