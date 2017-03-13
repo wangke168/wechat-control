@@ -146,6 +146,7 @@ class RequestController extends Controller
                 break;
             case 'search':
                 $keyword = $request->input('keyword');
+                $this->checkkeyword($keyword);
                 $rows = DB::table('wx_voice_request')
                     ->where('remark', 'like', '%' . $keyword . '%')
                     ->orderBy('id', 'desc')
@@ -246,6 +247,23 @@ class RequestController extends Controller
 
         }
         return $marketid;
+    }
+
+    private function checkkeyword($keyword)  //检查关键字表中是否已经含有关键字，没有的话写入*/
+    {
+        $keyword = str_replace("，", ",", $keyword);
+        $keyword = explode(',', $keyword);
+
+        for ($index = 0; $index < count($keyword); $index++) {
+
+            $row = DB::table('wx_request_keyword')
+                ->where('keyword', $keyword[$index])
+                ->first();
+            if (!$row) {
+                DB::table('wx_request_keyword')
+                    ->insert(['keyword' => $keyword[$index]]);
+            }
+        }
     }
 
 
