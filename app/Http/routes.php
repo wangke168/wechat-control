@@ -55,6 +55,7 @@ Route::group(['prefix' => 'control', 'middleware' => 'control'], function () {
 
     //回复管理
     Route::get('requesttxt', 'Control\RequestController@txt');
+    Route::post('requesttxt', 'Control\RequestController@txt');
 
     //语音回复
     Route::get('requestvoice', 'Control\RequestController@voice');

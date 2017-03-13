@@ -25,12 +25,65 @@ class RequestController extends Controller
         $this->usage = new Usage();
     }
 
-    public function txt()
+    public function txt(Request $request)
     {
-        $rows = DB::table('wx_txt_request')
-            ->orderBy('id', 'desc')
-            ->paginate(20);
-        return view('control.request_txt_list', compact('rows'));
+        $action = $request->input('action');
+        $id = $request->input('id');
+        switch ($action) {
+            case 'add':
+                return view('control.request_txt_add');
+            case 'modify':
+                $row = DB::table('wx_txt_request')
+                    ->find($id);
+                return view('control.request_txt_modify', compact('row'));
+                break;
+            case 'save';
+//                dd($request->all());
+                $content = $request->input('content');
+
+                $keyword = str_replace('，',',',$request->input('keyword'));
+                $focus = $request->input('focus');
+                $focus ?: $focus = 0;
+                $eventkey = $request->input('eventkey');
+                $eventkey = $this->Qrscene_info($eventkey);
+                if ($id) {
+                    DB::table('wx_txt_request')
+                        ->where('id', $id)
+                        ->update(['content' => $content, 'keyword' => $keyword, 'focus' => $focus, 'eventkey' => $eventkey]);
+                } else {
+                    DB::table('wx_txt_request')
+                        ->insert(['content' => $content, 'keyword' => $keyword, 'focus' => $focus, 'eventkey' => $eventkey]);
+                }
+                return redirect('/control/requesttxt');
+                break;
+            case 'search':
+                $keyword = $request->input('keyword');
+                $rows = DB::table('wx_txt_request')
+                    ->where('content', 'like', '%' . $keyword . '%')
+                    ->orderBy('id', 'desc')
+                    ->paginate(20);
+                return view('control.request_txt_list', compact('rows'));
+                break;
+            case 'online':
+                DB::table('wx_txt_request')
+                    ->where('id', $id)
+                    ->update(['online' => '1']);
+                return redirect('/control/requesttxt');
+                break;
+            case 'offline':
+                DB::table('wx_txt_request')
+                    ->where('id', $id)
+                    ->update(['online' => '0']);
+                return redirect('/control/requesttxt');
+                break;
+            default:
+                $rows = DB::table('wx_txt_request')
+                    ->orderBy('id', 'desc')
+                    ->paginate(20);
+                return view('control.request_txt_list', compact('rows'));
+                break;
+        }
+
     }
 
     public function se()
@@ -162,5 +215,38 @@ class RequestController extends Controller
         }
 
     }
+
+    private function Qrscene_info($qrscene_name)
+    {
+
+        $qrscene_name = explode(',', $qrscene_name);
+        $marketid = '';
+        for ($index = 0; $index < count($qrscene_name); $index++) {
+            if ($index == 0) {
+                if ($qrscene_name[$index] == '全部显示') {
+                    $marketid = "all";
+                } else {
+                    $row = DB::table('wx_qrscene_info')
+                        ->where('qrscene_name', $qrscene_name[$index])
+                        ->first();
+                    if ($row) {
+                        $marketid = $row->qrscene_id;
+                    }
+                }
+            } else {
+                if ($qrscene_name[$index] == '全部显示') {
+                    $marketid = $marketid . ',' . "all";
+                } else {
+                    $row = DB::table('wx_qrscene_info')
+                        ->where('qrscene_name', $qrscene_name[$index])
+                        ->first();
+                    $marketid = $marketid . ',' . $row->qrscene_id;
+                }
+            }
+
+        }
+        return $marketid;
+    }
+
 
 }

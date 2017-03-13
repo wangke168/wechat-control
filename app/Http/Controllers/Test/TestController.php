@@ -34,13 +34,25 @@ class TestController extends Controller
         $this->zone = new Zone();
         $this->session= $app->staff_session; // 客服会话管理
 
+
     }
 
     public function test()
     {
-//       return $this->session->waiters();
+        return $this->session->lists('kf2001@u_hengdian');
 
-        return $this->staff->lists();
+
+        return $this->session->get('o2e-YuBgnbLLgJGMQykhSg_V3VRI');
+
+        //    $this->session->close('kf2001@u_hengdian', 'o2e-YuBgnbLLgJGMQykhSg_V3VRI');
+
+     /*   return $this->staff->lists();
+
+       return $this->session->create('kf2001@u_hengdian', 'o2e-YuBgnbLLgJGMQykhSg_V3VRI');*/
+
+
+        return $this->staff->onlines();
+
         //  $this->staff->create('test1@gh_fa1b742c0244', '客服1');
         $this->staff->delete('test1@gh_fa1b742c0244');
 

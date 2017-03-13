@@ -42,14 +42,22 @@
                     </div>
                 </div>
                 <div class="portlet-body">
+                    <ul class="nav nav-pills navbar-left">
 
+
+                        <button type="button" class="btn btn-success"
+                                onclick="javascript:window.location.href='requesttxt?action=add';">添加文字回复
+                        </button>
+
+                    </ul>
                     <ul class="nav nav-pills">
 
-                        <form method="POST" name="myform" action="requesttxt" class="navbar-form navbar-right">
+                        {!! Form::open(['url'=>'control/requesttxt?action=search','class'=>'navbar-form navbar-right',
+                                            'id'=>'postForm']) !!}
                             <input class="m-wrap" type="text" name="keyword" class="form-control" placeholder="关键字"
                                    id="keyword" value=""/>
                             <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
-                        </form>
+                        {!! Form::close() !!}
                     </ul>
                     <div class="tab-content">
 
@@ -64,20 +72,12 @@
                                     标题
                                 </th>
                                 <th>
-                                    排序
+                                    关键字
                                 </th>
                                 <th>
                                     展示对象
                                 </th>
-                                <th>
-                                    点击数
-                                </th>
-                                <th>
-                                    不重复点击数
-                                </th>
-                                <th>
-                                    转发数
-                                </th>
+
                                 <th>
                                     状态
                                 </th>
@@ -102,24 +102,24 @@
                                         {{$row->keyword}}
                                     </td>
                                     <td>
-                                        {{$row->eventkey}}
+                                        <?php
+                                        $usage = new \App\WeChat\Usage();
+                                        echo "<span class='label bg-grey-cascade'>" . str_limit($usage->getArticleShowQrsecne($row->eventkey), $limit = 30, $end = '...') . "</span>";
+                                        ?>
                                     </td>
-                                    <td>
 
-                                    </td>
-                                    <td>
-
-                                    </td>
-                                    <td>
-
-                                    </td>
                                     <td>
                                         <?php
                                         if ($row->online == 1) {
-                                        echo "<span class='label label-success'>显示</span>";
+                                        echo "<span class='label label-success'>显示</span>&nbsp;";
                                         } else {
-                                        echo "<span class='label label-danger'>不显示</span>";
+                                        echo "<span class='label label-danger'>不显示</span>&nbsp;";
                                         }
+
+                                        if ($row->focus == 1) {
+                                            echo "&nbsp;<span class='label label-primary'>关注显示</span>";
+                                        }
+
                                         ?>
                                     </td>
                                     <td>
@@ -127,11 +127,11 @@
                                     </td>
                                     <td>
                                         <?php
-                                        echo "<a href='#' class='label label-success'><i class=\"fa fa-edit\"></i>&nbsp;修改</a>&nbsp;";
+                                        echo "<a href='requesttxt?action=modify&id=" . $row->id . "' class='label label-success'><i class=\"fa fa-edit\"></i>&nbsp;修改</a>&nbsp;";
                                        if ($row->online == 1) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='#' class='label label-warning'><i class=\"fa  fa-arrow-circle-o-down\"></i>&nbsp;下线</a>";
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='requesttxt?action=offline&id=" . $row->id . "'  class='label label-warning'><i class=\"fa  fa-arrow-circle-o-down\"></i>&nbsp;下线</a>";
                                         } elseif ($row->online == 0) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要上线'))return false;\"  href='#' class='label label-success'><i class=\"fa  fa-arrow-circle-o-up\"></i>&nbsp;上线</a>";
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要上线'))return false;\"  href='requesttxt?action=online&id=" . $row->id . "'  class='label label-success'><i class=\"fa  fa-arrow-circle-o-up\"></i>&nbsp;上线</a>";
 
                                         }
                                         ?>
