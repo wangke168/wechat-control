@@ -129,11 +129,12 @@
                                         <?php
                                         echo "<a href='requesttxt?action=modify&id=" . $row->id . "' class='label label-success'><i class=\"fa fa-edit\"></i>&nbsp;修改</a>&nbsp;";
                                        if ($row->online == 1) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='requesttxt?action=offline&id=" . $row->id . "'  class='label label-warning'><i class=\"fa  fa-arrow-circle-o-down\"></i>&nbsp;下线</a>";
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='requesttxt?action=offline&id=" . $row->id . "'  class='label label-warning'><i class=\"fa  fa-arrow-circle-o-down\"></i>&nbsp;下线</a>&nbsp;";
                                         } elseif ($row->online == 0) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要上线'))return false;\"  href='requesttxt?action=online&id=" . $row->id . "'  class='label label-success'><i class=\"fa  fa-arrow-circle-o-up\"></i>&nbsp;上线</a>";
-
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要上线'))return false;\"  href='requesttxt?action=online&id=" . $row->id . "'  class='label label-success'><i class=\"fa  fa-arrow-circle-o-up\"></i>&nbsp;上线</a>&nbsp;";
                                         }
+                                        echo "<a OnClick=\"javascript:if (!confirm('是否真的要删除'))return false;\"  href='requesttxt?action=del&id=" . $row->id . "' class='label label-danger'><i class=\"fa  fa-trash-o\"></i>&nbsp;删除</a>";
+
                                         ?>
                                     </td>
                                 </tr>

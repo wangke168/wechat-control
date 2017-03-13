@@ -77,6 +77,12 @@ class RequestController extends Controller
                     ->update(['online' => '0']);
                 return redirect('/control/requesttxt');
                 break;
+            case 'del':
+                DB::table('wx_txt_request')
+                    ->where('id', $id)
+                    ->delete();
+                return redirect('/control/requesttxt');
+                break;
             default:
                 $rows = DB::table('wx_txt_request')
                     ->orderBy('id', 'desc')
