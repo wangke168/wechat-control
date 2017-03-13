@@ -42,6 +42,7 @@ class RequestController extends Controller
                 $content = $request->input('content');
 
                 $keyword = str_replace('，',',',$request->input('keyword'));
+                $this->checkkeyword($keyword);
                 $focus = $request->input('focus');
                 $focus ?: $focus = 0;
                 $eventkey = $request->input('eventkey');
@@ -146,7 +147,7 @@ class RequestController extends Controller
                 break;
             case 'search':
                 $keyword = $request->input('keyword');
-                $this->checkkeyword($keyword);
+
                 $rows = DB::table('wx_voice_request')
                     ->where('remark', 'like', '%' . $keyword . '%')
                     ->orderBy('id', 'desc')
