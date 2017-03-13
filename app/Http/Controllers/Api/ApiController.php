@@ -102,6 +102,52 @@ class ApiController extends Controller
 //                return $show;
                      return response()->json($show)->setCallback(request()->input('callback'));
                 break;
+            case 'showdetail':
+                $show = array();
+                $date = Carbon::now()->toDateString();
+                $zone = new \App\WeChat\Zone();
+                $rows_zone = DB::table('zone')
+                    ->orderBy('priority', 'asc')
+                    ->get();
+                foreach ($rows_zone as $row_zone) {
+                    //获取现在所处时间段
+
+                    $rows_show = DB::table('zone_show_time')
+                        ->where('zone_id', $row_zone->id)
+                        ->orderBy('show_id', 'asc')
+                        ->get();
+                    if ($rows_show) {
+                        $zone_name = $row_zone->zone_name;
+                        $show_info = array();
+                        foreach ($rows_show as $row_show) {
+//                            if ($zone->get_correct_show($row_show->id, $row_show->show_id, $date)) {
+                                $show_name = $zone->get_project_info($row_show->show_id)->show_name;
+                                if ($row_show->se_name) {
+                                    $show_name = $row_show->se_name . '(' . $show_name . ')';
+                                }
+
+                                $show_time = str_replace(',', ' | ', $row_show->show_time);
+                                if ($row_show->remark) {
+                                    $show_remark = $row_show->remark;
+                                } else {
+                                    $show_remark = '';
+                                }
+
+                                $show_info[] = array('show_name' => $show_name, 'show_time' => $show_time,'startdate' => $row_show->startdate,'enddate' => $row_show->enddate,  'show_remark' => $show_remark);
+                            }
+                        }
+//                    }
+                    else{
+                        continue;
+                    }
+                    $show[] = array('zone'=>$zone_name,'info' => $show_info);
+                }
+                //       $aaa=json_encode($show);
+                //         var_dump(json_decode($aaa));
+//                return $show;
+                return response()->json($show)->setCallback(request()->input('callback'));
+                break;
+                break;
             case 'cast':
                 $row_day=DB::table('wx_article')
                     ->find('37');

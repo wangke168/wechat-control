@@ -24,6 +24,7 @@ class TestController extends Controller
     public $zone;
     public $staff;
     public $session;
+    public $material;
 
     public function __construct(Application $app)
     {
@@ -32,13 +33,75 @@ class TestController extends Controller
         $this->staff = $app->staff;
         $this->usage = new Usage();
         $this->zone = new Zone();
-        $this->session= $app->staff_session; // 客服会话管理
+        $this->session = $app->staff_session; // 客服会话管理
 
-
+        $this->material = $app->material;
     }
 
     public function test()
     {
+//        $stats = $this->material->stats();
+        $voice_count = $this->material->stats()->voice_count;
+//        return voice_count;
+
+        $i = 0;
+
+        do {
+            echo "这个数字是：$i <br>";
+
+            $j = $i + 10;
+
+            if ($voice_count-$j>10) {
+                $result = $this->material->lists('voice', $i, $j);
+            }
+            else{
+                $result = $this->material->lists('voice', $i, ($voice_count-$j));
+            }
+            $items = $result->item;
+            foreach ($items as $item) {
+                echo $item['media_id']."<br>";
+
+               /* $row = DB::table('wx_voice_request')
+                    ->where('media_id', $item['media_id'])
+                    ->count();
+                if ($row > 0) {
+                    DB::table('wx_voice_request')
+                        ->insert(['media_id' => $item['media_id'], 'remark' => $item['name']]);
+                }*/
+            }
+            $i = $i + 10;
+
+//            echo "这个数字是：$i <br>";
+        } while ($i <= $voice_count);
+
+        return $voice_count;
+        /*  for ($i=0;$i<=$voice_count;$i=$i+10)
+          {
+              $j=$i+10;
+              $result= $this->material->lists('voice', 0, 20);
+              echo $i;
+          }*/
+        $result = $this->material->lists('voice', 0, 20);
+        return $result;
+
+        $count = $result->total_count;
+
+        $items = $result->item;
+
+//        return $items;
+
+        foreach ($items as $item) {
+            echo $item['media_id'];
+
+            $row = DB::table('wx_voice_request')
+                ->where('media_id', $item['media_id'])
+                ->count();
+            if ($row > 0) {
+                DB::table('wx_voice_request')
+                    ->insert(['media_id' => $item['media_id'], 'remark' => $item['name']]);
+            }
+        }
+
         return $this->session->lists('kf2001@u_hengdian');
 
 
@@ -46,9 +109,9 @@ class TestController extends Controller
 
         //    $this->session->close('kf2001@u_hengdian', 'o2e-YuBgnbLLgJGMQykhSg_V3VRI');
 
-     /*   return $this->staff->lists();
+        /*   return $this->staff->lists();
 
-       return $this->session->create('kf2001@u_hengdian', 'o2e-YuBgnbLLgJGMQykhSg_V3VRI');*/
+          return $this->session->create('kf2001@u_hengdian', 'o2e-YuBgnbLLgJGMQykhSg_V3VRI');*/
 
 
         return $this->staff->onlines();
