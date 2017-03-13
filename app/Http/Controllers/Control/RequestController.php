@@ -41,7 +41,7 @@ class RequestController extends Controller
 //                dd($request->all());
                 $content = $request->input('content');
 
-                $keyword = str_replace('，',',',$request->input('keyword'));
+                $keyword = str_replace('，', ',', $request->input('keyword'));
                 $this->checkkeyword($keyword);
                 $focus = $request->input('focus');
                 $focus ?: $focus = 0;
@@ -124,23 +124,24 @@ class RequestController extends Controller
     public function voice(Request $request)
     {
         $action = $request->input('action');
+        $id = $request->input('id');
         switch ($action) {
             case 'online':
-                $id = $request->input('id');
+//                $id = $request->input('id');
                 DB::table('wx_voice_request')
                     ->where('id', $id)
                     ->update(['online' => '1']);
                 return redirect('/control/requestvoice');
                 break;
             case 'offline':
-                $id = $request->input('id');
+//                $id = $request->input('id');
                 DB::table('wx_voice_request')
                     ->where('id', $id)
                     ->update(['online' => '0']);
                 return redirect('/control/requestvoice');
                 break;
             case 'del':
-                $id = $request->input('id');
+//                $id = $request->input('id');
                 $media_id = $request->input('media_id');
                 DB::table('wx_voice_request')
                     ->where('id', $id)
@@ -150,6 +151,11 @@ class RequestController extends Controller
                 break;
             case 'add':
                 return view('control.request_voice_add');
+                break;
+            case 'modify':
+                $row = DB::table('wx_voice_request')
+                    ->find($id);
+                return view('control.request_voice_modify', compact('row'));
                 break;
             case 'search':
                 $keyword = $request->input('keyword');
@@ -163,15 +169,23 @@ class RequestController extends Controller
             case 'save':
 
                 $content = $request->input('content');
-                $marketid = $request->input('marketid');
+                $eventkey = $request->input('eventkey');
 
-                $marketid = $this->usage->getQrscene_info($marketid);
+                $eventkey = $this->usage->getQrscene_info($eventkey);
 
-                $file = $request->file('file');
-                $media_id = $this->upload_material($file, 'voice');
+                $focus = $request->input('focus');
+                $focus ?: $focus = 0;
+                if ($id) {
+                    DB::table('wx_voice_request')
+                        ->where('id', $id)
+                        ->update(['focus' => $focus, 'eventkey' => $eventkey, 'remark' => $content]);
+                } else {
+                    $file = $request->file('file');
+                    $media_id = $this->upload_material($file, 'voice');
 
-                DB::table('wx_voice_request')
-                    ->insert(['media_id' => $media_id, 'eventkey' => $marketid, 'remark' => $content]);
+                    DB::table('wx_voice_request')
+                        ->insert(['media_id' => $media_id, 'eventkey' => $eventkey, 'remark' => $content]);
+                }
                 return redirect('/control/requestvoice');
                 break;
             case 'download':
@@ -187,6 +201,35 @@ class RequestController extends Controller
                 file_put_contents($directory . '/' . $title . $ext, $voice);
                 return $title . $ext;
 
+                break;
+            case 'snyc':
+                $voice_count = $this->material->stats()->voice_count;;
+                $i = 0;
+                do {
+                    if ($voice_count - $i > 10) {
+                        $result = $this->material->lists('voice', $i, 10);
+                    } else {
+                        $result = $this->material->lists('voice', $i, ($voice_count - $i));
+                    }
+                    $items = $result->item;
+                    foreach ($items as $item) {
+                        echo $item['media_id'] . "<br>";
+
+                        $row = DB::table('wx_voice_request')
+                            ->where('media_id', $item['media_id'])
+                            ->count();
+                        echo $row . "<br>";
+                        if ($row < 1) {
+
+                            DB::table('wx_voice_request')
+                                ->insert(['media_id' => $item['media_id'], 'remark' => $item['name']]);
+                        } else {
+                            break;
+                        }
+                    }
+                    $i = $i + 10;
+                } while ($i <= $voice_count);
+                return redirect('/control/requestvoice');
                 break;
             default:
                 $rows = DB::table('wx_voice_request')

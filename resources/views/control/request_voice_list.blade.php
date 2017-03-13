@@ -50,6 +50,9 @@
                         <button type="button" class="btn btn-success"
                                 onclick="javascript:window.location.href='requestvoice?action=add';">添加语音回复
                         </button>
+                        <button type="button" class="btn btn-primary"
+                                onclick="javascript:window.location.href='requestvoice?action=snyc';">同步
+                        </button>
 
                     </ul>
                     <ul class="nav nav-pills">
@@ -124,6 +127,8 @@
                                     </td>
                                     <td>
                                         <?php
+                                        echo "<a href='requestvoice?action=modify&id=" . $row->id . "' class='label label-success'><i class=\"fa fa-edit\"></i>&nbsp;修改</a>&nbsp;";
+
                                         if ($row->online == 1) {
                                             echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='requestvoice?action=offline&id=" . $row->id . "' class='label label-warning'><i class=\"fa  fa-arrow-circle-o-down\"></i>&nbsp;下线</a>&nbsp;";
                                         } elseif ($row->online == 0) {

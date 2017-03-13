@@ -40,6 +40,8 @@ class TestController extends Controller
 
     public function test()
     {
+      /*  $result = $this->material->lists('voice', 0, 20);
+        return $result;*/
 //        $stats = $this->material->stats();
         $voice_count = $this->material->stats()->voice_count;
 //        return voice_count;
@@ -49,25 +51,27 @@ class TestController extends Controller
         do {
             echo "这个数字是：$i <br>";
 
-            $j = $i + 10;
-
-            if ($voice_count-$j>10) {
-                $result = $this->material->lists('voice', $i, $j);
+//            $j = $i + 10;
+//            echo "这个数字是：$j <br>";
+            if ($voice_count-$i>10) {
+                $result = $this->material->lists('voice', $i, 10);
             }
             else{
-                $result = $this->material->lists('voice', $i, ($voice_count-$j));
+                $result = $this->material->lists('voice', $i, ($voice_count-$i));
             }
             $items = $result->item;
             foreach ($items as $item) {
                 echo $item['media_id']."<br>";
 
-               /* $row = DB::table('wx_voice_request')
+                $row = DB::table('wx_voice_request')
                     ->where('media_id', $item['media_id'])
                     ->count();
-                if ($row > 0) {
+                echo $row."<br>";
+                if ($row <1) {
+
                     DB::table('wx_voice_request')
                         ->insert(['media_id' => $item['media_id'], 'remark' => $item['name']]);
-                }*/
+                }
             }
             $i = $i + 10;
 

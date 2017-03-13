@@ -99,12 +99,20 @@
                             </div>
 
                         </div>
-
+                        <div class="form-group">
+                            <label class="control-label col-md-1">是否关注显示</label>
+                            <div class="col-md-11">
+                                <label class="checkbox">
+                                    <input type="checkbox" name="focus" value="1"/>
+                                    <span class="help-inline">如果勾选，则客人关注时接收到此条信息。</span>
+                                </label>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label class="control-label col-md-1">展示对象</label>
 
                             <div class="col-md-3">
-                                <input type="hidden" name="marketid" id="select2_sample5"
+                                <input type="hidden" name="eventkey" id="select2_sample5"
                                        class="form-control select2" value="">
                             </div>
                         </div>

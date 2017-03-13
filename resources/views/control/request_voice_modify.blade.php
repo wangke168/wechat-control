@@ -60,52 +60,34 @@
                 </div>
                 <div class="portlet-body form">
 
-                    {!! Form::open(['url'=>'control/requestvoice?action=save','files'=>true,'class'=>'form-horizontal form-bordered',
+                    {!! Form::open(['url'=>'control/requestvoice?action=save','class'=>'form-horizontal form-bordered',
                     'id'=>'postForm','onkeydown'=>'if(event.keyCode==13){return false;}']) !!}
+                    <input type="text" name="id" hidden value="{!! $row->id !!}">
                     <div class="form-body">
                         <div class="form-group">
-                            <label class="control-label col-md-1">名称</label>
+                            <label class="control-label col-md-1">标题</label>
 
                             <div class="col-md-11">
-                                <input name="content" value="" class="form-control  input-inline input-xlarge">
+                                <input name="content" value="{!! $row->remark !!}" class="form-control  input-inline input-xlarge">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label col-md-1">选择文件</label>
-
+                            <label class="control-label col-md-1">是否关注显示</label>
                             <div class="col-md-11">
-
-                                <div class="fileinput fileinput-new" data-provides="fileinput">
-                                    <div class="input-group input-large">
-                                        <div class="form-control uneditable-input" data-trigger="fileinput">
-                                            <i class="fa fa-file fileinput-exists"></i>&nbsp; <span
-                                                    class="fileinput-filename">
-														</span>
-                                        </div>
-													<span class="input-group-addon btn default btn-file">
-													<span class="fileinput-new">
-													Select file </span>
-													<span class="fileinput-exists">
-													Change </span>
-													<input type="file" name="file">
-													</span>
-                                        <a href="#" class="input-group-addon btn red fileinput-exists"
-                                           data-dismiss="fileinput">
-                                            Remove </a>
-                                    </div>
-                                </div>
-
+                                <label class="checkbox">
+                                    <input type="checkbox" name="focus" value="1" <?php if ($row->focus == 1) echo 'checked' ?>/>
+                                    <span class="help-inline">如果勾选，则客人关注时接收到此条信息。</span>
+                                </label>
                             </div>
-
                         </div>
 
                         <div class="form-group">
                             <label class="control-label col-md-1">展示对象</label>
 
                             <div class="col-md-3">
-                                <input type="hidden" name="marketid" id="select2_sample5"
-                                       class="form-control select2" value="">
+                                <input type="hidden" name="eventkey" id="select2_sample5"
+                                       class="form-control select2" value="<?php $usage = new \App\WeChat\Usage(); echo $usage->getArticleShowQrsecne($row->eventkey)?>">
                             </div>
                         </div>
 
