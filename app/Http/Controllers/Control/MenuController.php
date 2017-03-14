@@ -58,11 +58,6 @@ class MenuController extends Controller
                                 "key" => "9"
                             ],
                             [
-                                "type" => "click",
-                                "name" => "马拉松报名",
-                                "key" => "21"
-                            ],
-                            [
                                 "type" => "view",
                                 "name" => "我的订单",
                                 "url"  => "http://e.hengdianworld.com/yd_search.aspx"
@@ -95,7 +90,7 @@ class MenuController extends Controller
                         ],
                     ],
                 ];
-//                $this->menu->add($buttons);
+                $this->menu->add($buttons);
                 break;
             case 'modify':
                 /*$this->menu->destroy('408720071');

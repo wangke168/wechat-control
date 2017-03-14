@@ -25,7 +25,7 @@ Route::get('control/login', 'UsersController@signin');
 Route::get('control/login.php', 'UsersController@signin');
 Route::get('control/Login.php', 'UsersController@signin');
 Route::post('control/login', 'UsersController@login');
-
+Route::get('json/qrscene', 'JsonController@qrscene');
 Route::group(['prefix' => 'control', 'middleware' => 'control'], function () {
     Route::get('index', function () {
         // Matches The "/control/index" URL

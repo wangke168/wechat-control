@@ -11,6 +11,7 @@ class JsonController extends Controller
 
     public function qrscene()
     {
+//        return '12';
      $rows=DB::table('wx_qrscene_info')
           ->orderBy('id','asc')
           ->get();
@@ -21,8 +22,9 @@ class JsonController extends Controller
             $qrscene_info[]=$row->qrscene_name;
             $i=$i+1;
         }
-//        $qrscene_name=array("name"=>$name);
-        return response()->json($qrscene_info);
+        $qrscene_name=array("name"=>$qrscene_info);
+
+        return response()->json($qrscene_name);
 /*
         $p1 = array('id' => "1",'text'=>"java");
         $p2 = array('id' => "2",'text'=>"jvm");
