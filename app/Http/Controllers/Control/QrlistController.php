@@ -112,7 +112,7 @@ class QrlistController extends Controller
         $rows = DB::table('wx_qrscene_info')
             ->where('qrscene_name', 'like', '%' . $keyword . '%')
             ->orWhere('qrscene_id',$keyword)
-            ->paginate(20);
+            ->get();
 
         return view('control.qrsearch', compact('rows', 'keyword'));
     }
