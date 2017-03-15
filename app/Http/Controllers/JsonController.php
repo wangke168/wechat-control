@@ -24,7 +24,7 @@ class JsonController extends Controller
         }
         $qrscene_name=array("name"=>$qrscene_info);
 
-        return response()->json($qrscene_name);
+        return response()->json($qrscene_name)->setCallback(request()->input('callback'));
 /*
         $p1 = array('id' => "1",'text'=>"java");
         $p2 = array('id' => "2",'text'=>"jvm");
