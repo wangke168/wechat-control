@@ -51,7 +51,7 @@ var ComponentsDropdowns = function () {
 
 
         $.ajax({
-            url: "http://hd-control.dev/json/qrscene",
+            url: "/control/json/qrscene",
             dataType: 'jsonp',
             type:"get",
             success: function(response) {

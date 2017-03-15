@@ -25,7 +25,7 @@ Route::get('control/login', 'UsersController@signin');
 Route::get('control/login.php', 'UsersController@signin');
 Route::get('control/Login.php', 'UsersController@signin');
 Route::post('control/login', 'UsersController@login');
-Route::get('json/qrscene', 'JsonController@qrscene');
+
 Route::group(['prefix' => 'control', 'middleware' => 'control'], function () {
     Route::get('index', function () {
         // Matches The "/control/index" URL
@@ -36,7 +36,7 @@ Route::group(['prefix' => 'control', 'middleware' => 'control'], function () {
         return view('control.mark_count');
     });
 
-    Route::get('json/qrscene', 'JsonController@qrscene');
+  //  Route::get('json/qrscene', 'JsonController@qrscene');
 
     //用户管理
     Route::get('logout', 'UsersController@logout');
@@ -90,7 +90,7 @@ Route::group(['prefix' => 'control', 'middleware' => 'control'], function () {
 
     Route::get('qrcode_temp_create/{id}', 'Control\QrlistController@create_temp');
 
-
+    Route::get('json/qrscene', 'Control\JsonController@qrscene');
     //菜单查询
     Route::get('menulist', 'Control\MenuController@menuList');
 

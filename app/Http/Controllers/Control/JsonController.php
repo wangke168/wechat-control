@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Control;
 
 use Illuminate\Http\Request;
-
+use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use DB;
 class JsonController extends Controller
@@ -13,6 +13,7 @@ class JsonController extends Controller
     {
 //        return '12';
      $rows=DB::table('wx_qrscene_info')
+         ->whereNotIn('classid', [3])
           ->orderBy('id','asc')
           ->get();
 //        return $rows;
