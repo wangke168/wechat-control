@@ -71,9 +71,6 @@
                             <li <?php if ($classid == 9) echo 'class=active'; ?>><a
                                         href="/control/articlelist?classid=9">酒店预定</a>
                             </li>
-                            <li <?php if ($classid == 9) echo 'class=active'; ?>><a
-                                        href="/control/articlelist?classid=21">马拉松报名</a>
-                            </li>
                             <li <?php if ($classid == 14) echo 'class=active'; ?>><a
                                         href="/control/articlelist?classid=14">景区节目时间表</a>
                             </li>

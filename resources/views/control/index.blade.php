@@ -101,7 +101,7 @@
                             昨日订单数
                         </div>
                     </div>
-                    <a class="more" href="#">
+                    <a class="more" href="ordercount">
                         View more <i class="m-icon-swapright m-icon-white"></i>
                     </a>
                 </div>
