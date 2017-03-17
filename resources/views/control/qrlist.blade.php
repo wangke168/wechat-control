@@ -1,15 +1,20 @@
 @extends('control.blade.data')
-<?php $usage=new \App\WeChat\Usage();?>
+<?php $usage = new \App\WeChat\Usage();?>
 @section('title', '横店影视城微信管理平台－－－二维码管理')
 
 @section('page-title','二维码管理')
 @section('css')
-    <link href="{{asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css')}}" rel="stylesheet"
+          type="text/css"/>
+    <link href="{{asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal.css')}}" rel="stylesheet"
+          type="text/css"/>
 @stop
 @section('page-menu-title')
-    {!! $usage->get_qr_classid_name($classid)->class_name !!}
-    @stop
+    @if($classid)
+        {!! $usage->get_qr_classid_name($classid)->class_name !!}
+
+    @endif
+@stop
 @section('page-bar')
     <div class="page-bar">
         <ul class="page-breadcrumb">
@@ -35,7 +40,10 @@
             <div class="portlet box green-haze">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="fa fa-globe"></i>{!! $usage->get_qr_classid_name($classid)->class_name !!}
+                        <i class="fa fa-globe"></i>
+                        @if($classid)
+                            {!! $usage->get_qr_classid_name($classid)->class_name !!}
+                        @endif
                     </div>
                     <div class="tools">
                     </div>
@@ -57,6 +65,9 @@
                                 名称
                             </th>
                             <th>
+                                标签
+                            </th>
+                            <th>
                                 关注数
                             </th>
                             <th>
@@ -74,7 +85,27 @@
                                     {{$row->qrscene_id}}
                                 </td>
                                 <td>
-                                    {{$row->qrscene_name}}
+                                    <?php
+                                    $row_parent = DB::table('wx_qrscene_info')
+                                            ->where('parent_id', $row->qrscene_id)
+                                            ->count();
+                                    if ($row_parent > 0) {
+                                        echo "<a href=qrlist?type=second&parentid=" . $row->qrscene_id . ">" . $row->qrscene_name . "</a>";
+                                    } else {
+                                        echo $row->qrscene_name;
+                                    }
+                                    ?>
+                              
+                                </td>
+                                <td>
+                                    <?php
+                                    $row_tag = DB::table('wx_user_tag')
+                                            ->where('eventkey', $row->qrscene_id)
+                                            ->first();
+                                    if ($row_tag) {
+                                        echo "<span class='label bg-grey-cascade'>" . $row_tag->tag_name . '(' . $row_tag->tag_id . ")</span>";
+                                    }
+                                    ?>
                                 </td>
                                 <td>
                                     <?php
@@ -95,7 +126,7 @@
                                 </td>
                                 <td>
                                     <?php
-                              //      echo "<a href='http://weix2.hengdianworld.com/control/qr_create.php?qrscene_id=" . $row->qrscene_id . "' class='label label-warning' target='_blank'><i class=\"icon-edit\"></i>获取二维码</a>&nbsp;&nbsp;&nbsp;";
+                                    //      echo "<a href='http://weix2.hengdianworld.com/control/qr_create.php?qrscene_id=" . $row->qrscene_id . "' class='label label-warning' target='_blank'><i class=\"icon-edit\"></i>获取二维码</a>&nbsp;&nbsp;&nbsp;";
                                     echo "<a class='getqrcode label label-primary' data-target=\"#long\" data-toggle=\"modal\" data-src=\"qrcode_create/" . $row->qrscene_id . "\"><i class=\"fa  fa-download\"></i>&nbsp;下载二维码</a>&nbsp;";
 
                                     echo "<a href='qrmodify?action=modify&id=" . $row->id . "' class='label label-success'><i class=\"fa fa-edit\"></i>&nbsp;修改</a>";
@@ -106,8 +137,11 @@
                         @endforeach
                         </tbody>
                     </table>
+                    @if($classid)
                     {!! $rows->appends(["classid"=>$classid])->render() !!}
-
+                    @elseif($parentid)
+                    {!! $rows->appends(["parentid"=>$parentid])->render() !!}
+                    @endif
                             <!--弹出层-->
                     <div id="long" class="modal fade " tabindex="-1" data-replace="true">
                         <div class="modal-header">
@@ -115,8 +149,9 @@
                             <h4 class="modal-title">二维码下载</h4>
                         </div>
                         <div class="modal-body">
-                            				{{--<img id='qr'  src="../../../../../../i.imgur.com/KwPYo.jpg">--}}
-                            <iframe id='qr' src="http://www.baidu.com" style="border:none; width:500px; height:500px;"></iframe>
+                            {{--<img id='qr'  src="../../../../../../i.imgur.com/KwPYo.jpg">--}}
+                            <iframe id='qr' src="http://www.baidu.com"
+                                    style="border:none; width:500px; height:500px;"></iframe>
                         </div>
                         <div class="modal-footer">
                             <button type="button" data-dismiss="modal" class="btn btn-default">关闭</button>
@@ -132,8 +167,10 @@
 
 @stop
 @section('js')
-    <script src="{{asset('assets/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js')}}" type="text/javascript"></script>
-    <script src="{{asset('assets/global/plugins/bootstrap-modal/js/bootstrap-modal.js')}}" type="text/javascript"></script>
+    <script src="{{asset('assets/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js')}}"
+            type="text/javascript"></script>
+    <script src="{{asset('assets/global/plugins/bootstrap-modal/js/bootstrap-modal.js')}}"
+            type="text/javascript"></script>
     <script src="{{asset('assets/admin/pages/scripts/ui-extended-modals.js')}}"></script>
 @stop
 

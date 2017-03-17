@@ -24,13 +24,22 @@ class QrlistController extends Controller
     public function index(Request $request)
     {
         $classid = $request->input('classid');
+        $parentid=$request->input('parentid');
+        if (!$parentid) {
+            $rows = DB::table('wx_qrscene_info')
+                ->where('classid', $classid)
+                ->where('parent_id', '')
+                ->paginate(20);
+            return view('control.qrlist', compact('rows', "classid"));
+        }
+        else{
+            $rows = DB::table('wx_qrscene_info')
+                ->where('parent_id', $parentid)
 
-        $rows = DB::table('wx_qrscene_info')
-            ->where('classid', $classid)
-            ->where('parent_id', '')
-            ->paginate(20);
+                ->paginate(20);
+            return view('control.qrlist', compact('rows', "parentid",'classid'));
+        }
 
-        return view('control.qrlist', compact('rows', "classid"));
     }
 
     public function test(Request $request)
