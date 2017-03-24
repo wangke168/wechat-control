@@ -174,13 +174,13 @@ class RequestController extends Controller
         $id = $request->input('id');
         switch ($action) {
             case 'se_offline':
-                DB::table('se_info_detail')
+                DB::table('wx_article_se')
                     ->where('id', $id)
                     ->update(['online' => '0']);
                 return redirect()->back();
                 break;
             case 'se_online':
-                DB::table('se_info_detail')
+                DB::table('wx_article_se')
                     ->where('id', $id)
                     ->update(['online' => '1']);
                 return redirect()->back();
