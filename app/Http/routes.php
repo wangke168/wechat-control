@@ -60,7 +60,10 @@ Route::group(['prefix' => 'control', 'middleware' => 'control'], function () {
     //语音回复
     Route::get('requestvoice', 'Control\RequestController@voice');
     Route::post('requestvoice', 'Control\RequestController@voice');
-    Route::get('requestse', 'Control\RequestController@se');
+
+    //二次回复
+    Route::get('request_se', 'Control\RequestController@se');
+    Route::post('request_se', 'Control\RequestController@se');
 
     Route::get('requestmodify', 'Control\RequestController@request_modify');
 

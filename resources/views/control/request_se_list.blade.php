@@ -41,7 +41,14 @@
                     </div>
                 </div>
                 <div class="portlet-body">
+                    <ul class="nav nav-pills navbar-left">
 
+
+                        <button type="button" class="btn btn-success"
+                                onclick="javascript:window.location.href='request_se?action=add';">添加二次回复
+                        </button>
+
+                    </ul>
                     <ul class="nav nav-pills">
 
                         <form method="POST" name="myform" action="requesttxt" class="navbar-form navbar-right">
@@ -50,6 +57,7 @@
                             <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
                         </form>
                     </ul>
+
                     <div class="tab-content">
 
 
@@ -62,12 +70,7 @@
                                 <th>
                                     标题
                                 </th>
-                                <th>
-                                    索引图
-                                </th>
-                                <th>
-                                    链接
-                                </th>
+
                                 <th>
                                     顺序
                                 </th>
@@ -104,45 +107,29 @@
                                         {{$row->title}}
                                     </td>
                                     <td>
-                                        <?php
-                                        if ($row->pic_url) {
-                                            echo '<img src=' . $row->pic_url . ' width=150>';
-                                        }
-                                        ?>
+                                        {{$row->priority}}
                                     </td>
                                     <td>
-                                        <a href="{{$row->article_url}}" target="_blank"> {{$row->article_url}}</a>
-                                    </td>
-                                    <td>
-                                        {{$row->sequence}}
-                                    </td>
-                                    <td>
-                                        @if ($row->is_all=='1')
+                                        @if ($row->target=='1')
                                             <span class='label label-success'>全部</span>
-                                        @else
-                                            @if($row->zone)
-                                                <span class='label label-success'>{!! $row->zone !!}</span>
-                                            @endif
-                                            @if($row->hotel)
-                                                <span class='label label-success'>{!! $row->hotel !!}</span>
-                                            @endif
-                                            @endif
+                                        @elseif($row->target=='2')
+                                            <span class='label label-success'>门票</span>
+                                        @elseif($row->target=='3')
+                                            <span class='label label-success'>酒店</span>
+                                        @endif
                                     </td>
                                     <td>
                                         <?php
-                                        $count=new \App\WeChat\Count();
-                                            echo $count->se_request_count($row->id);
+                                        $count = new \App\WeChat\Count();
+                                        echo $count->se_request_count($row->id);
                                         ?>
-
                                     </td>
                                     <td>
                                         {!! $count->se_request_read_count($row->id) !!}
-                                        
                                     </td>
                                     <td>
                                         {{$row->hits}}
                                     </td>
-
                                     <td>
                                         <?php
                                         if ($row->online == 1) {
@@ -157,7 +144,7 @@
                                     </td>
                                     <td>
                                         <?php
-                                        echo "<a href='#' class='label label-success'><i class=\"fa fa-edit\"></i>&nbsp;修改</a>&nbsp;";
+                                        echo "<a href='request_se?action=modify&id=" . $row->id . "' class='label label-success'><i class='fa fa-edit'></i>&nbsp;修改</a>&nbsp;";
                                         if ($row->online == 1) {
                                             echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='requestmodify?action=se_offline&id=" . $row->id . "' class='label label-warning'><i class=\"fa  fa-arrow-circle-o-down\"></i>&nbsp;下线</a>";
                                         } elseif ($row->online == 0) {
@@ -172,8 +159,6 @@
                             </tbody>
                         </table>
                         {!! $rows->render() !!}
-
-
 
 
                     </div>

@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use DB;
+use Image;
 
 class RequestController extends Controller
 {
@@ -93,12 +94,78 @@ class RequestController extends Controller
 
     }
 
-    public function se()
+    public function se(Request $request)
     {
-        $rows = DB::table('se_info_detail')
-            ->orderBy('id', 'desc')
-            ->paginate(20);
-        return view('control.request_se_list', compact('rows'));
+        $action = $request->input('action');
+        $id=$request->input('id');
+        switch ($action) {
+            case 'add':
+                return view('control.request_se_add');
+                break;
+            case 'modify':
+                $row=DB::table('wx_article_se')
+                    ->find($id);
+                return view('control.request_se_modify',compact('row','id'));
+                break;
+            case 'save':
+//                dd($request->all());
+
+                $title = $request->input('title');
+                $pyq_title = $request->input('pyq_title');
+                $content = $request->input('content');
+                $content = str_replace('\'', '\'\'', $content);
+                $content = str_replace("'", "", $content);
+                $url = $request->input('url');
+                $startdate = $request->input('startdate');
+                if (!$startdate) {
+                    $startdate = date('Y-m-d');
+                }
+                $enddate = $request->input('enddate');
+                if (!$enddate) {
+                    $enddate = '2999-9-9';
+                }
+                $target = $request->input('target');
+                $priority = $request->input('priority');
+                $marketid = $request->input('marketid');
+                $marketid = $this->Qrscene_info($marketid);
+                $show_qr = $this->checkbox($request->input('show_qr'), '1');
+                $pic_url = $this->uploadImage($request->file('pic_url'), 'pic_url');
+                $pyq_pic = $this->uploadImage($request->file('pyq_pic'), 'pyq_pic');
+                if($id)
+                {
+                    if (!$pic_url) {
+                        $pic_url = $request->input('pic_url_session');
+                    }
+                    if (!$pyq_pic) {
+                        $pyq_pic = $request->input('pyq_pic_session');
+                    }
+
+                    DB::table('wx_article_se')
+                        ->where('id', $id)
+                        ->update(['title' => $title,  'pic_url' => $pic_url,
+                            'pyq_pic' => $pyq_pic, 'pyq_title' => $pyq_title, 'content' => $content, 'url' => $url,
+                            'startdate' => $startdate, 'enddate' => $enddate, 'target' => $target,'priority' => $priority,
+                             'show_qr' => $show_qr, 'adddate' => date('Y-m-d'),
+                            'eventkey' => $marketid, 'author' => \Session::get('username')]);
+                }
+                else{
+                    DB::table('wx_article_se')
+                        ->insert(['title' => $title,  'pic_url' => $pic_url,
+                            'pyq_pic' => $pyq_pic, 'pyq_title' => $pyq_title, 'content' => $content, 'url' => $url,
+                            'startdate' => $startdate, 'enddate' => $enddate, 'target' => $target,'priority' => $priority,
+                            'show_qr' => $show_qr, 'adddate' => date('Y-m-d'),
+                            'eventkey' => $marketid, 'author' => \Session::get('username')]);
+                }
+                return redirect('/control/request_se');
+                break;
+            default:
+                $rows = DB::table('wx_article_se')
+                    ->orderBy('id', 'desc')
+                    ->paginate(20);
+                return view('control.request_se_list', compact('rows'));
+                break;
+        }
+
     }
 
     public function request_modify(Request $request)
@@ -316,5 +383,57 @@ class RequestController extends Controller
         }
     }
 
+    private function checkbox($box, $return)
+    {
+        switch ($return) {
+            case '0':           //是否审核
+                if ($box) {
+                    return '0';
+                } else {
+                    return '1';
+                }
+                break;
+            case '1':
+                if ($box) {
+                    return '1';
+                } else {
+                    return '0';
+                }
+                break;
+        }
+    }
 
+    private function uploadImage($filename, $type)
+    {
+        if ($filename) {
+            $file = $filename;
+            //判断文件上传过程中是否出错
+            if (!$file->isValid()) {
+                exit('文件上传出错！');
+            }
+            $destPath = 'uploads/' . date('Ymd') . '/';
+            if (!file_exists($destPath))
+                mkdir($destPath, 0755, true);
+            $extension = $file->getClientOriginalExtension();
+            $filename = time() . str_random(5) . '.' . $extension;
+
+//            $filename = time() . str_random(5) . $file->getClientOriginalName();
+            if (!$file->move($destPath, $filename)) {
+                exit('保存文件失败！');
+            }
+
+            switch ($type) {
+
+                case 'pic_url':
+                    Image::make($destPath . $filename)->save();
+                    break;
+                case 'pyq_pic':
+                    Image::make($destPath . $filename)->fit(200)->save();
+                    break;
+            }
+
+            return $destPath . $filename;
+
+        }
+    }
 }
