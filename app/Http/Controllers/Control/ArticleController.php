@@ -15,8 +15,8 @@ class ArticleController extends Controller
     public function articleList(Request $request)
     {
         $classid = $request->input('classid');
-        $eventkey= \Session::get('eventkey');
-        if ($eventkey=='all') {
+        $eventkey = \Session::get('eventkey');
+        if ($eventkey == 'all') {
             if (!$classid) {
                 $rows = DB::table('wx_article')
                     ->where('del', '0')
@@ -58,14 +58,12 @@ class ArticleController extends Controller
                     ->paginate(20);
             }
             return view('control.articlelist', compact('rows', 'classid'));
-        }
-        else
-        {
+        } else {
             $rows = DB::table('wx_article')
                 ->where('eventkey', $eventkey)
                 ->orderBy('id', 'desc')
                 ->paginate(20);
-            return view('control.articlelist', compact('rows', 'classid','eventkey'));
+            return view('control.articlelist', compact('rows', 'classid', 'eventkey'));
         }
     }
 
@@ -120,10 +118,10 @@ class ArticleController extends Controller
     public function articleSearch(Request $request)
     {
         $keyword = $request->input('keyword');
-        $eventkey=$this->Qrscene_info($keyword);
+        $eventkey = $this->Qrscene_info($keyword);
         $rows = DB::table('wx_article')
             ->where('title', 'like', '%' . $keyword . '%')
-            ->orWhere('eventkey',$eventkey)
+            ->orWhere('eventkey', $eventkey)
             ->where('audit', '1')
             ->orderBy('online', 'desc')
             ->orderBy('id', 'desc')
@@ -142,7 +140,6 @@ class ArticleController extends Controller
     {
         return view('control.articleadd_back');
     }
-
 
 
     public function articleSave(Request $request)
@@ -209,7 +206,7 @@ class ArticleController extends Controller
                     'audit' => $audit, 'focus' => $focus, 'show_qr' => $show_qr,
                     'allow_copy' => $allow_copy, 'adddate' => date('Y-m-d'),
                     'eventkey' => $marketid, 'author' => \Session::get('username')]);
-        }elseif ($action == 'copy') {
+        } elseif ($action == 'copy') {
             if (!$pic_url) {
                 $pic_url = $request->input('pic_url_session');
             }
@@ -230,7 +227,7 @@ class ArticleController extends Controller
 
     public function articleCopy(Request $request)
     {
-        $id=$request->input('id');
+        $id = $request->input('id');
         $row = DB::table('wx_article')
             ->where('id', $id)
             ->first();
@@ -322,8 +319,8 @@ class ArticleController extends Controller
                     $row = DB::table('wx_qrscene_info')
                         ->where('qrscene_name', $qrscene_name[$index])
                         ->first();
-                    if ($row){
-                    $marketid = $row->qrscene_id;
+                    if ($row) {
+                        $marketid = $row->qrscene_id;
                     }
                 }
             } else {
@@ -341,13 +338,23 @@ class ArticleController extends Controller
         return $marketid;
     }
 
-    public function review_qr($id)
+    public function review_qr(Request $request)
     {
+        $type = $request->input('type');
+        $id = $request->input('id');
         $app = app('wechat');
         $url = $app->url;
-        $shortUrl = $url->shorten('http://e.hengdianworld.com/WeixinOpenId.aspx?nexturl=https://wechat.hengdianworld.com/article/review?id='.$id);
+        switch ($type) {
+            case 'article':
+                $shortUrl = $url->shorten('http://e.hengdianworld.com/WeixinOpenId.aspx?nexturl=https://wechat.hengdianworld.com/article/review?id=' . $id);
+                break;
+            case 'article_se':
+                $shortUrl = $url->shorten('http://e.hengdianworld.com/WeixinOpenId.aspx?nexturl=https://wechat.hengdianworld.com/article/review?type=articlel_se&id=' . $id);
+                break;
+        }
+        //      $shortUrl = $url->shorten('http://e.hengdianworld.com/WeixinOpenId.aspx?nexturl=https://wechat.hengdianworld.com/article/review?id='.$id);
 //        return $shortUrl->short_url;
-        return view('control.articlereviewqr',compact('shortUrl'));
+        return view('control.articlereviewqr', compact('shortUrl'));
 
     }
 }

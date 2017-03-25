@@ -190,7 +190,7 @@
                                     </td>
                                     <td>
                                         <?php
-                                        echo "<a class='getqrcode label label-primary' data-target='#long' data-toggle='modal' data-src='qrcreat/" . $row->id . "'><i class='fa fa-eye'></i>&nbsp;预览</a>&nbsp;";
+                                        echo "<a class='getqrcode label label-primary' data-target='#long' data-toggle='modal' data-src='qrcreat?type=article&id=" . $row->id . "'><i class='fa fa-eye'></i>&nbsp;预览</a>&nbsp;";
                                         echo "<a href='articlemodify?action=modify&id=" . $row->id . "' class='label label-success'><i class='fa fa-edit'></i>&nbsp;修改</a>&nbsp;";
                                         if ($row->del == 0) {
                                             echo "<a OnClick=\"javascript:if (!confirm('是否真的要删除'))return false;\"  href='articlemodify?action=del&id=" . $row->id . "' class='label label-danger'><i class='fa fa-trash-o'></i>&nbsp;删除</a>&nbsp;";

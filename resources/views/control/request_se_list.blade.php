@@ -144,6 +144,7 @@
                                     </td>
                                     <td>
                                         <?php
+                                        echo "<a class='getqrcode label label-primary' data-target='#long' data-toggle='modal' data-src='qrcreat?type=article_se&id=" . $row->id . "'><i class='fa fa-eye'></i>&nbsp;预览</a>&nbsp;";
                                         echo "<a href='request_se?action=modify&id=" . $row->id . "' class='label label-success'><i class='fa fa-edit'></i>&nbsp;修改</a>&nbsp;";
                                         if ($row->online == 1) {
                                             echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='requestmodify?action=se_offline&id=" . $row->id . "' class='label label-warning'><i class=\"fa  fa-arrow-circle-o-down\"></i>&nbsp;下线</a>";
@@ -160,7 +161,22 @@
                         </table>
                         {!! $rows->render() !!}
 
-
+                                <!--弹出层-->
+                        <div id="long" class="modal fade " tabindex="-1" data-replace="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                <h4 class="modal-title">微信扫描二维码预览</h4>
+                            </div>
+                            <div class="modal-body">
+                                <!--				<img id='qr' style="height: 500px" src="../../../../../../i.imgur.com/KwPYo.jpg">-->
+                                <iframe id='qr' src="http://www.baidu.com"
+                                        style="border:none; width:250px; height:250px;"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-default">关闭</button>
+                            </div>
+                        </div>
+                        <!--结束弹出层-->
                     </div>
                 </div>
             </div>
@@ -183,7 +199,10 @@
 
 @section('init')
 
-
+    $(".getqrcode").click(function () {
+    //     alert($(this).attr('data-src'));
+    $("#qr").attr({"src": $(this).attr("data-src")});
+    });
 
 @stop
 

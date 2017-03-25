@@ -40,45 +40,40 @@ class TestController extends Controller
 
     public function test()
     {
-      /*  $result = $this->material->lists('voice', 0, 20);
-        return $result;*/
-//        $stats = $this->material->stats();
-        $voice_count = $this->material->stats()->voice_count;
-//        return voice_count;
 
-        $i = 0;
-
-        do {
-            echo "这个数字是：$i <br>";
-
-//            $j = $i + 10;
-//            echo "这个数字是：$j <br>";
-            if ($voice_count-$i>10) {
-                $result = $this->material->lists('voice', $i, 10);
-            }
-            else{
-                $result = $this->material->lists('voice', $i, ($voice_count-$i));
-            }
-            $items = $result->item;
-            foreach ($items as $item) {
-                echo $item['media_id']."<br>";
-
-                $row = DB::table('wx_voice_request')
-                    ->where('media_id', $item['media_id'])
-                    ->count();
-                echo $row."<br>";
-                if ($row <1) {
-
-                    DB::table('wx_voice_request')
-                        ->insert(['media_id' => $item['media_id'], 'remark' => $item['name']]);
+        $content='';
+        $rows = DB::table('wx_article_se')
+            ->where('online', '1')
+            ->whereIn('target', [1, 2])
+            ->orderBy('priority', 'asc')
+            ->get();
+        if ($rows) {
+            foreach ($rows as $row) {
+                $news = new News();
+                $news->title = $row->title;
+                $news->description = $row->description;
+                $pic_url = 'http://weix2.hengdianworld.com/' . $row->pic_url;
+                if ($row->url) {
+                    $url = $row->url;
+                } else {
+                    $url = "http://" . $_SERVER['HTTP_HOST'] . "/article/detail?type=se&sellid=" . $sellid . "&id=" . $row->id . "&wxnumber=" . $wxnumber;
                 }
+                $news->url = $url;
+                $news->image = $pic_url;
+                $content[] = $news;
+                $info_ids[] = $row->id;
             }
-            $i = $i + 10;
+        }
+        if ($content)
+        {
+            return $content;
+        }
+        else
+        {
 
-//            echo "这个数字是：$i <br>";
-        } while ($i <= $voice_count);
+        }
+        return $content;
 
-        return $voice_count;
         /*  for ($i=0;$i<=$voice_count;$i=$i+10)
           {
               $j=$i+10;

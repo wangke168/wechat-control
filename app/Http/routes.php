@@ -48,7 +48,7 @@ Route::group(['prefix' => 'control', 'middleware' => 'control'], function () {
     Route::post('articlesave', 'Control\ArticleController@articleSave');
     Route::get('articlecopy', 'Control\ArticleController@articleCopy');
 //预览二维码
-    Route::get('qrcreat/{id}', 'Control\ArticleController@review_qr');
+    Route::get('qrcreat', 'Control\ArticleController@review_qr');
 
 
     Route::get('articleadd1', 'Control\ArticleController@articleAdd1');
