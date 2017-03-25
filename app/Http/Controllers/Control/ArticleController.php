@@ -349,7 +349,7 @@ class ArticleController extends Controller
                 $shortUrl = $url->shorten('http://e.hengdianworld.com/WeixinOpenId.aspx?nexturl=https://wechat.hengdianworld.com/article/review?id=' . $id);
                 break;
             case 'article_se':
-                $shortUrl = $url->shorten('http://e.hengdianworld.com/WeixinOpenId.aspx?nexturl=https://wechat.hengdianworld.com/article/review?type=articlel_se&id=' . $id);
+                $shortUrl = $url->shorten('http://e.hengdianworld.com/WeixinOpenId.aspx?nexturl=https://wechat.hengdianworld.com/article/review?type=article_se&id=' . $id);
                 break;
         }
         //      $shortUrl = $url->shorten('http://e.hengdianworld.com/WeixinOpenId.aspx?nexturl=https://wechat.hengdianworld.com/article/review?id='.$id);

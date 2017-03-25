@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/request_se_list.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/request_se_list.blade.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.64421254">
-              <caret line="351" column="161" selection-start-line="351" selection-start-column="161" selection-end-line="351" selection-end-column="161" />
+              <caret line="351" column="156" selection-start-line="351" selection-start-column="156" selection-end-line="351" selection-end-column="156" />
               <folding />
             </state>
           </provider>
@@ -960,7 +955,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.64421254">
-          <caret line="351" column="161" selection-start-line="351" selection-start-column="161" selection-end-line="351" selection-end-column="161" />
+          <caret line="351" column="156" selection-start-line="351" selection-start-column="156" selection-end-line="351" selection-end-column="156" />
           <folding />
         </state>
       </provider>
