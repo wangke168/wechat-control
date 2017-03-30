@@ -41,39 +41,9 @@ class TestController extends Controller
     public function test()
     {
 
-        $content='';
-        $rows = DB::table('wx_article_se')
-            ->where('online', '1')
-            ->whereIn('target', [1, 2])
-            ->orderBy('priority', 'asc')
-            ->get();
-        if ($rows) {
-            foreach ($rows as $row) {
-                $news = new News();
-                $news->title = $row->title;
-                $news->description = $row->description;
-                $pic_url = 'http://weix2.hengdianworld.com/' . $row->pic_url;
-                if ($row->url) {
-                    $url = $row->url;
-                } else {
-                    $url = "http://" . $_SERVER['HTTP_HOST'] . "/article/detail?type=se&sellid=" . $sellid . "&id=" . $row->id . "&wxnumber=" . $wxnumber;
-                }
-                $news->url = $url;
-                $news->image = $pic_url;
-                $content[] = $news;
-                $info_ids[] = $row->id;
-            }
-        }
-        if ($content)
-        {
-            return $content;
-        }
-        else
-        {
-
-        }
-        return $content;
-
+        $app = app('wechat');
+        $url = $app->url;
+        return $url->shorten('http://yunxi.tv/livestream/fe7604457367438e898e322677afd198?utm_source=backend&utm_medium=wechat&utm_campaign=yunxi');
         /*  for ($i=0;$i<=$voice_count;$i=$i+10)
           {
               $j=$i+10;

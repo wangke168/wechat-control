@@ -37,11 +37,11 @@ class MenuController extends Controller
                                 "name" => "横店攻略",
                                 "key"  => "19"
                             ],
-                            [
+                            /*[
                                 "type" => "view",
                                 "name" => "大唐直播",
-                                "key"  => "http://yunxi.tv/livestream/fe7604457367438e898e322677afd198?utm_source=backend&utm_medium=wechat&utm_campaign=yunxi"
-                            ],
+                                "url"  => "http://w.url.cn/s/A4j7aZi"
+                            ],*/
                         ],
                     ],
                     [
@@ -61,6 +61,11 @@ class MenuController extends Controller
                                 "type" => "click",
                                 "name" => "酒店预订",
                                 "key" => "9"
+                            ],
+                            [
+                                "type" => "view",
+                                "name" => "手机官网",
+                                "url"  => "http://m.hengdianworld.com/uid=655F74657374"
                             ],
                             [
                                 "type" => "view",
