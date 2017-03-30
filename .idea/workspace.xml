@@ -2,11 +2,284 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/anchor/anchor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/attachment.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/attachment.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/attachment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_default.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/alignicon.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/alignicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/file-icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/file-icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/progress.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/success.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/success.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/background/background.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/background/background.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/background/background.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/background/images/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/background/images/success.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/chart.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/charts.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/charts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/charts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/images/charts0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/images/charts1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/images/charts2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/images/charts3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/images/charts4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/images/charts5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/emotion.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/emotion.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/emotion.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/0.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/bface.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/cface.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/fface.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/jxface2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/tface.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/wface.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/yface.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/gmap/gmap.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/help/help.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/help/help.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/help/help.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/image.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/image.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/image.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/alignicon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/progress.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/success.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/success.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/insertframe/insertframe.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/internal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/link/link.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/map/map.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/map/show.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/music/music.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/music/music.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/music/music.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/preview/preview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/addimg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/brush.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/delimg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/delimgH.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/empty.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/emptyH.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/eraser.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/redo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/redoH.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/scale.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/scaleH.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/size.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/undo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/undoH.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/scrawl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/scrawl.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/scrawl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/searchreplace/searchreplace.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/searchreplace/searchreplace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/snapscreen/snapscreen.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/spechars/spechars.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/spechars/spechars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/table/dragicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/table/edittable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/table/edittable.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/table/edittable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/table/edittd.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/table/edittip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/images/bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/images/pre0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/images/pre1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/images/pre2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/images/pre3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/images/pre4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/template.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/template.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/center_focus.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/file-icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/file-icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/left_focus.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/none_focus.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/progress.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/right_focus.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/success.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/success.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/video.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/video.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/video.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/webapp/webapp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/wordimage/imageUploader.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/wordimage/tangram.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/wordimage/wordimage.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/wordimage/wordimage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/en.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/addimage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/alldeletebtnhoverskin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/alldeletebtnupskin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/deletedisable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/deleteenable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/listbackground.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/localimage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/music.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/rotateleftdisable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/rotateleftenable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/rotaterightdisable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/rotaterightenable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/upload.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/zh-cn/images/copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/zh-cn/images/localimage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/zh-cn/images/music.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/zh-cn/images/upload.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/zh-cn/zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/php/Uploader.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/php/action_crawler.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/php/action_list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/php/action_upload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/php/config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/php/controller.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/css/ueditor.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/css/ueditor.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/dialogbase.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/anchor.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/arrow_down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/arrow_up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/button-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/cancelbutton.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/charts.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/cursor_h.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/cursor_h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/cursor_v.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/cursor_v.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/dialog-title-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/filescan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/highlighted.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/icons-all.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/loaderror.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/lock.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/neweditor-tab-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/pagebreak.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/scale.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/sortable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/spacer.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/sparator_v.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/table-cell-align.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/tangram-colorpicker.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/toolbar_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/unhighlighted.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/upload.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/videologo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/word.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/wordpaste.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/iframe.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/SyntaxHighlighter/shCore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/codemirror/codemirror.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/codemirror/codemirror.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/adapters/mootools-adapter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/adapters/prototype-adapter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/adapters/standalone-framework.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/highcharts-more.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/highcharts-more.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/highcharts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/highcharts.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/annotations.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/annotations.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/canvas-tools.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/canvas-tools.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/data.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/drilldown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/drilldown.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/exporting.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/exporting.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/funnel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/funnel.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/heatmap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/heatmap.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/map.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/no-data-to-display.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/themes/dark-blue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/themes/dark-green.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/themes/gray.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/themes/grid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/themes/skies.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/jquery-1.10.2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/jquery-1.10.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/jquery-1.10.2.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/font/vjs.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/font/vjs.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/font/vjs.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/font/vjs.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/video-js.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/video-js.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/video-js.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/video.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/video.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/Uploader.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.custom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.flashonly.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.flashonly.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.html5only.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.html5only.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.withoutimage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/zeroclipboard/ZeroClipboard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/ueditor.all.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/ueditor.all.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/ueditor.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/ueditor.parse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ueditor/ueditor.parse.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/articleadd.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/articleadd.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/articlemodify.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/articlemodify.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/request_se_add.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/request_se_add.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/request_se_modify.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/request_se_modify.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/MenuController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/MenuController.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +304,9 @@
       <file leaf-file-name="articleadd.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/articleadd.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.538462">
-              <caret line="372" column="8" selection-start-line="372" selection-start-column="8" selection-end-line="374" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="373" column="12" selection-start-line="373" selection-start-column="12" selection-end-line="373" selection-end-column="40" />
               <folding>
-                <element signature="e#8184#8217#0#HTML" expanded="true" />
                 <marker date="1490664520000" expanded="true" signature="1845:2045" placeholder="..." />
                 <marker date="1490664520000" expanded="true" signature="1857:2043" placeholder="..." />
                 <marker date="1490664520000" expanded="true" signature="1858:2042" placeholder="..." />
@@ -46,8 +318,8 @@
       <file leaf-file-name="articlemodify.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/articlemodify.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.384615">
-              <caret line="413" column="11" selection-start-line="413" selection-start-column="11" selection-end-line="413" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="412" column="34" selection-start-line="412" selection-start-column="12" selection-end-line="412" selection-end-column="34" />
               <folding>
                 <marker date="1490666068000" expanded="true" signature="1844:2047" placeholder="..." />
                 <marker date="1490666068000" expanded="true" signature="1856:2045" placeholder="..." />
@@ -57,42 +329,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="request_se_modify.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/control/request_se_modify.blade.php">
+      <file leaf-file-name="controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/php/controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.69262296">
-              <caret line="330" column="11" selection-start-line="330" selection-start-column="11" selection-end-line="330" selection-end-column="11" />
-              <folding>
-                <marker date="1490667276000" expanded="true" signature="1844:2044" placeholder="..." />
-                <marker date="1490667276000" expanded="true" signature="1856:2042" placeholder="..." />
-                <marker date="1490667276000" expanded="true" signature="1857:2041" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <file leaf-file-name="action_crawler.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/php/action_crawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.96153843">
-              <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-              <folding>
-                <element signature="e#7#392#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="request_se_add.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/control/request_se_add.blade.php">
+      <file leaf-file-name="Uploader.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/php/Uploader.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.5">
-              <caret line="309" column="11" selection-start-line="309" selection-start-column="11" selection-end-line="309" selection-end-column="11" />
-              <folding>
-                <marker date="1490667257000" expanded="true" signature="1850:2050" placeholder="..." />
-                <marker date="1490667257000" expanded="true" signature="1862:2048" placeholder="..." />
-                <marker date="1490667257000" expanded="true" signature="1863:2047" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="186" column="21" selection-start-line="186" selection-start-column="21" selection-end-line="186" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,18 +362,8 @@
       <file leaf-file-name="ueditor.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/ueditor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.6226416">
-              <caret line="50" column="19" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ueditor.all.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/vendor/ueditor/ueditor.all.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29313" column="8" selection-start-line="29313" selection-start-column="8" selection-end-line="29313" selection-end-column="8" />
+              <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -120,68 +372,68 @@
       <file leaf-file-name="ueditor.all.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.all.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.8518518">
-              <caret line="22981" column="28" selection-start-line="22981" selection-start-column="17" selection-end-line="22981" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="445" column="39" selection-start-line="445" selection-start-column="39" selection-end-line="445" selection-end-column="39" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1447842210000" expanded="true" signature="231445:231837" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="231451:231699" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="354140:354153" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="358683:358700" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="362738:362769" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="363316:363334" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="363550:363568" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="363847:363976" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="457174:457200" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="603303:603469" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="603805:603811" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="604251:604257" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="824144:824239" placeholder="..." />
-                <marker date="1447842210000" expanded="false" signature="824415:824421" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="824681:824687" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="829698:829704" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="830262:830268" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="860990:861066" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="873225:873243" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="873290:873332" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="873417:873447" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="890467:890539" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="900430:900456" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="900652:900743" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="901000:901075" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="901262:901277" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="901278:901770" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="901497:901718" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="913471:913560" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="977769:977841" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="996851:996863" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="999095:999119" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="1002900:1003078" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="1028864:1028875" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="1032416:1033947" placeholder="..." />
-                <marker date="1447842210000" expanded="true" signature="1032483:1033379" placeholder="..." />
-                <marker date="1447842210000" expanded="false" signature="1032812:1032825" placeholder="..." />
-                <marker date="1447842210000" expanded="false" signature="1033202:1033238" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="231445:231837" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="231451:231699" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="354140:354153" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="358683:358700" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="362738:362769" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="363316:363334" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="363550:363568" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="363847:363976" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="457174:457200" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="603303:603469" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="603805:603811" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="604251:604257" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="824147:824242" placeholder="..." />
+                <marker date="1490669849000" expanded="false" signature="824418:824424" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="824684:824690" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="829701:829707" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="830265:830271" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="860993:861069" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="873228:873246" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="873293:873335" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="873420:873450" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="890470:890542" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="900433:900459" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="900655:900746" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="901003:901078" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="901265:901280" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="901281:901773" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="901500:901721" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="913474:913563" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="977772:977844" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="996854:996866" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="999098:999122" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="1002903:1003081" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="1028867:1028878" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="1032419:1033950" placeholder="..." />
+                <marker date="1490669849000" expanded="true" signature="1032486:1033382" placeholder="..." />
+                <marker date="1490669849000" expanded="false" signature="1032815:1032828" placeholder="..." />
+                <marker date="1490669849000" expanded="false" signature="1033205:1033241" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articlelist.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/control/articlelist.blade.php">
+      <file leaf-file-name="MenuController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/MenuController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="192" column="161" selection-start-line="192" selection-start-column="161" selection-end-line="192" selection-end-column="161" />
+            <state vertical-scroll-proportion="0.8788159">
+              <caret line="42" column="158" selection-start-line="42" selection-start-column="158" selection-end-line="42" selection-end-column="158" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="request_se_list.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/control/request_se_list.blade.php">
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="146" column="164" selection-start-line="146" selection-start-column="164" selection-end-line="146" selection-end-column="164" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -202,7 +454,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Wechat/Menu_Select.php" />
         <option value="$PROJECT_DIR$/resources/views/control/zone_show_add.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/zone_show_modify.blade.php" />
         <option value="$PROJECT_DIR$/public/assets/global/plugins/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js" />
@@ -227,7 +478,6 @@
         <option value="$PROJECT_DIR$/resources/views/control/request_voice_list.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/request_voice_modify.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/request_voice_add.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Control/MenuController.php" />
         <option value="$PROJECT_DIR$/resources/views/test/test1.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/JsonController.php" />
         <option value="$PROJECT_DIR$/public/assets/admin/pages/scripts/components-dropdowns.js" />
@@ -237,7 +487,6 @@
         <option value="$PROJECT_DIR$/resources/views/control/qrlist.blade.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/public/vendor/ueditor/php/Uploader.class.php" />
-        <option value="$PROJECT_DIR$/config/ueditor.php" />
         <option value="$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/php/action_upload.php" />
         <option value="$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/php/Uploader.class.php" />
         <option value="$PROJECT_DIR$/app/Wechat/Article.php" />
@@ -248,11 +497,14 @@
         <option value="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/request_se_list.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php" />
-        <option value="$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.config.js" />
-        <option value="$PROJECT_DIR$/resources/views/control/articleadd.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/articlemodify.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/request_se_add.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/request_se_modify.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/articleadd.blade.php" />
+        <option value="$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.config.js" />
+        <option value="$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.all.js" />
+        <option value="$PROJECT_DIR$/config/ueditor.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Control/MenuController.php" />
       </list>
     </option>
   </component>
@@ -301,7 +553,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -331,11 +582,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -352,14 +599,6 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -371,7 +610,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -389,26 +628,107 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wechat-control" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wechat-control" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wechat-control" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wechat-control" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Control" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="ueditor.config.js&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.config.js&#10;ueditor&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.all.js&#10;sidebar&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;article&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ArticleController.php&#10;index&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/index.blade.php&#10;vo&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/request_voice_modify.blade.php&#10;A&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;Acc&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;order&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/count_order_payed.blade.php&#10;sideb&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;si&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;Tes&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php&#10;rou&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/routes.php&#10;Artic&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articlelist.blade.php&#10;Zon&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ZoneController.php&#10;arti&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articlemodify.blade.php&#10;Ar&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articleadd.blade.php&#10;bootstrap-datepicker.&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/public/assets/global/plugins/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js&#10;components-p&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/public/assets/admin/pages/scripts/components-pickers.js&#10;Zo&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Wechat/Zone.php&#10;Z&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ZoneController.php&#10;sid&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;Te&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php&#10;Qrc&#9;null&#9;null&#10;sho&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/zone_show_add.blade.php&#10;show&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/zone_show_add.blade.php&#10;push&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/push_project_add.blade.php&#10;Art&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articlemodify.blade.php&#10;Article&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articleadd.blade.php&#10;Js&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Js/Js.php&#10;tes&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php&#10;z&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ZoneController.php&#10;pus&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/push_project_modify.blade.php&#10;pu&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/push_project_list.blade.php&#10;log&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/login.blade.php&#10;login.&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/login.blade.php&#10;rout&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/routes.php&#10;Js.&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Js/Js.php&#10;a&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlelist.blade.php&#10;req&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/RequestController.php&#10;Acce&#9;FILE&#9;file:///Volumes/Result/Project/lesson/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;Pushc&#9;null&#9;null&#10;art&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlelist.blade.php&#10;qr&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qrlist.blade.php&#10;inde&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/index.blade.php&#10;user&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/UsersController.php&#10;hand&#9;null&#9;null&#10;app&#9;FILE&#9;file:///Volumes/Result/Project/lesson/config/app.php&#10;rem&#9;FILE&#9;file:///Volumes/Result/Project/lesson/readme.md&#10;data&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/DataController.php" />
+    <property name="SearchEverywhereHistoryKey" value="action_crawler.php&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/laravel-ueditor/src/assets/ueditor/php/action_crawler.php&#10;ueditor.config.js&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.config.js&#10;ueditor&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.all.js&#10;sidebar&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;article&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ArticleController.php&#10;index&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/index.blade.php&#10;vo&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/request_voice_modify.blade.php&#10;A&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;Acc&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;order&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/count_order_payed.blade.php&#10;sideb&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;si&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;Tes&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php&#10;rou&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/routes.php&#10;Artic&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articlelist.blade.php&#10;Zon&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ZoneController.php&#10;arti&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articlemodify.blade.php&#10;Ar&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articleadd.blade.php&#10;bootstrap-datepicker.&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/public/assets/global/plugins/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js&#10;components-p&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/public/assets/admin/pages/scripts/components-pickers.js&#10;Zo&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Wechat/Zone.php&#10;Z&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ZoneController.php&#10;sid&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;Te&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php&#10;Qrc&#9;null&#9;null&#10;sho&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/zone_show_add.blade.php&#10;show&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/zone_show_add.blade.php&#10;push&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/push_project_add.blade.php&#10;Art&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articlemodify.blade.php&#10;Article&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articleadd.blade.php&#10;Js&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Js/Js.php&#10;tes&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php&#10;z&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ZoneController.php&#10;pus&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/push_project_modify.blade.php&#10;pu&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/push_project_list.blade.php&#10;log&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/login.blade.php&#10;login.&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/login.blade.php&#10;rout&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/routes.php&#10;Js.&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Js/Js.php&#10;a&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlelist.blade.php&#10;req&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/RequestController.php&#10;Acce&#9;FILE&#9;file:///Volumes/Result/Project/lesson/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;Pushc&#9;null&#9;null&#10;art&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlelist.blade.php&#10;qr&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qrlist.blade.php&#10;inde&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/index.blade.php&#10;user&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/UsersController.php&#10;hand&#9;null&#9;null&#10;app&#9;FILE&#9;file:///Volumes/Result/Project/lesson/config/app.php&#10;rem&#9;FILE&#9;file:///Volumes/Result/Project/lesson/readme.md" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../hd-wechat" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/control" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Control" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Api" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/control" />
     </key>
   </component>
   <component name="RunManager">
@@ -459,11 +779,10 @@
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18317358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18477103" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28798586" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -475,6 +794,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28798586" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -518,17 +838,59 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/assets/global/plugins/jquery-multi-select/js/jquery.multi-select.js">
+    <entry file="file://$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.all.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="56" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1490669849000" expanded="true" signature="231445:231837" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="231451:231699" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="354140:354153" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="358683:358700" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="362738:362769" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="363316:363334" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="363550:363568" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="363847:363976" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="457174:457200" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="603303:603469" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="603805:603811" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="604251:604257" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="824147:824242" placeholder="..." />
+            <marker date="1490669849000" expanded="false" signature="824418:824424" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="824684:824690" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="829701:829707" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="830265:830271" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="860993:861069" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="873228:873246" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="873293:873335" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="873420:873450" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="890470:890542" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="900433:900459" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="900655:900746" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="901003:901078" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="901265:901280" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="901281:901773" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="901500:901721" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="913474:913563" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="977772:977844" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="996854:996866" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="999098:999122" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="1002903:1003081" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="1028867:1028878" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="1032419:1033950" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="1032486:1033382" placeholder="..." />
+            <marker date="1490669849000" expanded="false" signature="1032815:1032828" placeholder="..." />
+            <marker date="1490669849000" expanded="false" signature="1033205:1033241" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/qrsearch.blade.php">
+    <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="78.84615">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -630,20 +992,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/vendor/ueditor/php/Uploader.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.699722">
-          <caret line="395" column="36" selection-start-line="395" selection-start-column="28" selection-end-line="395" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/vendor/ueditor/php/controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1621872">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/config/ueditor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -665,13 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/php/controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4971591">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/views/assets.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -683,13 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.3018868">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/php/Uploader.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.433962">
-          <caret line="395" column="7" selection-start-line="395" selection-start-column="7" selection-end-line="395" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -714,13 +1048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.699722">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/request_txt_list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.653846">
@@ -732,7 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="102" column="38" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,9 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-177.88461">
           <caret line="185" column="42" selection-start-line="185" selection-start-column="42" selection-end-line="185" selection-end-column="42" />
-          <folding>
-            <element signature="e#48#69#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -750,7 +1073,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -758,7 +1080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="192" column="161" selection-start-line="192" selection-start-column="161" selection-end-line="192" selection-end-column="161" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,7 +1087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="146" column="164" selection-start-line="146" selection-start-column="164" selection-end-line="146" selection-end-column="164" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,7 +1094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -782,7 +1101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6623497">
           <caret line="350" column="30" selection-start-line="350" selection-start-column="30" selection-end-line="350" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -790,9 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.96153843">
           <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,7 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33290654">
           <caret line="507" column="293" selection-start-line="507" selection-start-column="293" selection-end-line="507" selection-end-column="293" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -808,7 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.8591683">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -816,7 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -824,55 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.017576318">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8518518">
-          <caret line="22981" column="28" selection-start-line="22981" selection-start-column="17" selection-end-line="22981" selection-end-column="28" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1447842210000" expanded="true" signature="231445:231837" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="231451:231699" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="354140:354153" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="358683:358700" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="362738:362769" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="363316:363334" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="363550:363568" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="363847:363976" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="457174:457200" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="603303:603469" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="603805:603811" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="604251:604257" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="824144:824239" placeholder="..." />
-            <marker date="1447842210000" expanded="false" signature="824415:824421" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="824681:824687" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="829698:829704" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="830262:830268" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="860990:861066" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="873225:873243" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="873290:873332" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="873417:873447" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="890467:890539" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="900430:900456" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="900652:900743" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="901000:901075" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="901262:901277" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="901278:901770" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="901497:901718" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="913471:913560" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="977769:977841" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="996851:996863" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="999095:999119" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="1002900:1003078" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="1028864:1028875" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="1032416:1033947" placeholder="..." />
-            <marker date="1447842210000" expanded="true" signature="1032483:1033379" placeholder="..." />
-            <marker date="1447842210000" expanded="false" signature="1032812:1032825" placeholder="..." />
-            <marker date="1447842210000" expanded="false" signature="1033202:1033238" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -880,40 +1143,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23219241">
           <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.config.js">
+    <entry file="file://$PROJECT_DIR$/resources/views/control/request_se_modify.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3796296">
-          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-24.346153">
+          <caret line="324" column="5" selection-start-line="324" selection-start-column="5" selection-end-line="324" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/ueditor.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/control/request_se_add.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6226416">
-          <caret line="50" column="19" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="19" />
-          <folding />
+        <state vertical-scroll-proportion="0.7400756">
+          <caret line="309" column="11" selection-start-line="309" selection-start-column="11" selection-end-line="309" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/vendor/ueditor/ueditor.all.js">
+    <entry file="file://$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/php/Uploader.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29313" column="8" selection-start-line="29313" selection-start-column="8" selection-end-line="29313" selection-end-column="8" />
+          <caret line="186" column="21" selection-start-line="186" selection-start-column="21" selection-end-line="186" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/php/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/articlemodify.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.384615">
-          <caret line="413" column="11" selection-start-line="413" selection-start-column="11" selection-end-line="413" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="412" column="34" selection-start-line="412" selection-start-column="12" selection-end-line="412" selection-end-column="34" />
           <folding>
             <marker date="1490666068000" expanded="true" signature="1844:2047" placeholder="..." />
             <marker date="1490666068000" expanded="true" signature="1856:2045" placeholder="..." />
@@ -924,10 +1190,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/articleadd.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.538462">
-          <caret line="372" column="8" selection-start-line="372" selection-start-column="8" selection-end-line="374" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="373" column="12" selection-start-line="373" selection-start-column="12" selection-end-line="373" selection-end-column="40" />
           <folding>
-            <element signature="e#8184#8217#0#HTML" expanded="true" />
             <marker date="1490664520000" expanded="true" signature="1845:2045" placeholder="..." />
             <marker date="1490664520000" expanded="true" signature="1857:2043" placeholder="..." />
             <marker date="1490664520000" expanded="true" signature="1858:2042" placeholder="..." />
@@ -935,27 +1200,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/request_se_add.blade.php">
+    <entry file="file://$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.5">
-          <caret line="309" column="11" selection-start-line="309" selection-start-column="11" selection-end-line="309" selection-end-column="11" />
+        <state vertical-scroll-proportion="-8.333333">
+          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/php/action_crawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/ueditor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/web.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2777778">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="445" column="39" selection-start-line="445" selection-start-column="39" selection-end-line="445" selection-end-column="39" />
           <folding>
-            <marker date="1490667257000" expanded="true" signature="1850:2050" placeholder="..." />
-            <marker date="1490667257000" expanded="true" signature="1862:2048" placeholder="..." />
-            <marker date="1490667257000" expanded="true" signature="1863:2047" placeholder="..." />
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1490669849000" expanded="true" signature="231445:231837" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="231451:231699" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="354140:354153" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="358683:358700" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="362738:362769" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="363316:363334" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="363550:363568" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="363847:363976" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="457174:457200" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="603303:603469" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="603805:603811" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="604251:604257" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="824147:824242" placeholder="..." />
+            <marker date="1490669849000" expanded="false" signature="824418:824424" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="824684:824690" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="829701:829707" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="830265:830271" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="860993:861069" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="873228:873246" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="873293:873335" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="873420:873450" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="890470:890542" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="900433:900459" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="900655:900746" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="901003:901078" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="901265:901280" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="901281:901773" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="901500:901721" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="913474:913563" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="977772:977844" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="996854:996866" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="999098:999122" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="1002903:1003081" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="1028867:1028878" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="1032419:1033950" placeholder="..." />
+            <marker date="1490669849000" expanded="true" signature="1032486:1033382" placeholder="..." />
+            <marker date="1490669849000" expanded="false" signature="1032815:1032828" placeholder="..." />
+            <marker date="1490669849000" expanded="false" signature="1033205:1033241" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/request_se_modify.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/MenuController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69262296">
-          <caret line="330" column="11" selection-start-line="330" selection-start-column="11" selection-end-line="330" selection-end-column="11" />
-          <folding>
-            <marker date="1490667276000" expanded="true" signature="1844:2044" placeholder="..." />
-            <marker date="1490667276000" expanded="true" signature="1856:2042" placeholder="..." />
-            <marker date="1490667276000" expanded="true" signature="1857:2041" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.8788159">
+          <caret line="42" column="158" selection-start-line="42" selection-start-column="158" selection-end-line="42" selection-end-column="158" />
+          <folding />
         </state>
       </provider>
     </entry>
