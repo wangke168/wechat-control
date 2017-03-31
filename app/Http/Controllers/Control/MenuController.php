@@ -62,11 +62,11 @@ class MenuController extends Controller
                                 "name" => "酒店预订",
                                 "key" => "9"
                             ],
-                            [
+                           /* [
                                 "type" => "view",
                                 "name" => "手机官网",
                                 "url"  => "http://m.hengdianworld.com/uid=655F74657374"
-                            ],
+                            ],*/
                             [
                                 "type" => "view",
                                 "name" => "我的订单",
