@@ -57,16 +57,16 @@ class MenuController extends Controller
                                 "name" => "特惠（门票+住宿）",
                                 "key" => "8"
                             ],
-                            [
+                            /*[
                                 "type" => "click",
                                 "name" => "酒店预订",
                                 "key" => "9"
-                            ],
-                           /* [
-                                "type" => "view",
-                                "name" => "手机官网",
-                                "url"  => "http://m.hengdianworld.com/uid=655F74657374"
                             ],*/
+                            [
+                                "type" => "view",
+                                "name" => "官网推荐",
+                                "url"  => "http://e.hengdianworld.com/WeixinOpenId.aspx?nexturl=http://wechat.hengdianworld.com/jump/mobile"
+                            ],
                             [
                                 "type" => "view",
                                 "name" => "我的订单",

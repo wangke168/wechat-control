@@ -41,19 +41,43 @@ class TestController extends Controller
     public function test()
     {
 
-        $app = app('wechat');
-        $url = $app->url;
-        return $url->shorten('http://yunxi.tv/livestream/fe7604457367438e898e322677afd198?utm_source=backend&utm_medium=wechat&utm_campaign=yunxi');
-        /*  for ($i=0;$i<=$voice_count;$i=$i+10)
-          {
-              $j=$i+10;
-              $result= $this->material->lists('voice', 0, 20);
-              echo $i;
-          }*/
-        $result = $this->material->lists('voice', 0, 20);
-        return $result;
 
-        $count = $result->total_count;
+
+        //初始化
+        $curl = curl_init();
+        //设置抓取的url
+        curl_setopt($curl, CURLOPT_URL, 'https://weix.hengdianworld.com/sendmessage/tglm');
+        //设置头文件的信息作为数据流输出
+        curl_setopt($curl, CURLOPT_HEADER, 1);
+        //设置获取的信息以文件流的形式返回，而不是直接输出。
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        //设置post方式提交
+        curl_setopt($curl, CURLOPT_POST, 1);
+        //设置post数据
+        $post_data = array(
+            "sellid" => "V1704110540",
+            "eventkey" => "91",
+            "uid"=>'717767313233343536'
+        );
+        curl_setopt($curl, CURLOPT_POSTFIELDS, $post_data);
+        //执行命令
+        curl_exec($curl);
+        //关闭URL请求
+        curl_close($curl);
+        //显示获得的数据
+//        print_r($data);
+       /* $f='thin_pig';
+        $row=DB::table('wx_qrscene_info')
+            ->join('qyh_user_info',function($join)use($f){
+                $join->on('wx_qrscene_info.qrscene_id','=','qyh_user_info.eventkey')
+                    ->where('qyh_user_info.userid','=',$f);
+            })->first();
+        dd($row->userid);*/
+
+   /*     $result = $this->material->lists('voice', 0, 20);
+        return $result;*/
+
+     /*   $count = $result->total_count;
 
         $items = $result->item;
 
@@ -74,19 +98,24 @@ class TestController extends Controller
         return $this->session->lists('kf2001@u_hengdian');
 
 
-        return $this->session->get('o2e-YuBgnbLLgJGMQykhSg_V3VRI');
+        return $this->session->get('o2e-YuBgnbLLgJGMQykhSg_V3VRI');*/
 
         //    $this->session->close('kf2001@u_hengdian', 'o2e-YuBgnbLLgJGMQykhSg_V3VRI');
 
-        /*   return $this->staff->lists();
+        //   return $this->staff->lists();
 
-          return $this->session->create('kf2001@u_hengdian', 'o2e-YuBgnbLLgJGMQykhSg_V3VRI');*/
+//          return $this->session->create('kf2001@u_hengdian', 'o2e-YuBgnbLLgJGMQykhSg_V3VRI');
 
 
-        return $this->staff->onlines();
+      /*  $online= $this->staff->onlines();
+
+        if(empty($online['kf_online_list']))
+        {
+            return 'sad';
+        }
 
         //  $this->staff->create('test1@gh_fa1b742c0244', '客服1');
-        $this->staff->delete('test1@gh_fa1b742c0244');
+        $this->staff->delete('test1@gh_fa1b742c0244');*/
 
 
     }
