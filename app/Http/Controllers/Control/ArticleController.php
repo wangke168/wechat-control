@@ -157,7 +157,7 @@ class ArticleController extends Controller
 
         $content = str_replace('\'', '\'\'', $content);
         $content = str_replace("'", "", $content);
-        $content = str_replace("https://img.xiumi.us", "http://img.xiumi.us", $content);
+      //  $content = str_replace("https://img.xiumi.us", "http://img.xiumi.us", $content);
 
         $url = $request->input('url');
         $startdate = $request->input('startdate');
