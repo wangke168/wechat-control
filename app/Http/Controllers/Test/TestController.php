@@ -51,7 +51,7 @@ class TestController extends Controller
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
         $result = curl_exec($ch);
         curl_close($ch);
-        return $result;
+        var_dump( $result);
 
         /*$api=new Api();
         $result= $api->get_wechat_api();
