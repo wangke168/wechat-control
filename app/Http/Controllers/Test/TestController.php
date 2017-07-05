@@ -44,11 +44,12 @@ class TestController extends Controller
         $token_url = "https://wechat.hdymxy.com/hd-token";
 //        $ACCESS_TOKEN = file_get_contents($token_url);
 //        return $ACCESS_TOKEN;
+
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL,$token_url);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect:'));
+
+
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
         $result = curl_exec($ch);
         var_dump(curl_error($ch));
