@@ -41,9 +41,9 @@ class TestController extends Controller
 
     public function test()
     {
-        $url = "http://wechat.hengdianworld.com/hd-token";
-        $ACCESS_TOKEN = file_get_contents($url);
-        return $ACCESS_TOKEN;
+        $url = "https://wechat.hengdianworld.com/hd-token";
+       /* $ACCESS_TOKEN = file_get_contents($url);
+        return $ACCESS_TOKEN;*/
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
