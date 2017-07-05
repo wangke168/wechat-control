@@ -15,6 +15,7 @@ use App\Http\Requests;
 use DB;
 use Intervention\Image\Facades\Image;
 
+
 class TestController extends Controller
 {
 
@@ -40,6 +41,9 @@ class TestController extends Controller
 
     public function test()
     {
+        $api=new Api();
+        $result= $api->get_wechat_api();
+        return $result['token'];
 
 
 
