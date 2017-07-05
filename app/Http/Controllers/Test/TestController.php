@@ -51,6 +51,7 @@ class TestController extends Controller
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect:'));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
         $result = curl_exec($ch);
+        var_dump(curl_error($ch));
         curl_close($ch);
         var_dump( $result);
 
