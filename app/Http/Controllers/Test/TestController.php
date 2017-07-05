@@ -48,7 +48,7 @@ class TestController extends Controller
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL,$token_url);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
         $result = curl_exec($ch);
