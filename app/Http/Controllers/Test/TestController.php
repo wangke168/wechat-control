@@ -41,7 +41,7 @@ class TestController extends Controller
 
     public function test()
     {
-        $url = 'https://github.com/';
+        $url = 'https://wechat.hdymxy.com/hd-token';
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL,$url);
