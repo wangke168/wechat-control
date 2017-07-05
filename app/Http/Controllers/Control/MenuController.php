@@ -54,7 +54,7 @@ class MenuController extends Controller
                             ],
                             [
                                 "type" => "click",
-                                "name" => "特惠（门票+住宿）",
+                                "name" => "优惠套餐",
                                 "key" => "8"
                             ],
                             /*[
