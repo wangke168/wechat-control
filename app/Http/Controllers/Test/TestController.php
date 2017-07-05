@@ -41,13 +41,20 @@ class TestController extends Controller
 
     public function test()
     {
-        $url = 'https://wechat.hdymxy.com/hd-token';
+        $token_url = "https://wechat.hdymxy.com/hd-token";
+//        $ACCESS_TOKEN = file_get_contents($token_url);
+//        return $ACCESS_TOKEN;
 
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL,$url);
+        curl_setopt($ch, CURLOPT_URL,$token_url);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-        echo curl_exec($ch);
+
+
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+        $result = curl_exec($ch);
+        var_dump(curl_error($ch));
+        curl_close($ch);
+        var_dump( $result);
 
 
 
