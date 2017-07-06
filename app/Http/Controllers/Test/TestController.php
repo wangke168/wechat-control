@@ -42,6 +42,7 @@ class TestController extends Controller
     public function test()
     {
         $url = "http://localhost:8080/api";
+//        $url = "https://wechat.hdymxy.com/api";
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
         curl_setopt($ch, CURLOPT_HEADER, false);
@@ -53,7 +54,8 @@ class TestController extends Controller
         $result = curl_exec($ch);
 //        var_dump(curl_error($ch));
         curl_close($ch);
-        return $result;
+        $result = json_decode($result, true);
+        return $result['token'];
 
 
     }

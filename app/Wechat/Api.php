@@ -29,6 +29,7 @@ class Api
         $result = curl_exec($ch);
 //        var_dump(curl_error($ch));
         curl_close($ch);
+        $result = json_decode($result, true);
         return $result;
     }
 
