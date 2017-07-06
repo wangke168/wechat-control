@@ -41,7 +41,7 @@ class TestController extends Controller
 
     public function test()
     {
-        $url = "https://wechat.hdymxy.com/hd-token";
+        $url = "http://localhost/hd-token";
        /* $ACCESS_TOKEN = file_get_contents($url);
         return $ACCESS_TOKEN;*/
 
