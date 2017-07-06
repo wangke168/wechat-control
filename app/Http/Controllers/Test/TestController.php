@@ -41,13 +41,7 @@ class TestController extends Controller
 
     public function test()
     {
-        $url = "http://localhost/api";
-       /* $ACCESS_TOKEN = file_get_contents($url);
-        return $ACCESS_TOKEN;*/
-
-
-
-
+        $url = "http://localhost:8080/api";
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
         curl_setopt($ch, CURLOPT_HEADER, false);
