@@ -41,7 +41,7 @@ class TestController extends Controller
 
     public function test()
     {
-        $url = "http://localhost:8080/api";
+        $url = "http://localhost/api";
        /* $ACCESS_TOKEN = file_get_contents($url);
         return $ACCESS_TOKEN;*/
 
