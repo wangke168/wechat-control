@@ -1,7 +1,7 @@
 
 @extends('control.blade.data')
 
-@section('title', '横店影视城微信管理平台－－－二维码管理')
+@section('title', '横店圆明新园微信管理平台－－－二维码管理')
 
 @section('page-title','二维码管理')
 @section('css')

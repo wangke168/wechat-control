@@ -1,6 +1,6 @@
 @extends('control.blade.data')
 
-@section('title', '横店影视城微信管理平台－－－回复管理')
+@section('title', '横店圆明新园微信管理平台－－－回复管理')
 @section('page-menu-title', '添加语音回复')
 
 @section('page-title', '回复管理')

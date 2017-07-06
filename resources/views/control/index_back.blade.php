@@ -1,7 +1,7 @@
 
 @extends('control.master')
 
-@section('title', '横店影视城微信管理平台－－－公告牌')
+@section('title', '横店圆明新园微信管理平台－－－公告牌')
 
 @section('page-title', '公告牌')
 

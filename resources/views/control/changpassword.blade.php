@@ -1,6 +1,6 @@
 @extends('control.blade.data')
 
-@section('title', '横店影视城微信管理平台－－－修改密码')
+@section('title', '横店圆明新园微信管理平台－－－修改密码')
 
 @section('css')
         <!-- BEGIN PAGE LEVEL STYLES -->

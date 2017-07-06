@@ -18,6 +18,7 @@ class Api
     public function get_wechat_api()
     {
         $url = "http://localhost:8080/api";
+//        $url = "https://wechat.hdymxy.com/api";
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
         curl_setopt($ch, CURLOPT_HEADER, false);

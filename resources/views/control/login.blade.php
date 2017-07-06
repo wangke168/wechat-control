@@ -13,7 +13,7 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8"/>
-    <title>横店影视城微信管理平台</title>
+    <title>横店圆明新园微信管理平台</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -53,7 +53,7 @@
 <!-- END SIDEBAR TOGGLER BUTTON -->
 <!-- BEGIN LOGO -->
 <div class="logo">
-    <h1 style="color:white">横 店 影 视 城 微 信 管 理 平 台</h1>
+    <h1 style="color:white">横 店 圆 明 新 园 微 信 管 理 平 台</h1>
 </div>
 <!-- END LOGO -->
 <!-- BEGIN LOGIN -->
