@@ -47,6 +47,12 @@ class TestController extends Controller
 
 
 
+        $token_url = "https://wechat.hdymxy.com/api";
+//        $ACCESS_TOKEN = file_get_contents($token_url);
+//        return $ACCESS_TOKEN;
+        $result =  $this->getSslPage($token_url);
+        $result = json_decode($result, true);
+        return $result;
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
@@ -63,7 +69,17 @@ class TestController extends Controller
 
 
     }
-
+    private function getSslPage($url) {
+        /*  http://www.manongjc.com/article/1428.html */
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL,$url);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+        $result = curl_exec($ch);
+        curl_close($ch);
+        return $result;
+    }
 
     private function decode_mime($string)
     {
