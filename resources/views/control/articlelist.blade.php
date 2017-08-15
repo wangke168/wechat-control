@@ -57,40 +57,34 @@
                                         href="/control/articlelist?classid=2">最新活动</a>
                             </li>
 
-                            <li <?php if ($classid == 19) echo 'class=active'; ?>><a
-                                        href="/control/articlelist?classid=19">横店攻略</a>
+                            <li <?php if ($classid == 3) echo 'class=active'; ?>><a
+                                        href="/control/articlelist?classid=3">景区介绍</a>
                             </li>
-
+                            <li <?php if ($classid == 4) echo 'class=active'; ?>><a
+                                        href="/control/articlelist?classid=4">演艺秀</a>
+                            </li>
                             <li <?php if ($classid == 7) echo 'class=active'; ?>><a
                                         href="/control/articlelist?classid=7">门票预定</a>
                             </li>
 
-                            <li <?php if ($classid == 8) echo 'class=active'; ?>><a
-                                        href="/control/articlelist?classid=8">门票酒店预定组合</a>
-                            </li>
-                            <li <?php if ($classid == 9) echo 'class=active'; ?>><a
-                                        href="/control/articlelist?classid=9">酒店预定</a>
-                            </li>
                             <li <?php if ($classid == 14) echo 'class=active'; ?>><a
                                         href="/control/articlelist?classid=14">景区节目时间表</a>
                             </li>
-                            <li <?php if ($classid == 15) echo 'class=active'; ?>><a
-                                        href="/control/articlelist?classid=15">剧组拍摄动态</a>
-                            </li>
                             <li <?php if ($classid == 16) echo 'class=active'; ?>><a
                                         href="/control/articlelist?classid=16">交通速查/出租/导航</a>
+                            </li>
+                            <li <?php if ($classid == 22) echo 'class=active'; ?>><a
+                                        href="/control/articlelist?classid=22">行程推荐</a>
                             </li>
                             <li <?php if ($classid == 97) echo 'class=active'; ?>><a
                                         href="/control/articlelist?classid=97">其他</a>
                             </li>
                             <li <?php if ($classid == 'audit') echo 'class=active'; ?>><a
                                         href="/control/articlelist?classid=audit">待审核</a></li>
-                            <li <?php if ($classid == 1) echo 'class=active'; ?>><a
-                                        href="/control/articlelist?classid=1">市场</a></li>
+
                             <li <?php if ($classid == 'del') echo 'class=active'; ?>><a
                                         href="/control/articlelist?classid=del">回收站</a></li>
-                            <li <?php if ($classid == '21') echo 'class=active'; ?>><a
-                                        href="/control/articlelist?classid=21">二次推送</a></li>
+
 
                             <form method="GET" name="myform" action="articlesearch" class="navbar-form navbar-right">
                                 <input class="m-wrap" type="text" name="keyword" class="form-control" placeholder="关键字"
