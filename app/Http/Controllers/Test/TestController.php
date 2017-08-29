@@ -41,7 +41,7 @@ class TestController extends Controller
 
     public function test()
     {
-        $url = "http://localhost:8080/api";
+/*        $url = "http://localhost:8080/api";
 //        $url = "https://wechat.hdymxy.com/api";
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
@@ -55,8 +55,12 @@ class TestController extends Controller
 //        var_dump(curl_error($ch));
         curl_close($ch);
         $result = json_decode($result, true);
-        return $result['token'];
+        return $result['token'];*/
 
+        $app = app('wechat');
+        $url = $app->url;
+        $shortUrl = $url->shorten('http://e-test.hdyuanmingxinyuan.com/yd_mp_activity.aspx?id=260&uid=746573745F74657374');
+        return $shortUrl->short_url;
 
     }
 

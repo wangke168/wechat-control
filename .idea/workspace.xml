@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,60 +29,18 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.038462">
-              <caret line="89" column="49" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
+            <state vertical-scroll-proportion="-14.735849">
+              <caret line="127" column="16" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDairyDetail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Console/Commands/UserDairyDetail.php">
+      <file leaf-file-name="TestController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Inspire.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Console/Commands/Inspire.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Kernel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-              <folding>
-                <element signature="e#31#74#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="qrlist.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/control/qrlist.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="128" column="66" selection-start-line="128" selection-start-column="66" selection-end-line="128" selection-end-column="66" />
+            <state vertical-scroll-proportion="0.4725898">
+              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,43 +49,87 @@
       <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="131.73077">
+            <state vertical-scroll-proportion="-9.075472">
+              <caret line="345" column="8" selection-start-line="345" selection-start-column="8" selection-end-line="346" selection-end-column="25" />
+              <folding>
+                <element signature="e#47#68#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZoneController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ZoneController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="43" column="44" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/RequestController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccessToken.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/overtrue/wechat/src/Core/AccessToken.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="121" column="30" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Usage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Wechat/Usage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="request_voice_list.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/control/request_voice_list.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1499304170000" expanded="true" signature="1863:2020" placeholder="..." />
+                <marker date="1499304170000" expanded="true" signature="1875:2018" placeholder="..." />
+                <marker date="1499304170000" expanded="true" signature="1876:2017" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zone_show_list.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/control/zone_show_list.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articlelist.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="articlelist.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/articlelist.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55607045">
-              <caret line="72" column="84" selection-start-line="72" selection-start-column="84" selection-end-line="72" selection-end-column="84" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="articleadd.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/control/articleadd.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.23077">
-              <caret line="76" column="54" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
+            <state vertical-scroll-proportion="-39.653847">
+              <caret line="217" column="47" selection-start-line="217" selection-start-column="47" selection-end-line="217" selection-end-column="47" />
               <folding>
-                <marker date="1499304170000" expanded="true" signature="1846:2046" placeholder="..." />
-                <marker date="1499304170000" expanded="true" signature="1858:2044" placeholder="..." />
-                <marker date="1499304170000" expanded="true" signature="1859:2043" placeholder="..." />
+                <element signature="e#11385#11432#0#HTML" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Wechat/Article.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.538462">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -146,9 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/storage/framework/views/3381f8f17df82f4b6e211343daa144b0ca3a5d4b.php" />
-        <option value="$PROJECT_DIR$/storage/framework/views/3444c2ac466daa7dfc3a1c64f49e637eb763bd76.php" />
-        <option value="$PROJECT_DIR$/storage/framework/views/364a80fb82ca26e357a4bf469f727f826641e0ab.php" />
         <option value="$PROJECT_DIR$/storage/framework/views/3fcc700836272eb29f82b4395b79b9880520cba9.php" />
         <option value="$PROJECT_DIR$/storage/framework/views/401bd1f21542ecf6893f7ba463025411d8494c0f.php" />
         <option value="$PROJECT_DIR$/storage/framework/views/422adf4b2f0da67ae26125be8dc3094456992bc9.php" />
@@ -197,6 +197,9 @@
         <option value="$PROJECT_DIR$/storage/framework/views/f16f98cd320178ace80ad4ecb5b71dcdca73d7d5.php" />
         <option value="$PROJECT_DIR$/storage/framework/views/fda32ba71f284c320e11876b5555f156abe1609d.php" />
         <option value="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Control/RequestController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
       </list>
     </option>
   </component>
@@ -246,6 +249,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -315,20 +319,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lesson" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat-control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -444,7 +434,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Control" />
+              <option name="myItemId" value="Test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -490,25 +480,24 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="Acc&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;ar&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ArticleController.php&#10;action_crawler.php&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/laravel-ueditor/src/assets/ueditor/php/action_crawler.php&#10;ueditor.config.js&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.config.js&#10;ueditor&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.all.js&#10;sidebar&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;article&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ArticleController.php&#10;index&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/index.blade.php&#10;vo&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/request_voice_modify.blade.php&#10;A&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;order&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/count_order_payed.blade.php&#10;sideb&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;si&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;Tes&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php&#10;rou&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/routes.php&#10;Artic&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articlelist.blade.php&#10;Zon&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ZoneController.php&#10;arti&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articlemodify.blade.php&#10;Ar&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articleadd.blade.php&#10;bootstrap-datepicker.&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/public/assets/global/plugins/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js&#10;components-p&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/public/assets/admin/pages/scripts/components-pickers.js&#10;Zo&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Wechat/Zone.php&#10;Z&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ZoneController.php&#10;sid&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;Te&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php&#10;Qrc&#9;null&#9;null&#10;sho&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/zone_show_add.blade.php&#10;show&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/zone_show_add.blade.php&#10;push&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/push_project_add.blade.php&#10;Art&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articlemodify.blade.php&#10;Article&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articleadd.blade.php&#10;Js&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Js/Js.php&#10;tes&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php&#10;z&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ZoneController.php&#10;pus&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/push_project_modify.blade.php&#10;pu&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/push_project_list.blade.php&#10;log&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/login.blade.php&#10;login.&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/login.blade.php&#10;rout&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/routes.php&#10;Js.&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Js/Js.php&#10;a&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlelist.blade.php&#10;req&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/RequestController.php&#10;Acce&#9;FILE&#9;file:///Volumes/Result/Project/lesson/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;Pushc&#9;null&#9;null&#10;art&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlelist.blade.php&#10;qr&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qrlist.blade.php&#10;inde&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/index.blade.php&#10;user&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/UsersController.php&#10;hand&#9;null&#9;null&#10;app&#9;FILE&#9;file:///Volumes/Result/Project/lesson/config/app.php" />
+    <property name="SearchEverywhereHistoryKey" value="request_v&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/request_voice_list.blade.php&#10;showli&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/zone_show_list.blade.php&#10;Acc&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;ar&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ArticleController.php&#10;action_crawler.php&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/laravel-ueditor/src/assets/ueditor/php/action_crawler.php&#10;ueditor.config.js&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.config.js&#10;ueditor&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.all.js&#10;sidebar&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;article&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ArticleController.php&#10;index&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/index.blade.php&#10;vo&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/request_voice_modify.blade.php&#10;A&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;order&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/count_order_payed.blade.php&#10;sideb&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;si&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;Tes&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php&#10;rou&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/routes.php&#10;Artic&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articlelist.blade.php&#10;Zon&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ZoneController.php&#10;arti&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articlemodify.blade.php&#10;Ar&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articleadd.blade.php&#10;bootstrap-datepicker.&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/public/assets/global/plugins/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js&#10;components-p&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/public/assets/admin/pages/scripts/components-pickers.js&#10;Zo&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Wechat/Zone.php&#10;Z&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ZoneController.php&#10;sid&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;Te&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php&#10;Qrc&#9;null&#9;null&#10;sho&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/zone_show_add.blade.php&#10;show&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/zone_show_add.blade.php&#10;push&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/push_project_add.blade.php&#10;Art&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articlemodify.blade.php&#10;Article&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articleadd.blade.php&#10;Js&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Js/Js.php&#10;tes&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php&#10;z&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ZoneController.php&#10;pus&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/push_project_modify.blade.php&#10;pu&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/push_project_list.blade.php&#10;log&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/login.blade.php&#10;login.&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/login.blade.php&#10;rout&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/routes.php&#10;Js.&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Js/Js.php&#10;a&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlelist.blade.php&#10;req&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/Control/RequestController.php&#10;Acce&#9;FILE&#9;file:///Volumes/Result/Project/lesson/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;Pushc&#9;null&#9;null&#10;art&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/articlelist.blade.php&#10;qr&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/qrlist.blade.php&#10;inde&#9;FILE&#9;file:///Volumes/Result/Project/lesson/resources/views/control/index.blade.php&#10;user&#9;FILE&#9;file:///Volumes/Result/Project/lesson/app/Http/Controllers/UsersController.php" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../hd-wechat" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/control" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Control" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Api" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/control" />
     </key>
   </component>
   <component name="RunManager">
@@ -559,10 +548,11 @@
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21884984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22523962" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28761062" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -574,7 +564,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28761062" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -618,76 +607,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/framework/views/4fd1287106e01fbca38e0a984d554928f0bc9fa1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.6923075">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/framework/views/515016ac8a16005f797fbb2a6e3b7ed022765392.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/framework/views/52dc3895754eefa7fc9e8d2d5a4a3b7769c6a9b8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.96153843">
-          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/framework/views/5cb288307c4deac623a171da212923dcc95f2c54.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/framework/views/5ebc720e73946f72bafc19d21c3bc21240a6a5ba.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/framework/views/61604c61c192f970249d32619a4db51f09d94466.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/framework/views/6dd0db278b9e9114bec982b349c1672b627d59ea.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/framework/views/6e9c4e9fe5f7c6e8f914446d928531fe9d416e39.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/framework/views/740a4ce91b402bc5c85a70785b42f44e9c9df18d.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/framework/views/7610791295d0ffa3d652cd2e8e745273c0cc8e36.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/framework/views/76b95e603fd5fdeffca529593c0f5385331dd8ab.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -877,34 +796,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/RequestController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ZoneController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="49" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Wechat/Usage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,33 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Inspire.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding>
-            <element signature="e#31#74#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,37 +814,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="128" column="66" selection-start-line="128" selection-start-column="66" selection-end-line="128" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.038462">
-          <caret line="89" column="49" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="131.73077">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Wechat/Article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.538462">
+        <state vertical-scroll-proportion="0.0">
           <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/articleadd.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.23077">
+        <state vertical-scroll-proportion="0.0">
           <caret line="76" column="54" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
           <folding>
             <marker date="1499304170000" expanded="true" signature="1846:2046" placeholder="..." />
@@ -986,10 +836,155 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Inspire.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/count_menu_click.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/blade/data.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ApiController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ZoneController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="44" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/RequestController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/overtrue/wechat/src/Core/AccessToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="121" column="30" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Wechat/Api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.538462">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/request_voice_list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1499304170000" expanded="true" signature="1863:2020" placeholder="..." />
+            <marker date="1499304170000" expanded="true" signature="1875:2018" placeholder="..." />
+            <marker date="1499304170000" expanded="true" signature="1876:2017" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Wechat/Usage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/zone_show_list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/articlelist.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55607045">
-          <caret line="72" column="84" selection-start-line="72" selection-start-column="84" selection-end-line="72" selection-end-column="84" />
+        <state vertical-scroll-proportion="-39.653847">
+          <caret line="217" column="47" selection-start-line="217" selection-start-column="47" selection-end-line="217" selection-end-column="47" />
+          <folding>
+            <element signature="e#11385#11432#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.735849">
+          <caret line="127" column="16" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.075472">
+          <caret line="345" column="8" selection-start-line="345" selection-start-column="8" selection-end-line="346" selection-end-column="25" />
+          <folding>
+            <element signature="e#47#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4725898">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
