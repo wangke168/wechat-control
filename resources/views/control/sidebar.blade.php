@@ -349,6 +349,12 @@
                         </li>
                     </ul>
                 </li>
+                <li>
+                    <a href="agentinterface">
+                        <i class="icon-equalizer"></i>
+                        <span class="title">代理商订单衔接</span>
+                    </a>
+                </li>
                 <!-- END MARKET MENU -->
             @endif
             <li>

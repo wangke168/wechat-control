@@ -16,7 +16,8 @@
         "overtrue/laravel-wechat": "~3.0",
         "overtrue/laravel-ueditor": "~1.0",
         "simplesoftwareio/simple-qrcode": "~1",
-        "sentry/sentry-laravel": "^0.6.1"
+        "sentry/sentry-laravel": "^0.6.1",
+        "artisaninweb/laravel-soap": "0.3.0.7"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

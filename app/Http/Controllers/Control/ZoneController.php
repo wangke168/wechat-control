@@ -34,9 +34,10 @@ class ZoneController extends Controller
                 $show_place = $request->input('show_place');
                 $show_place_url = $request->input('show_place_url');
                 $remark = $request->input('remark');
+                $priority = $request->input('priority');
                 $zone = new Zone();
                 $eventkey = $zone->get_zone_info($zone_id)->eventkey;
-                if ($this->check_show($show_name, $zone_id,$id)) {
+                if ($this->check_show($show_name, $zone_id, $id)) {
 //                    \Session::flash('check','failed');
                     return \Redirect::back()->with(['check' => 'failed', 'show_name' => $show_name, 'zone_id' => $zone_id]);
                 } else {
@@ -44,11 +45,11 @@ class ZoneController extends Controller
                         DB::table('zone_show_info')
                             ->where('id', $id)
                             ->update(['zone_id' => $zone_id, 'show_name' => $show_name, 'show_place' => $show_place,
-                                'show_place_url' => $show_place_url, 'remark' => $remark, 'eventkey' => $eventkey]);
+                                'show_place_url' => $show_place_url, 'remark' => $remark, 'priority' => $priority, 'eventkey' => $eventkey]);
                     } else {
                         DB::table('zone_show_info')
                             ->insert(['zone_id' => $zone_id, 'show_name' => $show_name, 'show_place' => $show_place,
-                                'show_place_url' => $show_place_url, 'remark' => $remark, 'eventkey' => $eventkey]);
+                                'show_place_url' => $show_place_url, 'remark' => $remark, 'priority' => $priority, 'eventkey' => $eventkey]);
                     }
                 }
                 return redirect('/control/showlist');
@@ -140,7 +141,7 @@ class ZoneController extends Controller
                 break;
             case 'del':
                 DB::table('zone_show_time')
-                    ->where('id',$id)
+                    ->where('id', $id)
                     ->delete();
                 return redirect('/control/pushproject');
                 break;
@@ -171,7 +172,7 @@ class ZoneController extends Controller
      * 检查数据库中是否已经存在该演艺秀
      * @param $type
      */
-    private function check_show($show_name, $zone_id,$id=null)
+    private function check_show($show_name, $zone_id, $id = null)
     {
         $row = DB::table('zone_show_info')
             ->where('show_name', $show_name)

@@ -109,6 +109,23 @@
                                 <input name="remark"  value="" class="form-control  input-inline input-xlarge">
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-1">排序</label>
+
+                            <div class="col-md-11">
+                                <select name="priority" class="form-control input-medium select2me"
+                                        data-placeholder="Select...">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                     <div class="form-actions">
                         <div class="row">

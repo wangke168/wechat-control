@@ -56,11 +56,24 @@ class TestController extends Controller
         curl_close($ch);
         $result = json_decode($result, true);
         return $result['token'];*/
-
+/*
         $app = app('wechat');
         $url = $app->url;
-        $shortUrl = $url->shorten('http://e-test.hdyuanmingxinyuan.com/yd_mp_activity.aspx?id=260&uid=746573745F74657374');
-        return $shortUrl->short_url;
+        $shortUrl = $url->shorten('https://wechat.hdyuanmingxinyuan.com/article/detail?type=hs_show&id=1483');
+        return $shortUrl->short_url;*/
+
+        $rows=DB::table('test_jsp_data')
+            ->orderBy('id', 'desc')
+            ->get();
+        foreach ($rows as $row)
+        {
+            $result=DB::table('test_jsp_source')
+                ->where('d',$row->d)
+                ->first();
+            if(!$result){
+                echo $row->d.'<br>';
+            }
+        }
 
     }
 

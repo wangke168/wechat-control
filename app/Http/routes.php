@@ -113,6 +113,8 @@ Route::group(['prefix' => 'control', 'middleware' => 'control'], function () {
     Route::any('tglm', 'Control\QyController@tglm');
 
     //修改密码
+    Route::any('agentinterface', 'Control\AgentController@index');
+    //修改密码
     Route::any('changpassword', 'UsersController@changpwd');
 
 });
