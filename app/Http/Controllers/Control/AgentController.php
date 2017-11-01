@@ -16,7 +16,7 @@ class AgentController extends Controller
 
     public function __construct()
     {
-        $this->SoapClint = new \SoapClient("http://aaa.hdyuanmingxinyuan.com/interface/AgentInterface.asmx?WSDL");
+        $this->SoapClint = new \SoapClient("http:///10.0.61.201/interface/AgentInterface.asmx?WSDL");
 //        $this->CompanyCode='ymxytest0fjloa';
     }
 
