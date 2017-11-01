@@ -44,7 +44,7 @@
 
 //        alert($.get('/control/agentinterface?type=getproductid&productname=abc&companycode=xcddmpowurop'));
         product_name=params_child1[4].replace(/[+]/g,"%2B");
-        alert(product_name);
+//        alert(product_name);
         $.ajax({
             type : "GET",
             url: '/control/agentinterface?action=getproductid&productname='+product_name+'&CompanyCode='+companycode,//后台映射的URL
