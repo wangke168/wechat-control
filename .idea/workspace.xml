@@ -34,26 +34,22 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ZoneController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ZoneController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1376">
               <caret line="49" column="43" lean-forward="false" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zone_show_modify.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/control/zone_show_modify.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2912">
-              <caret line="91" column="12" lean-forward="false" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="12" />
-              <folding>
-                <marker date="1507952023000" expanded="true" signature="2146:2330" ph="..." />
-                <marker date="1507952023000" expanded="true" signature="2158:2328" ph="..." />
-                <marker date="1507952023000" expanded="true" signature="2159:2327" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -129,13 +125,13 @@
       <file leaf-file-name="AgentController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="18" column="63" lean-forward="false" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+            <state relative-caret-position="502">
+              <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
               <folding>
                 <element signature="e#48#76#0#PHP" expanded="true" />
-                <marker date="1509508528000" expanded="true" signature="2742:2860" ph="..." />
-                <marker date="1509508528000" expanded="true" signature="3005:3156" ph="..." />
-                <marker date="1509508528000" expanded="true" signature="3191:3308" ph="..." />
+                <marker date="1509508690000" expanded="true" signature="2872:2990" ph="..." />
+                <marker date="1509508690000" expanded="true" signature="3135:3286" ph="..." />
+                <marker date="1509508690000" expanded="true" signature="3321:3438" ph="..." />
               </folding>
             </state>
           </provider>
@@ -159,8 +155,8 @@
       <find>test</find>
       <find>CompanyName</find>
       <find>ArrivalDate</find>
-      <find>in</find>
       <find>google</find>
+      <find>in</find>
       <find>menu</find>
     </findStrings>
     <replaceStrings>
@@ -438,12 +434,12 @@
       <workItem from="1508287130018" duration="8465000" />
       <workItem from="1509001116374" duration="7000" />
       <workItem from="1509001150531" duration="8926000" />
-      <workItem from="1509335853839" duration="13863000" />
+      <workItem from="1509335853839" duration="14024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31302000" />
+    <option name="totallyTimeSpent" value="31463000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -666,13 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Wechat/Api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -831,16 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="130" column="41" lean-forward="false" selection-start-line="130" selection-start-column="39" selection-end-line="130" selection-end-column="41" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Test/SoapController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
@@ -887,6 +866,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="130" column="41" lean-forward="false" selection-start-line="130" selection-start-column="39" selection-end-line="130" selection-end-column="41" />
+          <folding>
+            <element signature="e#7#392#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/agentinterface.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="859">
@@ -897,13 +894,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="18" column="63" lean-forward="false" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+        <state relative-caret-position="502">
+          <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
           <folding>
             <element signature="e#48#76#0#PHP" expanded="true" />
-            <marker date="1509508528000" expanded="true" signature="2742:2860" ph="..." />
-            <marker date="1509508528000" expanded="true" signature="3005:3156" ph="..." />
-            <marker date="1509508528000" expanded="true" signature="3191:3308" ph="..." />
+            <marker date="1509508690000" expanded="true" signature="2872:2990" ph="..." />
+            <marker date="1509508690000" expanded="true" signature="3135:3286" ph="..." />
+            <marker date="1509508690000" expanded="true" signature="3321:3438" ph="..." />
           </folding>
         </state>
       </provider>
