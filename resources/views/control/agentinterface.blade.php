@@ -185,13 +185,18 @@
 
                             <label class="control-label  col-md-1">门票ID</label>
 
-                            <div class="col-md-11">
+                            <div class="col-md-5">
 
                                 <input id="ProductID" type="text" placeholder="门票ID" class="form-control input-large"
                                        name="ProductID"/>
 
                             </div>
-
+                            @if(Session::has('check'))
+                                <div class="alert alert-danger">
+                                    <button class="close" data-close="alert"></button>
+                                    <span>该门票未绑定ID </span>
+                                </div>
+                            @endif
                         </div>
 
                         <div class="form-group">

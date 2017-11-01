@@ -112,8 +112,9 @@ Route::group(['prefix' => 'control', 'middleware' => 'control'], function () {
     //企业号推广联盟管理
     Route::any('tglm', 'Control\QyController@tglm');
 
-    //修改密码
+    //代理商订单衔接
     Route::any('agentinterface', 'Control\AgentController@index');
+    Route::any('agentproduct', 'Control\AgentController@agentproduct');
     //修改密码
     Route::any('changpassword', 'UsersController@changpwd');
 
