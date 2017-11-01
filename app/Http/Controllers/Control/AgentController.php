@@ -32,13 +32,10 @@ class AgentController extends Controller
                 return $this->post_order_test();
                 break;
             case 'getproductid':
-//                return $product_name;
                 return $this->get_productid($ProductName, $CompanyCode);
                 break;
             case 'addorder':
 
-                var_dump($request->all());
-//                return $request->input('$OrderTime');
                 $viewid = $request->input('ProductID');
 //                $Property = $request->input('Property');
                 $Number = $request->input('Number');
@@ -49,10 +46,15 @@ class AgentController extends Controller
                 $VisitorName = $request->input('VisitorName');
                 $VisitorMobile = $request->input('VisitorMobile');
 
-                echo '<br>';
-                echo $ArrivalDate;
-                echo '<br>';
-                $this->OrderReq($viewid, $Number, $CompanyCode, $CompanyName, $CompanyOrderID, $OrderTime, $ArrivalDate, $VisitorName, $VisitorMobile);
+                $ErrorMsg=$this->OrderReq($viewid, $Number, $CompanyCode, $CompanyName, $CompanyOrderID, $OrderTime, $ArrivalDate, $VisitorName, $VisitorMobile);
+                return redirect('/control/agentinterface?action=result&msg='.$ErrorMsg);
+                break;
+            case 'result':
+
+
+                $ErrorMsg = $request->input('msg');
+//                $OrderNo = $request->input('no');
+                return view('control.agentinterfaceresult',compact('ErrorMsg'));
                 break;
             default:
 
@@ -63,10 +65,6 @@ class AgentController extends Controller
 
     private function get_productid($product_name, $company_code)
     {
-        /* echo $product_name;
-         echo '<br>';
-      $product_name='【携程特权日】新圆明园(春苑)+火烧圆明园（夏苑夜景）联票（11.1-11.30）';
-         echo $product_name;*/
         $row = \DB::table('agent_product_id')
             ->where('product_name', $product_name)
             ->where('companycode', $company_code)
@@ -77,13 +75,12 @@ class AgentController extends Controller
 
     private function OrderReq($viewid, $Number, $CompanyCode, $CompanyName, $CompanyOrderID, $OrderTime, $ArrivalDate, $VisitorName, $VisitorMobile)
     {
-//        $client = new \SoapClient("http://aaa.hdyuanmingxinyuan.com/interface/AgentInterface.asmx?WSDL");
+//        return view('control.agentinterfaceresult');
         $products = "<product>
                     <viewid>$viewid</viewid>
                     <viewname></viewname>
                     </product>";
 
-//        $products = array("product" => array("viewid" => "F01", "viewname" => "新圆明园(春苑)(电子票6折)"));
         $property = "<PropertyAndNumber>
                     <Property>Adult</Property>
                     <Number>$Number</Number>                  
@@ -92,7 +89,8 @@ class AgentController extends Controller
                    <VisitorName></VisitorName>
                 <IdNumber></IdNumber>
                 </OtherVisitor>";
-        $params = array('TimeStamp' => '20171025123644',
+
+        $params = array('TimeStamp' => '20171101124644',
             'CompanyCode' => $CompanyCode,
             'CompanyName' => $CompanyName,
             'CompanyOrderID' => $CompanyOrderID,
@@ -109,18 +107,19 @@ class AgentController extends Controller
             'Memo' => ''
         );
 
-        var_dump(array('agentOrderInfo' => $params));
+//        var_dump(array('agentOrderInfo' => $params));
         $response = $this->SoapClint->AgentOrderReq(array('agentOrderInfo' => $params));
-        var_dump($response);
-        /*        echo("SOAP服务器提供的开放函数:");
-                echo('<pre>');
-                var_dump($client->__getFunctions());
-                echo('</pre>');
-                echo("SOAP服务器提供的Type:");
+    /*    $data = json_decode($response, true);
+        var_dump($data);*/
+        $ErrorMsg=$response->AgentOrderReqResult->ErrorMsg;
+        return $ErrorMsg;
+       /* $OrderNo=$response->AgentOrderReqResult->OrderNo;*/
+//        var_dump($response->AgentOrderReqResult);
+       /* return redirect('/control/agentinterface?action=result&msg='.$ErrorMsg);
+        var_dump($response->AgentOrderReqResult);*/
+    /*    return view('control.agentinterfaceresult',compact(''));
+        var_dump($response->AgentOrderReqResult);*/
 
-                echo('<pre>');
-                var_dump($client->__getTypes());
-                echo('</pre>');*/
     }
 
 }
