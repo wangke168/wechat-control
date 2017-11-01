@@ -62,19 +62,13 @@ class TestController extends Controller
         $shortUrl = $url->shorten('https://wechat.hdyuanmingxinyuan.com/article/detail?type=hs_show&id=1483');
         return $shortUrl->short_url;*/
 
-        $rows=DB::table('test_jsp_data')
-            ->orderBy('id', 'desc')
-            ->get();
-        foreach ($rows as $row)
-        {
-            $result=DB::table('test_jsp_source')
-                ->where('d',$row->d)
-                ->first();
-            if(!$result){
-                echo $row->d.'<br>';
-            }
-        }
-
+//phpinfo();
+/*
+$test=DB::connection('mysql')
+    ->table('userlist')->get();*/
+        $test=DB::connection('sqlsrv')
+            ->table('dbo.tbdBank')->get();
+var_dump($test);
     }
 
 
@@ -85,7 +79,7 @@ class TestController extends Controller
         if (!is_int($pos)) {
             return $string;
         } else {
-//            return $string;
+            return $string;
         }
     }
 

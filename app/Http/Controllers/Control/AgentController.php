@@ -11,12 +11,47 @@ use SoapHeader;
 
 class AgentController extends Controller
 {
+    private $SoapClint;
+
+//    private $CompanyCode;
+
+    public function __construct()
+    {
+        $this->SoapClint = new \SoapClient("http://aaa.hdyuanmingxinyuan.com/interface/AgentInterface.asmx?WSDL");
+//        $this->CompanyCode='ymxytest0fjloa';
+    }
+
     public function index(Request $request)
     {
-        $type = $request->input('type');
-        switch ($type) {
+        $action = $request->input('action');
+        $ProductName = $request->input('productname');
+        $CompanyCode = $request->input('CompanyCode');
+        switch ($action) {
             case 'test':
                 return $this->post_order_test();
+                break;
+            case 'getproductid':
+//                return $product_name;
+                return $this->get_productid($ProductName, $CompanyCode);
+                break;
+            case 'addorder':
+
+                var_dump($request->all());
+//                return $request->input('$OrderTime');
+                $viewid = $request->input('ProductID');
+//                $Property = $request->input('Property');
+                $Number = $request->input('Number');
+                $CompanyName = $request->input('CompanyName');
+                $CompanyOrderID = $request->input('CompanyOrderID');
+                $OrderTime = $request->input('OrderTime');
+                $ArrivalDate = $request->input('ArrivalDate');
+                $VisitorName = $request->input('VisitorName');
+                $VisitorMobile = $request->input('VisitorMobile');
+
+                echo '<br>';
+                echo $ArrivalDate;
+                echo '<br>';
+                $this->OrderReq($viewid, $Number, $CompanyCode, $CompanyName, $CompanyOrderID, $OrderTime, $ArrivalDate, $VisitorName, $VisitorMobile);
                 break;
             default:
 
@@ -25,166 +60,66 @@ class AgentController extends Controller
         }
     }
 
-
-    private function post_order_test()
+    private function get_productid($product_name, $company_code)
     {
+        /* echo $product_name;
+         echo '<br>';
+      $product_name='【携程特权日】新圆明园(春苑)+火烧圆明园（夏苑夜景）联票（11.1-11.30）';
+         echo $product_name;*/
+        $row = \DB::table('agent_product_id')
+            ->where('product_name', $product_name)
+            ->where('companycode', $company_code)
+            ->first();
+//    var_dump($row);
+        return $row->product_id;
+    }
 
-
-        /*      [CompanyCode=[ymxytest0fjloa],
-                  CompanyName=[圆明新园测试],
-                  CompanyOrderID=[123123423],
-                  Products=[<product><viewid>F01</viewid><viewname>新圆明园(春苑)(电子票6折)</viewname></product>],
-              OrderTime=[2017-10-02 11:49:45],
-              ArrivalDate=[2017-10-06],
-              PayType=[1],
-              VisitorName=[张三],
-              VisitorMobile=[13605725464],
-              IdCard=[],
-              Products=[<product><viewid>F01</viewid><viewname>新圆明园(春苑)(电子票6折)</viewname></product>],
-              TicketProperties=[<PropertyAndNumber><Property>Adult</Property><Number>1</Number></PropertyAndNumber>],
-              OtherVisitors=[], Memo=[], ]*/
-//        $time=date(format,timestamp);
-
-               $post_data = '<?xml version=\"1.0\" encoding=\"utf-8\"?>
-                           <soap12:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
-                             <soap12:Body>
-                              <AgentOrderReq xmlns="http://tempuri.org/">
-                           <agentOrderInfo>
-                           <TimeStamp>20171003162344</TimeStamp>
-                           <CompanyCode>ymxytest0fjloa</CompanyCode>
-                           <CompanyName>圆明新园测试</CompanyName>
-                           <CompanyOrderID>1234567891</CompanyOrderID>
-                           <OrderTime>2017-10-03 09:14:25</OrderTime>
-                           <ArrivalDate>2017-10-13</ArrivalDate>
-                           <PayType>1</PayType>
-                           <VisitorName>测试</VisitorName>
-                           <VisitorMobile>13605725464</VisitorMobile>
-                           <IdCard></IdCard>
-                           <Products>%s</Products>
-                           <TicketProperties>%s</TicketProperties>
-                            <OtherVisitors></OtherVisitors>
-                           <Memo>订单号:1234567891</Memo>
-                           </agentOrderInfo>
-                           </AgentOrderReq>
-                           </soap12:Body>
-                           </soap12:Envelope>';
-
+    private function OrderReq($viewid, $Number, $CompanyCode, $CompanyName, $CompanyOrderID, $OrderTime, $ArrivalDate, $VisitorName, $VisitorMobile)
+    {
+//        $client = new \SoapClient("http://aaa.hdyuanmingxinyuan.com/interface/AgentInterface.asmx?WSDL");
         $products = "<product>
-                    <viewid>F01</viewid>
-                    <viewname>新圆明园(春苑)(电子票6折)</viewname>
+                    <viewid>$viewid</viewid>
+                    <viewname></viewname>
                     </product>";
 
 //        $products = array("product" => array("viewid" => "F01", "viewname" => "新圆明园(春苑)(电子票6折)"));
         $property = "<PropertyAndNumber>
                     <Property>Adult</Property>
-                    <number>2</number>
-                    <PropertyAndNumber>";
-
-//        $property = array("PropertyAndNumber" => array("Property" => "Adult", "number" => 2));
-
-        $show_info = array('TimeStamp' => '20171003162344',
-            'CompanyCode' => 'ymxytest0fjloa',
-            'CompanyName' => '圆明新园测试',
-            'CompanyOrderID' => '1234567891',
-            'OrderTime' => '2017-10-03 09:14:25',
-            'ArrivalDate' => '2017-10-13',
+                    <Number>$Number</Number>                  
+                    </PropertyAndNumber>";
+        $other = "<OtherVisitor>
+                   <VisitorName></VisitorName>
+                <IdNumber></IdNumber>
+                </OtherVisitor>";
+        $params = array('TimeStamp' => '20171025123644',
+            'CompanyCode' => $CompanyCode,
+            'CompanyName' => $CompanyName,
+            'CompanyOrderID' => $CompanyOrderID,
+            'OrderTime' => $OrderTime,
+            'ArrivalDate' => $ArrivalDate,
             'PayType' => '1',
-            'VisitorName' => '测试',
-            'VisitorMobile' => '13605725464',
-            'IdCardNeed' => '',
+            'VisitorName' => $VisitorName,
+            'VisitorMobile' => $VisitorMobile,
+            'IdCardNeed' => '0',
             'IdCard' => '',
             'Products' => $products,
             'TicketProperties' => $property,
-            'OtherVisitors' => '',
-            'Memo' => 'fdgdf');
+            'OtherVisitors' => $other,
+            'Memo' => ''
+        );
 
-
-        $post_info = array("agentOrderInfo" => $show_info);
-//        print_r($post_info);
-//        return $show_info;
-
-        ini_set('soap.wsdl_cache_enabled','0');//关闭缓存
-        $wsdl = 'http://aaa.hdyuanmingxinyuan.com/interface/agentinterface.asmx?WSDL';
-
-//        $soap = new SoapClient('http://localhost/soap_demo/server.php?wsdl');
-        $resultStr = sprintf($post_data, $products,$property);
-//        return $resultStr;
-        $soap = new SoapClient($wsdl);
-
-        try {
-            $result = $soap->AgentOrderReq($resultStr);
-            print_r($result);
-        } catch (SoapFault $e) {
-            echo 'error';
-            echo 'Message: ' . $e->getMessage();
-        }
-
-
-        /*        echo('<pre>');
-                var_dump($soap->__getFunctions());
+        var_dump(array('agentOrderInfo' => $params));
+        $response = $this->SoapClint->AgentOrderReq(array('agentOrderInfo' => $params));
+        var_dump($response);
+        /*        echo("SOAP服务器提供的开放函数:");
+                echo('<pre>');
+                var_dump($client->__getFunctions());
                 echo('</pre>');
                 echo("SOAP服务器提供的Type:");
 
                 echo('<pre>');
-                var_dump($soap->__getTypes());
+                var_dump($client->__getTypes());
                 echo('</pre>');*/
-
-        /* return $soap->__getLastRequest();
-         try {
-             $result = $soap->__doRequest($resultStr, $wsdl, 'http://tempuri.org/AgentOrderReq', 1.2, 0);
-             print_r($result);
-         } catch (SoapFault $e) {
-             echo $e->getMessage();
-         } catch (Exception $e) {
-             echo $e->getMessage();
-         }*/
-//        return $resultStr;
-
     }
-
-    private function post_template()
-    {
-        $template = "<agentOrderInfo>
-                    <TimeStamp><![CDATA[%s]]></TimeStamp>
-                    <CompanyCode>ymxytest0fjloa</CompanyCode>
-                    <CompanyName>圆明新园测试</CompanyName>
-                    <CompanyOrderID><![CDATA[%s]]></CompanyOrderID>
-                    <OrderTime><![CDATA[%s]]></OrderTime>
-                    <ArrivalDate><![CDATA[%s]]></ArrivalDate>
-                    <PayType>st<![CDATA[%s]]>ring</PayType>
-                    <VisitorName><![CDATA[%s]]></VisitorName>
-                    <VisitorMobile><![CDATA[%s]]></VisitorMobile>
-                    <IdCardNeed><![CDATA[%s]]></IdCardNeed>
-                    <IdCard><![CDATA[%s]]></IdCard>
-                    <Products><![CDATA[%s]]></Products>
-                    <TicketProperties><![CDATA[%s]]></TicketProperties>
-                    <OtherVisitors><![CDATA[%s]]></OtherVisitors>
-                    <Memo><![CDATA[%s]]></Memo>
-                    </agentOrderInfo>";
-        return $template;
-    }
-    /*
-    <soap:Body>
-    <AgentOrderReq xmlns="http://tempuri.org/">
-    <agentOrderInfo>
-    <TimeStamp>string</TimeStamp>
-    <CompanyCode>string</CompanyCode>
-    <CompanyName>string</CompanyName>
-    <CompanyOrderID>string</CompanyOrderID>
-    <OrderTime>string</OrderTime>
-    <ArrivalDate>string</ArrivalDate>
-    <PayType>string</PayType>
-    <VisitorName>string</VisitorName>
-    <VisitorMobile>string</VisitorMobile>
-    <IdCardNeed>int</IdCardNeed>
-    <IdCard>string</IdCard>
-    <Products>string</Products>
-    <TicketProperties>string</TicketProperties>
-    <OtherVisitors>string</OtherVisitors>
-    <Memo>string</Memo>
-    </agentOrderInfo>
-    </AgentOrderReq>
-    </soap:Body>
-    */
 
 }

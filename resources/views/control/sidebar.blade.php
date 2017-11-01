@@ -349,12 +349,30 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon-shuffle"></i>
+                                    <span class="title">代理商订单衔接 </span>
+                                    <span class="arrow "></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="agentinterface">
+                                            <span class="title">同步订单</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            门票数据管理</a>
+                                    </li>
+                                </ul>
+                            </li>
+                {{--<li>
                     <a href="agentinterface">
                         <i class="icon-equalizer"></i>
                         <span class="title">代理商订单衔接</span>
                     </a>
-                </li>
+                </li>--}}
                 <!-- END MARKET MENU -->
             @endif
             <li>

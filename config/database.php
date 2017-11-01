@@ -66,6 +66,16 @@ return [
             'engine' => null,
         ],
 
+        'sqlsrv' => [
+            'driver' => 'sqlsrv',
+            'host' => '192.168.1.254',
+            'database' => 'hdymxy',
+            'username' => 'sa',
+            'password' => 'Aa123456',
+            'charset' => 'utf8',
+            'prefix' => '',
+        ],
+
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', 'localhost'),
