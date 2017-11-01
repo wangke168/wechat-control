@@ -58,8 +58,7 @@ class AgentController extends Controller
         }
     }
 
-    public function agentproduct(Request $request)
-    {
+    public function agentproduct(Request $request){
         $action = $request->input('action');
         switch ($action) {
             case 'addproduct':
@@ -92,7 +91,7 @@ class AgentController extends Controller
             case 'del':
                 $id = $request->input('id');
                 DB::table('agent_product_id')
-                    ->where('id', $id)
+                    ->where('id',$id)
                     ->delete();
                 return redirect('control/agentproduct');
                 break;
