@@ -23,7 +23,7 @@
 //        alert(params[0].split(" "));
 //        alert(params[0]);
         params_child1=params[0].split(" ");
-        alert(params_child1);
+//        alert(params_child1);
         params_child2=params[7].split(" ");
         CompanyOrderID=params_child1[0].replace(/订单号：/,"");
 
