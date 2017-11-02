@@ -35,7 +35,6 @@
             companycode='xcddmpowurop';
         }
         if(params_child1[4]==''){
-
             product_name=params_child1[5]
         }
         else{
@@ -70,17 +69,6 @@
 
 
     }
-    function check() {
-
-        if(document.getElementById("CompanyOrderID").value=="")
-        {
-            alert("用户名不能为空");
-//            document.dd.username.focus();
-            return   false;
-        }
-
-    }
-
 
 </script>
 @section('page-menu-title', '代理商')

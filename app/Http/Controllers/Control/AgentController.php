@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Control;
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -152,9 +153,17 @@ class AgentController extends Controller
 
 //        var_dump(array('agentOrderInfo' => $params));
         $response = $this->SoapClint->AgentOrderReq(array('agentOrderInfo' => $params));
-        /*    $data = json_decode($response, true);
-            var_dump($data);*/
+
+            var_dump($response);
+
         $ErrorMsg = $response->AgentOrderReqResult->ErrorMsg;
+
+            if ($response->AgentOrderReqResult->ErrorCode=='0000') {
+                DB::table('agent_products_sync')
+                    ->insert(['CompanyOrderID' => $CompanyOrderID, 'OrderID' => $response->AgentOrderReqResult->OrderNo,
+                        'AddTime' => Carbon::now(),'CompanyCode'=>$CompanyCode]);
+            }
+
         return $ErrorMsg;
         /* $OrderNo=$response->AgentOrderReqResult->OrderNo;*/
 //        var_dump($response->AgentOrderReqResult);

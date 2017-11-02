@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/agentinterface.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/agentinterface.blade.php" />
     </list>
     <ignored path="lesson.iws" />
@@ -42,26 +43,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="agentinterface.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="agentinterface.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/agentinterface.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+            <state relative-caret-position="-1907">
+              <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AgentController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AgentController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="98" />
+            <state relative-caret-position="859">
+              <caret line="163" column="78" lean-forward="false" selection-start-line="163" selection-start-column="78" selection-end-line="163" selection-end-column="78" />
               <folding>
-                <element signature="e#48#76#0#PHP" expanded="true" />
-                <marker date="1509583856000" expanded="true" signature="4726:4844" ph="..." />
-                <marker date="1509583856000" expanded="true" signature="4888:5039" ph="..." />
-                <marker date="1509583856000" expanded="true" signature="5074:5191" ph="..." />
+                <element signature="e#48#66#0#PHP" expanded="true" />
+                <marker date="1509606175000" expanded="true" signature="4745:4863" ph="..." />
+                <marker date="1509606175000" expanded="true" signature="4907:5058" ph="..." />
+                <marker date="1509606175000" expanded="true" signature="5093:5210" ph="..." />
               </folding>
             </state>
           </provider>
@@ -210,8 +211,8 @@
         <option value="$PROJECT_DIR$/resources/views/control/agent_products_modify.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/agent_products_list.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" />
         <option value="$PROJECT_DIR$/resources/views/control/agentinterface.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" />
       </list>
     </option>
   </component>
@@ -431,19 +432,19 @@
       <workItem from="1508287130018" duration="8465000" />
       <workItem from="1509001116374" duration="7000" />
       <workItem from="1509001150531" duration="8926000" />
-      <workItem from="1509335853839" duration="25506000" />
+      <workItem from="1509335853839" duration="27206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42945000" />
+    <option name="totallyTimeSpent" value="44645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19329074" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19329074" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -912,24 +913,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/control/agentinterface.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="98" />
-          <folding>
-            <element signature="e#48#76#0#PHP" expanded="true" />
-            <marker date="1509583856000" expanded="true" signature="4726:4844" ph="..." />
-            <marker date="1509583856000" expanded="true" signature="4888:5039" ph="..." />
-            <marker date="1509583856000" expanded="true" signature="5074:5191" ph="..." />
-          </folding>
+        <state relative-caret-position="-1907">
+          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/agentinterface.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="859">
+          <caret line="163" column="78" lean-forward="false" selection-start-line="163" selection-start-column="78" selection-end-line="163" selection-end-column="78" />
+          <folding>
+            <element signature="e#48#66#0#PHP" expanded="true" />
+            <marker date="1509606175000" expanded="true" signature="4745:4863" ph="..." />
+            <marker date="1509606175000" expanded="true" signature="4907:5058" ph="..." />
+            <marker date="1509606175000" expanded="true" signature="5093:5210" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
