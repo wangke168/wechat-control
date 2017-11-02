@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/control/agent_order_cancel.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/agentinterfaceresult.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/agentinterfaceresult.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/articlecopy.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/articlecopy.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/request_txt_add.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/request_txt_add.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/index.blade.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,13 +65,30 @@
       <file leaf-file-name="AgentController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="165" column="34" lean-forward="false" selection-start-line="165" selection-start-column="34" selection-end-line="165" selection-end-column="34" />
+            <state relative-caret-position="780">
+              <caret line="191" column="63" lean-forward="true" selection-start-line="191" selection-start-column="63" selection-end-line="191" selection-end-column="73" />
               <folding>
                 <element signature="e#48#66#0#PHP" expanded="true" />
                 <marker date="1509608962000" expanded="true" signature="4822:4940" ph="..." />
                 <marker date="1509608962000" expanded="true" signature="4984:5135" ph="..." />
                 <marker date="1509608962000" expanded="true" signature="5170:5287" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/control/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-32">
+              <caret line="135" column="60" lean-forward="false" selection-start-line="135" selection-start-column="60" selection-end-line="135" selection-end-column="60" />
+              <folding>
+                <element signature="e#8266#8303#0#HTML" expanded="false" />
+                <element signature="e#8312#11411#0#HTML" expanded="false" />
+                <element signature="e#11466#42256#0#HTML" expanded="false" />
+                <element signature="e#42311#48599#0#HTML" expanded="false" />
+                <element signature="e#48654#118344#0#HTML" expanded="false" />
+                <element signature="e#118399#138780#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -172,7 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/storage/framework/views/7bb0faa449fd46e9c3f1bb06a384fab0860e307d.php" />
         <option value="$PROJECT_DIR$/storage/framework/views/7f4132780bff2309ce0fdfc5a12b5f827a2ef287.php" />
         <option value="$PROJECT_DIR$/storage/framework/views/90621ca89b37599dc4bc313fdff5411d31b7d01d.php" />
         <option value="$PROJECT_DIR$/storage/framework/views/96c1ceb16cff18768d34a8ab2eeda07fb65dc00b.php" />
@@ -223,6 +232,7 @@
         <option value="$PROJECT_DIR$/resources/views/control/articlecopy.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/agentinterfaceresult.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/index.blade.php" />
       </list>
     </option>
   </component>
@@ -442,12 +452,12 @@
       <workItem from="1508287130018" duration="8465000" />
       <workItem from="1509001116374" duration="7000" />
       <workItem from="1509001150531" duration="8926000" />
-      <workItem from="1509335853839" duration="29542000" />
+      <workItem from="1509335853839" duration="30928000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46981000" />
+    <option name="totallyTimeSpent" value="48367000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -516,13 +526,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Wechat/Usage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/request_voice_list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -948,10 +951,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="135" column="60" lean-forward="false" selection-start-line="135" selection-start-column="60" selection-end-line="135" selection-end-column="60" />
+          <folding>
+            <element signature="e#8266#8303#0#HTML" expanded="false" />
+            <element signature="e#8312#11411#0#HTML" expanded="false" />
+            <element signature="e#11466#42256#0#HTML" expanded="false" />
+            <element signature="e#42311#48599#0#HTML" expanded="false" />
+            <element signature="e#48654#118344#0#HTML" expanded="false" />
+            <element signature="e#118399#138780#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="165" column="34" lean-forward="false" selection-start-line="165" selection-start-column="34" selection-end-line="165" selection-end-column="34" />
+        <state relative-caret-position="780">
+          <caret line="191" column="63" lean-forward="true" selection-start-line="191" selection-start-column="63" selection-end-line="191" selection-end-column="73" />
           <folding>
             <element signature="e#48#66#0#PHP" expanded="true" />
             <marker date="1509608962000" expanded="true" signature="4822:4940" ph="..." />
