@@ -16,13 +16,14 @@
 
     function button123() {
         var x=document.getElementById("orderinfo");
-//        alert(x.value);
-//        alert((x.value.split(" ") + "<br />"));
+        /*alert(x.value);
+        alert((x.value.split(" ") + "<br />"));*/
 
         params = x.value.split("\t");
 //        alert(params[0].split(" "));
 //        alert(params[0]);
         params_child1=params[0].split(" ");
+        alert(params_child1);
         params_child2=params[7].split(" ");
         CompanyOrderID=params_child1[0].replace(/订单号：/,"");
 
@@ -33,9 +34,16 @@
             document.getElementById("CompanyCode").value='xcddmpowurop';
             companycode='xcddmpowurop';
         }
+        if(params_child1[4]==''){
+
+            product_name=params_child1[5]
+        }
+        else{
+            product_name=params_child1[4];
+        }
 //        alert(CompanyOrderID);
         document.getElementById("CompanyOrderID").value=CompanyOrderID;
-        document.getElementById("Products").value=params_child1[4];
+        document.getElementById("Products").value=product_name;
         document.getElementById("OrderTime").value=params[3];
         document.getElementById("ArrivalDate").value=params[4];
         document.getElementById("VisitorName").value=params[6];
@@ -43,7 +51,7 @@
         document.getElementById("Number").value=params_child2[1];
 
 //        alert($.get('/control/agentinterface?type=getproductid&productname=abc&companycode=xcddmpowurop'));
-        product_name=params_child1[4].replace(/[+]/g,"%2B");
+        product_name=product_name.replace(/[+]/g,"%2B");
 //        alert(product_name);
         $.ajax({
             type : "GET",
