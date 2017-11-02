@@ -162,7 +162,7 @@ class AgentController extends Controller
 
         $ErrorMsg = $response->AgentOrderReqResult->ErrorMsg;
 
-        if ($response->AgentOrderReqResult->ErrorCode == '0000') {
+        if ($response->AgentOrderReqResult->Result == true) {
             DB::table('agent_order_sync')
                 ->insert(['CompanyOrderID' => $CompanyOrderID, 'OrderID' => $response->AgentOrderReqResult->OrderNo,
                     'AddTime' => Carbon::now(), 'CompanyCode' => $CompanyCode]);
@@ -185,20 +185,17 @@ class AgentController extends Controller
 //                    'CompanyName' => '圆明新园测试',
                     'CompanyOrderID' => $CompanyOrderID,
                     'IdCardNeed' => ''));
-                try {
 //                    var_dump($params);
-                    $response = $this->SoapClint->OrderCancel($params);
-                    $ErrorMsg = $response->OrderCancelResult->ErrorMsg;
-                    if ($response->OrderCancelResult->ErrorCode == '0000') {
-                        DB::table('agent_order_cancel')
-                            ->insert(['CompanyOrderID' => $CompanyOrderID,'AddTime' => Carbon::now(),
-                                'CompanyCode' => $CompanyCode]);
-                    }
-                    return redirect('/control/agentinterface?action=result&type=cancel&msg=' . $ErrorMsg);
+                $response = $this->SoapClint->OrderCancel($params);
+//                var_dump($response);
+                $ErrorMsg = $response->OrderCancelResult->ErrorMsg;
 
-                } catch (Exception $e) {
-                    echo 'Message: ' . $e->getMessage();
+                if ($response->OrderCancelResult->Result == true) {
+                    DB::table('agent_order_cancel')
+                        ->insert(['CompanyOrderID' => $CompanyOrderID, 'AddTime' => Carbon::now(),
+                            'CompanyCode' => $CompanyCode]);
                 }
+                return redirect('/control/agentinterface?action=result&type=cancel&msg=' . $ErrorMsg);
 
                 break;
             default:

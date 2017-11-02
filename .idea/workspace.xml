@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,13 +66,13 @@
       <file leaf-file-name="AgentController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="191" column="63" lean-forward="true" selection-start-line="191" selection-start-column="63" selection-end-line="191" selection-end-column="73" />
+            <state relative-caret-position="389">
+              <caret line="186" column="41" lean-forward="false" selection-start-line="186" selection-start-column="41" selection-end-line="186" selection-end-column="41" />
               <folding>
                 <element signature="e#48#66#0#PHP" expanded="true" />
-                <marker date="1509608962000" expanded="true" signature="4822:4940" ph="..." />
-                <marker date="1509608962000" expanded="true" signature="4984:5135" ph="..." />
-                <marker date="1509608962000" expanded="true" signature="5170:5287" ph="..." />
+                <marker date="1509611118000" expanded="true" signature="4822:4940" ph="..." />
+                <marker date="1509611118000" expanded="true" signature="4984:5135" ph="..." />
+                <marker date="1509611118000" expanded="true" signature="5170:5287" ph="..." />
               </folding>
             </state>
           </provider>
@@ -231,8 +232,8 @@
         <option value="$PROJECT_DIR$/resources/views/control/agent_order_cancel.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/articlecopy.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/agentinterfaceresult.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" />
         <option value="$PROJECT_DIR$/resources/views/control/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" />
       </list>
     </option>
   </component>
@@ -452,12 +453,12 @@
       <workItem from="1508287130018" duration="8465000" />
       <workItem from="1509001116374" duration="7000" />
       <workItem from="1509001150531" duration="8926000" />
-      <workItem from="1509335853839" duration="30928000" />
+      <workItem from="1509335853839" duration="31522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48367000" />
+    <option name="totallyTimeSpent" value="48961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -968,13 +969,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="191" column="63" lean-forward="true" selection-start-line="191" selection-start-column="63" selection-end-line="191" selection-end-column="73" />
+        <state relative-caret-position="389">
+          <caret line="186" column="41" lean-forward="false" selection-start-line="186" selection-start-column="41" selection-end-line="186" selection-end-column="41" />
           <folding>
             <element signature="e#48#66#0#PHP" expanded="true" />
-            <marker date="1509608962000" expanded="true" signature="4822:4940" ph="..." />
-            <marker date="1509608962000" expanded="true" signature="4984:5135" ph="..." />
-            <marker date="1509608962000" expanded="true" signature="5170:5287" ph="..." />
+            <marker date="1509611118000" expanded="true" signature="4822:4940" ph="..." />
+            <marker date="1509611118000" expanded="true" signature="4984:5135" ph="..." />
+            <marker date="1509611118000" expanded="true" signature="5170:5287" ph="..." />
           </folding>
         </state>
       </provider>
