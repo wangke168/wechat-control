@@ -1,9 +1,9 @@
 @extends('control.blade.data')
 
-@section('title', '横店圆明新园微信管理平台－－－回复管理')
-@section('page-menu-title', '添加文字回复')
+@section('title', '横店圆明新园微信管理平台－－－代理商订单取消')
+@section('page-menu-title', '代理商订单衔接')
 
-@section('page-title', '回复管理')
+@section('page-title', '取消订单')
 
 @section('css')
         <!-- BEGIN PAGE LEVEL STYLES -->
@@ -35,7 +35,7 @@
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
-                <a href="#">回复管理</a>
+                <a href="#">取消订单</a>
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
@@ -54,54 +54,38 @@
             <div class="portlet box blue-hoki">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="fa fa-gift"></i>添加回复内容
+                        <i class="fa fa-gift"></i>取消订单
                     </div>
 
                 </div>
                 <div class="portlet-body form">
 
-                    {!! Form::open(['url'=>'control/requesttxt?action=save','class'=>'form-horizontal form-bordered',
+                    {!! Form::open(['url'=>'/control/agentordercancel?action=cancel','class'=>'form-horizontal form-bordered',
                     'id'=>'postForm','onkeydown'=>'if(event.keyCode==13){return false;}']) !!}
 
                     <div class="form-body">
                         <div class="form-group">
-                            <label class="control-label col-md-1">内容</label>
+                            <label class="control-label col-md-1">代理商订单ID</label>
 
                             <div class="col-md-4">
-                                <textarea name="content" class="form-control" rows="3" placeholder="请输入回复内容"></textarea>
-                            </div>
+                                <input type="text" placeholder="请输入代理商订单ID" class="form-control input-large"
+                                       name="CompanyOrderID" />                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <label class="control-label col-md-1">回复关键字</label>
 
+                        <div class="form-group">
+                            <label class="control-label  col-md-1">所属代理商</label>
 
                             <div class="col-md-11">
-                                <input name="keyword" value="" data-role="tagsinput"
-                                       placeholder="请输入回复关键字"/>
-                                <span class="help-inline">每个关键字用","隔开</span>
 
-                            </div>
+                                <select class="form-control input-medium select2me" name="CompanyCode"
+                                        data-placeholder="选择所属类别">
+                                    {{--<option value=""></option>--}}
+                                    <option value="xcddmpowurop">携程单订门票</option>;
 
 
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-1">是否关注显示</label>
+                                </select>
 
-                            <div class="col-md-11">
-                                <label class="checkbox">
-                                    <input type="checkbox" name="focus" value="1"/>
-                                    <span class="help-inline">如果勾选，则客人关注时接收到此条信息。</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-1">展示对象</label>
-
-                            <div class="col-md-3">
-
-                                <input type="hidden" name="eventkey" id="select2_sample5"
-                                       class="form-control select2" value="全部显示">
                             </div>
                         </div>
                     </div>

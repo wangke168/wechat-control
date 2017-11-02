@@ -40,7 +40,14 @@
             <div class="page-title text-center">
 
                 <p>
-                    <a href="/control/agentinterface">继续下单 </a>
+                    @if ($Type=='sync')
+                        <a href="/control/agentinterface">继续下单 </a>
+                    @elseif($Type=='cancel')
+                        <a href="/control/agentordercancel">继续取消订单</a>
+                    @endif
+
+
+
                 </p>
 
             </div>

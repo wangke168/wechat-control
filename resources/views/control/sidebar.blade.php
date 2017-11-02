@@ -362,6 +362,11 @@
                                         </a>
                                     </li>
                                     <li>
+                                        <a href="agentordercancel">
+                                            <span class="title">取消订单</span>
+                                        </a>
+                                    </li>
+                                    <li>
                                         <a href="agentproduct">
                                             门票数据管理</a>
                                     </li>

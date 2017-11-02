@@ -19,7 +19,7 @@ class AgentController extends Controller
     public function __construct()
     {
 //        phpinfo();
-        $wsdl=env('AGENT_WSDL', '');
+        $wsdl = env('AGENT_WSDL', '');
         $this->SoapClint = new SoapClient($wsdl);
 //        $this->SoapClint = new SoapClient("http://10.0.61.201/interface/AgentInterface.asmx?WSDL");
 //        $this->CompanyCode='ymxytest0fjloa';
@@ -46,12 +46,15 @@ class AgentController extends Controller
                 $VisitorMobile = $request->input('VisitorMobile');
 
                 $ErrorMsg = $this->OrderReq($viewid, $Number, $CompanyCode, $CompanyName, $CompanyOrderID, $OrderTime, $ArrivalDate, $VisitorName, $VisitorMobile);
-                return redirect('/control/agentinterface?action=result&msg=' . $ErrorMsg);
+                return redirect('/control/agentinterface?action=result&type=sync&msg=' . $ErrorMsg);
                 break;
             case 'result':
                 $ErrorMsg = $request->input('msg');
+                $Type = $request->input('type');
+                return view('control.agentinterfaceresult', compact('ErrorMsg', 'Type'));
+
 //                $OrderNo = $request->input('no');
-                return view('control.agentinterfaceresult', compact('ErrorMsg'));
+
                 break;
 
             default:
@@ -60,7 +63,8 @@ class AgentController extends Controller
         }
     }
 
-    public function agentproduct(Request $request){
+    public function agentproduct(Request $request)
+    {
         $action = $request->input('action');
         switch ($action) {
             case 'addproduct':
@@ -93,7 +97,7 @@ class AgentController extends Controller
             case 'del':
                 $id = $request->input('id');
                 DB::table('agent_product_id')
-                    ->where('id',$id)
+                    ->where('id', $id)
                     ->delete();
                 return redirect('control/agentproduct');
                 break;
@@ -154,23 +158,53 @@ class AgentController extends Controller
 //        var_dump(array('agentOrderInfo' => $params));
         $response = $this->SoapClint->AgentOrderReq(array('agentOrderInfo' => $params));
 
-            var_dump($response);
+//        var_dump($response);
 
         $ErrorMsg = $response->AgentOrderReqResult->ErrorMsg;
 
-            if ($response->AgentOrderReqResult->ErrorCode=='0000') {
-                DB::table('agent_products_sync')
-                    ->insert(['CompanyOrderID' => $CompanyOrderID, 'OrderID' => $response->AgentOrderReqResult->OrderNo,
-                        'AddTime' => Carbon::now(),'CompanyCode'=>$CompanyCode]);
-            }
+        if ($response->AgentOrderReqResult->ErrorCode == '0000') {
+            DB::table('agent_order_sync')
+                ->insert(['CompanyOrderID' => $CompanyOrderID, 'OrderID' => $response->AgentOrderReqResult->OrderNo,
+                    'AddTime' => Carbon::now(), 'CompanyCode' => $CompanyCode]);
+        }
 
         return $ErrorMsg;
-        /* $OrderNo=$response->AgentOrderReqResult->OrderNo;*/
-//        var_dump($response->AgentOrderReqResult);
-        /* return redirect('/control/agentinterface?action=result&msg='.$ErrorMsg);
-         var_dump($response->AgentOrderReqResult);*/
-        /*    return view('control.agentinterfaceresult',compact(''));
-            var_dump($response->AgentOrderReqResult);*/
+
+    }
+
+    public function OrderCancel(Request $request)
+    {
+        $action = $request->input('action');
+        switch ($action) {
+            case 'cancel':
+                $CompanyCode = $request->input('CompanyCode');
+                $CompanyOrderID = $request->input('CompanyOrderID');
+                $TimeStamp = date('YmdHis');
+                $params = array('orderInfo' => array('TimeStamp' => $TimeStamp,
+                    'CompanyCode' => $CompanyCode,
+//                    'CompanyName' => '圆明新园测试',
+                    'CompanyOrderID' => $CompanyOrderID,
+                    'IdCardNeed' => ''));
+                try {
+//                    var_dump($params);
+                    $response = $this->SoapClint->OrderCancel($params);
+                    $ErrorMsg = $response->OrderCancelResult->ErrorMsg;
+                    if ($response->OrderCancelResult->ErrorCode == '0000') {
+                        DB::table('agent_order_cancel')
+                            ->insert(['CompanyOrderID' => $CompanyOrderID,'AddTime' => Carbon::now(),
+                                'CompanyCode' => $CompanyCode]);
+                    }
+                    return redirect('/control/agentinterface?action=result&type=cancel&msg=' . $ErrorMsg);
+
+                } catch (Exception $e) {
+                    echo 'Message: ' . $e->getMessage();
+                }
+
+                break;
+            default:
+                return view('control.agent_order_cancel');
+                break;
+        }
 
     }
 
