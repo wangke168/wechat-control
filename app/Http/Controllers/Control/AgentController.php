@@ -165,7 +165,7 @@ class AgentController extends Controller
         if ($response->AgentOrderReqResult->Result == true) {
             DB::table('agent_order_sync')
                 ->insert(['CompanyOrderID' => $CompanyOrderID, 'OrderID' => $response->AgentOrderReqResult->OrderNo,
-                    'AddTime' => Carbon::now(), 'CompanyCode' => $CompanyCode]);
+                    'AddTime' => Carbon::now(), 'CompanyCode' => $CompanyCode,'User'=>\Session::get('username')]);
         }
 
         return $ErrorMsg;
@@ -193,7 +193,7 @@ class AgentController extends Controller
                 if ($response->OrderCancelResult->Result == true) {
                     DB::table('agent_order_cancel')
                         ->insert(['CompanyOrderID' => $CompanyOrderID, 'AddTime' => Carbon::now(),
-                            'CompanyCode' => $CompanyCode]);
+                            'CompanyCode' => $CompanyCode,'User'=>\Session::get('username')]);
                 }
                 return redirect('/control/agentinterface?action=result&type=cancel&msg=' . $ErrorMsg);
 

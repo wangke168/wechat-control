@@ -16,7 +16,7 @@
 
     function button123() {
         var x=document.getElementById("orderinfo");
-        /*alert(x.value);
+     /*   alert(x.value);
         alert((x.value.split(" ") + "<br />"));*/
 
         params = x.value.split("\t");
