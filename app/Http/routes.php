@@ -114,8 +114,8 @@ Route::group(['prefix' => 'control', 'middleware' => 'control'], function () {
 
     //代理商订单衔接
     Route::any('agentinterface', 'Control\AgentController@index');
-    Route::any('agentordercancel', 'Control\AgentController@ordercancel');
-    Route::any('agentproduct', 'Control\AgentController@OrderCancel');
+    Route::any('agentordercancel', 'Control\AgentController@OrderCancel');
+    Route::any('agentproduct', 'Control\AgentController@AgentProduct');
     //修改密码
     Route::any('changpassword', 'UsersController@changpwd');
 

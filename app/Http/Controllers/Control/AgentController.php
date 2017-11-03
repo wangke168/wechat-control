@@ -63,7 +63,7 @@ class AgentController extends Controller
         }
     }
 
-    public function agentproduct(Request $request)
+    public function AgentProduct(Request $request)
     {
         $action = $request->input('action');
         switch ($action) {
