@@ -117,13 +117,18 @@
 
 
                         <div class="form-group">
-
+                            @if(Session::has('check'))
+                                <div class="alert alert-danger">
+                                    <button class="close" data-close="alert"></button>
+                                    <span>该门票ID有误，请检查 </span>
+                                </div>
+                            @endif
                             <label class="control-label  col-md-1">订单信息</label>
 
                             <div class="col-md-11">
                                 <div class="input-group">
                                    <input id="orderinfo" type="text" placeholder="订单信息" class="form-control"
-                                           name="orderinfo" value=""/>
+                                           name="orderinfo" value="{{ old('orderinfo') }}"/>
                                     {{--<textarea class="input-block-level" id="orderinfo" name="orderinfo" rows="5" style="width: 300px"></textarea>--}}
                                     <span class="input-group-btn">
                                      <button type="button" class="btn btn-Danger" onclick="button123()"><i
@@ -139,7 +144,7 @@
 
                                <div class="col-md-11">
                                    <input id="CompanyName" type="text"  placeholder="代理商名称" class="form-control input-large"
-                                          name="CompanyName"/>
+                                          name="CompanyName" value="{{ old('CompanyName') }}"/>
                                </div>
 
                            </div>
@@ -149,7 +154,7 @@
 
                             <div class="col-md-11">
                                 <input id="CompanyCode" type="text"  placeholder="代理商名称" class="form-control input-large"
-                                       name="CompanyCode"/>
+                                       name="CompanyCode" value="{{ old('CompanyCode') }}"/>
                             </div>
 
                         </div>
@@ -161,7 +166,7 @@
                             <div class="col-md-11">
 
                                 <input id="CompanyOrderID" type="text" placeholder="代理商订单号" class="form-control input-large"
-                                       name="CompanyOrderID"/>
+                                       name="CompanyOrderID" value="{{ old('CompanyOrderID') }}"/>
 
                             </div>
 
@@ -173,7 +178,7 @@
                             <div class="col-md-11">
 
                                 <input id="Products" type="text" placeholder="预订门票" class="form-control input-large"
-                                       name="Products"/>
+                                       name="Products" value="{{ old('Products') }}"/>
 
                             </div>
 
@@ -185,15 +190,10 @@
                             <div class="col-md-5">
 
                                 <input id="ProductID" type="text" placeholder="门票ID" class="form-control input-large"
-                                       name="ProductID"/>
+                                       name="ProductID" value="{{ old('ProductID') }}"/>
 
                             </div>
-                            @if(Session::has('check'))
-                                <div class="alert alert-danger">
-                                    <button class="close" data-close="alert"></button>
-                                    <span>该门票未绑定ID </span>
-                                </div>
-                            @endif
+
                         </div>
 
                         <div class="form-group">
@@ -203,7 +203,7 @@
                             <div class="col-md-11">
 
                                 <input id="ArrivalDate" type="text" placeholder="预达日期" class="form-control input-large"
-                                       name="ArrivalDate"/>
+                                       name="ArrivalDate" value="{{ old('ArrivalDate') }}"/>
 
 
                             </div>
@@ -215,7 +215,7 @@
                             <div class="col-md-11">
 
                                 <input id="VisitorName" type="text" placeholder="游客姓名" class="form-control input-large"
-                                       name="VisitorName"/>
+                                       name="VisitorName" value="{{ old('VisitorName') }}"/>
 
 
                             </div>
@@ -226,7 +226,7 @@
                             <div class="col-md-11">
 
                                 <input id="VisitorMobile" type="text" placeholder="游客手机号" class="form-control input-large"
-                                       name="VisitorMobile"/>
+                                       name="VisitorMobile" value="{{ old('VisitorMobile') }}"/>
 
 
                             </div>
@@ -237,7 +237,7 @@
                             <div class="col-md-11">
 
                                 <input id="Number" type="text" placeholder="人数" class="form-control input-large"
-                                       name="Number"/>
+                                       name="Number" value="{{ old('Number') }}"/>
 
 
                             </div>
@@ -249,7 +249,7 @@
                             <div class="col-md-11">
 
                                 <input id="OrderTime" type="text" placeholder="供应商下单时间" class="form-control input-large"
-                                       name="OrderTime"/>
+                                       name="OrderTime" value="{{ old('OrderTime') }}"/>
 
                             </div>
 

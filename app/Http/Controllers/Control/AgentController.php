@@ -44,9 +44,15 @@ class AgentController extends Controller
                 $ArrivalDate = $request->input('ArrivalDate');
                 $VisitorName = $request->input('VisitorName');
                 $VisitorMobile = $request->input('VisitorMobile');
-
-                $ErrorMsg = $this->OrderReq($viewid, $Number, $CompanyCode, $CompanyName, $CompanyOrderID, $OrderTime, $ArrivalDate, $VisitorName, $VisitorMobile);
-                return redirect('/control/agentinterface?action=result&type=sync&msg=' . $ErrorMsg);
+                if ($this->CheckAgentProduct($viewid,$ProductName,$CompanyCode)) {
+                    $ErrorMsg = $this->OrderReq($viewid, $Number, $CompanyCode, $CompanyName, $CompanyOrderID, $OrderTime, $ArrivalDate, $VisitorName, $VisitorMobile);
+                    return redirect('/control/agentinterface?action=result&type=sync&msg=' . $ErrorMsg);
+                }
+                else
+                {
+                    \Session::flash('check','failed');
+                    return redirect()->back()->withInput($request->input());
+                }
                 break;
             case 'result':
                 $ErrorMsg = $request->input('msg');
@@ -60,6 +66,22 @@ class AgentController extends Controller
             default:
                 return view('control.agentinterface');
                 break;
+        }
+    }
+
+
+    private function CheckAgentProduct($viewid,$ProductName,$CompanyCode)
+    {
+        $row=DB::table('agent_product_id')
+            ->where('product_id',$viewid)
+            ->where('product_name',$ProductName)
+            ->where('companycode',$CompanyCode)
+            ->get();
+        if ($row){
+            return true;
+        }
+        else{
+            return false;
         }
     }
 
