@@ -55,8 +55,8 @@
       <file leaf-file-name="agentinterface.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/agentinterface.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="124" column="34" lean-forward="false" selection-start-line="124" selection-start-column="34" selection-end-line="124" selection-end-column="34" />
+            <state relative-caret-position="349">
+              <caret line="51" column="76" lean-forward="false" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -89,13 +89,13 @@
       <file leaf-file-name="AgentController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+            <state relative-caret-position="636">
+              <caret line="50" column="16" lean-forward="false" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
               <folding>
                 <element signature="e#48#66#0#PHP" expanded="true" />
-                <marker date="1509755811000" expanded="true" signature="5520:5638" ph="..." />
-                <marker date="1509755811000" expanded="true" signature="5682:5833" ph="..." />
-                <marker date="1509755811000" expanded="true" signature="5868:5985" ph="..." />
+                <marker date="1509756271000" expanded="true" signature="5671:5789" ph="..." />
+                <marker date="1509756271000" expanded="true" signature="5833:5984" ph="..." />
+                <marker date="1509756271000" expanded="true" signature="6019:6136" ph="..." />
               </folding>
             </state>
           </provider>
@@ -180,6 +180,8 @@
       <find>Session::flash</find>
       <find>@if(Session::has</find>
       <find>menu</find>
+      <find>checl</find>
+      <find>productname</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -461,12 +463,12 @@
       <workItem from="1508287130018" duration="8465000" />
       <workItem from="1509001116374" duration="7000" />
       <workItem from="1509001150531" duration="8926000" />
-      <workItem from="1509335853839" duration="36147000" />
+      <workItem from="1509335853839" duration="36603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53586000" />
+    <option name="totallyTimeSpent" value="54042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -957,14 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/agentinterface.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="124" column="34" lean-forward="false" selection-start-line="124" selection-start-column="34" selection-end-line="124" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/zone_show_add.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
@@ -977,15 +971,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/agentinterface.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="51" column="76" lean-forward="false" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        <state relative-caret-position="636">
+          <caret line="50" column="16" lean-forward="false" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
           <folding>
             <element signature="e#48#66#0#PHP" expanded="true" />
-            <marker date="1509755811000" expanded="true" signature="5520:5638" ph="..." />
-            <marker date="1509755811000" expanded="true" signature="5682:5833" ph="..." />
-            <marker date="1509755811000" expanded="true" signature="5868:5985" ph="..." />
+            <marker date="1509756271000" expanded="true" signature="5671:5789" ph="..." />
+            <marker date="1509756271000" expanded="true" signature="5833:5984" ph="..." />
+            <marker date="1509756271000" expanded="true" signature="6019:6136" ph="..." />
           </folding>
         </state>
       </provider>
