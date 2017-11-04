@@ -44,15 +44,15 @@ class AgentController extends Controller
                 $ArrivalDate = $request->input('ArrivalDate');
                 $VisitorName = $request->input('VisitorName');
                 $VisitorMobile = $request->input('VisitorMobile');
-                if ($this->CheckAgentProduct($viewid,$ProductName,$CompanyCode)) {
+//                if ($this->CheckAgentProduct($viewid,$ProductName,$CompanyCode)) {
                     $ErrorMsg = $this->OrderReq($viewid, $Number, $CompanyCode, $CompanyName, $CompanyOrderID, $OrderTime, $ArrivalDate, $VisitorName, $VisitorMobile);
                     return redirect('/control/agentinterface?action=result&type=sync&msg=' . $ErrorMsg);
-                }
+                /*}
                 else
                 {
                     \Session::flash('check','failed');
                     return redirect()->back()->withInput($request->input());
-                }
+                }*/
                 break;
             case 'result':
                 $ErrorMsg = $request->input('msg');
