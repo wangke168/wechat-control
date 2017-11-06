@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/agent_cancel_list.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/agent_cancel_list.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/agent_sync_list.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/agent_sync_list.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,16 +52,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AgentController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AgentController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-880">
-              <caret line="249" column="0" lean-forward="true" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
+            <state relative-caret-position="446">
+              <caret line="192" column="87" lean-forward="false" selection-start-line="192" selection-start-column="87" selection-end-line="192" selection-end-column="87" />
               <folding>
                 <element signature="e#48#66#0#PHP" expanded="true" />
-                <marker date="1509948355000" expanded="true" signature="3968:4086" ph="..." />
-                <marker date="1509948355000" expanded="true" signature="4129:4280" ph="..." />
-                <marker date="1509948355000" expanded="true" signature="4315:4432" ph="..." />
+                <marker date="1509948699000" expanded="true" signature="3968:4086" ph="..." />
+                <marker date="1509948699000" expanded="true" signature="4129:4280" ph="..." />
+                <marker date="1509948699000" expanded="true" signature="4315:4432" ph="..." />
               </folding>
             </state>
           </provider>
@@ -78,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="agent_sync_list.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="agent_sync_list.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/agent_sync_list.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
+            <state relative-caret-position="959">
               <caret line="37" column="46" lean-forward="false" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
               <folding />
             </state>
@@ -228,9 +227,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" />
         <option value="$PROJECT_DIR$/resources/views/control/agent_cancel_list.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/agent_sync_list.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" />
       </list>
     </option>
   </component>
@@ -451,12 +450,12 @@
       <workItem from="1509001116374" duration="7000" />
       <workItem from="1509001150531" duration="8926000" />
       <workItem from="1509335853839" duration="39722000" />
-      <workItem from="1509945359037" duration="3156000" />
+      <workItem from="1509945359037" duration="3302000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60317000" />
+    <option name="totallyTimeSpent" value="60463000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -871,19 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-880">
-          <caret line="249" column="0" lean-forward="true" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
-          <folding>
-            <element signature="e#48#66#0#PHP" expanded="true" />
-            <marker date="1509948355000" expanded="true" signature="3968:4086" ph="..." />
-            <marker date="1509948355000" expanded="true" signature="4129:4280" ph="..." />
-            <marker date="1509948355000" expanded="true" signature="4315:4432" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/count_order_payed.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
@@ -910,9 +896,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/agent_sync_list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
+        <state relative-caret-position="959">
           <caret line="37" column="46" lean-forward="false" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="192" column="87" lean-forward="false" selection-start-line="192" selection-start-column="87" selection-end-line="192" selection-end-column="87" />
+          <folding>
+            <element signature="e#48#66#0#PHP" expanded="true" />
+            <marker date="1509948699000" expanded="true" signature="3968:4086" ph="..." />
+            <marker date="1509948699000" expanded="true" signature="4129:4280" ph="..." />
+            <marker date="1509948699000" expanded="true" signature="4315:4432" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

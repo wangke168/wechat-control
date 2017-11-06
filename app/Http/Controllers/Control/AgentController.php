@@ -182,13 +182,15 @@ class AgentController extends Controller
                 $type = $request->input('type');
                 if ($type == 'add') {
                     DB::table('agent_product_id')
-                        ->insert(['product_id' => $product_id, 'product_name' => $product_name, 'companycode' => $companycode]);
+                        ->insert(['product_id' => $product_id, 'product_name' => $product_name, 'companycode' => $companycode,
+                            'AddTime'=>Carbon::now(),'User'=> \Session::get('username')]);
                     return redirect('control/agentproduct');
                 } elseif ($type == 'modify') {
                     $id = $request->input('id');
                     DB::table('agent_product_id')
                         ->where('id', $id)
-                        ->update(['product_id' => $product_id, 'product_name' => $product_name, 'companycode' => $companycode]);
+                        ->update(['product_id' => $product_id, 'product_name' => $product_name, 'companycode' => $companycode,
+                            'AddTime'=>Carbon::now(),'User'=> \Session::get('username')]);
                     return redirect('control/agentproduct');
                 }
                 break;
