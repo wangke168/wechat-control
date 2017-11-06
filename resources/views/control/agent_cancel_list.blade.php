@@ -38,7 +38,7 @@
             <div class="portlet box blue-hoki">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="fa fa-globe"></i>同步列表
+                        <i class="fa fa-globe"></i>取消列表
                     </div>
                     <div class="tools">
                     </div>
@@ -51,7 +51,7 @@
                         <button type="button" class="btn btn-success" onclick="javascript:window.location.href='agentproduct?action=addproduct';">绑 定 门 票</button>
 
                     </ul>--}}
-                    <form method="POST" name="myform" action="agentsycnlist?action=search" class="navbar-form navbar-right">
+                    <form method="POST" name="myform" action="agentcancellist?action=search" class="navbar-form navbar-right">
                         <input class="m-wrap" type="text" name="keyword" class="form-control" placeholder="关键字"
                                id="keyword" value=""/><input type="hidden" name="_token" value="{{ csrf_token() }}" />
                         <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
