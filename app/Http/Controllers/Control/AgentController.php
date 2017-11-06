@@ -299,6 +299,7 @@ class AgentController extends Controller
                         ->where('CompanyOrderID',$row->CompanyOrderID)
                         ->first();
                     DB::table('agent_order_cancel')
+                        ->where('CompanyOrderID',$row->CompanyOrderID)
                         ->update(['OrderID'=>$result->OrderID]);
                 }
 
