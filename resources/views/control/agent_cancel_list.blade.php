@@ -35,7 +35,7 @@
     <div class="row">
         <div class="col-md-12">
             <!-- BEGIN EXAMPLE TABLE PORTLET-->
-            <div class="portlet box blue-hoki">
+            <div class="portlet box red-intense">
                 <div class="portlet-title">
                     <div class="caption">
                         <i class="fa fa-globe"></i>取消列表
@@ -72,7 +72,7 @@
                                 </th>
 
                                 <th>
-                                    同步时间
+                                    取消时间
                                 </th>
 
                                 <th>
