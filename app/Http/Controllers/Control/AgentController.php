@@ -228,10 +228,17 @@ class AgentController extends Controller
                     'IdCardNeed' => ''));
                 $response = $this->SoapClint->OrderCancel($params);
                 $ErrorMsg = $response->OrderCancelResult->ErrorMsg;
+
+                //获取CompanyOrderID对应的OrderID
+                $result = DB::table('agent_order_sync')
+                    ->where('CompanyOrderID', $CompanyOrderID)
+                    ->first();
+                $OrderID = $result->OrderID;
+
                 if ($response->OrderCancelResult->Result == true) {
                     DB::table('agent_order_cancel')
                         ->insert(['CompanyOrderID' => $CompanyOrderID, 'AddTime' => Carbon::now(),
-                            'CompanyCode' => $CompanyCode, 'User' => \Session::get('username')]);
+                            'CompanyCode' => $CompanyCode, 'OrderID' => $OrderID, 'User' => \Session::get('username')]);
                 }
                 return redirect('/control/agentinterface?action=result&type=cancel&msg=' . $ErrorMsg);
                 break;
@@ -240,7 +247,6 @@ class AgentController extends Controller
                 break;
         }
     }
-
 
     /**
      * 订单同步历史
@@ -252,13 +258,13 @@ class AgentController extends Controller
         $Action = $request->input('action');
         switch ($Action) {
             case 'search':
-                $Keyword=$request->input('keyword');
-                $rows=DB::table('agent_order_sync')
-                    ->where('CompanyOrderID',$Keyword)
-                    ->orWhere('OrderID',$Keyword)
-                    ->orWhere('User',$Keyword)
+                $Keyword = $request->input('keyword');
+                $rows = DB::table('agent_order_sync')
+                    ->where('CompanyOrderID', $Keyword)
+                    ->orWhere('OrderID', $Keyword)
+                    ->orWhere('User', $Keyword)
                     ->paginate(20);
-                return  view('control.agent_sync_list', compact('rows'));
+                return view('control.agent_sync_list', compact('rows'));
 
                 break;
             default:
@@ -281,32 +287,20 @@ class AgentController extends Controller
         $Action = $request->input('action');
         switch ($Action) {
             case 'search':
-                $Keyword=$request->input('keyword');
-                $rows=DB::table('agent_order_cancel')
-                    ->where('CompanyOrderID',$Keyword)
-                    ->orWhere('OrderID',$Keyword)
-                    ->orWhere('User',$Keyword)
+                $Keyword = $request->input('keyword');
+                $rows = DB::table('agent_order_cancel')
+                    ->where('CompanyOrderID', $Keyword)
+                    ->orWhere('OrderID', $Keyword)
+                    ->orWhere('User', $Keyword)
                     ->paginate(20);
-                return  view('control.agent_cancel_list', compact('rows'));
+                return view('control.agent_cancel_list', compact('rows'));
 
                 break;
             default:
-
-                $rows=DB::table('agent_order_cancel')
-                    ->get();
-                foreach ($rows as $row){
-                    $result=DB::table('agent_order_sync')
-                        ->where('CompanyOrderID',$row->CompanyOrderID)
-                        ->first();
-                    DB::table('agent_order_cancel')
-                        ->where('CompanyOrderID',$row->CompanyOrderID)
-                        ->update(['OrderID'=>$result->OrderID]);
-                }
-
-                /*$rows = DB::table('agent_order_cancel')
+                $rows = DB::table('agent_order_cancel')
                     ->orderBy('id', 'desc')
                     ->paginate(20);
-                return view('control.agent_cancel_list', compact('rows'));*/
+                return view('control.agent_cancel_list', compact('rows'));
                 break;
         }
     }

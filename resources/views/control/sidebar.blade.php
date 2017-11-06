@@ -374,6 +374,10 @@
                                         <a href="agentsycnlist">
                                             订单同步历史</a>
                                     </li>
+                                    <li>
+                                        <a href="agentcancellist">
+                                            订单取消历史</a>
+                                    </li>
                                 </ul>
                             </li>
                 {{--<li>
