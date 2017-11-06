@@ -116,6 +116,8 @@ Route::group(['prefix' => 'control', 'middleware' => 'control'], function () {
     Route::any('agentinterface', 'Control\AgentController@index');
     Route::any('agentordercancel', 'Control\AgentController@OrderCancel');
     Route::any('agentproduct', 'Control\AgentController@AgentProduct');
+    Route::any('agentsycnlist', 'Control\AgentController@AgentOrderSyncList');
+    Route::any('agentcancellist', 'Control\AgentController@AgentOrderCancelList');
     //修改密码
     Route::any('changpassword', 'UsersController@changpwd');
 

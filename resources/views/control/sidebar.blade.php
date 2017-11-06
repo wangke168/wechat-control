@@ -370,6 +370,10 @@
                                         <a href="agentproduct">
                                             门票数据管理</a>
                                     </li>
+                                    <li>
+                                        <a href="agentsycnlist">
+                                            订单同步历史</a>
+                                    </li>
                                 </ul>
                             </li>
                 {{--<li>
