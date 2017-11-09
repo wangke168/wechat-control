@@ -175,7 +175,9 @@ return [
         //出错提示
         Sentry\SentryLaravel\SentryLaravelServiceProvider::class,
 
-        Artisaninweb\SoapWrapper\ServiceProvider::class
+        Artisaninweb\SoapWrapper\ServiceProvider::class,
+
+        Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class
     ],
 
     /*
@@ -235,6 +237,7 @@ return [
         'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class,
 
         'Sentry' => Sentry\SentryLaravel\SentryFacade::class,
+
 
         'SoapWrapper' => Artisaninweb\SoapWrapper\Facade::class,
     ],

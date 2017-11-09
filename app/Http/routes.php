@@ -136,3 +136,5 @@ Route::get('soap','Test\SoapController@index');
 Route::get('json/userdairydetail', 'Control\DataController@user_dairy_detail');
 Route::get('esc', 'Test\TestController@take_esc_json');
 Route::get('json/orderdairydetail', 'Control\DataController@order_dairy_detail');
+
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');

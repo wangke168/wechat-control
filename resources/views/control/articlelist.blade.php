@@ -85,6 +85,8 @@
                             <li <?php if ($classid == 'del') echo 'class=active'; ?>><a
                                         href="/control/articlelist?classid=del">回收站</a></li>
 
+                            <li <?php if ($classid == '22') echo 'class=active'; ?>><a
+                                        href="/control/articlelist?classid=22">公告</a></li>
 
                             <form method="GET" name="myform" action="articlesearch" class="navbar-form navbar-right">
                                 <input class="m-wrap" type="text" name="keyword" class="form-control" placeholder="关键字"
