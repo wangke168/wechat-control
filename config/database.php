@@ -77,11 +77,11 @@ return [
         ],*/
         'sqlsrv' => [
             'driver' => 'sqlsrv',
-            'host' => env('DB_HOST', '192.168.1.254'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'hdymxy'),
-            'username' => env('DB_USERNAME', 'sa'),
-            'password' => env('DB_PASSWORD', 'Aa123456'),
+            'host' => env('SQLSERVER_HOST', 'localhost'),
+            'port' => env('SQLSERVER_PORT', '3306'),
+            'database' => env('SQLSERVER_DATABASE', 'forge'),
+            'username' => env('SQLSERVER_USERNAME', 'forge'),
+            'password' => env('SQLSERVER_PASSWORD', ''),
             'charset' => 'utf8',
             'prefix' => '',
         ],

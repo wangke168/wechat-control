@@ -41,7 +41,9 @@ class TestController extends Controller
 
     public function test(Request $request)
     {
-        phpinfo();
+//        $result =DB::connection('sqlsrv')->select('select * from dbo.tbdBank');
+        $result=DB::connection('sqlsrv')->table('dbo.tbdBankInfo')->get();
+        dd($result);
     }
 
     private function checkNum($number)
