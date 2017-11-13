@@ -41,19 +41,28 @@ class TestController extends Controller
 
     public function test(Request $request)
     {
+        $type = $request->input('type');
+        switch ($type) {
+            case 'info':
+                phpinfo();
+                break;
+            default:
 //        $result =DB::connection('sqlsrv')->select('select * from dbo.tbdBank');
-        $result=DB::connection('sqlsrv')->table('dbo.tbdBankInfo')->get();
-        dd($result);
+                $result = DB::connection('sqlsrv')->table('dbo.tbdEmployeeCard')
+                    ->where('DIdNumber', '330724197811270010')
+                    ->get();
+                dd($result);
+        }
     }
 
     private function checkNum($number)
     {
-        if($number>1)
-        {
+        if ($number > 1) {
             throw new \Exception("Value must be 1 or below");
         }
         return true;
     }
+
     private function decode_mime($string)
     {
         $pos = strpos($string, '=?');
