@@ -41,12 +41,7 @@ class TestController extends Controller
 
     public function test(Request $request)
     {
-        try{
-            $ss=Date('Y');
-        }
-        catch(\Exception $e){
-            echo 'Message: ' ;
-        }
+        phpinfo();
     }
 
     private function checkNum($number)

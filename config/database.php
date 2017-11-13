@@ -66,12 +66,22 @@ return [
             'engine' => null,
         ],
 
-        'sqlsrv' => [
+        /*'sqlsrv' => [
             'driver' => 'sqlsrv',
             'host' => '192.168.1.254',
             'database' => 'hdymxy',
             'username' => 'sa',
             'password' => 'Aa123456',
+            'charset' => 'utf8',
+            'prefix' => '',
+        ],*/
+        'sqlsrv' => [
+            'driver' => 'sqlsrv',
+            'host' => env('DB_HOST', '192.168.1.254'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'hdymxy'),
+            'username' => env('DB_USERNAME', 'sa'),
+            'password' => env('DB_PASSWORD', 'Aa123456'),
             'charset' => 'utf8',
             'prefix' => '',
         ],
