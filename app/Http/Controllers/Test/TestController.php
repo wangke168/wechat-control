@@ -14,6 +14,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use DB;
 use Intervention\Image\Facades\Image;
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 
 class TestController extends Controller
@@ -41,7 +42,7 @@ class TestController extends Controller
 
     public function test(Request $request)
     {
-        $type = $request->input('type');
+       /*$type = $request->input('type');
         switch ($type) {
             case 'info':
                 phpinfo();
@@ -52,7 +53,16 @@ class TestController extends Controller
                     ->where('DIdNumber', '330724197811270010')
                     ->get();
                 dd($result);
-        }
+                break;
+        }*/
+//       QrCode::
+        var_dump(QrCode::generate('Hello,LaravelAcademy!'));
+        /*$xml='<PropertyMsg><Item><Property>Adult</Property><Password>661505</Password></Item><Item><Property>Elder</Property><Password>712050</Password></Item></PropertyMsg>';
+        $info= json_decode(json_encode((array) simplexml_load_string($xml)), true);
+        return $info;*/
+
+
+
     }
 
     private function checkNum($number)

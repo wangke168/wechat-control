@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/control/employeecard.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/CardController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/CardController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Test/SoapController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Test/SoapController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Wechat/Api.php" afterPath="$PROJECT_DIR$/app/Wechat/Api.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,98 +33,65 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="664">
-              <caret line="133" column="25" lean-forward="false" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="25" />
+            <state relative-caret-position="381">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/User.php">
+      <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="248">
+              <caret line="342" column="5" lean-forward="true" selection-start-line="342" selection-start-column="5" selection-end-line="342" selection-end-column="5" />
+              <folding>
+                <element signature="e#47#68#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/database.php">
+      <file leaf-file-name="articlereviewqr.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/control/articlereviewqr.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1040">
-              <caret line="83" column="49" lean-forward="false" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
+            <state relative-caret-position="32">
+              <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="532">
+              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QrlistController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/QrlistController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+              <folding>
+                <element signature="e#47#68#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="47" column="22" lean-forward="false" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+            <state relative-caret-position="346">
+              <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="42" />
               <folding>
-                <marker date="1510560094000" expanded="true" signature="1137:1162" ph="select * fro... tbdBank" />
+                <marker date="1512458761000" expanded="true" signature="1182:1207" ph="select * fro... tbdBank" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AgentController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6496">
-              <caret line="203" column="20" lean-forward="false" selection-start-line="203" selection-start-column="20" selection-end-line="203" selection-end-column="20" />
-              <folding>
-                <element signature="e#48#66#0#PHP" expanded="true" />
-                <marker date="1509948699000" expanded="true" signature="3968:4086" ph="..." />
-                <marker date="1509948699000" expanded="true" signature="4129:4280" ph="..." />
-                <marker date="1509948699000" expanded="true" signature="4315:4432" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="articlelist.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/control/articlelist.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2816">
-              <caret line="88" column="77" lean-forward="false" selection-start-line="88" selection-start-column="77" selection-end-line="88" selection-end-column="77" />
-              <folding>
-                <marker date="1510214189000" expanded="true" signature="8379:8385" ph=" " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="articleadd.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/control/articleadd.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2432">
-              <caret line="76" column="55" lean-forward="false" selection-start-line="76" selection-start-column="55" selection-end-line="76" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Wechat/Article.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -124,8 +99,40 @@
       <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
-              <caret line="178" column="0" lean-forward="true" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+            <state relative-caret-position="-1480">
+              <caret line="172" column="27" lean-forward="false" selection-start-line="172" selection-start-column="25" selection-end-line="172" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Api.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Wechat/Api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="757">
+              <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="articlelist.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/control/articlelist.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="189" column="142" lean-forward="false" selection-start-line="189" selection-start-column="142" selection-end-line="189" selection-end-column="142" />
+              <folding>
+                <marker date="1510214189000" expanded="true" signature="8379:8385" ph=" " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-579">
+              <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -142,16 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>IdCardNeed</find>
-      <find>test</find>
-      <find>CompanyName</find>
-      <find>ArrivalDate</find>
-      <find>in</find>
-      <find>red</find>
-      <find>agent</find>
-      <find>redirect</find>
-      <find>insert</find>
-      <find>update</find>
       <find>del</find>
       <find>result</find>
       <find>@if</find>
@@ -171,7 +168,17 @@
       <find>orw</find>
       <find>articlesearch</find>
       <find>paginate</find>
+      <find>req</find>
       <find>test\</find>
+      <find>parent</find>
+      <find>Card</find>
+      <find>sess</find>
+      <find>qrc</find>
+      <find>review_qr</find>
+      <find>review_qrarticlereviewqr</find>
+      <find>预览</find>
+      <find>qr</find>
+      <find>articlereviewqr</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -183,11 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/storage/framework/views/b3cd94d5a1f1e64ba73bbfb1298063fd18262a19.php" />
-        <option value="$PROJECT_DIR$/storage/framework/views/b66482453ae9ad9d6f756a7bc1b946af12087385.php" />
-        <option value="$PROJECT_DIR$/storage/framework/views/b79b61fd7ba033009cb2c1d39f427d5045971b08.php" />
-        <option value="$PROJECT_DIR$/storage/framework/views/c07546870af14a007d894ecf7568009cc5b3c796.php" />
-        <option value="$PROJECT_DIR$/storage/framework/views/c5f9992532438f295bdd39f50a41ac01abbd2ba3.php" />
         <option value="$PROJECT_DIR$/storage/framework/views/cb8a29d2e4e816827b4a0f316b10b6da823fe22a.php" />
         <option value="$PROJECT_DIR$/storage/framework/views/cbd38717f344a8daa9c8c67e0a470805c46fd984.php" />
         <option value="$PROJECT_DIR$/storage/framework/views/d3141b808f95d767e7f86b5ab50968e4606a6847.php" />
@@ -204,13 +206,10 @@
         <option value="$PROJECT_DIR$/storage/framework/views/f16f98cd320178ace80ad4ecb5b71dcdca73d7d5.php" />
         <option value="$PROJECT_DIR$/storage/framework/views/fda32ba71f284c320e11876b5555f156abe1609d.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Control/RequestController.php" />
-        <option value="$PROJECT_DIR$/app/Wechat/Api.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php" />
         <option value="$PROJECT_DIR$/resources/views/control/zone_show_modify.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/zone_show_add.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Control/ZoneController.php" />
         <option value="$PROJECT_DIR$/app/Wechat/Soap.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Test/SoapController.php" />
         <option value="$PROJECT_DIR$/resources/views/control/articleadd.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/agent_products_add.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/agent_products_modify.blade.php" />
@@ -219,21 +218,29 @@
         <option value="$PROJECT_DIR$/resources/views/control/agent_order_cancel.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/articlecopy.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/agentinterfaceresult.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/control/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/agentinterface.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/blade/data.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/mark_count.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/agent_cancel_list.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/control/agent_sync_list.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" />
         <option value="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/config/database.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Test/SoapController.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/qy_tglm_add.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/employeecard.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Control/CardController.php" />
         <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/Wechat/Api.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/articlereviewqr.blade.php" />
       </list>
     </option>
   </component>
@@ -283,8 +290,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,30 +299,52 @@
             </path>
             <path>
               <item name="lesson" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechat-control" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lesson" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechat-control" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lesson" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechat-control" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lesson" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechat-control" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lesson" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/config/app.php&#10;qrlist&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/qrlist.blade.php&#10;order&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/count_order_payed.blade.php&#10;side&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;article&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ArticleController.php&#10;articles&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articlesearch.blade.php&#10;sid&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;agent&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/agent_products_list.blade.php&#10;dat&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/blade/data.blade.php&#10;arti&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ArticleController.php&#10;si&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;requ&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/request_txt_add.blade.php&#10;rou&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/routes.php&#10;ke&#9;ACTION&#9;ChangeKeymap&#10;keymap&#9;ACTION&#9;ChangeKeymap&#10;keym&#9;ACTION&#9;Help.KeymapReference&#10;request_v&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/request_voice_list.blade.php&#10;showli&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/zone_show_list.blade.php&#10;Acc&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;ar&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ArticleController.php&#10;action_crawler.php&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/laravel-ueditor/src/assets/ueditor/php/action_crawler.php&#10;ueditor.config.js&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.config.js&#10;ueditor&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.all.js&#10;sidebar&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;index&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/index.blade.php&#10;vo&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/request_voice_modify.blade.php&#10;A&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;sideb&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;Tes&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php&#10;Artic&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articlelist.blade.php&#10;Zon&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ZoneController.php&#10;Ar&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articleadd.blade.php&#10;bootstrap-datepicker.&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/public/assets/global/plugins/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js&#10;components-p&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/public/assets/admin/pages/scripts/components-pickers.js&#10;Zo&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Wechat/Zone.php&#10;Z&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ZoneController.php&#10;Te&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php&#10;Qrc&#9;null&#9;null&#10;sho&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/zone_show_add.blade.php&#10;show&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/zone_show_add.blade.php&#10;push&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/push_project_add.blade.php&#10;Art&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articlemodify.blade.php&#10;Article&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articleadd.blade.php&#10;Js&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Js/Js.php&#10;tes&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php&#10;z&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ZoneController.php&#10;pus&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/push_project_modify.blade.php&#10;pu&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/push_project_list.blade.php&#10;log&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/login.blade.php&#10;login.&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/login.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="test&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php&#10;ag&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/AgentController.php&#10;side&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;a&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/AgentController.php&#10;soa&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/SoapController.php&#10;soap&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/SoapController.php&#10;agent&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/AgentController.php&#10;app&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/config/app.php&#10;qrlist&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/qrlist.blade.php&#10;order&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/count_order_payed.blade.php&#10;article&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ArticleController.php&#10;articles&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articlesearch.blade.php&#10;sid&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;dat&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/blade/data.blade.php&#10;arti&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ArticleController.php&#10;si&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;requ&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/request_txt_add.blade.php&#10;rou&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/routes.php&#10;ke&#9;ACTION&#9;ChangeKeymap&#10;keymap&#9;ACTION&#9;ChangeKeymap&#10;keym&#9;ACTION&#9;Help.KeymapReference&#10;request_v&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/request_voice_list.blade.php&#10;showli&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/zone_show_list.blade.php&#10;Acc&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;ar&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ArticleController.php&#10;action_crawler.php&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/laravel-ueditor/src/assets/ueditor/php/action_crawler.php&#10;ueditor.config.js&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.config.js&#10;ueditor&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/laravel-ueditor/src/assets/ueditor/ueditor.all.js&#10;sidebar&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;index&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/index.blade.php&#10;vo&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/request_voice_modify.blade.php&#10;A&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Core/AccessToken.php&#10;sideb&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/sidebar.blade.php&#10;Tes&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php&#10;Artic&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articlelist.blade.php&#10;Zon&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ZoneController.php&#10;Ar&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articleadd.blade.php&#10;bootstrap-datepicker.&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/public/assets/global/plugins/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js&#10;components-p&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/public/assets/admin/pages/scripts/components-pickers.js&#10;Zo&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Wechat/Zone.php&#10;Z&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Control/ZoneController.php&#10;Te&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php&#10;Qrc&#9;null&#9;null&#10;sho&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/zone_show_add.blade.php&#10;show&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/zone_show_add.blade.php&#10;push&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/push_project_add.blade.php&#10;Art&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articlemodify.blade.php&#10;Article&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/resources/views/control/articleadd.blade.php&#10;Js&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/vendor/overtrue/wechat/src/Js/Js.php&#10;tes&#9;FILE&#9;file:///Volumes/Result/Code/wechat-control/app/Http/Controllers/Test/TestController.php" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/control" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Test" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Control" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Api" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/control" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -382,29 +409,36 @@
       <workItem from="1509335853839" duration="39722000" />
       <workItem from="1509945359037" duration="4429000" />
       <workItem from="1510214069549" duration="860000" />
-      <workItem from="1510216045720" duration="5113000" />
+      <workItem from="1510216045720" duration="6878000" />
+      <workItem from="1510637943630" duration="6097000" />
+      <workItem from="1510731868999" duration="1220000" />
+      <workItem from="1511422792084" duration="306000" />
+      <workItem from="1511509889240" duration="4013000" />
+      <workItem from="1512030182174" duration="2425000" />
+      <workItem from="1512357256120" duration="78000" />
+      <workItem from="1512457188136" duration="1563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67563000" />
+    <option name="totallyTimeSpent" value="85030000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1996805" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21458998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956523" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956523" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -456,48 +490,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/control/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ApiController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/UserDairyDetail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="59" column="58" lean-forward="false" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Wechat/Zone.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1312">
-          <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/zone_show_modify.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2912">
-          <caret line="91" column="12" lean-forward="false" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Wechat/Soap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1739">
-          <caret line="56" column="1" lean-forward="false" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/a2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -516,13 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1507">
           <caret line="267" column="80" lean-forward="false" selection-start-line="267" selection-start-column="80" selection-end-line="267" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -603,36 +588,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="135" column="60" lean-forward="false" selection-start-line="135" selection-start-column="60" selection-end-line="135" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/agentinterfaceresult.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="45" column="58" lean-forward="false" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Test/SoapController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="53" selection-end-column="9" />
-          <folding>
-            <marker date="1509073788000" expanded="true" signature="2190:2335" ph="..." />
-            <marker date="1509073788000" expanded="true" signature="2375:2520" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ZoneController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -640,15 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
           <caret line="40" column="23" lean-forward="false" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/QrlistController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5440">
-          <caret line="176" column="20" lean-forward="false" selection-start-line="176" selection-start-column="20" selection-end-line="177" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -656,20 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
           <caret line="61" column="19" lean-forward="true" selection-start-line="61" selection-start-column="19" selection-end-line="66" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/agentinterface.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="51" column="76" lean-forward="false" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/blade/data.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -705,23 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1728">
           <caret line="54" column="148" lean-forward="false" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="148" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3744">
-          <caret line="123" column="17" lean-forward="false" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12064">
-          <caret line="377" column="60" lean-forward="false" selection-start-line="377" selection-start-column="60" selection-end-line="377" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,7 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1184">
           <caret line="37" column="47" lean-forward="false" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -737,7 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1248">
           <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,7 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1184">
           <caret line="37" column="46" lean-forward="false" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -753,30 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
           <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6496">
-          <caret line="203" column="20" lean-forward="false" selection-start-line="203" selection-start-column="20" selection-end-line="203" selection-end-column="20" />
-          <folding>
-            <element signature="e#48#66#0#PHP" expanded="true" />
-            <marker date="1509948699000" expanded="true" signature="3968:4086" ph="..." />
-            <marker date="1509948699000" expanded="true" signature="4129:4280" ph="..." />
-            <marker date="1509948699000" expanded="true" signature="4315:4432" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/articlelist.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2816">
-          <caret line="88" column="77" lean-forward="false" selection-start-line="88" selection-start-column="77" selection-end-line="88" selection-end-column="77" />
-          <folding>
-            <marker date="1510214189000" expanded="true" signature="8379:8385" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -784,7 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2432">
           <caret line="76" column="55" lean-forward="false" selection-start-line="76" selection-start-column="55" selection-end-line="76" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,15 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="178" column="0" lean-forward="true" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -808,41 +690,195 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/blade/data.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="737">
+          <caret line="39" column="4" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/agentinterfaceresult.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="45" column="58" lean-forward="false" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12256">
+          <caret line="383" column="41" lean-forward="false" selection-start-line="383" selection-start-column="29" selection-end-line="383" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/qy_tglm_add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="894">
+          <caret line="53" column="56" lean-forward="false" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Test/SoapController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1791">
+          <caret line="75" column="40" lean-forward="false" selection-start-line="72" selection-start-column="21" selection-end-line="75" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1504">
+          <caret line="53" column="20" lean-forward="false" selection-start-line="53" selection-start-column="20" selection-end-line="54" selection-end-column="76" />
+          <folding>
+            <element signature="e#48#66#0#PHP" expanded="true" />
+            <marker date="1510561598000" expanded="true" signature="3968:4086" ph="..." />
+            <marker date="1510561598000" expanded="true" signature="4129:4280" ph="..." />
+            <marker date="1510561598000" expanded="true" signature="4315:4432" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/agentinterface.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4672">
+          <caret line="146" column="60" lean-forward="false" selection-start-line="146" selection-start-column="60" selection-end-line="146" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/employeecard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2368">
+          <caret line="74" column="59" lean-forward="false" selection-start-line="74" selection-start-column="59" selection-end-line="74" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/CardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1024">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="e#48#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/overtrue/wechat/src/Core/AccessToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="121" column="31" lean-forward="false" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
+          <folding>
+            <element signature="e#429#448#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="54" column="7" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="83" column="49" lean-forward="false" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
+        <state relative-caret-position="-579">
+          <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://$PROJECT_DIR$/app/Wechat/Api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="757">
+          <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/articlelist.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="189" column="142" lean-forward="false" selection-start-line="189" selection-start-column="142" selection-end-line="189" selection-end-column="142" />
+          <folding>
+            <marker date="1510214189000" expanded="true" signature="8379:8385" ph=" " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="133" column="25" lean-forward="false" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="25" />
+        <state relative-caret-position="381">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/QrlistController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding>
+            <element signature="e#47#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1480">
+          <caret line="172" column="27" lean-forward="false" selection-start-line="172" selection-start-column="25" selection-end-line="172" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="47" column="22" lean-forward="false" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+        <state relative-caret-position="346">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="42" />
           <folding>
-            <marker date="1510560094000" expanded="true" signature="1137:1162" ph="select * fro... tbdBank" />
+            <marker date="1512458761000" expanded="true" signature="1182:1207" ph="select * fro... tbdBank" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="342" column="5" lean-forward="true" selection-start-line="342" selection-start-column="5" selection-end-line="342" selection-end-column="5" />
+          <folding>
+            <element signature="e#47#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/articlereviewqr.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

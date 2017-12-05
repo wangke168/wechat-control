@@ -32,7 +32,7 @@
 
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search...">
-							<span class="input-group-btn">
+                        <span class="input-group-btn">
 							<a href="javascript:;" class="btn submit"><i class="icon-magnifier"></i></a>
 							</span>
                     </div>
@@ -46,7 +46,7 @@
                     data-original-title="公告牌">
                     <a href="index">
                         <i class="icon-home"></i>
-					<span class="title">
+                        <span class="title">
 					公告牌 </span>
                     </a>
                 </li>
@@ -72,13 +72,13 @@
                     </ul>
                 </li>
                 <!-- END MARKET MENU-->
-                @endif
+            @endif
             @if (Session::get('managelevel')=='4')
                 <li class="tooltips" data-container="body" data-placement="right" data-html="true"
                     data-original-title="公告牌">
                     <a href="index">
                         <i class="icon-home"></i>
-					<span class="title">
+                        <span class="title">
 					公告牌 </span>
                     </a>
                 </li>
@@ -125,14 +125,14 @@
                 </li>
                 </li>
                 <!-- END MARKET MENU-->
-                @endif
-                @if (Session::get('managelevel')=='3')
-                        <!-- BEGIN ANGULARJS LINK -->
+            @endif
+            @if (Session::get('managelevel')=='3')
+            <!-- BEGIN ANGULARJS LINK -->
                 <li class="tooltips" data-container="body" data-placement="right" data-html="true"
                     data-original-title="公告牌">
                     <a href="index">
                         <i class="icon-home"></i>
-					<span class="title">
+                        <span class="title">
 					公告牌 </span>
                     </a>
                 </li>
@@ -258,7 +258,7 @@
                     <ul class="sub-menu">
                         <?php
                         $rows = DB::table('wx_qrscene_class')
-                                ->get();
+                            ->get();
                         foreach ($rows as $row) {
                             echo "<li><a href='qrlist?classid=" . $row->classid . "'>" . $row->class_name . "</a></li>";
                         }
@@ -349,44 +349,50 @@
                         </li>
                     </ul>
                 </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <i class="icon-shuffle"></i>
-                                    <span class="title">代理商订单衔接 </span>
-                                    <span class="arrow "></span>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li>
-                                        <a href="agentinterface">
-                                            <span class="title">同步订单</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="agentordercancel">
-                                            <span class="title">取消订单</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="agentproduct">
-                                            门票数据管理</a>
-                                    </li>
-                                    <li>
-                                        <a href="agentsycnlist">
-                                            订单同步历史</a>
-                                    </li>
-                                    <li>
-                                        <a href="agentcancellist">
-                                            订单取消历史</a>
-                                    </li>
-                                </ul>
-                            </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="icon-shuffle"></i>
+                        <span class="title">代理商订单衔接 </span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="agentinterface">
+                                <span class="title">同步订单</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="agentordercancel">
+                                <span class="title">取消订单</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="agentproduct">
+                                门票数据管理</a>
+                        </li>
+                        <li>
+                            <a href="agentsycnlist">
+                                订单同步历史</a>
+                        </li>
+                        <li>
+                            <a href="agentcancellist">
+                                订单取消历史</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="employeecard">
+                        <i class="icon-equalizer"></i>
+                        <span class="title">年卡查询</span>
+                    </a>
+                </li>
                 {{--<li>
                     <a href="agentinterface">
                         <i class="icon-equalizer"></i>
                         <span class="title">代理商订单衔接</span>
                     </a>
                 </li>--}}
-                <!-- END MARKET MENU -->
+            <!-- END MARKET MENU -->
             @endif
             <li>
                 <a href="changpassword">

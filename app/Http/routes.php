@@ -118,6 +118,10 @@ Route::group(['prefix' => 'control', 'middleware' => 'control'], function () {
     Route::any('agentproduct', 'Control\AgentController@AgentProduct');
     Route::any('agentsycnlist', 'Control\AgentController@AgentOrderSyncList');
     Route::any('agentcancellist', 'Control\AgentController@AgentOrderCancelList');
+
+    //年卡查询
+    Route::any('employeecard', 'Control\CardController@index');
+
     //修改密码
     Route::any('changpassword', 'UsersController@changpwd');
 
