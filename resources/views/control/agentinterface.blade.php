@@ -144,7 +144,7 @@
 
                                <div class="col-md-11">
                                    <input id="CompanyName" type="text"  placeholder="代理商名称" class="form-control input-large"
-                                          name="CompanyName" value="{{ old('CompanyName') }}"/>
+                                          name="CompanyName"i/>
                                </div>
 
                            </div>

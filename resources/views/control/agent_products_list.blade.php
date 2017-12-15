@@ -49,7 +49,8 @@
 
 
                         <button type="button" class="btn btn-success" onclick="javascript:window.location.href='agentproduct?action=addproduct';">绑 定 门 票</button>
-
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="button" class="btn btn-danger" >成人票之外的票性质请在门票ID前加相应代号。&nbsp;&nbsp;老人:O&nbsp;&nbsp;半票:C&nbsp;&nbsp;教师:T&nbsp;&nbsp;学生:S</button>
                     </ul>
                     <div class="tab-content">
                         <table class="table table-striped table-bordered table-hover" id="sample_1">

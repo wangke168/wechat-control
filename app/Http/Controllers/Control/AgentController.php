@@ -117,12 +117,35 @@ class AgentController extends Controller
      */
     private function OrderReq($viewid, $Number, $CompanyCode, $CompanyName, $CompanyOrderID, $OrderTime, $ArrivalDate, $VisitorName, $VisitorMobile)
     {
+        if(substr( $viewid, 0, 1 )=='O')
+        {
+            $Property='Elder';
+            $viewid=str_replace("O","",$viewid);
+        }
+        elseif (substr( $viewid, 0, 1 )=='C')
+        {
+            $Property='Child';
+            $viewid=str_replace("C","",$viewid);
+        }
+        elseif (substr( $viewid, 0, 1 )=='S')
+        {
+            $Property='Student';
+            $viewid=str_replace("S","",$viewid);
+        }
+        elseif (substr( $viewid, 0, 1 )=='T')
+        {
+            $Property='Teacher';
+            $viewid=str_replace("T","",$viewid);
+        }
+        else{
+            $Property='Adult';
+        }
         $products = "<product>
                     <viewid>$viewid</viewid>
                     <viewname></viewname>
                     </product>";
         $property = "<PropertyAndNumber>
-                    <Property>Adult</Property>
+                    <Property>$Property</Property>
                     <Number>$Number</Number>                  
                     </PropertyAndNumber>";
         $other = "<OtherVisitor>
