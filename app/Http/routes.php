@@ -74,6 +74,7 @@ Route::group(['prefix' => 'control', 'middleware' => 'control'], function () {
     Route::get('ordercount', 'Control\DataController@ordersend');
     Route::get('ordercountsearch', 'Control\DataController@ordersend_search');
     Route::get('orderaction', 'Control\DataController@orderaction');
+    Route::get('cardcount', 'Control\DataController@CardCount');
     //市场数据统计
     Route::get('countmarket', 'Control\DataController@market');
     Route::post('countmarket', 'Control\DataController@market');
@@ -135,7 +136,7 @@ Route::get('api/mobile', 'Api\ApiController@api_mobile');
 Route::get('zone/map', 'ZoneController@map');
 
 
-Route::get('test', 'Test\TestController@test');
+Route::get('test', 'Test\TestController@index');
 Route::get('soap','Test\SoapController@index');
 Route::get('json/userdairydetail', 'Control\DataController@user_dairy_detail');
 Route::get('esc', 'Test\TestController@take_esc_json');

@@ -169,4 +169,14 @@ class DataController extends Controller
         }
         return view('control.count_market_info');
     }
+
+    //各部门年卡订单管理
+    public function CardCount()
+    {
+        $rows = DB::table('wx_order_detail')
+            ->whereDate('adddate','>=','2017-1-1')
+            ->orderBy('id', 'desc')
+            ->paginate(20);
+        return view('control.count_order_nianka_payed', compact('rows'));
+    }
 }

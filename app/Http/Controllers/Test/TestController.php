@@ -15,7 +15,7 @@ use App\Http\Requests;
 use DB;
 use Intervention\Image\Facades\Image;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
-
+use SoapClient;
 
 class TestController extends Controller
 {
@@ -27,7 +27,7 @@ class TestController extends Controller
     public $staff;
     public $session;
     public $material;
-
+    private $SoapClint;
     public function __construct(Application $app)
     {
         $this->app = $app;
@@ -38,7 +38,42 @@ class TestController extends Controller
         $this->session = $app->staff_session; // 客服会话管理
 
         $this->material = $app->material;
+        $wsdl = env('AGENT_WSDL', '');
+        $this->SoapClint = new SoapClient($wsdl);
     }
+
+    public function index(Request $request)
+    {
+        $action=$request->action;
+        switch ($action){
+            case 'orderquery':
+                var_dump($this->TestQuery('DL20180103033707','mtddmp12738yhs'));
+                break;
+            default:
+                break;
+        }
+    }
+
+    /**
+     * 测试美团查询接口
+     * @param $OrderID
+     * @param $CompanyCode
+     */
+    private function TestQuery($CompanyOrderID,$CompanyCode)
+    {
+        $TimeStamp = date('YmdHis');
+        $params = array('TimeStamp' => $TimeStamp,
+            'CompanyCode' => $CompanyCode,
+            'CompanyOrderID' => $CompanyOrderID,
+//            'IdCardNeed' => 'dfs',
+        );
+        $response = $this->SoapClint->OrderStatusCheck(array('orderInfo' => $params));
+//        return $response;
+        $ErrorMsg = $response->OrderStatusCheckResult;
+
+        return $ErrorMsg;
+    }
+
 
     public function test(Request $request)
     {
@@ -84,20 +119,6 @@ class TestController extends Controller
         }
     }
 
-    public function index()
-    {
-        $from = date("Y-m-d", strtotime("-1 day"));
-        $to = date("Y-m-d");
-        echo $from;
-        echo $to;
-        $row = DB::table('wx_order_send')
-            //           ->whereDate('adddate', '>=', '2016-10-12')
-            //           ->whereDate('adddate', '<', '2016-10-13')
-            ->whereDate('adddate', '>=', date("Y-m-d", strtotime("-1 day")))
-            ->whereDate('adddate', '<', date("Y-m-d"))
-            ->count();
-        return $row;
-    }
 
     public function take_add_json(Request $request)
     {

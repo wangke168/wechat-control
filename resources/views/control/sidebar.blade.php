@@ -233,6 +233,10 @@
                             <a href="menuclickcount">
                                 菜单点击数</a>
                         </li>
+                        <li>
+                            <a href="cardcount">
+                                年卡数据</a>
+                        </li>
                         {{--          <li>
                                      <a href="table_managed.html">
                                          Managed Datatables</a>
