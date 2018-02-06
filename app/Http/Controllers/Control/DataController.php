@@ -175,6 +175,8 @@ class DataController extends Controller
     {
         $rows = DB::table('wx_order_detail')
             ->whereDate('adddate','>=','2017-1-1')
+            ->orderBy('eventkey','asc')
+            ->orderBy('ticket','asc')
             ->orderBy('id', 'desc')
             ->paginate(20);
         return view('control.count_order_nianka_payed', compact('rows'));
