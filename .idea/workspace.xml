@@ -4,7 +4,6 @@
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/count_order_nianka_payed.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/count_order_nianka_payed.blade.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +26,7 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="2144">
               <caret line="76" column="61" lean-forward="false" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="61" />
               <folding />
             </state>
@@ -37,8 +36,8 @@
       <file leaf-file-name="DataController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="737">
-              <caret line="179" column="37" lean-forward="false" selection-start-line="179" selection-start-column="37" selection-end-line="179" selection-end-column="37" />
+            <state relative-caret-position="629">
+              <caret line="177" column="37" lean-forward="false" selection-start-line="177" selection-start-column="37" selection-end-line="177" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -47,8 +46,8 @@
       <file leaf-file-name="count_order_nianka_payed.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/count_order_nianka_payed.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="104" column="36" lean-forward="true" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
+            <state relative-caret-position="3328">
+              <caret line="104" column="36" lean-forward="false" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -105,7 +104,7 @@
       <file leaf-file-name="AgentController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8384">
+            <state relative-caret-position="8192">
               <caret line="262" column="6" lean-forward="false" selection-start-line="262" selection-start-column="6" selection-end-line="262" selection-end-column="6" />
               <folding>
                 <element signature="e#48#66#0#PHP" expanded="true" />
@@ -270,7 +269,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -338,6 +336,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -436,19 +435,20 @@
       <workItem from="1515632705125" duration="61000" />
       <workItem from="1517536667355" duration="3371000" />
       <workItem from="1517821107455" duration="2033000" />
-      <workItem from="1517880290713" duration="191000" />
+      <workItem from="1517880290713" duration="280000" />
+      <workItem from="1517881541255" duration="23000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97870000" />
+    <option name="totallyTimeSpent" value="97982000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18743344" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18903089" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -822,7 +822,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8384">
+        <state relative-caret-position="8192">
           <caret line="262" column="6" lean-forward="false" selection-start-line="262" selection-start-column="6" selection-end-line="262" selection-end-column="6" />
           <folding>
             <element signature="e#48#66#0#PHP" expanded="true" />
@@ -843,7 +843,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="2144">
           <caret line="76" column="61" lean-forward="false" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="61" />
           <folding />
         </state>
@@ -853,7 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -882,16 +881,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/count_order_nianka_payed.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="104" column="36" lean-forward="true" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
+        <state relative-caret-position="3328">
+          <caret line="104" column="36" lean-forward="false" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="179" column="37" lean-forward="false" selection-start-line="179" selection-start-column="37" selection-end-line="179" selection-end-column="37" />
+        <state relative-caret-position="629">
+          <caret line="177" column="37" lean-forward="false" selection-start-line="177" selection-start-column="37" selection-end-line="177" selection-end-column="37" />
           <folding />
         </state>
       </provider>

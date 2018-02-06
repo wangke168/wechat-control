@@ -175,6 +175,7 @@ class DataController extends Controller
     {
         $rows = DB::table('wx_order_detail')
             ->whereDate('adddate','>=','2017-1-1')
+            ->orderBy('adddate','desc')
             ->orderBy('eventkey','asc')
             ->orderBy('ticket','asc')
             ->orderBy('numbers','desc')
