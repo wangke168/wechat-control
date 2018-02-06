@@ -92,7 +92,7 @@
                         @foreach($rows as $row)
                             <tr>
                                 <td>
-                                    <a href="http://e.hengdianworld.com/Admin_VisitorOrderView.aspx?SellID={!! $row->sellid !!}" target="_blank"> {!! $row->sellid !!}</a>
+                                    <a href="http://ydpt.hdyuanmingxianyuan.com/Admin_VisitorOrderView.aspx?SellID={!! $row->sellid !!}" target="_blank"> {!! $row->sellid !!}</a>
                                 </td>
 
 

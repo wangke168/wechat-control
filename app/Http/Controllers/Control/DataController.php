@@ -177,6 +177,7 @@ class DataController extends Controller
             ->whereDate('adddate','>=','2017-1-1')
             ->orderBy('eventkey','asc')
             ->orderBy('ticket','asc')
+            ->orderBy('numbers','desc')
             ->orderBy('id', 'desc')
             ->paginate(20);
         return view('control.count_order_nianka_payed', compact('rows'));
