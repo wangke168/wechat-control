@@ -10,6 +10,11 @@
         <!--日历-->
 <link rel="stylesheet" type="text/css"
       href="{{asset('assets/global/plugins/bootstrap-datepicker/css/datepicker3.css')}}"/>
+        <link rel="stylesheet" type="text/css"
+              href="{{asset('assets/global/plugins/bootstrap-select/bootstrap-select.min.css')}}"/>
+        <link rel="stylesheet" type="text/css" href="{{asset('assets/global/plugins/select2/select2.css')}}"/>
+        <link rel="stylesheet" type="text/css"
+              href="{{asset('assets/global/plugins/jquery-multi-select/css/multi-select.css')}}"/>
 @stop
 @section('page-bar')
     <div class="page-bar">
@@ -43,10 +48,30 @@
                     </div>
                 </div>
                 <div class="portlet-body">
-                    <form method="GET" name="myform" action="/control/ordercountsearch" class="navbar-form navbar-right">
-
+                    <form method="GET" name="myform" action="/control/niankacountsearch" class="navbar-form navbar-right">
+                        <select name="eventkey" class="form-control input-medium select2me"
+                                data-placeholder="Select...">
+                            <option value="1019">春苑</option>
+                            <option value="1024">夜福海</option>
+                            <option value="1020">夏苑</option>
+                            <option value="1023">火烧</option>
+                            <option value="1021">秋苑</option>
+                            <option value="1022">冬苑</option>
+                            <option value="1025">动物</option>
+                            <option value="1026">冰雪</option>
+                            <option value="1027">办公室</option>
+                            <option value="1028">售票</option>
+                            <option value="1029">检票</option>
+                            <option value="1030">车辆</option>
+                            <option value="1031">高科</option>
+                            <option value="1032">警卫</option>
+                            <option value="1033">演艺管理部</option>
+                        </select>
                     <div class="input-group input-large date-picker input-daterange" data-date="10/11/2012"
                          data-date-format="yyyy/mm/dd">
+
+
+
                         <input type="text" class="form-control" name="from"
                                value="">
 												<span class="input-group-addon">
@@ -132,6 +157,13 @@
     @stop
 
     @section('js')
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script type="text/javascript"
+                src="{{asset('assets/global/plugins/bootstrap-select/bootstrap-select.min.js')}}"></script>
+        <script type="text/javascript" src="{{asset('assets/global/plugins/select2/select2.min.js')}}"></script>
+        <script type="text/javascript"
+                src="{{asset('assets/global/plugins/jquery-multi-select/js/jquery.multi-select.js')}}"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
 
             <!--日历-->
     <script type="text/javascript"
