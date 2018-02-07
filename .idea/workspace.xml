@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/control/count_order_card_payed.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/count_order_card_payed.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/count_order_card_payed.blade.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,9 +49,17 @@
       <file leaf-file-name="count_order_card_payed.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/control/count_order_card_payed.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="167" column="55" lean-forward="false" selection-start-line="167" selection-start-column="55" selection-end-line="167" selection-end-column="55" />
-              <folding />
+            <state relative-caret-position="387">
+              <caret line="1782" column="7" lean-forward="false" selection-start-line="1782" selection-start-column="7" selection-end-line="1782" selection-end-column="7" />
+              <folding>
+                <element signature="e#1250#10697#0#HTML" expanded="false" />
+                <element signature="e#6008#10686#0#HTML" expanded="false" />
+                <element signature="e#10702#20205#0#HTML" expanded="false" />
+                <element signature="e#15463#20194#0#HTML" expanded="false" />
+                <element signature="e#20210#29704#0#HTML" expanded="false" />
+                <element signature="e#24969#29693#0#HTML" expanded="false" />
+                <element signature="e#29735#34460#0#HTML" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -436,12 +442,12 @@
       <workItem from="1517536667355" duration="3371000" />
       <workItem from="1517821107455" duration="2033000" />
       <workItem from="1517880290713" duration="280000" />
-      <workItem from="1517881541255" duration="6771000" />
+      <workItem from="1517881541255" duration="7632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104730000" />
+    <option name="totallyTimeSpent" value="105591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -899,9 +905,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/count_order_card_payed.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="167" column="55" lean-forward="false" selection-start-line="167" selection-start-column="55" selection-end-line="167" selection-end-column="55" />
-          <folding />
+        <state relative-caret-position="387">
+          <caret line="1782" column="7" lean-forward="false" selection-start-line="1782" selection-start-column="7" selection-end-line="1782" selection-end-column="7" />
+          <folding>
+            <element signature="e#1250#10697#0#HTML" expanded="false" />
+            <element signature="e#6008#10686#0#HTML" expanded="false" />
+            <element signature="e#10702#20205#0#HTML" expanded="false" />
+            <element signature="e#15463#20194#0#HTML" expanded="false" />
+            <element signature="e#20210#29704#0#HTML" expanded="false" />
+            <element signature="e#24969#29693#0#HTML" expanded="false" />
+            <element signature="e#29735#34460#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
