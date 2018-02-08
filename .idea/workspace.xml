@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/control/count_order_card_payed_search.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/count_order_card_payed.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/count_order_card_payed.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/count_order_card_payed_search.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/count_order_card_payed_search.blade.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,7 +45,7 @@
       <file leaf-file-name="count_order_card_payed.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/control/count_order_card_payed.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
+            <state relative-caret-position="-5138">
               <caret line="43" column="73" lean-forward="false" selection-start-line="43" selection-start-column="73" selection-end-line="43" selection-end-column="73" />
               <folding />
             </state>
@@ -60,8 +55,8 @@
       <file leaf-file-name="count_order_card_payed_search.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/control/count_order_card_payed_search.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="1766" column="38" lean-forward="true" selection-start-line="1766" selection-start-column="38" selection-end-line="1766" selection-end-column="38" />
+            <state relative-caret-position="-3735">
+              <caret line="201" column="61" lean-forward="false" selection-start-line="201" selection-start-column="61" selection-end-line="201" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -152,8 +147,8 @@
       <find>ordersend_search</find>
       <find>searc</find>
       <find>CardSearchCount</find>
-      <find>Bordered Table</find>
       <find>-&gt;whereDate('adddate', '=', date(&quot;Y-m-d&quot;, strtotime(&quot;-1 day&quot;)))</find>
+      <find>Bordered Table</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -214,8 +209,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/control/count_order_card_payed.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/control/count_order_card_payed_search.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/count_order_card_payed_search.blade.php" />
       </list>
     </option>
   </component>
@@ -446,12 +441,12 @@
       <workItem from="1517536667355" duration="3371000" />
       <workItem from="1517821107455" duration="2033000" />
       <workItem from="1517880290713" duration="280000" />
-      <workItem from="1517881541255" duration="10304000" />
+      <workItem from="1517881541255" duration="10540000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108263000" />
+    <option name="totallyTimeSpent" value="108499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -889,14 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/count_order_card_payed.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="43" column="73" lean-forward="false" selection-start-line="43" selection-start-column="73" selection-end-line="43" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="683">
@@ -907,10 +894,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/count_order_card_payed.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5138">
+          <caret line="43" column="73" lean-forward="false" selection-start-line="43" selection-start-column="73" selection-end-line="43" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/count_order_card_payed_search.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="1766" column="38" lean-forward="true" selection-start-line="1766" selection-start-column="38" selection-end-line="1766" selection-end-column="38" />
+        <state relative-caret-position="-3735">
+          <caret line="201" column="61" lean-forward="false" selection-start-line="201" selection-start-column="61" selection-end-line="201" selection-end-column="61" />
           <folding />
         </state>
       </provider>

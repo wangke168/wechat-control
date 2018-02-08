@@ -198,7 +198,8 @@
                         <?php
                         $rows = \DB::table('wx_order_detail')
                             ->where('eventkey', '1020')
-                            ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                            ->whereDate('adddate', '>=', $from)
+                            ->whereDate('adddate', '<=', $to)
                             ->groupBy('ticket')
                             ->get();
                         ?>
