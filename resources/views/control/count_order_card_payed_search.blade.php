@@ -80,7 +80,8 @@
                         <?php
                         $rows = \DB::table('wx_order_detail')
                             ->where('eventkey', '1019')
-                            ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                            ->whereDate('adddate', '>=', $from)
+                            ->whereDate('adddate', '<=', $to)
                             ->groupBy('ticket')
                             ->get();
                         ?>
@@ -110,7 +111,8 @@
                             $result = \DB::table('wx_order_detail')
                                 ->where('ticket', $row->ticket)
                                 ->where('eventkey', '1019')
-                                ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                                ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                                 ->get();
                             $i = 0;
                             $j = 0;
@@ -226,7 +228,8 @@
                             $result = \DB::table('wx_order_detail')
                                 ->where('ticket', $row->ticket)
                                 ->where('eventkey', '1020')
-                                ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                                ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                                 ->get();
                             $i = 0;
                             $j = 0;
@@ -314,7 +317,8 @@
                         <?php
                         $rows = \DB::table('wx_order_detail')
                             ->where('eventkey', '1021')
-                            ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                            ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                             ->groupBy('ticket')
                             ->get();
                         ?>
@@ -344,7 +348,8 @@
                             $result = \DB::table('wx_order_detail')
                                 ->where('ticket', $row->ticket)
                                 ->where('eventkey', '1021')
-                                ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                                ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                                 ->get();
                             $i = 0;
                             $j = 0;
@@ -430,7 +435,8 @@
                         <?php
                         $rows = \DB::table('wx_order_detail')
                             ->where('eventkey', '1022')
-                            ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                            ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                             ->groupBy('ticket')
                             ->get();
                         ?>
@@ -460,7 +466,8 @@
                             $result = \DB::table('wx_order_detail')
                                 ->where('ticket', $row->ticket)
                                 ->where('eventkey', '1022')
-                                ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                                ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                                 ->get();
                             $i = 0;
                             $j = 0;
@@ -548,7 +555,8 @@
                         <?php
                         $rows = \DB::table('wx_order_detail')
                             ->where('eventkey', '1023')
-                            ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                            ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                             ->groupBy('ticket')
                             ->get();
                         ?>
@@ -578,7 +586,8 @@
                             $result = \DB::table('wx_order_detail')
                                 ->where('ticket', $row->ticket)
                                 ->where('eventkey', '1023')
-                                ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                                ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                                 ->get();
                             $i = 0;
                             $j = 0;
@@ -664,7 +673,8 @@
                         <?php
                         $rows = \DB::table('wx_order_detail')
                             ->where('eventkey', '1024')
-                            ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                            ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                             ->groupBy('ticket')
                             ->get();
                         ?>
@@ -694,7 +704,8 @@
                             $result = \DB::table('wx_order_detail')
                                 ->where('ticket', $row->ticket)
                                 ->where('eventkey', '1024')
-                                ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                                ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                                 ->get();
                             $i = 0;
                             $j = 0;
@@ -782,7 +793,8 @@
                         <?php
                         $rows = \DB::table('wx_order_detail')
                             ->where('eventkey', '1025')
-                            ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                            ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                             ->groupBy('ticket')
                             ->get();
                         ?>
@@ -812,7 +824,8 @@
                             $result = \DB::table('wx_order_detail')
                                 ->where('ticket', $row->ticket)
                                 ->where('eventkey', '1025')
-                                ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                                ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                                 ->get();
                             $i = 0;
                             $j = 0;
@@ -898,7 +911,8 @@
                         <?php
                         $rows = \DB::table('wx_order_detail')
                             ->where('eventkey', '1026')
-                            ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                            ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                             ->groupBy('ticket')
                             ->get();
                         ?>
@@ -928,7 +942,8 @@
                             $result = \DB::table('wx_order_detail')
                                 ->where('ticket', $row->ticket)
                                 ->where('eventkey', '1026')
-                                ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                                ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                                 ->get();
                             $i = 0;
                             $j = 0;
@@ -1017,7 +1032,8 @@
                         <?php
                         $rows = \DB::table('wx_order_detail')
                             ->where('eventkey', '1027')
-                            ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                            ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                             ->groupBy('ticket')
                             ->get();
                         ?>
@@ -1047,7 +1063,8 @@
                             $result = \DB::table('wx_order_detail')
                                 ->where('ticket', $row->ticket)
                                 ->where('eventkey', '1027')
-                                ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                                ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                                 ->get();
                             $i = 0;
                             $j = 0;
@@ -1133,7 +1150,8 @@
                         <?php
                         $rows = \DB::table('wx_order_detail')
                             ->where('eventkey', '1028')
-                            ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                            ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                             ->groupBy('ticket')
                             ->get();
                         ?>
@@ -1163,7 +1181,8 @@
                             $result = \DB::table('wx_order_detail')
                                 ->where('ticket', $row->ticket)
                                 ->where('eventkey', '1028')
-                                ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                                ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                                 ->get();
                             $i = 0;
                             $j = 0;
@@ -1251,7 +1270,8 @@
                         <?php
                         $rows = \DB::table('wx_order_detail')
                             ->where('eventkey', '1029')
-                            ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                            ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                             ->groupBy('ticket')
                             ->get();
                         ?>
@@ -1281,7 +1301,8 @@
                             $result = \DB::table('wx_order_detail')
                                 ->where('ticket', $row->ticket)
                                 ->where('eventkey', '1029')
-                                ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                                ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                                 ->get();
                             $i = 0;
                             $j = 0;
@@ -1367,7 +1388,8 @@
                         <?php
                         $rows = \DB::table('wx_order_detail')
                             ->where('eventkey', '1030')
-                            ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                            ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                             ->groupBy('ticket')
                             ->get();
                         ?>
@@ -1397,7 +1419,8 @@
                             $result = \DB::table('wx_order_detail')
                                 ->where('ticket', $row->ticket)
                                 ->where('eventkey', '1030')
-                                ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                                ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                                 ->get();
                             $i = 0;
                             $j = 0;
@@ -1485,7 +1508,8 @@
                         <?php
                         $rows = \DB::table('wx_order_detail')
                             ->where('eventkey', '1031')
-                            ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                            ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                             ->groupBy('ticket')
                             ->get();
                         ?>
@@ -1515,7 +1539,8 @@
                             $result = \DB::table('wx_order_detail')
                                 ->where('ticket', $row->ticket)
                                 ->where('eventkey', '1031')
-                                ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                                ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                                 ->get();
                             $i = 0;
                             $j = 0;
@@ -1601,7 +1626,8 @@
                         <?php
                         $rows = \DB::table('wx_order_detail')
                             ->where('eventkey', '1032')
-                            ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                            ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                             ->groupBy('ticket')
                             ->get();
                         ?>
@@ -1631,7 +1657,8 @@
                             $result = \DB::table('wx_order_detail')
                                 ->where('ticket', $row->ticket)
                                 ->where('eventkey', '1032')
-                                ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                                ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                                 ->get();
                             $i = 0;
                             $j = 0;
@@ -1719,7 +1746,8 @@
                         <?php
                         $rows = \DB::table('wx_order_detail')
                             ->where('eventkey', '1033')
-                            ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                            ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                             ->groupBy('ticket')
                             ->get();
                         ?>
@@ -1749,7 +1777,8 @@
                             $result = \DB::table('wx_order_detail')
                                 ->where('ticket', $row->ticket)
                                 ->where('eventkey', '1033')
-                                ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                                ->whereDate('adddate', '>=', $from)
+                                ->whereDate('adddate', '<=', $to)
                                 ->get();
                             $i = 0;
                             $j = 0;

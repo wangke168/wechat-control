@@ -246,18 +246,7 @@ class DataController extends Controller
         $to = $request->input('to');
         \Session::flash('from', $from);
         \Session::flash('to', $to);
-        $eventkey = $request->eventkey;
-//        $eventkey='1019';
 
-        $rows = DB::table('wx_order_detail')
-            ->whereDate('adddate', '>=', $from)
-            ->whereDate('adddate', '<=', $to)
-            ->where('eventkey', $eventkey)
-            ->orderBy('adddate', 'desc')
-            ->orderBy('ticket', 'asc')
-            ->orderBy('numbers', 'desc')
-            ->orderBy('id', 'desc')
-            ->paginate(20);
-        return view('control.count_order_nianka_payed', compact('rows', 'from', 'to'));
+        return view('control.count_order_card_payed_search', compact('rows', 'from', 'to'));
     }
 }
