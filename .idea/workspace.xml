@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Wechat/Usage.php" afterPath="$PROJECT_DIR$/app/Wechat/Usage.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/count_order_card_payed.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/count_order_card_payed.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/count_order_card_payed_search.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/count_order_card_payed_search.blade.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,9 +55,19 @@
       <file leaf-file-name="count_order_card_payed.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/control/count_order_card_payed.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="161" column="36" lean-forward="true" selection-start-line="161" selection-start-column="36" selection-end-line="161" selection-end-column="36" />
-              <folding />
+            <state relative-caret-position="440">
+              <caret line="52" column="79" lean-forward="false" selection-start-line="52" selection-start-column="79" selection-end-line="52" selection-end-column="79" />
+              <folding>
+                <marker date="1518074435000" expanded="true" signature="1912:1953" ph="..." />
+                <marker date="1518074435000" expanded="true" signature="3010:3388" ph="..." />
+                <marker date="1518074435000" expanded="true" signature="3167:3185" ph="..." />
+                <marker date="1518074435000" expanded="true" signature="3227:3277" ph="..." />
+                <marker date="1518074435000" expanded="true" signature="3317:3325" ph="..." />
+                <marker date="1518074435000" expanded="true" signature="4516:4538" ph="..." />
+                <marker date="1518074435000" expanded="true" signature="4580:4598" ph="..." />
+                <marker date="1518074435000" expanded="true" signature="4644:4694" ph="..." />
+                <marker date="1518074435000" expanded="true" signature="4900:5158" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -430,12 +436,12 @@
       <workItem from="1517536667355" duration="3371000" />
       <workItem from="1517821107455" duration="2033000" />
       <workItem from="1517880290713" duration="280000" />
-      <workItem from="1517881541255" duration="14821000" />
+      <workItem from="1517881541255" duration="15080000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112780000" />
+    <option name="totallyTimeSpent" value="113039000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -892,9 +898,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/count_order_card_payed.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="161" column="36" lean-forward="true" selection-start-line="161" selection-start-column="36" selection-end-line="161" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="440">
+          <caret line="52" column="79" lean-forward="false" selection-start-line="52" selection-start-column="79" selection-end-line="52" selection-end-column="79" />
+          <folding>
+            <marker date="1518074435000" expanded="true" signature="1912:1953" ph="..." />
+            <marker date="1518074435000" expanded="true" signature="3010:3388" ph="..." />
+            <marker date="1518074435000" expanded="true" signature="3167:3185" ph="..." />
+            <marker date="1518074435000" expanded="true" signature="3227:3277" ph="..." />
+            <marker date="1518074435000" expanded="true" signature="3317:3325" ph="..." />
+            <marker date="1518074435000" expanded="true" signature="4516:4538" ph="..." />
+            <marker date="1518074435000" expanded="true" signature="4580:4598" ph="..." />
+            <marker date="1518074435000" expanded="true" signature="4644:4694" ph="..." />
+            <marker date="1518074435000" expanded="true" signature="4900:5158" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

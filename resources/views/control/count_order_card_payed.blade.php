@@ -46,11 +46,11 @@
                 <div class="input-group input-large date-picker input-daterange" data-date="10/11/2012"
                      data-date-format="yyyy/mm/dd">
                     <input type="text" class="form-control" name="from"
-                           value="<?php if (Session::has('from')) echo Session::get('from') ?>">
+                           value="<?php echo date("Y-m-d", strtotime("-1 day")) ?>">
                     <span class="input-group-addon">
 												to </span>
                     <input type="text" class="form-control" name="to"
-                           value="<?php if (Session::has('to')) echo Session::get('to') ?>">
+                           value="<?php echo date("Y-m-d", strtotime("-1 day")) ?>">
                 </div>
 
                 <button type="submit" class="btn green"><i class="fa fa-search"></i> 提 交</button>
