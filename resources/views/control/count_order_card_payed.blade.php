@@ -41,20 +41,20 @@
     <!-- BEGIN PAGE CONTENT-->
     <div class="row">
         <div class="col-md-12">
-        <form method="GET" name="myform" action="/control/cardcountsearch" class="navbar-form navbar-right">
+            <form method="GET" name="myform" action="/control/cardcountsearch" class="navbar-form navbar-right">
 
-            <div class="input-group input-large date-picker input-daterange" data-date="10/11/2012"
-                 data-date-format="yyyy/mm/dd">
-                <input type="text" class="form-control" name="from"
-                       value="<?php if (Session::has('from')) echo Session::get('from') ?>">
-                <span class="input-group-addon">
+                <div class="input-group input-large date-picker input-daterange" data-date="10/11/2012"
+                     data-date-format="yyyy/mm/dd">
+                    <input type="text" class="form-control" name="from"
+                           value="<?php if (Session::has('from')) echo Session::get('from') ?>">
+                    <span class="input-group-addon">
 												to </span>
-                <input type="text" class="form-control" name="to"
-                       value="<?php if (Session::has('to')) echo Session::get('to') ?>">
-            </div>
+                    <input type="text" class="form-control" name="to"
+                           value="<?php if (Session::has('to')) echo Session::get('to') ?>">
+                </div>
 
-            <button type="submit" class="btn green"><i class="fa fa-search"></i> 提 交</button>
-        </form>
+                <button type="submit" class="btn green"><i class="fa fa-search"></i> 提 交</button>
+            </form>
         </div>
 
         <div class="col-md-6">
@@ -78,6 +78,7 @@
                 <div class="portlet-body">
                     <div class="table-scrollable">
                         <?php
+                        $Usage = new \App\WeChat\Usage();
                         $rows = \DB::table('wx_order_detail')
                             ->where('eventkey', '1019')
                             ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
@@ -99,6 +100,9 @@
                                 <th>
                                     学生
                                 </th>
+                                <th>
+                                    合计
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -116,17 +120,10 @@
                             $j = 0;
                             $k = 0;
                             foreach ($result as $aaa) {
-                                if (strpos($aaa->numbers, '学生') !== false) {
-                                    $k = $k + mb_substr(strstr($aaa->numbers, "学生"), 2, 1);
-
-                                }
-                                if (strpos($aaa->numbers, '成人') !== false) {
-                                    $i = $i + mb_substr(strstr($aaa->numbers, "成人"), 2, 1);
-                                }
-                                if (strpos($aaa->numbers, '老人') !== false) {
-                                    $j = $j + mb_substr(strstr($aaa->numbers, "老人"), 2, 1);
-                                }
-
+                                $bbb = $Usage->GetCardInfo($aaa->numbers);
+                                $i = $i + $bbb[0];
+                                $j = $j + $bbb[1];
+                                $k = $k + $bbb[2];
 
                             }
                             ?>
@@ -143,6 +140,9 @@
                                 </td>
                                 <td>
                                     {{$k}}
+                                </td>
+                                <td>
+                                    {{$i+$j+$k}}
                                 </td>
                             </tr>
                             <?php
@@ -164,6 +164,9 @@
                                 </td>
                                 <td>
                                     {{$c}}
+                                </td>
+                                <td>
+                                    {{$a+$b+$c}}
                                 </td>
                             </tr>
                             </tbody>
@@ -215,6 +218,9 @@
                                 <th>
                                     学生
                                 </th>
+                                <th>
+                                    合计
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -232,18 +238,10 @@
                             $j = 0;
                             $k = 0;
                             foreach ($result as $aaa) {
-                                if (strpos($aaa->numbers, '学生') !== false) {
-                                    $k = $k + mb_substr(strstr($aaa->numbers, "学生"), 2, 1);
-
-                                }
-                                if (strpos($aaa->numbers, '成人') !== false) {
-                                    $i = $i + mb_substr(strstr($aaa->numbers, "成人"), 2, 1);
-                                }
-                                if (strpos($aaa->numbers, '老人') !== false) {
-                                    $j = $j + mb_substr(strstr($aaa->numbers, "老人"), 2, 1);
-                                }
-
-
+                                $bbb = $Usage->GetCardInfo($aaa->numbers);
+                                $i = $i + $bbb[0];
+                                $j = $j + $bbb[1];
+                                $k = $k + $bbb[2];
                             }
                             ?>
                             <tr>
@@ -258,7 +256,10 @@
                                     {{$j}}
                                 </td>
                                 <td>
-										{{$k}}
+                                    {{$k}}
+                                </td>
+                                <td>
+                                    {{$i+$j+$k}}
                                 </td>
                             </tr>
                             <?php
@@ -279,7 +280,10 @@
                                     {{$b}}
                                 </td>
                                 <td>
-										{{$c}}
+                                    {{$c}}
+                                </td>
+                                <td>
+                                    {{$a+$b+$c}}
                                 </td>
                             </tr>
                             </tbody>
@@ -333,6 +337,9 @@
                                 <th>
                                     学生
                                 </th>
+                                <th>
+                                    合计
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -350,18 +357,10 @@
                             $j = 0;
                             $k = 0;
                             foreach ($result as $aaa) {
-                                if (strpos($aaa->numbers, '学生') !== false) {
-                                    $k = $k + mb_substr(strstr($aaa->numbers, "学生"), 2, 1);
-
-                                }
-                                if (strpos($aaa->numbers, '成人') !== false) {
-                                    $i = $i + mb_substr(strstr($aaa->numbers, "成人"), 2, 1);
-                                }
-                                if (strpos($aaa->numbers, '老人') !== false) {
-                                    $j = $j + mb_substr(strstr($aaa->numbers, "老人"), 2, 1);
-                                }
-
-
+                                $bbb = $Usage->GetCardInfo($aaa->numbers);
+                                $i = $i + $bbb[0];
+                                $j = $j + $bbb[1];
+                                $k = $k + $bbb[2];
                             }
                             ?>
                             <tr>
@@ -377,6 +376,9 @@
                                 </td>
                                 <td>
                                     {{$k}}
+                                </td>
+                                <td>
+                                    {{$i+$j+$k}}
                                 </td>
                             </tr>
                             <?php
@@ -398,6 +400,9 @@
                                 </td>
                                 <td>
                                     {{$c}}
+                                </td>
+                                <td>
+                                    {{$a+$b+$c}}
                                 </td>
                             </tr>
                             </tbody>
@@ -449,6 +454,9 @@
                                 <th>
                                     学生
                                 </th>
+                                <th>
+                                    合计
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -466,18 +474,10 @@
                             $j = 0;
                             $k = 0;
                             foreach ($result as $aaa) {
-                                if (strpos($aaa->numbers, '学生') !== false) {
-                                    $k = $k + mb_substr(strstr($aaa->numbers, "学生"), 2, 1);
-
-                                }
-                                if (strpos($aaa->numbers, '成人') !== false) {
-                                    $i = $i + mb_substr(strstr($aaa->numbers, "成人"), 2, 1);
-                                }
-                                if (strpos($aaa->numbers, '老人') !== false) {
-                                    $j = $j + mb_substr(strstr($aaa->numbers, "老人"), 2, 1);
-                                }
-
-
+                                $bbb = $Usage->GetCardInfo($aaa->numbers);
+                                $i = $i + $bbb[0];
+                                $j = $j + $bbb[1];
+                                $k = $k + $bbb[2];
                             }
                             ?>
                             <tr>
@@ -493,6 +493,9 @@
                                 </td>
                                 <td>
                                     {{$k}}
+                                </td>
+                                <td>
+                                    {{$i+$j+$k}}
                                 </td>
                             </tr>
                             <?php
@@ -514,6 +517,9 @@
                                 </td>
                                 <td>
                                     {{$c}}
+                                </td>
+                                <td>
+                                    {{$a+$b+$c}}
                                 </td>
                             </tr>
                             </tbody>
@@ -567,6 +573,9 @@
                                 <th>
                                     学生
                                 </th>
+                                <th>
+                                    合计
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -584,18 +593,10 @@
                             $j = 0;
                             $k = 0;
                             foreach ($result as $aaa) {
-                                if (strpos($aaa->numbers, '学生') !== false) {
-                                    $k = $k + mb_substr(strstr($aaa->numbers, "学生"), 2, 1);
-
-                                }
-                                if (strpos($aaa->numbers, '成人') !== false) {
-                                    $i = $i + mb_substr(strstr($aaa->numbers, "成人"), 2, 1);
-                                }
-                                if (strpos($aaa->numbers, '老人') !== false) {
-                                    $j = $j + mb_substr(strstr($aaa->numbers, "老人"), 2, 1);
-                                }
-
-
+                                $bbb = $Usage->GetCardInfo($aaa->numbers);
+                                $i = $i + $bbb[0];
+                                $j = $j + $bbb[1];
+                                $k = $k + $bbb[2];
                             }
                             ?>
                             <tr>
@@ -611,6 +612,9 @@
                                 </td>
                                 <td>
                                     {{$k}}
+                                </td>
+                                <td>
+                                    {{$i+$j+$k}}
                                 </td>
                             </tr>
                             <?php
@@ -632,6 +636,9 @@
                                 </td>
                                 <td>
                                     {{$c}}
+                                </td>
+                                <td>
+                                    {{$a+$b+$c}}
                                 </td>
                             </tr>
                             </tbody>
@@ -683,6 +690,9 @@
                                 <th>
                                     学生
                                 </th>
+                                <th>
+                                    合计
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -700,18 +710,10 @@
                             $j = 0;
                             $k = 0;
                             foreach ($result as $aaa) {
-                                if (strpos($aaa->numbers, '学生') !== false) {
-                                    $k = $k + mb_substr(strstr($aaa->numbers, "学生"), 2, 1);
-
-                                }
-                                if (strpos($aaa->numbers, '成人') !== false) {
-                                    $i = $i + mb_substr(strstr($aaa->numbers, "成人"), 2, 1);
-                                }
-                                if (strpos($aaa->numbers, '老人') !== false) {
-                                    $j = $j + mb_substr(strstr($aaa->numbers, "老人"), 2, 1);
-                                }
-
-
+                                $bbb = $Usage->GetCardInfo($aaa->numbers);
+                                $i = $i + $bbb[0];
+                                $j = $j + $bbb[1];
+                                $k = $k + $bbb[2];
                             }
                             ?>
                             <tr>
@@ -727,6 +729,9 @@
                                 </td>
                                 <td>
                                     {{$k}}
+                                </td>
+                                <td>
+                                    {{$i+$j+$k}}
                                 </td>
                             </tr>
                             <?php
@@ -748,6 +753,9 @@
                                 </td>
                                 <td>
                                     {{$c}}
+                                </td>
+                                <td>
+                                    {{$a+$b+$c}}
                                 </td>
                             </tr>
                             </tbody>
@@ -801,6 +809,9 @@
                                 <th>
                                     学生
                                 </th>
+                                <th>
+                                    合计
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -818,18 +829,10 @@
                             $j = 0;
                             $k = 0;
                             foreach ($result as $aaa) {
-                                if (strpos($aaa->numbers, '学生') !== false) {
-                                    $k = $k + mb_substr(strstr($aaa->numbers, "学生"), 2, 1);
-
-                                }
-                                if (strpos($aaa->numbers, '成人') !== false) {
-                                    $i = $i + mb_substr(strstr($aaa->numbers, "成人"), 2, 1);
-                                }
-                                if (strpos($aaa->numbers, '老人') !== false) {
-                                    $j = $j + mb_substr(strstr($aaa->numbers, "老人"), 2, 1);
-                                }
-
-
+                                $bbb = $Usage->GetCardInfo($aaa->numbers);
+                                $i = $i + $bbb[0];
+                                $j = $j + $bbb[1];
+                                $k = $k + $bbb[2];
                             }
                             ?>
                             <tr>
@@ -845,6 +848,9 @@
                                 </td>
                                 <td>
                                     {{$k}}
+                                </td>
+                                <td>
+                                    {{$i+$j+$k}}
                                 </td>
                             </tr>
                             <?php
@@ -866,6 +872,9 @@
                                 </td>
                                 <td>
                                     {{$c}}
+                                </td>
+                                <td>
+                                    {{$a+$b+$c}}
                                 </td>
                             </tr>
                             </tbody>
@@ -917,6 +926,9 @@
                                 <th>
                                     学生
                                 </th>
+                                <th>
+                                    合计
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -934,18 +946,10 @@
                             $j = 0;
                             $k = 0;
                             foreach ($result as $aaa) {
-                                if (strpos($aaa->numbers, '学生') !== false) {
-                                    $k = $k + mb_substr(strstr($aaa->numbers, "学生"), 2, 1);
-
-                                }
-                                if (strpos($aaa->numbers, '成人') !== false) {
-                                    $i = $i + mb_substr(strstr($aaa->numbers, "成人"), 2, 1);
-                                }
-                                if (strpos($aaa->numbers, '老人') !== false) {
-                                    $j = $j + mb_substr(strstr($aaa->numbers, "老人"), 2, 1);
-                                }
-
-
+                                $bbb = $Usage->GetCardInfo($aaa->numbers);
+                                $i = $i + $bbb[0];
+                                $j = $j + $bbb[1];
+                                $k = $k + $bbb[2];
                             }
                             ?>
                             <tr>
@@ -961,6 +965,9 @@
                                 </td>
                                 <td>
                                     {{$k}}
+                                </td>
+                                <td>
+                                    {{$i+$j+$k}}
                                 </td>
                             </tr>
                             <?php
@@ -982,6 +989,9 @@
                                 </td>
                                 <td>
                                     {{$c}}
+                                </td>
+                                <td>
+                                    {{$a+$b+$c}}
                                 </td>
                             </tr>
                             </tbody>
@@ -1036,6 +1046,9 @@
                                 <th>
                                     学生
                                 </th>
+                                <th>
+                                    合计
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -1053,18 +1066,10 @@
                             $j = 0;
                             $k = 0;
                             foreach ($result as $aaa) {
-                                if (strpos($aaa->numbers, '学生') !== false) {
-                                    $k = $k + mb_substr(strstr($aaa->numbers, "学生"), 2, 1);
-
-                                }
-                                if (strpos($aaa->numbers, '成人') !== false) {
-                                    $i = $i + mb_substr(strstr($aaa->numbers, "成人"), 2, 1);
-                                }
-                                if (strpos($aaa->numbers, '老人') !== false) {
-                                    $j = $j + mb_substr(strstr($aaa->numbers, "老人"), 2, 1);
-                                }
-
-
+                                $bbb = $Usage->GetCardInfo($aaa->numbers);
+                                $i = $i + $bbb[0];
+                                $j = $j + $bbb[1];
+                                $k = $k + $bbb[2];
                             }
                             ?>
                             <tr>
@@ -1080,6 +1085,9 @@
                                 </td>
                                 <td>
                                     {{$k}}
+                                </td>
+                                <td>
+                                    {{$i+$j+$k}}
                                 </td>
                             </tr>
                             <?php
@@ -1101,6 +1109,9 @@
                                 </td>
                                 <td>
                                     {{$c}}
+                                </td>
+                                <td>
+                                    {{$a+$b+$c}}
                                 </td>
                             </tr>
                             </tbody>
@@ -1152,6 +1163,9 @@
                                 <th>
                                     学生
                                 </th>
+                                <th>
+                                    合计
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -1169,18 +1183,10 @@
                             $j = 0;
                             $k = 0;
                             foreach ($result as $aaa) {
-                                if (strpos($aaa->numbers, '学生') !== false) {
-                                    $k = $k + mb_substr(strstr($aaa->numbers, "学生"), 2, 1);
-
-                                }
-                                if (strpos($aaa->numbers, '成人') !== false) {
-                                    $i = $i + mb_substr(strstr($aaa->numbers, "成人"), 2, 1);
-                                }
-                                if (strpos($aaa->numbers, '老人') !== false) {
-                                    $j = $j + mb_substr(strstr($aaa->numbers, "老人"), 2, 1);
-                                }
-
-
+                                $bbb = $Usage->GetCardInfo($aaa->numbers);
+                                $i = $i + $bbb[0];
+                                $j = $j + $bbb[1];
+                                $k = $k + $bbb[2];
                             }
                             ?>
                             <tr>
@@ -1196,6 +1202,9 @@
                                 </td>
                                 <td>
                                     {{$k}}
+                                </td>
+                                <td>
+                                    {{$i+$j+$k}}
                                 </td>
                             </tr>
                             <?php
@@ -1217,6 +1226,9 @@
                                 </td>
                                 <td>
                                     {{$c}}
+                                </td>
+                                <td>
+                                    {{$a+$b+$c}}
                                 </td>
                             </tr>
                             </tbody>
@@ -1270,6 +1282,9 @@
                                 <th>
                                     学生
                                 </th>
+                                <th>
+                                    合计
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -1287,18 +1302,10 @@
                             $j = 0;
                             $k = 0;
                             foreach ($result as $aaa) {
-                                if (strpos($aaa->numbers, '学生') !== false) {
-                                    $k = $k + mb_substr(strstr($aaa->numbers, "学生"), 2, 1);
-
-                                }
-                                if (strpos($aaa->numbers, '成人') !== false) {
-                                    $i = $i + mb_substr(strstr($aaa->numbers, "成人"), 2, 1);
-                                }
-                                if (strpos($aaa->numbers, '老人') !== false) {
-                                    $j = $j + mb_substr(strstr($aaa->numbers, "老人"), 2, 1);
-                                }
-
-
+                                $bbb = $Usage->GetCardInfo($aaa->numbers);
+                                $i = $i + $bbb[0];
+                                $j = $j + $bbb[1];
+                                $k = $k + $bbb[2];
                             }
                             ?>
                             <tr>
@@ -1314,6 +1321,9 @@
                                 </td>
                                 <td>
                                     {{$k}}
+                                </td>
+                                <td>
+                                    {{$i+$j+$k}}
                                 </td>
                             </tr>
                             <?php
@@ -1335,6 +1345,9 @@
                                 </td>
                                 <td>
                                     {{$c}}
+                                </td>
+                                <td>
+                                    {{$a+$b+$c}}
                                 </td>
                             </tr>
                             </tbody>
@@ -1386,6 +1399,9 @@
                                 <th>
                                     学生
                                 </th>
+                                <th>
+                                    合计
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -1403,18 +1419,10 @@
                             $j = 0;
                             $k = 0;
                             foreach ($result as $aaa) {
-                                if (strpos($aaa->numbers, '学生') !== false) {
-                                    $k = $k + mb_substr(strstr($aaa->numbers, "学生"), 2, 1);
-
-                                }
-                                if (strpos($aaa->numbers, '成人') !== false) {
-                                    $i = $i + mb_substr(strstr($aaa->numbers, "成人"), 2, 1);
-                                }
-                                if (strpos($aaa->numbers, '老人') !== false) {
-                                    $j = $j + mb_substr(strstr($aaa->numbers, "老人"), 2, 1);
-                                }
-
-
+                                $bbb = $Usage->GetCardInfo($aaa->numbers);
+                                $i = $i + $bbb[0];
+                                $j = $j + $bbb[1];
+                                $k = $k + $bbb[2];
                             }
                             ?>
                             <tr>
@@ -1430,6 +1438,9 @@
                                 </td>
                                 <td>
                                     {{$k}}
+                                </td>
+                                <td>
+                                    {{$i+$j+$k}}
                                 </td>
                             </tr>
                             <?php
@@ -1451,6 +1462,9 @@
                                 </td>
                                 <td>
                                     {{$c}}
+                                </td>
+                                <td>
+                                    {{$a+$b+$c}}
                                 </td>
                             </tr>
                             </tbody>
@@ -1504,6 +1518,9 @@
                                 <th>
                                     学生
                                 </th>
+                                <th>
+                                    合计
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -1521,18 +1538,10 @@
                             $j = 0;
                             $k = 0;
                             foreach ($result as $aaa) {
-                                if (strpos($aaa->numbers, '学生') !== false) {
-                                    $k = $k + mb_substr(strstr($aaa->numbers, "学生"), 2, 1);
-
-                                }
-                                if (strpos($aaa->numbers, '成人') !== false) {
-                                    $i = $i + mb_substr(strstr($aaa->numbers, "成人"), 2, 1);
-                                }
-                                if (strpos($aaa->numbers, '老人') !== false) {
-                                    $j = $j + mb_substr(strstr($aaa->numbers, "老人"), 2, 1);
-                                }
-
-
+                                $bbb = $Usage->GetCardInfo($aaa->numbers);
+                                $i = $i + $bbb[0];
+                                $j = $j + $bbb[1];
+                                $k = $k + $bbb[2];
                             }
                             ?>
                             <tr>
@@ -1548,6 +1557,9 @@
                                 </td>
                                 <td>
                                     {{$k}}
+                                </td>
+                                <td>
+                                    {{$i+$j+$k}}
                                 </td>
                             </tr>
                             <?php
@@ -1569,6 +1581,9 @@
                                 </td>
                                 <td>
                                     {{$c}}
+                                </td>
+                                <td>
+                                    {{$a+$b+$c}}
                                 </td>
                             </tr>
                             </tbody>
@@ -1620,6 +1635,9 @@
                                 <th>
                                     学生
                                 </th>
+                                <th>
+                                    合计
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -1637,18 +1655,10 @@
                             $j = 0;
                             $k = 0;
                             foreach ($result as $aaa) {
-                                if (strpos($aaa->numbers, '学生') !== false) {
-                                    $k = $k + mb_substr(strstr($aaa->numbers, "学生"), 2, 1);
-
-                                }
-                                if (strpos($aaa->numbers, '成人') !== false) {
-                                    $i = $i + mb_substr(strstr($aaa->numbers, "成人"), 2, 1);
-                                }
-                                if (strpos($aaa->numbers, '老人') !== false) {
-                                    $j = $j + mb_substr(strstr($aaa->numbers, "老人"), 2, 1);
-                                }
-
-
+                                $bbb = $Usage->GetCardInfo($aaa->numbers);
+                                $i = $i + $bbb[0];
+                                $j = $j + $bbb[1];
+                                $k = $k + $bbb[2];
                             }
                             ?>
                             <tr>
@@ -1664,6 +1674,9 @@
                                 </td>
                                 <td>
                                     {{$k}}
+                                </td>
+                                <td>
+                                    {{$i+$j+$k}}
                                 </td>
                             </tr>
                             <?php
@@ -1685,6 +1698,9 @@
                                 </td>
                                 <td>
                                     {{$c}}
+                                </td>
+                                <td>
+                                    {{$a+$b+$c}}
                                 </td>
                             </tr>
                             </tbody>
@@ -1738,6 +1754,9 @@
                                 <th>
                                     学生
                                 </th>
+                                <th>
+                                    合计
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -1755,18 +1774,10 @@
                             $j = 0;
                             $k = 0;
                             foreach ($result as $aaa) {
-                                if (strpos($aaa->numbers, '学生') !== false) {
-                                    $k = $k + mb_substr(strstr($aaa->numbers, "学生"), 2, 1);
-
-                                }
-                                if (strpos($aaa->numbers, '成人') !== false) {
-                                    $i = $i + mb_substr(strstr($aaa->numbers, "成人"), 2, 1);
-                                }
-                                if (strpos($aaa->numbers, '老人') !== false) {
-                                    $j = $j + mb_substr(strstr($aaa->numbers, "老人"), 2, 1);
-                                }
-
-
+                                $bbb = $Usage->GetCardInfo($aaa->numbers);
+                                $i = $i + $bbb[0];
+                                $j = $j + $bbb[1];
+                                $k = $k + $bbb[2];
                             }
                             ?>
                             <tr>
@@ -1782,6 +1793,9 @@
                                 </td>
                                 <td>
                                     {{$k}}
+                                </td>
+                                <td>
+                                    {{$i+$j+$k}}
                                 </td>
                             </tr>
                             <?php
@@ -1803,6 +1817,9 @@
                                 </td>
                                 <td>
                                     {{$c}}
+                                </td>
+                                <td>
+                                    {{$a+$b+$c}}
                                 </td>
                             </tr>
                             </tbody>

@@ -28,6 +28,7 @@ class TestController extends Controller
     public $session;
     public $material;
     private $SoapClint;
+
     public function __construct(Application $app)
     {
         $this->app = $app;
@@ -44,10 +45,10 @@ class TestController extends Controller
 
     public function index(Request $request)
     {
-        $action=$request->action;
-        switch ($action){
+        $action = $request->action;
+        switch ($action) {
             case 'orderquery':
-                var_dump($this->TestQuery('DL20180103033707','mtddmp12738yhs'));
+                var_dump($this->TestQuery('DL20180103033707', 'mtddmp12738yhs'));
                 break;
             default:
                 break;
@@ -59,7 +60,7 @@ class TestController extends Controller
      * @param $OrderID
      * @param $CompanyCode
      */
-    private function TestQuery($CompanyOrderID,$CompanyCode)
+    private function TestQuery($CompanyOrderID, $CompanyCode)
     {
         $TimeStamp = date('YmdHis');
         $params = array('TimeStamp' => $TimeStamp,
@@ -75,30 +76,74 @@ class TestController extends Controller
     }
 
 
-    public function test(Request $request)
+    public function test()
     {
-       /*$type = $request->input('type');
-        switch ($type) {
-            case 'info':
-                phpinfo();
-                break;
-            default:
-//        $result =DB::connection('sqlsrv')->select('select * from dbo.tbdBank');
-                $result = DB::connection('sqlsrv')->table('dbo.tbdEmployeeCard')
-                    ->where('DIdNumber', '330724197811270010')
-                    ->get();
-                dd($result);
-                break;
-        }*/
-//       QrCode::
-        var_dump(QrCode::generate('Hello,LaravelAcademy!'));
-        /*$xml='<PropertyMsg><Item><Property>Adult</Property><Password>661505</Password></Item><Item><Property>Elder</Property><Password>712050</Password></Item></PropertyMsg>';
-        $info= json_decode(json_encode((array) simplexml_load_string($xml)), true);
-        return $info;*/
-
-
+        $Usage = new \App\WeChat\Usage();
+        $rows = \DB::table('wx_order_detail')
+            ->where('eventkey', '1019')
+            ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+            ->groupBy('ticket')
+            ->get();
+        $a = 0;
+        $b = 0;
+        $c = 0;
+        foreach ($rows as $row) {
+            $result = \DB::table('wx_order_detail')
+                ->where('ticket', $row->ticket)
+                ->where('eventkey', '1019')
+                ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
+                ->get();
+            $i = 0;
+            $j = 0;
+            $k = 0;
+            foreach ($result as $aaa) {
+                $bbb = $Usage->GetCardInfo($aaa->numbers);
+                $i = $i + $bbb[0];
+                $j = $j + $bbb[1];
+                $k = $k + $bbb[2];
+//                echo $bbb[0];
+//                var_dump($bbb);
+            }
+            echo $i . '<br>';
+            echo $j . '<br>';
+            echo $k . '<br>';
+        }
 
     }
+
+    public function GetCardInfo($str)
+    {
+        $i = 0;
+        $j = 0;
+        $k = 0;
+        $result = explode("+", $str);
+        foreach ($result as $value) {
+            if (strpos($value, '成人') !== false) {
+                $i = $this->GetNumbers($value);
+            }
+            if (strpos($value, '学生') !== false) {
+                $k = $this->GetNumbers($value);
+            }
+            if (strpos($value, '老人') !== false) {
+                $j = $this->GetNumbers($value);
+            }
+        }
+        $aaa = array($i, $j, $k);
+        return ($aaa[0]);
+    }
+
+    private function GetNumbers($str)
+    {
+        $result = '';
+        for ($x = 0; $x < strlen($str); $x++) {
+            if (is_numeric($str[$x])) {
+                $result .= $str[$x];
+            }
+
+        }
+        return $result;
+    }
+
 
     private function checkNum($number)
     {
@@ -108,7 +153,8 @@ class TestController extends Controller
         return true;
     }
 
-    private function decode_mime($string)
+    private
+    function decode_mime($string)
     {
         $pos = strpos($string, '=?');
 //        return $pos;
@@ -120,7 +166,8 @@ class TestController extends Controller
     }
 
 
-    public function take_add_json(Request $request)
+    public
+    function take_add_json(Request $request)
     {
 //        $info[]=array('root'=>'add');
         /*     for ($x=-16; $x<=-1; $x++) {
@@ -170,7 +217,8 @@ class TestController extends Controller
         return response()->json($info)->setCallback($request->input('callback'));
     }
 
-    public function take_esc_json(Request $request)
+    public
+    function take_esc_json(Request $request)
     {
         for ($x = 100; $x <= 130; $x++) {
             $y = $x - 1;

@@ -193,4 +193,37 @@ class Usage
         }
     }
 
+    public function GetCardInfo($str)
+    {
+        $i = 0;
+        $j = 0;
+        $k = 0;
+        $result = explode("+", $str);
+        foreach($result as $value){
+            if (strpos($value, '成人') !== false) {
+                $i=$this->GetNumbers($value);
+            }
+            if (strpos($value, '学生') !== false) {
+                $k=$this->GetNumbers($value);
+            }
+            if (strpos($value, '老人') !== false) {
+                $j=$this->GetNumbers($value);
+            }
+        }
+        $aaa=array($i,$j,$k);
+        return($aaa);
+    }
+
+    private function GetNumbers($str)
+    {
+        $result = '';
+        for ($x = 0; $x < strlen($str); $x++) {
+            if (is_numeric($str[$x])) {
+                $result .= $str[$x];
+            }
+
+        }
+        return $result;
+    }
+
 }
