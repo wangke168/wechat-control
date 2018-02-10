@@ -53,7 +53,7 @@
             <div class="portlet box blue-hoki">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="fa fa-gift"></i>文章修改
+                        <i class="fa fa-gift"></i>禁止微信办理年卡部门
                     </div>
 
                 </div>
@@ -64,7 +64,7 @@
                     <div class="form-body">
 
                         <div class="form-group">
-                            <label class="control-label col-md-2">选择禁止办理年卡部门</label>
+                            <label class="control-label col-md-1">选择部门</label>
 
                             <div class="col-md-4">
 

@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/control/cardban.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/control/cardban.blade.php" afterPath="$PROJECT_DIR$/resources/views/control/cardban.blade.php" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DataController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="978">
@@ -114,15 +109,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cardban.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cardban.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/control/cardban.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="77" column="51" lean-forward="false" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
+            <state relative-caret-position="753">
+              <caret line="71" column="85" lean-forward="false" selection-start-line="71" selection-start-column="85" selection-end-line="71" selection-end-column="85" />
               <folding>
-                <marker date="1518244609000" expanded="true" signature="1851:2050" ph="..." />
-                <marker date="1518244609000" expanded="true" signature="1863:2048" ph="..." />
-                <marker date="1518244609000" expanded="true" signature="1864:2047" ph="..." />
+                <marker date="1518247824000" expanded="true" signature="1857:2056" ph="..." />
+                <marker date="1518247824000" expanded="true" signature="1869:2054" ph="..." />
+                <marker date="1518247824000" expanded="true" signature="1870:2053" ph="..." />
               </folding>
             </state>
           </provider>
@@ -239,8 +234,8 @@
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Wechat/Usage.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php" />
-        <option value="$PROJECT_DIR$/resources/views/control/cardban.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" />
+        <option value="$PROJECT_DIR$/resources/views/control/cardban.blade.php" />
       </list>
     </option>
   </component>
@@ -470,12 +465,12 @@
       <workItem from="1517821107455" duration="2033000" />
       <workItem from="1517880290713" duration="280000" />
       <workItem from="1517881541255" duration="15187000" />
-      <workItem from="1518242362592" duration="4093000" />
+      <workItem from="1518242362592" duration="4189000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117239000" />
+    <option name="totallyTimeSpent" value="117335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -898,18 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/control/cardban.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="77" column="51" lean-forward="false" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
-          <folding>
-            <marker date="1518244609000" expanded="true" signature="1851:2050" ph="..." />
-            <marker date="1518244609000" expanded="true" signature="1863:2048" ph="..." />
-            <marker date="1518244609000" expanded="true" signature="1864:2047" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
@@ -932,6 +915,18 @@
           <caret line="269" column="12" lean-forward="true" selection-start-line="269" selection-start-column="12" selection-end-line="272" selection-end-column="36" />
           <folding>
             <element signature="e#48#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/control/cardban.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="71" column="85" lean-forward="false" selection-start-line="71" selection-start-column="85" selection-end-line="71" selection-end-column="85" />
+          <folding>
+            <marker date="1518247824000" expanded="true" signature="1857:2056" ph="..." />
+            <marker date="1518247824000" expanded="true" signature="1869:2054" ph="..." />
+            <marker date="1518247824000" expanded="true" signature="1870:2053" ph="..." />
           </folding>
         </state>
       </provider>
