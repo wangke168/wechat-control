@@ -237,6 +237,10 @@
                             <a href="cardcount">
                                 年卡数据</a>
                         </li>
+                        <li>
+                            <a href="cardban">
+                                年卡禁止部门</a>
+                        </li>
                         {{--          <li>
                                      <a href="table_managed.html">
                                          Managed Datatables</a>

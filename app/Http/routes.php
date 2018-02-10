@@ -76,6 +76,8 @@ Route::group(['prefix' => 'control', 'middleware' => 'control'], function () {
     Route::get('orderaction', 'Control\DataController@orderaction');
     Route::get('cardcount', 'Control\DataController@CardCount');
     Route::get('cardcountsearch', 'Control\DataController@CardSearchCount');
+    Route::get('cardban','Control\DataController@CardBan');
+    Route::post('cardban','Control\DataController@CardBan');
     //市场数据统计
     Route::get('countmarket', 'Control\DataController@market');
     Route::post('countmarket', 'Control\DataController@market');

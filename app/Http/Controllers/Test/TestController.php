@@ -71,42 +71,29 @@ class TestController extends Controller
         $response = $this->SoapClint->OrderStatusCheck(array('orderInfo' => $params));
 //        return $response;
         $ErrorMsg = $response->OrderStatusCheckResult;
-
         return $ErrorMsg;
     }
 
 
     public function test()
     {
-        $Usage = new \App\WeChat\Usage();
-        $rows = \DB::table('wx_order_detail')
-            ->where('eventkey', '1019')
-            ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
-            ->groupBy('ticket')
-            ->get();
-        $a = 0;
-        $b = 0;
-        $c = 0;
-        foreach ($rows as $row) {
-            $result = \DB::table('wx_order_detail')
-                ->where('ticket', $row->ticket)
-                ->where('eventkey', '1019')
-                ->whereDate('adddate', '=', date("Y-m-d", strtotime("-1 day")))
-                ->get();
-            $i = 0;
-            $j = 0;
-            $k = 0;
-            foreach ($result as $aaa) {
-                $bbb = $Usage->GetCardInfo($aaa->numbers);
-                $i = $i + $bbb[0];
-                $j = $j + $bbb[1];
-                $k = $k + $bbb[2];
-//                echo $bbb[0];
-//                var_dump($bbb);
-            }
-            echo $i . '<br>';
-            echo $j . '<br>';
-            echo $k . '<br>';
+      var_dump($this->CheckCardBan('10217'));
+
+
+
+    }
+
+    private function CheckCardBan($eventkey)
+    {
+        $row=DB::table('wx_card_ban')
+            ->where('id',1)
+            ->first();
+
+        $tmparray = explode($eventkey,$row->eventkey);
+        if(count($tmparray)>1){
+            return true;
+        } else{
+            return false;
         }
 
     }

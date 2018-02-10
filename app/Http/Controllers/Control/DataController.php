@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Control;
 
+use App\WeChat\Usage;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
@@ -248,5 +249,31 @@ class DataController extends Controller
         \Session::flash('to', $to);
 
         return view('control.count_order_card_payed_search', compact('rows', 'from', 'to'));
+    }
+
+
+    public function CardBan(Request $request)
+    {
+        $action=$request->action;
+        switch ($action){
+            case 'update':
+                $usage=new Usage();
+                $marketid = $request->input('marketid');
+                $marketid = $usage->getQrscene_info($marketid);
+                DB::table('wx_card_ban')
+                    ->where('id','1')
+                    ->update(['eventkey'=>$marketid]);
+                return redirect('/control/cardban');
+                break;
+            default:
+
+            $row=DB::table('wx_card_ban')
+                ->where('id',1)
+                ->first();
+           $eventkey=$row->eventkey;
+            return view('control.cardban',compact('eventkey'));
+
+        }
+
     }
 }
