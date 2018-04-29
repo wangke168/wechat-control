@@ -32,7 +32,7 @@ class SoapController extends Controller
 
     public function __construct()
     {
-        $this->SoapClint = new \SoapClient("http://aaa.hdyuanmingxinyuan.com/interface/AgentInterface.asmx?WSDL");
+        $this->SoapClint = new \SoapClient("http://aaa.hdyuanmingxinyuan.com:8081/interface/AgentInterface.asmx?WSDL");
         $this->CompanyCode = 'ymxytest0fjloa';
     }
 
@@ -87,8 +87,8 @@ class SoapController extends Controller
             'CompanyCode' => 'ymxytest0fjloa',
             'CompanyName' => '圆明新园测试',
             'CompanyOrderID' => '533765532343',
-            'OrderTime' => '2017-11-14 09:14:25',
-            'ArrivalDate' => '2017-11-30',
+            'OrderTime' => '2018-3-14 09:14:25',
+            'ArrivalDate' => '2018-3-5',
             'PayType' => '1',
             'VisitorName' => '测试',
             'VisitorMobile' => '13605725464',

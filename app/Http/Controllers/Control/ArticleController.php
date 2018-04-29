@@ -347,13 +347,13 @@ class ArticleController extends Controller
         $url = $app->url;
         switch ($type) {
             case 'article':
-                $shortUrl = $url->shorten('http://ydpt.hdyuanmingxinyuan.com/WeixinOpenId.aspx?nexturl=https://wechat.hdyuanmingxinyuan.com/article/review?id=' . $id);
+                $shortUrl = $url->shorten('http://e-test.hdyuanmingxinyuan.com/WeixinOpenId.aspx?nexturl=https://wechat.hdyuanmingxinyuan.com/article/review?id=' . $id);
                 break;
             case 'article_se':
-                $shortUrl = $url->shorten('http://ydpt.hdyuanmingxinyuan.com/WeixinOpenId.aspx?nexturl=https://wechat.hdyuanmingxinyuan.com/article/review?type=article_se&id=' . $id);
+                $shortUrl = $url->shorten('http://e-test.hdyuanmingxinyuan.com/WeixinOpenId.aspx?nexturl=https://wechat.hdyuanmingxinyuan.com/article/review?type=article_se&id=' . $id);
                 break;
         }
-              $shortUrl = $url->shorten('http://ydpt.hdyuanmingxinyuan.com/WeixinOpenId.aspx?nexturl=https://wechat.hdyuanmingxinyuan.com/article/review?id='.$id);
+              $shortUrl = $url->shorten('http://e-test.hdyuanmingxinyuan.com/WeixinOpenId.aspx?nexturl=https://wechat.hdyuanmingxinyuan.com/article/review?id='.$id);
 //        return $shortUrl->short_url;
         return view('control.articlereviewqr', compact('shortUrl'));
 
