@@ -353,7 +353,9 @@ class ArticleController extends Controller
                 $shortUrl = $url->shorten('http://e-test.hdyuanmingxinyuan.com/WeixinOpenId.aspx?nexturl=https://wechat.hdyuanmingxinyuan.com/article/review?type=article_se&id=' . $id);
                 break;
         }
-              $shortUrl = $url->shorten('http://e-test.hdyuanmingxinyuan.com/WeixinOpenId.aspx?nexturl=https://wechat.hdyuanmingxinyuan.com/article/review?id='.$id);
+                      $shortUrl = $url->shorten('https://wechat.hdyuanmingxinyuan.com/article/review?id='.$id);
+
+//              $shortUrl = $url->shorten('http://e-test.hdyuanmingxinyuan.com/WeixinOpenId.aspx?nexturl=https://wechat.hdyuanmingxinyuan.com/article/review?id='.$id);
 //        return $shortUrl->short_url;
         return view('control.articlereviewqr', compact('shortUrl'));
 
