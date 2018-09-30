@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35487750-8a31-435c-8eb1-917218e592e3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/WebArticleController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/control/web_articleadd.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/control/web_articlelist.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/control/web_articlemodify.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
@@ -14,31 +10,66 @@
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/lesson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lesson.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Console/Commands/Inspire.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/Inspire.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/UserDairyDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/UserDairyDetail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Events/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Events/Event.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/AgentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/CardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/CardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/DataController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/JsonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/JsonController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/MenuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/MenuController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/MessageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/QrlistController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/QrlistController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/QyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/QyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/RequestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/RequestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/TagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/TagController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/WebArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/WebArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Control/ZoneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Control/ZoneController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FormController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FormController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Test/SoapController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Test/SoapController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ZoneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ZoneController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/ControlMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/ControlMiddleware.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ArticleSaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ArticleSaveRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/QrRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/QrRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Requests/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Request.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserLoginRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserLoginRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Jobs/Job.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/Job.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Listeners/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/app/Listeners/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Permission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Policies/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/.gitkeep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Wechat/Api.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Wechat/Api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Wechat/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Wechat/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Wechat/Count.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Wechat/Count.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Wechat/Menu_Select.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Wechat/Menu_Select.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Wechat/Qr.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Wechat/Qr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Wechat/Soap.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Wechat/Soap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Wechat/Usage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Wechat/Usage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Wechat/Zone.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Wechat/Zone.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootstrap/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/autoload.php" afterDir="false" />
@@ -51,29 +82,609 @@
       <change beforePath="$PROJECT_DIR$/config/cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cache.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/compile.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/compile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/entrust.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/entrust.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/ide-helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/ide-helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/image.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/image.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/queue.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/queue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sentry.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/sentry.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/ueditor.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/ueditor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/wechat.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/wechat.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/database/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/ModelFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ModelFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2016_11_11_040830_entrust_setup_tables.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2016_11_11_040830_entrust_setup_tables.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/.gitkeep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/img/bg-opacity.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/img/bg-opacity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/img/icon-img-down.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/img/icon-img-down.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/img/icon-img-up.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/img/icon-img-up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/css/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/css/themes/darkblue.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/css/themes/darkblue.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/css/themes/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/css/themes/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar3_small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar3_small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar_admin.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/avatar_admin.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/icon-color-close.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/icon-color-close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/icon-color.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/icon-color.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/logo-big-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/logo-big-white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/logo-big.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/logo-big.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/logo_hd.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/logo_hd.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/sidebar_inline_toggler_icon_darkblue.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/sidebar_inline_toggler_icon_darkblue.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/sidebar_inline_toggler_icon_default.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/sidebar_inline_toggler_icon_default.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/sidebar_toggler_icon_darkblue.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/sidebar_toggler_icon_darkblue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/img/sidebar_toggler_icon_default.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/img/sidebar_toggler_icon_default.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/scripts/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/scripts/demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/scripts/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/scripts/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout/scripts/quick-sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout/scripts/quick-sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/css/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/css/themes/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/css/themes/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/css/themes/grey.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/css/themes/grey.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar3_small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar3_small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/img/avatar9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/img/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/img/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/img/logo-big-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/img/logo-big-white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/img/logo-big.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/img/logo-big.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/img/logo-default.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/img/logo-default.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/img/sidebar-toggler-inverse.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/img/sidebar-toggler-inverse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/img/sidebar-toggler.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/img/sidebar-toggler.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/scripts/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/scripts/demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout2/scripts/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout2/scripts/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/css/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/css/themes/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/css/themes/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/img/avatar1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/img/avatar1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/img/avatar2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/img/avatar2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/img/avatar3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/img/avatar3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/img/avatar4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/img/avatar4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/img/avatar5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/img/avatar5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/img/avatar6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/img/avatar6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/img/avatar7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/img/avatar7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/img/avatar8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/img/avatar8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/img/avatar9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/img/avatar9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/img/logo-big-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/img/logo-big-white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/img/logo-big.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/img/logo-big.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/img/logo-default.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/img/logo-default.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/img/menu-toggler.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/img/menu-toggler.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/scripts/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/scripts/demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout3/scripts/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout3/scripts/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout4/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout4/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout4/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout4/css/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout4/css/themes/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout4/css/themes/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout4/css/themes/light.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout4/css/themes/light.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout4/img/avatar9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout4/img/avatar9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout4/img/logo-light.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout4/img/logo-light.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout4/img/sidebar-toggle-light.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout4/img/sidebar-toggle-light.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout4/scripts/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout4/scripts/demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/layout4/scripts/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/layout4/scripts/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/about-us.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/about-us.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/blog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/coming-soon.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/coming-soon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/error.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/error.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/image-crop.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/image-crop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/inbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/inbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/invoice.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/invoice.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/lock.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/lock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/lock2.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/lock2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/login-soft.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/login-soft.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/login2.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/login2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/login3.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/login3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/news.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/news.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/portfolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/portfolio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/pricing-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/pricing-table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/profile-old.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/profile-old.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/tasks.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/tasks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/timeline-old.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/timeline-old.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/timeline.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/timeline.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/css/todo.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/css/todo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/img/bg-white-lock.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/img/bg-white-lock.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/img/bg-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/img/bg-white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/charts-amcharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/charts-amcharts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/charts-flotcharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/charts-flotcharts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/coming-soon.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/coming-soon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/components-dropdowns.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/components-dropdowns.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/components-editors.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/components-editors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/components-form-tools.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/components-form-tools.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/components-ion-sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/components-ion-sliders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/components-jqueryui-sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/components-jqueryui-sliders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/components-knob-dials.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/components-knob-dials.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/components-nouisliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/components-nouisliders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/components-pickers.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/components-pickers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/contact-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/contact-us.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ecommerce-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ecommerce-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ecommerce-orders-view.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ecommerce-orders-view.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ecommerce-orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ecommerce-orders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ecommerce-products-edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ecommerce-products-edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ecommerce-products.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ecommerce-products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/form-dropzone.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/form-dropzone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/form-editable.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/form-editable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/form-fileupload.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/form-fileupload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/form-icheck.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/form-icheck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/form-image-crop.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/form-image-crop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/form-samples.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/form-samples.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/form-validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/form-validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/form-wizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/form-wizard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/inbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/inbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/index3.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/index3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/lock.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/lock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/login-soft.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/login-soft.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/maps-google.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/maps-google.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/maps-vector.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/maps-vector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/portfolio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/portlet-draggable.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/portlet-draggable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/table-advanced.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/table-advanced.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/table-ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/table-ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/table-editable.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/table-editable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/table-managed.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/table-managed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/tasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/tasks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/timeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/timeline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-alert-dialog-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-alert-dialog-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-blockui.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-blockui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-confirmations.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-confirmations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-datepaginator.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-datepaginator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-extended-modals.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-extended-modals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-general.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-general.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-idletimeout.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-idletimeout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-nestable.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-nestable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-notific8.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-notific8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-toastr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-toastr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/pages/scripts/ui-tree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-theme.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-theme.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/circle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/circle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/js/Chart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/bootstrap/js/jquery-2.0.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/js/jquery-2.0.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/js/npm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/spin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/js/spin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/lib/bootstrap-tagsinput.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/bootstrap-tagsinput.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/lib/bootstrap-tagsinput.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/bootstrap-tagsinput.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/font/summernote.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/font/summernote.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/font/summernote.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/font/summernote.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/font/summernote.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/font/summernote.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/function.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/function.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/jquery-3.1.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/jquery-3.1.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/js/a1.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/js/a1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/js/a2.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/js/a2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-ar-AR.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-ar-AR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-bg-BG.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-bg-BG.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-ca-ES.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-ca-ES.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-cs-CZ.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-cs-CZ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-da-DK.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-da-DK.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-de-DE.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-de-DE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-es-ES.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-es-ES.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-es-EU.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-es-EU.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-fa-IR.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-fa-IR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-fi-FI.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-fi-FI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-fr-FR.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-fr-FR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-gl-ES.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-gl-ES.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-he-IL.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-he-IL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-hr-HR.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-hr-HR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-hu-HU.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-hu-HU.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-id-ID.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-id-ID.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-it-IT.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-it-IT.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-ja-JP.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-ja-JP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-ko-KR.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-ko-KR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-lt-LT.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-lt-LT.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-lt-LV.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-lt-LV.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-nb-NO.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-nb-NO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-nl-NL.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-nl-NL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-pl-PL.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-pl-PL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-pt-BR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-pt-PT.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-pt-PT.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-ro-RO.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-ro-RO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-ru-RU.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-ru-RU.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-sk-SK.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-sk-SK.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-sl-SI.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-sl-SI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-sr-RS-Latin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-sr-RS-Latin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-sr-RS.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-sr-RS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-sv-SE.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-sv-SE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-th-TH.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-th-TH.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-tr-TR.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-tr-TR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-uk-UA.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-uk-UA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-vi-VN.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-vi-VN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-zh-CN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/lang/summernote-zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lang/summernote-zh-TW.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/lib/plugin/databasic/summernote-ext-databasic.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/plugin/databasic/summernote-ext-databasic.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/lib/plugin/databasic/summernote-ext-databasic.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/plugin/databasic/summernote-ext-databasic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/plugin/hello/summernote-ext-hello.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/plugin/hello/summernote-ext-hello.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/plugin/specialchars/summernote-ext-specialchars.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/plugin/specialchars/summernote-ext-specialchars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/show.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/show.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/summernote.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/summernote.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/summernote.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/summernote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/summernote.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/summernote.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/summernote1111.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/summernote1111.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/59ZRklaO5bWGqF5A9baEEYX0hVgzZQUfRDuZrPvH3D8.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/59ZRklaO5bWGqF5A9baEEYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/DXI1ORHCpsQm3Vp6mXoaTQ7aC6SjiAOpAWOKfJDfVRY.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/DXI1ORHCpsQm3Vp6mXoaTQ7aC6SjiAOpAWOKfJDfVRY.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/DXI1ORHCpsQm3Vp6mXoaTRdwxCXfZpKo5kWAx_74bHs.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/DXI1ORHCpsQm3Vp6mXoaTRdwxCXfZpKo5kWAx_74bHs.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/DXI1ORHCpsQm3Vp6mXoaTYjoYw3YTyktCCer_ilOlhE.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/DXI1ORHCpsQm3Vp6mXoaTYjoYw3YTyktCCer_ilOlhE.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/DXI1ORHCpsQm3Vp6mXoaTZ6vnaPZw6nYDxM4SVEMFKg.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/DXI1ORHCpsQm3Vp6mXoaTZ6vnaPZw6nYDxM4SVEMFKg.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/DXI1ORHCpsQm3Vp6mXoaTfgrLsWo7Jk1KvZser0olKY.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/DXI1ORHCpsQm3Vp6mXoaTfgrLsWo7Jk1KvZser0olKY.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/DXI1ORHCpsQm3Vp6mXoaTfy1_HTwRwgtl1cPga3Fy3Y.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/DXI1ORHCpsQm3Vp6mXoaTfy1_HTwRwgtl1cPga3Fy3Y.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/K88pR3goAWT7BTt32Z01m4X0hVgzZQUfRDuZrPvH3D8.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/K88pR3goAWT7BTt32Z01m4X0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/LWCjsQkB6EMdfHrEVqA1KYX0hVgzZQUfRDuZrPvH3D8.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/LWCjsQkB6EMdfHrEVqA1KYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/MTP_ySUJH_bn48VBG8sNSg7aC6SjiAOpAWOKfJDfVRY.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/MTP_ySUJH_bn48VBG8sNSg7aC6SjiAOpAWOKfJDfVRY.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/MTP_ySUJH_bn48VBG8sNShdwxCXfZpKo5kWAx_74bHs.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/MTP_ySUJH_bn48VBG8sNShdwxCXfZpKo5kWAx_74bHs.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/MTP_ySUJH_bn48VBG8sNSojoYw3YTyktCCer_ilOlhE.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/MTP_ySUJH_bn48VBG8sNSojoYw3YTyktCCer_ilOlhE.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/MTP_ySUJH_bn48VBG8sNSp6vnaPZw6nYDxM4SVEMFKg.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/MTP_ySUJH_bn48VBG8sNSp6vnaPZw6nYDxM4SVEMFKg.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/MTP_ySUJH_bn48VBG8sNSvgrLsWo7Jk1KvZser0olKY.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/MTP_ySUJH_bn48VBG8sNSvgrLsWo7Jk1KvZser0olKY.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/MTP_ySUJH_bn48VBG8sNSvy1_HTwRwgtl1cPga3Fy3Y.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/MTP_ySUJH_bn48VBG8sNSvy1_HTwRwgtl1cPga3Fy3Y.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/RjgO7rYTmqiVp7vzi-Q5UYX0hVgzZQUfRDuZrPvH3D8.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/RjgO7rYTmqiVp7vzi-Q5UYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/k3k702ZOKiLJc3WVjuplzA7aC6SjiAOpAWOKfJDfVRY.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/k3k702ZOKiLJc3WVjuplzA7aC6SjiAOpAWOKfJDfVRY.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/k3k702ZOKiLJc3WVjuplzBdwxCXfZpKo5kWAx_74bHs.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/k3k702ZOKiLJc3WVjuplzBdwxCXfZpKo5kWAx_74bHs.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/k3k702ZOKiLJc3WVjuplzIjoYw3YTyktCCer_ilOlhE.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/k3k702ZOKiLJc3WVjuplzIjoYw3YTyktCCer_ilOlhE.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/k3k702ZOKiLJc3WVjuplzJ6vnaPZw6nYDxM4SVEMFKg.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/k3k702ZOKiLJc3WVjuplzJ6vnaPZw6nYDxM4SVEMFKg.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/k3k702ZOKiLJc3WVjuplzPgrLsWo7Jk1KvZser0olKY.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/k3k702ZOKiLJc3WVjuplzPgrLsWo7Jk1KvZser0olKY.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/k3k702ZOKiLJc3WVjuplzPy1_HTwRwgtl1cPga3Fy3Y.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/k3k702ZOKiLJc3WVjuplzPy1_HTwRwgtl1cPga3Fy3Y.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/u-WUoqrET9fUeobQW7jkRYX0hVgzZQUfRDuZrPvH3D8.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/u-WUoqrET9fUeobQW7jkRYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/fonts/xozscpT2726on7jbcb_pAoX0hVgzZQUfRDuZrPvH3D8.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/fonts/xozscpT2726on7jbcb_pAoX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/avatar_admin.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/image/avatar_admin.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/image/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/logo_hd.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/image/logo_hd.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/map/gmj.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/image/map/gmj.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/map/gxj.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/image/map/gxj.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/map/mqg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/image/map/mqg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/map/mqg_m.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/image/map/mqg_m.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/map/photoTilt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/image/map/photoTilt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/map/qmsht.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/image/map/qmsht.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/map/qmsht_m.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/image/map/qmsht_m.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/map/qwg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/image/map/qwg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/map/qwg_m.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/image/map/qwg_m.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/map/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/image/map/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/pyq_title.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/image/pyq_title.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/show.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/image/show.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/show1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/image/show1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/qr/101.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/qr/101.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/qr/911.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/qr/911.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/qr/getheadimg.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/qr/getheadimg.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/qr/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/qr/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/qr/logo1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/qr/logo1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/qr/logo_ldjl.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/qr/logo_ldjl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/qr/qrcode.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/qr/qrcode.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/anchor/anchor.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/anchor/anchor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/attachment.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/attachment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/attachment.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/attachment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/attachment.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/attachment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_default.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_default.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/alignicon.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/alignicon.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/alignicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/alignicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/file-icons.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/file-icons.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/file-icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/file-icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/icons.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/icons.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/progress.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/progress.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/success.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/success.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/success.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/attachment/images/success.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/background/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/background/background.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/background/background.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/background/background.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/background/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/background/background.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/background/images/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/background/images/bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/background/images/success.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/background/images/success.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/chart.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/chart.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/charts.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/charts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/charts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/charts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/images/charts0.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/images/charts0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/images/charts1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/images/charts1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/images/charts2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/images/charts2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/images/charts3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/images/charts3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/images/charts4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/images/charts4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/images/charts5.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/charts/images/charts5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/emotion.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/emotion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/emotion.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/emotion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/emotion.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/emotion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/0.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/bface.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/bface.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/cface.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/cface.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/fface.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/fface.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/jxface2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/jxface2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/tface.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/tface.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/wface.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/wface.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/yface.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/emotion/images/yface.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/gmap/gmap.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/gmap/gmap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/help/help.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/help/help.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/help/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/help/help.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/help/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/help/help.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/image.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/image.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/image.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/image.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/alignicon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/alignicon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/icons.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/icons.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/progress.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/progress.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/success.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/success.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/success.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/image/images/success.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/insertframe/insertframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/insertframe/insertframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/internal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/link/link.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/link/link.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/map/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/map/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/map/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/map/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/music/music.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/music/music.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/music/music.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/music/music.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/music/music.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/music/music.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/preview/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/preview/preview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/addimg.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/addimg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/brush.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/brush.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/delimg.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/delimg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/delimgH.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/delimgH.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/empty.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/empty.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/emptyH.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/emptyH.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/eraser.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/eraser.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/redo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/redo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/redoH.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/redoH.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/scale.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/scale.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/scaleH.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/scaleH.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/size.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/size.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/undo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/undo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/undoH.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/images/undoH.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/scrawl.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/scrawl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/scrawl.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/scrawl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/scrawl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/scrawl/scrawl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/searchreplace/searchreplace.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/searchreplace/searchreplace.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/searchreplace/searchreplace.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/searchreplace/searchreplace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/snapscreen/snapscreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/snapscreen/snapscreen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/spechars/spechars.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/spechars/spechars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/spechars/spechars.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/spechars/spechars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/table/dragicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/table/dragicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/table/edittable.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/table/edittable.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/table/edittable.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/table/edittable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/table/edittable.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/table/edittable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/table/edittd.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/table/edittd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/table/edittip.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/table/edittip.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/images/bg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/images/bg.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/images/pre0.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/images/pre0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/images/pre1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/images/pre1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/images/pre2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/images/pre2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/images/pre3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/images/pre3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/images/pre4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/images/pre4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/template.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/template/template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/center_focus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/center_focus.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/file-icons.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/file-icons.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/file-icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/file-icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/icons.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/icons.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/left_focus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/left_focus.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/none_focus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/none_focus.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/progress.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/progress.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/right_focus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/right_focus.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/success.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/success.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/success.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/images/success.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/video.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/video.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/video/video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/webapp/webapp.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/webapp/webapp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/wordimage/imageUploader.swf" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/wordimage/imageUploader.swf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/wordimage/tangram.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/wordimage/tangram.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/wordimage/wordimage.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/wordimage/wordimage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/wordimage/wordimage.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/dialogs/wordimage/wordimage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/addimage.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/addimage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/alldeletebtnhoverskin.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/alldeletebtnhoverskin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/alldeletebtnupskin.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/alldeletebtnupskin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/button.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/button.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/copy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/deletedisable.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/deletedisable.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/deleteenable.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/deleteenable.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/listbackground.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/listbackground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/localimage.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/localimage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/music.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/music.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/rotateleftdisable.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/rotateleftdisable.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/rotateleftenable.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/rotateleftenable.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/rotaterightdisable.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/rotaterightdisable.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/rotaterightenable.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/rotaterightenable.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/upload.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/en/images/upload.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/zh-cn/images/copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/zh-cn/images/copy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/zh-cn/images/localimage.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/zh-cn/images/localimage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/zh-cn/images/music.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/zh-cn/images/music.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/zh-cn/images/upload.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/zh-cn/images/upload.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/lang/zh-cn/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/lang/zh-cn/zh-cn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/php/Uploader.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/php/Uploader.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/php/action_crawler.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/php/action_crawler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/php/action_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/php/action_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/php/action_upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/php/action_upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/php/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/php/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/php/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/php/controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/css/ueditor.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/css/ueditor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/css/ueditor.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/css/ueditor.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/dialogbase.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/dialogbase.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/anchor.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/anchor.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/arrow_down.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/arrow_down.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/arrow_up.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/arrow_up.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/button-bg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/button-bg.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/cancelbutton.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/cancelbutton.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/charts.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/charts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/cursor_h.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/cursor_h.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/cursor_h.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/cursor_h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/cursor_v.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/cursor_v.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/cursor_v.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/cursor_v.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/dialog-title-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/dialog-title-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/filescan.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/filescan.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/highlighted.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/highlighted.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/icons-all.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/icons-all.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/icons.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/icons.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/loaderror.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/loaderror.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/lock.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/lock.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/neweditor-tab-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/neweditor-tab-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/pagebreak.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/pagebreak.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/scale.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/scale.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/sortable.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/sortable.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/spacer.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/spacer.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/sparator_v.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/sparator_v.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/table-cell-align.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/table-cell-align.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/tangram-colorpicker.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/tangram-colorpicker.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/toolbar_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/toolbar_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/unhighlighted.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/unhighlighted.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/upload.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/upload.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/videologo.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/videologo.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/word.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/word.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/wordpaste.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/wordpaste.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/iframe.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/iframe.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/SyntaxHighlighter/shCore.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/SyntaxHighlighter/shCore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/codemirror/codemirror.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/codemirror/codemirror.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/codemirror/codemirror.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/codemirror/codemirror.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/adapters/mootools-adapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/adapters/mootools-adapter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/adapters/prototype-adapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/adapters/prototype-adapter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/adapters/standalone-framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/adapters/standalone-framework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/highcharts-more.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/highcharts-more.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/highcharts-more.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/highcharts-more.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/highcharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/highcharts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/highcharts.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/highcharts.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/annotations.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/annotations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/annotations.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/annotations.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/canvas-tools.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/canvas-tools.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/canvas-tools.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/canvas-tools.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/data.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/data.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/drilldown.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/drilldown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/drilldown.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/drilldown.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/exporting.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/exporting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/exporting.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/exporting.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/funnel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/funnel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/funnel.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/funnel.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/heatmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/heatmap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/heatmap.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/heatmap.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/map.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/map.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/no-data-to-display.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/no-data-to-display.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/themes/dark-blue.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/themes/dark-blue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/themes/dark-green.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/themes/dark-green.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/themes/gray.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/themes/gray.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/themes/grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/themes/grid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/themes/skies.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/highcharts/themes/skies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/jquery-1.10.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/jquery-1.10.2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/jquery-1.10.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/jquery-1.10.2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/jquery-1.10.2.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/jquery-1.10.2.min.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/font/vjs.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/font/vjs.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/font/vjs.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/font/vjs.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/font/vjs.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/font/vjs.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/font/vjs.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/font/vjs.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/video-js.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/video-js.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/video-js.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/video-js.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/video-js.swf" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/video-js.swf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/video.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/video.dev.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/video-js/video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/Uploader.swf" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/Uploader.swf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.custom.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.flashonly.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.flashonly.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.flashonly.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.flashonly.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.html5only.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.html5only.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.html5only.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.html5only.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.withoutimage.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.withoutimage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/zeroclipboard/ZeroClipboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/zeroclipboard/ZeroClipboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/ueditor.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/ueditor.all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/ueditor.all.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/ueditor.all.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/ueditor.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/ueditor.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/ueditor.parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/ueditor.parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/ueditor/ueditor.parse.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/ueditor/ueditor.parse.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/web.config" beforeDir="false" afterPath="$PROJECT_DIR$/public/web.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/assets/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/app.scss" afterDir="false" />
@@ -81,11 +692,97 @@
       <change beforePath="$PROJECT_DIR$/resources/lang/en/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/pagination.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/passwords.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/passwords.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/vendor/ueditor/en/upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/vendor/ueditor/en/upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/vendor/ueditor/zh-CN/upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/vendor/ueditor/zh-CN/upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/vendor/ueditor/zh-TW/upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/vendor/ueditor/zh-TW/upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/agent_cancel_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/agent_cancel_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/agent_order_cancel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/agent_order_cancel.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/agent_products_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/agent_products_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/agent_products_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/agent_products_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/agent_products_modify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/agent_products_modify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/agent_sync_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/agent_sync_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/agentinterface.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/agentinterface.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/agentinterfaceresult.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/agentinterfaceresult.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/article_hits.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/article_hits.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/articleadd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/articleadd.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/articleadd_back.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/articleadd_back.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/articlecopy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/articlecopy.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/articlelist.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/articlemodify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/articlemodify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/articlereviewqr.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/articlereviewqr.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/articlesearch.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/articlesearch.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/blade/data.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/blade/data.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/cardban.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/cardban.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/changpassword.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/changpassword.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/count_click.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/count_click.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/count_market_info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/count_market_info.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/count_menu_click.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/count_menu_click.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/count_order_card_payed.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/count_order_card_payed.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/count_order_card_payed_search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/count_order_card_payed_search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/count_order_nianka_payed.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/count_order_nianka_payed.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/count_order_payed.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/count_order_payed.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/count_order_payed_search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/count_order_payed_search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/employeecard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/employeecard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/index_back.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/index_back.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/mark_count.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/mark_count.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/menu_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/menu_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/menu_modify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/menu_modify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/message.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/message.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/picker.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/picker.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/push_project_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/push_project_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/push_project_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/push_project_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/push_project_modify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/push_project_modify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/qradd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/qradd.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/qrlist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/qrlist.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/qrlist1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/qrlist1.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/qrmodify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/qrmodify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/qrsearch.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/qrsearch.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/qrtempadd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/qrtempadd.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/qrtemplist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/qrtemplist.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/qrtempmodify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/qrtempmodify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/qy_tglm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/qy_tglm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/qy_tglm_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/qy_tglm_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/request_se_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/request_se_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/request_se_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/request_se_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/request_se_modify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/request_se_modify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/request_txt_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/request_txt_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/request_txt_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/request_txt_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/request_txt_modify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/request_txt_modify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/request_voice_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/request_voice_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/request_voice_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/request_voice_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/request_voice_modify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/request_voice_modify.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/tag_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/tag_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/tag_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/tag_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/test.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/test.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/top.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/top.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/web_articleadd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/web_articleadd.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/web_articlelist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/web_articlelist.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/web_articlemodify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/web_articlemodify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/zone_show_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/zone_show_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/zone_show_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/zone_show_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/control/zone_show_modify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/control/zone_show_modify.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/errors/503.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/errors/503.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/test/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/test/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/test/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/test/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/test/test.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/test/test.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/test/test1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/test/test1.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/vendor/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/laravel-log-viewer/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-log-viewer/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/laravel-log-viewer/log.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-log-viewer/log.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/ueditor/assets.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/ueditor/assets.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/zone/map.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/zone/map.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/temp/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/temp/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/temp/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/temp/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/.idea/temp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/temp/.idea/temp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/temp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ExampleTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
     </list>
@@ -186,8 +883,8 @@
       <file leaf-file-name="sidebar.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/control/sidebar.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="72" column="21" lean-forward="true" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
+            <state relative-caret-position="808">
+              <caret line="80" column="48" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -494,12 +1191,12 @@
       <workItem from="1524968118219" duration="87000" />
       <workItem from="1538271876451" duration="1796000" />
       <workItem from="1538285210419" duration="17000" />
-      <workItem from="1538285245858" duration="4302000" />
+      <workItem from="1538285245858" duration="4758000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125207000" />
+    <option name="totallyTimeSpent" value="125663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -886,8 +1583,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/control/sidebar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="72" column="21" lean-forward="true" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
+        <state relative-caret-position="808">
+          <caret line="80" column="48" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
         </state>
       </provider>
     </entry>
