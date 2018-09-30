@@ -129,6 +129,14 @@ Route::group(['prefix' => 'control', 'middleware' => 'control'], function () {
     //修改密码
     Route::any('changpassword', 'UsersController@changpwd');
 
+    //官网文章管理
+    Route::get('web_articlelist', 'Control\WebArticleController@articleList');
+    Route::get('web_articlemodify', 'Control\WebArticleController@articleModify');
+    Route::get('web_articlesearch', 'Control\WebArticleController@articleSearch');
+    Route::get('web_articleadd', 'Control\WebArticleController@articleAdd');
+    Route::post('web_articlesave', 'Control\WebArticleController@articleSave');
+
+
 });
 
 //对外
@@ -137,6 +145,12 @@ Route::get('api/ldjl', 'Api\ApiController@ldjl');        //龙帝惊临每天获
 Route::get('api/mobile', 'Api\ApiController@api_mobile');
 //景区导览图
 Route::get('zone/map', 'ZoneController@map');
+
+
+
+
+
+
 
 
 Route::get('test', 'Test\TestController@test');

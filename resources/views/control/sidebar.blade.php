@@ -57,20 +57,21 @@
                 <li>
                     <a href="javascript:;">
                         <i class="icon-settings"></i>
-                        <span class="title">文章管理</span>
+                        <span class="title">官网管理</span>
                         <span class="arrow "></span>
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="articlelist">
+                            <a href="web_articlelist">
                                 文章列表</a>
                         </li>
                         <li>
-                            <a href="articleadd">
+                            <a href="web_articleadd">
                                 添加文章</a>
                         </li>
                     </ul>
                 </li>
+
                 <!-- END MARKET MENU-->
             @endif
             @if (Session::get('managelevel')=='4')
@@ -85,6 +86,23 @@
                 <!-- START MARKET MENU -->
                 <li class="heading">
                     <h3 class="uppercase">Features</h3>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="icon-settings"></i>
+                        <span class="title">官网管理</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="articlelist">
+                                文章列表</a>
+                        </li>
+                        <li>
+                            <a href="articleadd">
+                                添加文章</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="javascript:;">
@@ -140,6 +158,23 @@
                 <!-- START MANGER MENU -->
                 <li class="heading">
                     <h3 class="uppercase">Features</h3>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="icon-settings"></i>
+                        <span class="title">官网管理</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="web_articlelist">
+                                文章列表</a>
+                        </li>
+                        <li>
+                            <a href="web_articleadd">
+                                添加文章</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="javascript:;">

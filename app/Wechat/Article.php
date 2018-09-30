@@ -82,4 +82,31 @@ class Article
             }
         }
     }
+
+
+    /*
+     * 官网编辑文章时确认所选栏目
+     */
+    public function WebMenuCheck($classid)
+    {
+
+            $result_options = DB::connection('mysql_main')->table('newscats')
+
+                ->orderBy('id', 'asc')
+                ->get();
+            if ($result_options) {
+
+                foreach ($result_options as $result_option) {
+                    if ($classid == $result_option->id) {
+                        echo "<option selected  value=\"" . $result_option->id . "\">" . $result_option->title . "</option>";
+                    } else {
+                        echo "<option  value=\"" . $result_option->id . "\">" . $result_option->title . "</option>";
+                    }
+                }
+
+            }
+
+    }
+
+
 }

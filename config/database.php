@@ -66,6 +66,19 @@ return [
             'engine' => null,
         ],
 
+        'mysql_main' => [
+            'driver'    => 'mysql',
+            'host'      => env('DB_MAIN_HOST', 'localhost'),
+            'database'  => env('DB_MAIN_DATABASE', 'forge'),
+            'username'  => env('DB_MAIN_USERNAME', 'forge'),
+            'password'  => env('DB_MAIN_PASSWORD', ''),
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+            'strict'    => false,
+        ],
+
+
         /*'sqlsrv' => [
             'driver' => 'sqlsrv',
             'host' => '192.168.1.254',
