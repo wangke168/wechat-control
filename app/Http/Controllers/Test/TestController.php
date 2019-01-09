@@ -77,24 +77,35 @@ class TestController extends Controller
 
     public function test()
     {
-
+//        echo 'sdaa';
         $rows=DB::table('Report')
             ->where('guest_city','=',null)
             ->where('guest_tel','<>','')
-            ->orderBy('id','asc')
-            ->skip(100)->take(0)
+            ->orderBy('ID','asc')
+            ->skip(0)
+            ->take(500)
             ->get();
+//        var_dump($rows);
          foreach ($rows as $row) {
-             $json = file_get_contents("http://cx.shouji.360.cn/phonearea.php?number=".$row->guest_tel);
-             $data = json_decode($json, true);
-             $province=$data['data']['province'];
-             $city=$data['data']['city'];
-             echo $province;
-             echo($row->guest_tel.'<br>');
-             DB::table('Report')
-                 ->where('ID',$row->ID)
-                 ->update(['guest_province'=>$province,'guest_city'=>$city]);
-         }
+             try {
+                 $json = file_get_contents("http://cx.shouji.360.cn/phonearea.php?number=" . $row->guest_tel);
+                 $data = json_decode($json, true);
+                 $province = $data['data']['province'];
+                 $city = $data['data']['city'];
+//             echo $province;
+
+                 DB::table('Report')
+                     ->where('ID', $row->ID)
+                     ->update(['guest_province' => $province, 'guest_city' => $city]);
+             }
+             catch (Exception $e) {
+                 var_dump($e);
+             }
+
+        }
+
+//                          echo($row->guest_tel.'<br>');
+
     }
 
     private function CheckCardBan($eventkey)
