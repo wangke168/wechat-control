@@ -32,7 +32,8 @@ class SoapController extends Controller
 
     public function __construct()
     {
-        $this->SoapClint = new \SoapClient("http://aaa.hdyuanmingxinyuan.com:8081/interface/AgentInterface.asmx?WSDL");
+        $wsdl = env('AGENT_WSDL', '');
+        $this->SoapClint = new \SoapClient($wsdl);
         $this->CompanyCode = 'ymxytest0fjloa';
     }
 

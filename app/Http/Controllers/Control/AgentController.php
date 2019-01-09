@@ -16,8 +16,8 @@ class AgentController extends Controller
 
     public function __construct()
     {
-//        $wsdl = env('AGENT_WSDL', '');
-//        $this->SoapClint = new SoapClient($wsdl);
+        $wsdl = env('AGENT_WSDL', '');
+        $this->SoapClint = new SoapClient($wsdl);
 //        $this->CompanyCode='ymxytest0fjloa';
     }
 

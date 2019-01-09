@@ -18,7 +18,8 @@
         "simplesoftwareio/simple-qrcode": "~1",
         "sentry/sentry-laravel": "^0.6.1",
         "artisaninweb/laravel-soap": "0.3.0.7",
-        "rap2hpoutre/laravel-log-viewer": "^0.10.4"
+        "rap2hpoutre/laravel-log-viewer": "^0.10.4",
+        "econea/nusoap": "~0.9.5.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

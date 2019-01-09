@@ -39,8 +39,8 @@ class TestController extends Controller
         $this->session = $app->staff_session; // 客服会话管理
 
         $this->material = $app->material;
-        $wsdl = env('AGENT_WSDL', '');
-        $this->SoapClint = new SoapClient($wsdl);
+//        $wsdl = env('AGENT_WSDL', '');
+//        $this->SoapClint = new SoapClient($wsdl);
     }
 
     public function index(Request $request)
@@ -77,10 +77,24 @@ class TestController extends Controller
 
     public function test()
     {
-      var_dump($this->CheckCardBan('10217'));
 
-
-
+        $rows=DB::table('Report')
+            ->where('guest_city','=',null)
+            ->where('guest_tel','<>','')
+            ->orderBy('id','asc')
+            ->skip(100)->take(0)
+            ->get();
+         foreach ($rows as $row) {
+             $json = file_get_contents("http://cx.shouji.360.cn/phonearea.php?number=".$row->guest_tel);
+             $data = json_decode($json, true);
+             $province=$data['data']['province'];
+             $city=$data['data']['city'];
+             echo $province;
+             echo($row->guest_tel.'<br>');
+             DB::table('Report')
+                 ->where('ID',$row->ID)
+                 ->update(['guest_province'=>$province,'guest_city'=>$city]);
+         }
     }
 
     private function CheckCardBan($eventkey)
