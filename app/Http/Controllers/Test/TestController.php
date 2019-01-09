@@ -86,22 +86,26 @@ class TestController extends Controller
             ->take(500)
             ->get();
 //        var_dump($rows);
-         foreach ($rows as $row) {
-             try {
-                 $json = file_get_contents("http://cx.shouji.360.cn/phonearea.php?number=" . $row->guest_tel);
-                 $data = json_decode($json, true);
-                 $province = $data['data']['province'];
-                 $city = $data['data']['city'];
+        if ($row) {
+            foreach ($rows as $row) {
+                try {
+                    $json = file_get_contents("http://cx.shouji.360.cn/phonearea.php?number=" . $row->guest_tel);
+                    $data = json_decode($json, true);
+                    $province = $data['data']['province'];
+                    $city = $data['data']['city'];
 //             echo $province;
 
-                 DB::table('Report')
-                     ->where('ID', $row->ID)
-                     ->update(['guest_province' => $province, 'guest_city' => $city]);
-             }
-             catch (Exception $e) {
-                 var_dump($e);
-             }
+                    DB::table('Report')
+                        ->where('ID', $row->ID)
+                        ->update(['guest_province' => $province, 'guest_city' => $city]);
+                } catch (Exception $e) {
+                    var_dump($e);
+                }
 
+            }
+        }
+        else{
+            echo "同步地区信息已完成";
         }
 
 //                          echo($row->guest_tel.'<br>');
