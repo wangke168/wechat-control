@@ -86,7 +86,7 @@ class TestController extends Controller
             ->take(500)
             ->get();
 //        var_dump($rows);
-        if ($row) {
+        if ($rows) {
             foreach ($rows as $row) {
                 try {
                     $json = file_get_contents("http://cx.shouji.360.cn/phonearea.php?number=" . $row->guest_tel);
