@@ -79,7 +79,7 @@ class TestController extends Controller
     {
 //        echo 'sdaa';
         $rows=DB::table('Report')
-            ->where('guest_city','=',null)
+            ->where('guest_city','=','')
             ->where('guest_tel','<>','')
             ->orderBy('ID','asc')
             ->skip(0)
