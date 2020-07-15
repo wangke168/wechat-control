@@ -153,10 +153,17 @@ Route::get('zone/map', 'ZoneController@map');
 
 
 
-Route::get('test', 'Test\TestController@test');
+Route::get('test', 'Test\TestController@create');
 Route::get('soap','Test\SoapController@index');
 Route::get('json/userdairydetail', 'Control\DataController@user_dairy_detail');
 Route::get('esc', 'Test\TestController@take_esc_json');
 Route::get('json/orderdairydetail', 'Control\DataController@order_dairy_detail');
 
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+
+
+
+Route::get('hotel/detail','HotelController@detail');
+Route::get('hotel/order','HotelController@order');
+
+Route::get('redirect' ,'RedirectController@index');

@@ -43,6 +43,40 @@ class TestController extends Controller
 //        $this->SoapClint = new SoapClient($wsdl);
     }
 
+    public function create()
+    {
+        $id='101';
+
+        $app = app('wechat');
+        $qrcode = $app->qrcode;
+        $result =  $this->qrcode->forever($id);// 或者 $qrcode->forever("foo");
+        return $result;
+        $ticket = $result->ticket; // 或者 $result['ticket']
+        if ($row->qrscene_logo) {
+            $qr_logo = $row->qrscene_logo;
+        }
+        else{
+            $qr_logo='qr/logo.png';
+        }
+        /* $QR = $qrcode->url($ticket);
+         $logo = $qr_logo;
+         $img = Image::make($QR);
+         $img->insert($logo, 'center');
+         return $img->response('png');*/
+        return $this->create_qr($ticket,$qr_logo);
+    }
+    private function create_qr($ticket,$qr_logo)
+    {
+        $QR = $this->qrcode->url($ticket);
+        $logo=$qr_logo;
+        $img = Image::make($QR);
+        $img->insert($logo, 'center');
+        return $img->response('png');
+    }
+
+
+
+
     public function index(Request $request)
     {
         $action = $request->action;
