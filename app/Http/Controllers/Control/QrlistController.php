@@ -144,7 +144,7 @@ class QrlistController extends Controller
             $qr_logo = $row->qrscene_logo;
         }
         else{
-            $qr_logo='qr/logo.png';
+            $qr_logo='qr/logo_hd.png';
         }
        /* $QR = $qrcode->url($ticket);
         $logo = $qr_logo;

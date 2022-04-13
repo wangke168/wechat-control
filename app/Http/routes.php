@@ -153,7 +153,7 @@ Route::get('zone/map', 'ZoneController@map');
 
 
 
-Route::get('test', 'Test\TestController@create');
+Route::get('test', 'Test\TestController@temp');
 Route::get('soap','Test\SoapController@index');
 Route::get('json/userdairydetail', 'Control\DataController@user_dairy_detail');
 Route::get('esc', 'Test\TestController@take_esc_json');

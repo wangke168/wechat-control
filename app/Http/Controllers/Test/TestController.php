@@ -43,8 +43,47 @@ class TestController extends Controller
 //        $this->SoapClint = new SoapClient($wsdl);
     }
 
+    public function  temp(){
+        $a=1;
+        $b=1;
+        $c=1;
+        $d=1;
+        $e=1;
+        $f=1;
+        $g=1;
+        $u=0.1;
+        $v=0.1;
+        $w=0.1;
+        $x=0.1;
+        $y=0.1;
+        $z=0.1;
+        for ($i=0; $i<=20; $i++)
+        {
+            $result1=0*$a+2*$a*(23/27)+0*$a*(21/27)+1*$a*(18/27)+1*$a*(14/27)+2*$a*(11/27)+0*$a*(8/27);
+            $result2=0*$b+2*$b*(23/27)+1*$b*(21/27)+1*$b*(18/27)+3*$b*(14/27)+1*$b*(11/27)+1*$b*(8/27);
+            $result3=1*$c+2*$c*(23/27)+1*$c*(21/27)+2*$c*(18/27)+5*$c*(14/27)+3*$c*(11/27)+0*$c*(8/27);
+            $result4=0*$d+1*$d*(23/27)+1*$d*(21/27)+1*$d*(18/27)+0*$d*(14/27)+2*$d*(11/27)+1*$d*(8/27);
+            $result5=1*$e+1*$e*(23/27)+4*$e*(21/27)+0*$e*(18/27)+2*$e*(14/27)+5*$e*(11/27)+1*$e*(8/27);
+            $result6=0*$f+0*$f*(23/27)+1*$f*(21/27)+9*$f*(18/27)+5*$f*(14/27)+2*$f*(11/27)+0*$f*(8/27);
+            $result=$result1+$result2+$result3+$result4+$result5+$result6;
+            echo $result1.'_'.$result2.'_'.$result3.'_'.$result4.'_'.$result5.'_'.$result6.'_'.$result.'_'.$a."</br>";
+
+
+            $a=$a+1;
+            $b=$a;
+            $c=$a;
+            $d=$a-1;
+            $e=$a-2;
+            $f=$a-3;
+        }
+
+    }
+
     public function create()
     {
+
+
+
         $id='101';
 
         $app = app('wechat');
@@ -112,7 +151,7 @@ class TestController extends Controller
     public function test()
     {
 //        echo 'sdaa';
-        $rows=DB::table('Report')
+        $rows=DB::table('Report_2021')
             ->where('guest_city','=','')
             ->where('guest_tel','<>','')
             ->orderBy('ID','asc')
