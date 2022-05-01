@@ -84,7 +84,8 @@
                             <i class="fa fa-comments"></i>
                             <?php
                             $usage = new \App\WeChat\Usage();
-                            echo $usage->get_tag_info($menu['matchrule']['group_id'])->tag_name.'('.$usage->get_tag_info($menu['matchrule']['group_id'])->eventkey.')'; ?>
+                            echo $usage->get_tag_info($menu['matchrule']['group_id'])->tag_name.'('.$usage->get_tag_info($menu['matchrule']['group_id'])->eventkey.')';
+                            echo "tag_ID:".$menu['matchrule']['group_id']?>
                         </div>
                     </div>
                     <div class="portlet-body">

@@ -43,38 +43,56 @@ class TestController extends Controller
 //        $this->SoapClint = new SoapClient($wsdl);
     }
 
-    public function  temp(){
-        $a=1;
-        $b=1;
-        $c=1;
-        $d=1;
-        $e=1;
-        $f=1;
-        $g=1;
-        $u=0.1;
-        $v=0.1;
-        $w=0.1;
-        $x=0.1;
-        $y=0.1;
-        $z=0.1;
-        for ($i=0; $i<=20; $i++)
-        {
-            $result1=0*$a+2*$a*(23/27)+0*$a*(21/27)+1*$a*(18/27)+1*$a*(14/27)+2*$a*(11/27)+0*$a*(8/27);
-            $result2=0*$b+2*$b*(23/27)+1*$b*(21/27)+1*$b*(18/27)+3*$b*(14/27)+1*$b*(11/27)+1*$b*(8/27);
-            $result3=1*$c+2*$c*(23/27)+1*$c*(21/27)+2*$c*(18/27)+5*$c*(14/27)+3*$c*(11/27)+0*$c*(8/27);
-            $result4=0*$d+1*$d*(23/27)+1*$d*(21/27)+1*$d*(18/27)+0*$d*(14/27)+2*$d*(11/27)+1*$d*(8/27);
-            $result5=1*$e+1*$e*(23/27)+4*$e*(21/27)+0*$e*(18/27)+2*$e*(14/27)+5*$e*(11/27)+1*$e*(8/27);
-            $result6=0*$f+0*$f*(23/27)+1*$f*(21/27)+9*$f*(18/27)+5*$f*(14/27)+2*$f*(11/27)+0*$f*(8/27);
-            $result=$result1+$result2+$result3+$result4+$result5+$result6;
-            echo $result1.'_'.$result2.'_'.$result3.'_'.$result4.'_'.$result5.'_'.$result6.'_'.$result.'_'.$a."</br>";
+    public function test1()
+    {
+        return date('yy-m-d', "1651116958");
+    }
+    private function pkcsPadding($str, $blocksize)
+    {
+        $pad = $blocksize - (strlen($str) % $blocksize);
+        return $str . str_repeat(chr($pad), $pad);
+    }
+    private function unPkcsPadding($str)
+    {
+        $pad = ord($str{strlen($str) - 1});
+        if ($pad > strlen($str)) {
+            return false;
+        }
+        return substr($str, 0, -1 * $pad);
+    }
+
+    public function temp()
+    {
+        $a = 1;
+        $b = 1;
+        $c = 1;
+        $d = 1;
+        $e = 1;
+        $f = 1;
+        $g = 1;
+        $u = 0.1;
+        $v = 0.1;
+        $w = 0.1;
+        $x = 0.1;
+        $y = 0.1;
+        $z = 0.1;
+        for ($i = 0; $i <= 20; $i++) {
+            $result1 = 0 * $a + 2 * $a * (23 / 27) + 0 * $a * (21 / 27) + 1 * $a * (18 / 27) + 1 * $a * (14 / 27) + 2 * $a * (11 / 27) + 0 * $a * (8 / 27);
+            $result2 = 0 * $b + 2 * $b * (23 / 27) + 1 * $b * (21 / 27) + 1 * $b * (18 / 27) + 3 * $b * (14 / 27) + 1 * $b * (11 / 27) + 1 * $b * (8 / 27);
+            $result3 = 1 * $c + 2 * $c * (23 / 27) + 1 * $c * (21 / 27) + 2 * $c * (18 / 27) + 5 * $c * (14 / 27) + 3 * $c * (11 / 27) + 0 * $c * (8 / 27);
+            $result4 = 0 * $d + 1 * $d * (23 / 27) + 1 * $d * (21 / 27) + 1 * $d * (18 / 27) + 0 * $d * (14 / 27) + 2 * $d * (11 / 27) + 1 * $d * (8 / 27);
+            $result5 = 1 * $e + 1 * $e * (23 / 27) + 4 * $e * (21 / 27) + 0 * $e * (18 / 27) + 2 * $e * (14 / 27) + 5 * $e * (11 / 27) + 1 * $e * (8 / 27);
+            $result6 = 0 * $f + 0 * $f * (23 / 27) + 1 * $f * (21 / 27) + 9 * $f * (18 / 27) + 5 * $f * (14 / 27) + 2 * $f * (11 / 27) + 0 * $f * (8 / 27);
+            $result = $result1 + $result2 + $result3 + $result4 + $result5 + $result6;
+            echo $result1 . '_' . $result2 . '_' . $result3 . '_' . $result4 . '_' . $result5 . '_' . $result6 . '_' . $result . '_' . $a . "</br>";
 
 
-            $a=$a+1;
-            $b=$a;
-            $c=$a;
-            $d=$a-1;
-            $e=$a-2;
-            $f=$a-3;
+            $a = $a + 1;
+            $b = $a;
+            $c = $a;
+            $d = $a - 1;
+            $e = $a - 2;
+            $f = $a - 3;
         }
 
     }
@@ -83,37 +101,34 @@ class TestController extends Controller
     {
 
 
-
-        $id='101';
+        $id = '101';
 
         $app = app('wechat');
         $qrcode = $app->qrcode;
-        $result =  $this->qrcode->forever($id);// 或者 $qrcode->forever("foo");
+        $result = $this->qrcode->forever($id);// 或者 $qrcode->forever("foo");
         return $result;
         $ticket = $result->ticket; // 或者 $result['ticket']
         if ($row->qrscene_logo) {
             $qr_logo = $row->qrscene_logo;
-        }
-        else{
-            $qr_logo='qr/logo.png';
+        } else {
+            $qr_logo = 'qr/logo.png';
         }
         /* $QR = $qrcode->url($ticket);
          $logo = $qr_logo;
          $img = Image::make($QR);
          $img->insert($logo, 'center');
          return $img->response('png');*/
-        return $this->create_qr($ticket,$qr_logo);
+        return $this->create_qr($ticket, $qr_logo);
     }
-    private function create_qr($ticket,$qr_logo)
+
+    private function create_qr($ticket, $qr_logo)
     {
         $QR = $this->qrcode->url($ticket);
-        $logo=$qr_logo;
+        $logo = $qr_logo;
         $img = Image::make($QR);
         $img->insert($logo, 'center');
         return $img->response('png');
     }
-
-
 
 
     public function index(Request $request)
@@ -151,10 +166,10 @@ class TestController extends Controller
     public function test()
     {
 //        echo 'sdaa';
-        $rows=DB::table('Report_2021')
-            ->where('guest_city','=','')
-            ->where('guest_tel','<>','')
-            ->orderBy('ID','asc')
+        $rows = DB::table('Report_2021')
+            ->where('guest_city', '=', '')
+            ->where('guest_tel', '<>', '')
+            ->orderBy('ID', 'asc')
             ->skip(0)
             ->take(500)
             ->get();
@@ -176,8 +191,7 @@ class TestController extends Controller
                 }
 
             }
-        }
-        else{
+        } else {
             echo "同步地区信息已完成";
         }
 
@@ -187,14 +201,14 @@ class TestController extends Controller
 
     private function CheckCardBan($eventkey)
     {
-        $row=DB::table('wx_card_ban')
-            ->where('id',1)
+        $row = DB::table('wx_card_ban')
+            ->where('id', 1)
             ->first();
 
-        $tmparray = explode($eventkey,$row->eventkey);
-        if(count($tmparray)>1){
+        $tmparray = explode($eventkey, $row->eventkey);
+        if (count($tmparray) > 1) {
             return true;
-        } else{
+        } else {
             return false;
         }
 
