@@ -38,7 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Welcome WANG</div>
+                <div class="title">Hello World</div>
             </div>
         </div>
     </body>
