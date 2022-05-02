@@ -1,7 +1,7 @@
 @extends('control.blade.data')
 
 @section('title', '横店影视城微信管理平台－－－回复管理')
-@section('page-menu-title', '修改文字回复')
+@section('page-menu-title', '添加语音回复')
 
 @section('page-title', '回复管理')
 
@@ -39,7 +39,7 @@
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
-                <a href="#">修改文字回复</a>
+                <a href="#">添加语音回复</a>
             </li>
         </ul>
 
@@ -60,36 +60,50 @@
                 </div>
                 <div class="portlet-body form">
 
-                    {!! Form::open(['url'=>'control/requesttxt?action=save','class'=>'form-horizontal form-bordered',
+                    {!! Form::open(['url'=>'control/requestimage?action=save','files'=>true,'class'=>'form-horizontal form-bordered',
                     'id'=>'postForm','onkeydown'=>'if(event.keyCode==13){return false;}']) !!}
-                    <input type="text" name="id" hidden value="{!! $row->id !!}">
                     <div class="form-body">
                         <div class="form-group">
-                            <label class="control-label col-md-1">内容</label>
+                            <label class="control-label col-md-1">名称</label>
 
-                            <div class="col-md-4">
-                                <textarea name="content"   class="form-control"  rows="3" placeholder="请输入回复内容">{!! $row->content !!}</textarea>
+                            <div class="col-md-11">
+                                <input name="content" value="" class="form-control  input-inline input-xlarge">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label col-md-1">回复关键字</label>
+                            <label class="control-label col-md-1">选择文件</label>
 
+                            <div class="col-md-11">
 
-                                <div class="col-md-11">
-                                    <input name="keyword"   value="{!! $row->keyword !!}" data-role="tagsinput"
-                                           placeholder="请输入回复关键字"/>
-                                    <span class="help-inline">每个关键字用","隔开</span>
-
+                                <div class="fileinput fileinput-new" data-provides="fileinput">
+                                    <div class="input-group input-large">
+                                        <div class="form-control uneditable-input" data-trigger="fileinput">
+                                            <i class="fa fa-file fileinput-exists"></i>&nbsp; <span
+                                                    class="fileinput-filename">
+														</span>
+                                        </div>
+													<span class="input-group-addon btn default btn-file">
+													<span class="fileinput-new">
+													Select file </span>
+													<span class="fileinput-exists">
+													Change </span>
+													<input type="file" name="file">
+													</span>
+                                        <a href="#" class="input-group-addon btn red fileinput-exists"
+                                           data-dismiss="fileinput">
+                                            Remove </a>
+                                    </div>
                                 </div>
 
+                            </div>
 
                         </div>
                         <div class="form-group">
                             <label class="control-label col-md-1">是否关注显示</label>
                             <div class="col-md-11">
                                 <label class="checkbox">
-                                    <input type="checkbox" name="focus" value="1" <?php if ($row->focus == 1) echo 'checked' ?>/>
+                                    <input type="checkbox" name="focus" value="1"/>
                                     <span class="help-inline">如果勾选，则客人关注时接收到此条信息。</span>
                                 </label>
                             </div>
@@ -98,12 +112,24 @@
                             <label class="control-label col-md-1">展示对象</label>
 
                             <div class="col-md-3">
-
                                 <input type="hidden" name="eventkey" id="select2_sample5"
-                                       class="form-control select2"
-                                       value="<?php $usage = new \App\WeChat\Usage(); echo $usage->getArticleShowQrsecne($row->eventkey)?>">
+                                       class="form-control select2" value="">
                             </div>
                         </div>
+
+                        <!-- <div class="form-group">
+                             <label class="control-label col-md-1">演艺秀地理位置</label>
+                             <div class="col-md-11">
+                                 <input name="location_url"  value="" class="form-control  input-inline input-xlarge">
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <label class="control-label col-md-1">备注</label>
+                             <div class="col-md-11">
+                                 <input name="remark"  value="" class="form-control  input-inline input-xlarge">
+                             </div>
+                         </div>
+                         -->
                     </div>
                     <div class="form-actions">
                         <div class="row">

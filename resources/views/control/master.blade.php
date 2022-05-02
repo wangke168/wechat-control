@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="测试页面">
-    <title>横店圆明新园微信管理平台 - @yield('title')</title>
+    <title>横店影视城微信管理平台 - @yield('title')</title>
     <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('bootstrap/css/style.css')}}">
     <!-- BEGIN GLOBAL MANDATORY STYLES -->

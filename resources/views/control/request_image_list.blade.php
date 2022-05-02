@@ -1,6 +1,6 @@
 @extends('control.blade.data')
 
-@section('title', '横店影视城微信管理平台－－－二维码管理')
+@section('title', '横店影视城微信管理平台－－－回复管理')
 
 @section('css')
     <link href="{{asset('assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css')}}" rel="stylesheet"
@@ -9,7 +9,10 @@
           type="text/css"/>
 @stop
 
-@section('page-title', '文章列表')
+
+@section('page-menu-title', '图片回复')
+
+@section('page-title', '回复管理')
 
 @section('page-bar')
     <div class="page-bar">
@@ -20,7 +23,7 @@
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
-                <a href="#">文章列表</a>
+                <a href="#">图片回复</a>
             </li>
         </ul>
 
@@ -35,7 +38,7 @@
             <div class="portlet box blue-hoki">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="fa fa-globe"></i>文章列表
+                        <i class="fa fa-globe"></i>图片回复列表
                     </div>
                     <div class="tools">
                     </div>
@@ -45,22 +48,25 @@
 
 
                         <button type="button" class="btn btn-success"
-                                onclick="javascript:window.location.href='request_se?action=add';">添加二次回复
+                                onclick="javascript:window.location.href='requestimage?action=add';">添加图片回复
+                        </button>
+                        <button type="button" class="btn btn-primary"
+                                onclick="javascript:window.location.href='requestimage?action=snyc';">同步
                         </button>
 
                     </ul>
                     <ul class="nav nav-pills">
+                        {!! Form::open(['url'=>'control/requestvoice?action=search','class'=>'navbar-form navbar-right',
+                                            'id'=>'postForm']) !!}
 
-                        <form method="POST" name="myform" action="requesttxt" class="navbar-form navbar-right">
-                            <input class="m-wrap" type="text" name="keyword" class="form-control" placeholder="关键字"
-                                   id="keyword" value=""/>
-                            <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
-                        </form>
+                        <input class="m-wrap" type="text" name="keyword" class="form-control" placeholder="关键字"
+                               id="keyword" value=""/>
+
+                        <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
+
+                        {!! Form::close() !!}
                     </ul>
-
                     <div class="tab-content">
-
-
                         <table class="table table-striped table-bordered table-hover" id="sample_1">
                             <thead>
                             <tr>
@@ -68,23 +74,13 @@
                                     序号
                                 </th>
                                 <th>
-                                    标题
+                                    说明
                                 </th>
-
                                 <th>
-                                    顺序
+                                    media_id
                                 </th>
                                 <th>
                                     展示对象
-                                </th>
-                                <th>
-                                    发送数
-                                </th>
-                                <th>
-                                    打开数
-                                </th>
-                                <th>
-                                    点击数
                                 </th>
                                 <th>
                                     状态
@@ -98,38 +94,25 @@
                             </tr>
                             </thead>
                             <tbody>
+                            <?php $i = 1?>
                             @foreach($rows as $row)
                                 <tr>
                                     <td>
-                                        {{$row->id}}
+                                        {{$i}}
                                     </td>
                                     <td>
-                                        {{$row->title}}
+                                        {{$row->remark}}
                                     </td>
                                     <td>
-                                        {{$row->priority}}
-                                    </td>
-                                    <td>
-                                        @if ($row->target=='1')
-                                            <span class='label label-success'>全部</span>
-                                        @elseif($row->target=='2')
-                                            <span class='label label-success'>门票</span>
-                                        @elseif($row->target=='3')
-                                            <span class='label label-success'>酒店</span>
-                                        @endif
+                                        {{$row->media_id}}
                                     </td>
                                     <td>
                                         <?php
-                                        $count = new \App\WeChat\Count();
-                                        echo $count->se_request_count($row->id);
+                                        $usage = new \App\WeChat\Usage();
+                                        echo "<span class='label bg-grey-cascade'>" . str_limit($usage->getArticleShowQrsecne($row->eventkey), $limit = 30, $end = '...') . "</span>";
                                         ?>
                                     </td>
-                                    <td>
-                                        {!! $count->se_request_read_count($row->id) !!}
-                                    </td>
-                                    <td>
-                                        {{$row->hits}}
-                                    </td>
+
                                     <td>
                                         <?php
                                         if ($row->online == 1) {
@@ -140,18 +123,20 @@
                                         ?>
                                     </td>
                                     <td>
-
+                                        {{$row->start_date}}--{!! $row->end_date !!}
                                     </td>
                                     <td>
                                         <?php
-                                        echo "<a class='getqrcode label label-primary' data-target='#long' data-toggle='modal' data-src='qrcreat?type=article_se&id=" . $row->id . "'><i class='fa fa-eye'></i>&nbsp;预览</a>&nbsp;";
-                                        echo "<a href='request_se?action=modify&id=" . $row->id . "' class='label label-success'><i class='fa fa-edit'></i>&nbsp;修改</a>&nbsp;";
+                                        echo "<a href='requestimage?action=modify&id=" . $row->id . "' class='label label-success'><i class=\"fa fa-edit\"></i>&nbsp;修改</a>&nbsp;";
+
                                         if ($row->online == 1) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='requestmodify?action=se_offline&id=" . $row->id . "' class='label label-warning'><i class=\"fa  fa-arrow-circle-o-down\"></i>&nbsp;下线</a>";
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要下线'))return false;\"  href='requestimage?action=offline&id=" . $row->id . "' class='label label-warning'><i class=\"fa  fa-arrow-circle-o-down\"></i>&nbsp;下线</a>&nbsp;";
                                         } elseif ($row->online == 0) {
-                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要上线'))return false;\"  href='requestmodify?action=se_online&id=" . $row->id . "' class='label label-success'><i class=\"fa  fa-arrow-circle-o-up\"></i>&nbsp;上线</a>";
+                                            echo "<a OnClick=\"javascript:if (!confirm('是否真的要上线'))return false;\"  href='requestimage?action=online&id=" . $row->id . "' class='label label-success'><i class=\"fa  fa-arrow-circle-o-up\"></i>&nbsp;上线</a>&nbsp;";
 
                                         }
+                                        echo "<a OnClick=\"javascript:if (!confirm('是否真的要删除'))return false;\"  href='requestimage?action=del&id=" . $row->id . "&media_id=" . $row->media_id . "' class='label label-danger'><i class='fa fa-trash-o'></i>&nbsp;删除</a>";
+                                        $i = $i + 1;
                                         ?>
                                     </td>
                                 </tr>
@@ -159,24 +144,26 @@
 
                             </tbody>
                         </table>
-                        {!! $rows->render() !!}
+                    {!! $rows->render() !!}
 
-                                <!--弹出层-->
+                    <!--弹出层-->
                         <div id="long" class="modal fade " tabindex="-1" data-replace="true">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                                <h4 class="modal-title">微信扫描二维码预览</h4>
+                                <h4 class="modal-title">扫描二维码关注试听</h4>
                             </div>
                             <div class="modal-body">
-                                <!--				<img id='qr' style="height: 500px" src="../../../../../../i.imgur.com/KwPYo.jpg">-->
+                                {{--<img id='qr'  src="../../../../../../i.imgur.com/KwPYo.jpg">--}}
                                 <iframe id='qr' src="http://www.baidu.com"
-                                        style="border:none; width:250px; height:250px;"></iframe>
+                                        style="border:none; width:500px; height:500px;"></iframe>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" data-dismiss="modal" class="btn btn-default">关闭</button>
                             </div>
                         </div>
                         <!--结束弹出层-->
+
+
                     </div>
                 </div>
             </div>
@@ -205,4 +192,3 @@
     });
 
 @stop
-

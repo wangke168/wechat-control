@@ -1,6 +1,6 @@
 @extends('control.blade.data')
 
-@section('title', '横店圆明新园微信管理平台－－－数据统计')
+@section('title', '横店影视城微信管理平台－－－数据统计')
 
 @section('page-menu-title', '订单统计')
 

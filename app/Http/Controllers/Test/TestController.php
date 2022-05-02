@@ -45,7 +45,9 @@ class TestController extends Controller
 
     public function test1()
     {
-        return date('yy-m-d', "1651116958");
+//        $app = app('wechat');
+        $image=$this->material->get("y1_Ypabgd3rcrb6YdsaJjlGFUD20hq_ye7S9pgdpiJBtdWR5RsTJhCIR-ponseyY");
+        var_dump($image);
     }
     private function pkcsPadding($str, $blocksize)
     {

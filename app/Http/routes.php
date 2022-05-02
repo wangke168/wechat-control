@@ -61,6 +61,10 @@ Route::group(['prefix' => 'control', 'middleware' => 'control'], function () {
     Route::get('requestvoice', 'Control\RequestController@voice');
     Route::post('requestvoice', 'Control\RequestController@voice');
 
+    //图片回复
+    Route::get('requestimage', 'Control\RequestController@image');
+    Route::post('requestimage', 'Control\RequestController@image');
+
     //二次回复
     Route::get('request_se', 'Control\RequestController@se');
     Route::post('request_se', 'Control\RequestController@se');

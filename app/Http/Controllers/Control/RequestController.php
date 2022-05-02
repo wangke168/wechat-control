@@ -308,6 +308,134 @@ class RequestController extends Controller
         }
     }
 
+    /**
+     * 图片素材管理
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector|\Illuminate\View\View
+     */
+    public function image(Request $request)
+    {
+        $action = $request->input('action');
+        $id = $request->input('id');
+        switch ($action) {
+            case 'online':
+//                $id = $request->input('id');
+                DB::table('wx_images_request')
+                    ->where('id', $id)
+                    ->update(['online' => '1']);
+                return redirect('/control/requestimage');
+                break;
+            case 'offline':
+//                $id = $request->input('id');
+                DB::table('wx_images_request')
+                    ->where('id', $id)
+                    ->update(['online' => '0']);
+                return redirect('/control/requestimage');
+                break;
+            case 'del':
+//                $id = $request->input('id');
+                $media_id = $request->input('media_id');
+                DB::table('wx_images_request')
+                    ->where('id', $id)
+                    ->delete();
+                $this->material->delete($media_id);
+                return redirect('/control/requestimage');
+                break;
+            case 'add':
+                return view('control.request_image_add');
+                break;
+            case 'modify':
+                $row = DB::table('wx_images_request')
+                    ->find($id);
+                return view('control.request_image_modify', compact('row'));
+                break;
+            case 'search':
+                $keyword = $request->input('keyword');
+
+                $rows = DB::table('wx_images_request')
+                    ->where('remark', 'like', '%' . $keyword . '%')
+                    ->orderBy('id', 'desc')
+                    ->paginate(20);
+                return view('control.request_image_list', compact('rows'));
+                break;
+            case 'save':
+
+                $content = $request->input('content');
+                $eventkey = $request->input('eventkey');
+
+                $eventkey = $this->usage->getQrscene_info($eventkey);
+
+                $focus = $request->input('focus');
+                $focus ?: $focus = 0;
+                if ($id) {
+                    DB::table('wx_images_request')
+                        ->where('id', $id)
+                        ->update(['focus' => $focus, 'eventkey' => $eventkey, 'remark' => $content]);
+                } else {
+                    $file = $request->file('file');
+                    $media_id = $this->upload_material($file, 'voice');
+
+                    DB::table('wx_images_request')
+                        ->insert(['media_id' => $media_id, 'eventkey' => $eventkey, 'remark' => $content]);
+                }
+                return redirect('/control/requestimage');
+                break;
+            case 'download':
+                $id = $request->input('id');
+                $row = DB::table('wx_images_request')
+                    ->find($id);
+                $media_id = $row->media_id;
+                $title = $row->remark;
+                $voice = $this->material->get($media_id);
+                $ext = File::getStreamExt($voice); //这里返回的扩展名已经带[.]了
+//                return $ext;
+                $directory = '/volumes/result/Downloads';
+                file_put_contents($directory . '/' . $title . $ext, $voice);
+                return $title . $ext;
+
+                break;
+            case 'snyc':
+                $voice_count = $this->material->stats()->voice_count;;
+                $i = 0;
+                do {
+                    if ($voice_count - $i > 10) {
+                        $result = $this->material->lists('voice', $i, 10);
+                    } else {
+                        $result = $this->material->lists('voice', $i, ($voice_count - $i));
+                    }
+                    $items = $result->item;
+                    foreach ($items as $item) {
+                        echo $item['media_id'] . "<br>";
+
+                        $row = DB::table('wx_images_request')
+                            ->where('media_id', $item['media_id'])
+                            ->count();
+                        echo $row . "<br>";
+                        if ($row < 1) {
+
+                            DB::table('wx_images_request')
+                                ->insert(['media_id' => $item['media_id'], 'remark' => $item['name']]);
+                        } else {
+                            break;
+                        }
+                    }
+                    $i = $i + 10;
+                } while ($i <= $voice_count);
+                return redirect('/control/requestimage');
+                break;
+            default:
+                $rows = DB::table('wx_images_request')
+                    ->orderBy('id', 'desc')
+                    ->paginate(20);
+                return view('control.request_image_list', compact('rows'));
+                break;
+
+        }
+    }
+
+
+
+
     private function upload_material($file, $type)
     {
         //判断文件上传过程中是否出错
@@ -328,6 +456,10 @@ class RequestController extends Controller
         switch ($type) {
             case 'voice':
                 $result = $this->material->uploadVoice($file);  // 请使用绝对路径写法！除非你正确的理解了相对路径（好多人是没理解对的）！
+                return ($result->media_id);
+                break;
+            case "image":
+                $result = $this->material->uploadImage($file);  // 请使用绝对路径写法！除非你正确的理解了相对路径（好多人是没理解对的）！
                 return ($result->media_id);
                 break;
         }

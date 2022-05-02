@@ -237,7 +237,7 @@
                                 语音回复</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="requestimage">
                                 图片回复</a>
                         </li>
                         <li>

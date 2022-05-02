@@ -1,6 +1,6 @@
 @extends('control.blade.data')
 
-@section('title', '横店圆明新园微信管理平台－－－景区演艺秀推送')
+@section('title', '横店影视城微信管理平台－－－景区演艺秀推送')
 @section('page-menu-title', '添加演艺秀信息')
 
 @section('page-title', '景区演艺秀推送')
