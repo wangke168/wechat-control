@@ -2,6 +2,7 @@
 namespace App\Http\Controllers\Control;
 
 use App\WeChat\Usage;
+use App\WeChat\Api;
 use EasyWeChat\Foundation\Application;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -14,10 +15,12 @@ class QrlistController extends Controller
     public $usage;
     public $app;
     public $qrcode;
+    public $api;
     public function __construct(Application $app)
     {
         $this->app=$app;
         $this->qrcode=$this->app->qrcode;
+        $this->api=new Api();
         $this->usage=new Usage();
     }
 

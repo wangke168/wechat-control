@@ -238,7 +238,7 @@
                         </li>
                         <li>
                             <a href="requestimage">
-                                图片回复111</a>
+                                图片回复</a>
                         </li>
                         <li>
                             <a href="request_se">

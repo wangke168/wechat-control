@@ -1,7 +1,7 @@
 @extends('control.blade.data')
 
 @section('title', '横店影视城微信管理平台－－－回复管理')
-@section('page-menu-title', '添加语音回复')
+@section('page-menu-title', '添加图片回复')
 
 @section('page-title', '回复管理')
 
@@ -39,7 +39,7 @@
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
-                <a href="#">添加语音回复</a>
+                <a href="#">添加图片回复</a>
             </li>
         </ul>
 
@@ -54,7 +54,7 @@
             <div class="portlet box blue-hoki">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="fa fa-gift"></i>添加语音
+                        <i class="fa fa-gift"></i>添加图片
                     </div>
 
                 </div>

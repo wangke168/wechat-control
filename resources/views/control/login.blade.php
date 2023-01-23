@@ -53,7 +53,7 @@
 <!-- END SIDEBAR TOGGLER BUTTON -->
 <!-- BEGIN LOGO -->
 <div class="logo">
-    <h1 style="color:white">横 店 圆 明 新 园 微 信 管 理 平 台</h1>
+    <h1 style="color:white">横 店 影 视 城 微 信 管 理 平 台</h1>
 </div>
 <!-- END LOGO -->
 <!-- BEGIN LOGIN -->

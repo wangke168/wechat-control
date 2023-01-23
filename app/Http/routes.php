@@ -20,6 +20,8 @@ Route::get('index', function () {
     return view('test.test');
 });
 
+//生成h5跳小程序链接
+Route::get('getminipage','MiniPageController@gettoken');
 
 Route::get('control/login', 'UsersController@signin');
 Route::get('control/login.php', 'UsersController@signin');
