@@ -239,7 +239,7 @@ return [
         'Sentry' => Sentry\SentryLaravel\SentryFacade::class,
 
 
-//        'SoapWrapper' => Artisaninweb\SoapWrapper\Facade::class,
+        'SoapWrapper' => Artisaninweb\SoapWrapper\Facade::class,
     ],
 
 ];
