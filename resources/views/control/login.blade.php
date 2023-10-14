@@ -73,7 +73,7 @@
         <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
         <label class="control-label visible-ie8 visible-ie9">用户名</label>
         {!! Form::text('username',null,['class'=>'form-control form-conrol-solid placeholder-no-fix',
-        'autocomolete'=>'off','placeholder'=>'请输入用户名']) !!}
+        'autocomolete'=>'off','placeholder'=>'请输入用户名11']) !!}
 
     </div>
     <div class="form-group">
